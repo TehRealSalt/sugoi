@@ -1,0 +1,1589 @@
+VERSION 2.2.8
+
+Lump _STSFX
+SoundTestPage = 2
+
+Lump _TITLE
+Title = Kimokawaiii!
+AltTitle = ...for Title Screen
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump _CHSEL
+Title = Starting Out!
+AltTitle = ...for Character Select
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+StoppingTime = 0
+
+Lump _RECAT
+Title = Warming Up!
+AltTitle = ...for Record Attack
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+StoppingTime = 0
+
+Lump _NITAT
+Title = [nights music]
+AltTitle = ...for NiGHTS Mode
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+StoppingTime = 0
+
+Lump _INTER
+Title = [mp inter music]
+AltTitle = ...for MP Intermission
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+StoppingTime = 0
+
+Lump _INV
+Title = Sparkle Power!
+AltTitle = ...for Invincibility
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+StoppingTime = 0
+
+Lump _SHOES
+Title = Faster, Faster!
+AltTitle = ...for Speed Sneakers
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+StoppingTime = 0
+
+Lump _CLEAR
+Title = A Sugoi Victory!
+AltTitle = ...for Level Clear
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+StoppingTime = 7000
+
+Lump _DROWN
+Title = You're Drowning!!
+AltTitle = ...for Drowning
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+StoppingTime = 11000
+
+Lump _GOVER
+Title = You've Let Us Down...
+AltTitle = ...for Game Over
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+StoppingTime = 6000
+
+Lump _CONTI
+Title = Continue, Try Again?
+AltTitle = ...for Continue
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+StoppingTime = 0
+
+Lump _1UP
+Title = [oneup music]
+AltTitle = ...for Extra Life
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+StoppingTime = 3000
+
+Lump _SUPER
+Title = Feeling Like A Superstar
+AltTitle = ...for Super Sonic
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump _SUGOI
+Title = Dracula Battle
+AltTitle = ...for Title Screen
+Authors = Masanori Adachi, Taro Kudo
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump BUMPNK
+Title = bump-n-knock
+AltTitle = ...for Teleport Station
+Authors = phaser
+Source = https://modarchive.org/module.php?116891
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump MTJRNY
+Title = Mountain Journey
+AltTitle = ...for Groggy Gale
+Authors = Supergoose
+Source = https://modarchive.org/module.php?52496
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump MYSTIC
+Title = Mysticism
+AltTitle = ...for Skytop
+Authors = Necros/PM
+Source = https://modarchive.org/module.php?48433
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump QUARTZ
+Title = Quartzite Crag
+Authors = SeventhSentinel
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump CWZ1
+Title = Trip to Blue
+AltTitle = ...for Contaminated Water
+Authors = minomus of DOMU
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 125
+
+Lump 16BBRA
+Title = 16bit brain
+AltTitle = ...for Nightlight Ruins
+Authors = madbrain
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 125
+
+Lump TWINKP
+Title = Pleasure Castle
+AltTitle = ...for Robotnik Park
+Authors = Jun Senoue, Kenichi Tokoi, Fumie Kumatani
+Source = Sonic Adventure
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump WAVES
+Title = Waves
+AltTitle = ...for Aquatic Corridors
+Authors = kid pixel
+Source = https://soundcloud.com/kdpxl/waves
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump FILMOA
+Title = Fillmore Act-1
+AltTitle = ...for Overgrown Castle
+Authors = Yuzo Koshiro
+Source = Actraiser
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump KTDMC
+Title = Moonlight Capital (VRC6+FDS)
+AltTitle = ...for Lilac Conservatory
+Authors = MistSomething, Jun Ishikawa
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 180
+
+Lump HOGAN
+Title = Real American (MIDI)
+AltTitle = ...for Lilac Conservatory
+Authors = WrstlCraze, Rick Derringer
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 130
+
+Lump JUMPER
+Title = Jumper
+AltTitle = ...for Lavender World
+Authors = Waterflame
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump LBYRTH
+Title = Act 1
+AltTitle = ...for Sky Labyrinth
+Authors = Atsuko Iwanaga
+Source = Sonic Labyrinth
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump MEMDST
+Title = Memorydust
+AltTitle = ...for Fiery Volcano
+Authors = Codex
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 150
+
+Lump CNFRNT
+Title = void
+AltTitle = ...for End of Time
+Authors = nutcase
+Source = https://modarchive.org/module.php?169697
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump HEAVEN
+Title = Heaven of Pain
+AltTitle = ...for End of Time
+Authors = MADOKAN
+Source = https://modarchive.org/module.php?44352
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ISEE
+Title = REMNANT
+AltTitle = ...for Cute Ice
+Authors = Tsutomu Narita, Chihiro Fujioka, Takeshi Abo
+Source = Megadimension Neptunia Victory II
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump FINEGG
+Title = Mechanical Resonance
+AltTitle = ...for Robotnik Laboratory 1
+Authors = Jun Senoue, Kenichi Tokoi, Fumie Kumatani
+Source = Sonic Adventure
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump BULLTS
+Title = Bullet Station
+AltTitle = ...for Robotnik Laboratory 2
+Authors = Jun Senoue, Tomoya Ohtani, Fumie Kumatani, Mariko Nanba, Keiichi Sugiyama
+Source = Sonic Heroes
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump FUDGEC
+Title = Fudge Canyon
+Authors = VAdaPEGA
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump TAR04M
+Title = Tar04
+AltTitle = ...for Fudge Canyon
+Authors = don
+Source = SOUP 0.9
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump OKXYGN
+Title = Okta-xy-geen
+AltTitle = ...for Orbital Complex
+Authors = Skaven252
+Source = https://modarchive.org/module.php?71907
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GRVWEL
+Title = Galactical Galaxies
+AltTitle = ...for Gravity Well
+Authors = Mark Cooksey
+Source = Speedy Gonzales in Los Gatos Bandidos
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump KVZ
+Title = overscan
+AltTitle = ...for Kodachrome Void
+Authors = Andreas Bilke (ascender)
+Source = https://modarchive.org/module.php?158049
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 94
+
+Lump CONHIT
+Title = Continuous Hits
+AltTitle = ...for Grand Cavern
+Authors = Tsutomu Narita, Chihiro Fujioka, Takeshi Abo
+Source = Megadimension Neptunia Victory II
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump PHEART
+Title = Purple Heart's Theme
+AltTitle = ...for Grand Cavern
+Authors = Kenji Kaneko
+Source = Hyperdimension Neptunia Re;Birth 3
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump DOGOO
+Title = Dogoo Game Over
+AltTitle = ...for Grand Cavern
+Authors = Kenji Kaneko
+Source = Hyperdimension Neptunia Re;birth 1
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GARANZ
+Title = Mystic Forest
+AltTitle = ...for Garanz Site 16
+Authors = Akiko Shikata
+Source = Umineko: When They Cry
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GARAN2
+Title = Jungle ~A Lush Load~ (MIDI)
+AltTitle = ...for Garanz Site 16
+Authors = Stacy Anne Christiansen, Fumie Kumatani
+Source = Phantasy Star Online
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump HLRAIS
+Title = Hellraiser
+AltTitle = ...for SUGOI Ending
+Authors = Tsutomu Narita, Chihiro Fujioka, Takeshi Abo
+Source = Megadimension Neptunia Victory II
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump MISATO
+Title = Misato's Theme (XM)
+AltTitle = ...for SUBARASHII Intro
+Authors = Veritas, Shiro Sagisu
+Source = https://modarchive.org/module.php?152767
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump DOGMA
+Title = Attack On Dogma (IT)
+AltTitle = ...for SUBARASHII Intro
+Authors = St3vor, Shiro Sagisu
+Source = Neon Genesis Evangelion
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump MAGICH
+Title = The Magic House
+AltTitle = ...for Joestar Manor
+Authors = Nobuo Uematsu
+Source = Final Fantasy VI
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SHOP
+Title = Slashed Prices
+AltTitle = ...for Shadow's Shop
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ACT1
+Title = Green Hills
+AltTitle = ...for Green Flowers 1
+Authors = Naofumi Hataya, Masafumi Ogata
+Source = Sonic the Hedgehog 2 (8-bit)
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ACT2
+Title = Aqua Lake
+AltTitle = ...for Green Flowers 2
+Authors = Naofumi Hataya, Masafumi Ogata
+Source = Sonic the Hedgehog 2 (8-bit)
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ACT3
+Title = Rainy Savannah
+AltTitle = ...for Green Flowers 3
+Authors = Masayuki Nagao, Saori Kobayashi
+Source = Sonic Drift 2
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GFBO
+Title = Boss (Game Gear)
+AltTitle = ...for Green Flowers 4
+Authors = Naofumi Hataya, Masafumi Ogata
+Source = Sonic the Hedgehog 2 (8-bit)
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump HOUSE
+Title = Snow Mountain
+AltTitle = ...for Holiday House
+Authors = Koji Kondo
+Source = Super Mario 64
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump BTRFLY
+Title = Butterfly Flew Away
+AltTitle = ...for Frozen Valley
+Authors = TB
+Source = https://modarchive.org/module.php?58844
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump HHZ
+Title = Holiday Hill
+Authors = SeventhSentinel
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump PPZ2IT
+Title = Pacific Paradise 2
+AltTitle = ...for Bubble Tides
+Authors = SeventhSentinel
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump PFZM
+Title = crux-mas
+AltTitle = ...for Plastic Factory
+Authors = maniac/crux
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 125
+
+Lump 118N64
+Title = 118 in 64 and 194
+AltTitle = ...for Funky Headquarters
+Authors = Reed
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump DIMDST
+Title = Diamond Dust 1
+AltTitle = ...for Sapphire Frost
+Authors = Jun Senoue, Tatsuyuki Maeda, Masaru Setsumaru, Seirou Okamoto
+Source = Sonic 3D Blast (Genesis)
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump BUREAU
+Title = Bureautique
+AltTitle = ...for Night Temple
+Authors = art, ytpmvp0
+Source = https://modarchive.org/module.php?177258
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump INTERN
+Title = International Karate
+AltTitle = ...for Night Temple
+Authors = Whiskeymusic
+Source = https://modarchive.org/module.php?45038
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump CRIMSN
+Title = Portals of Chaos
+AltTitle = ...for Crimson Castle
+Authors = Kevin Schilder
+Source = Heretic
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ICECAP
+Title = Ice Cap 1
+Authors = Brad Buxer, Sachio Ogawa, Tatsuyuki Maeda, Jun Senoue
+Source = Sonic the Hedgehog 3
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump DDESRT
+Title = not fragile
+AltTitle = ...for Dusty Desert 1
+Authors = Author unknown
+Source = https://modarchive.org/module.php?97021
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ATLNTS
+Title = -xTREMELY xECUTABLE-
+AltTitle = ...for Atlantis
+Authors = Anders Akerheden
+Source = https://modarchive.org/module.php?134336
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SUMMIT
+Title = Diamond Dust 1
+AltTitle = ...for Snow Summit
+Authors = Richard Jacques
+Source = Sonic 3D Blast (Saturn)
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GROVE
+Title = Secret Forest Shrine
+AltTitle = ...for Twilight Grove
+Authors = FearofDark
+Source = https://modarchive.org/module.php?176891
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump TORVAL
+Title = Torval: Hoverbike or Bust
+AltTitle = ...for Mount Torval 1
+Authors = David Bergeaud
+Source = Ratchet: Deadlocked
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump TORVA2
+Title = Mount Vesuvius
+AltTitle = ...for Mount Torval 2
+Authors = Jake Kaufman, Hiroshige Tonomura
+Source = Ducktales: Remastered
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump STONSH
+Title = Difficult Fight
+AltTitle = ...for Stone Shuttle
+Authors = Yoko Shimomura
+Source = Live-A-Live
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump MIXIT
+Title = High and Broken
+AltTitle = ...for Mix It All Together ! 1
+Authors = Fumie Kumatani, Kenichi Tokoi, Seirou Okamoto, Le Club Bachraf
+Source = Sonic and the Secret Rings
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump STMTWR
+Title = Tower to the Skies
+AltTitle = ...for Steaming Towers
+Authors = Lucifer
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 116
+
+Lump SVZ
+Title = Plant Kingdom 1 (IT)
+AltTitle = ...for Sundial Veld
+Authors = Steel T, Tomoya Ohtani, Seirou Okamoto, Mariko Nanba
+Source = Sonic Rush Adventure
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump LOFZ
+Title = Strike Ants
+AltTitle = ...for Leaps of Faith
+Authors = Yoshinori Nagumo
+Source = Dangerous Seed
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump PLCPKS
+Title = Sealed Ground
+AltTitle = ...for Palace Peaks
+Authors = Kenichi Tokoi, Fumie Kumatani, Hideaki Kobayashi, Tomonori Sawada
+Source = Sonic Riders: Zero Gravity
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump PMDCAN
+Title = Great Canyon
+AltTitle = ...for Roasted Ravine 1
+Authors = Arata Iiyoshi, Atsuhiro Ishizuna
+Source = Pokemon Mystery Dungeon Red/Blue Rescue Team
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump PMDBOS
+Title = Versus Boss
+AltTitle = ...for Roasted Ravine 3
+Authors = Arata Iiyoshi, Atsuhiro Ishizuna
+Source = Pokemon Mystery Dungeon Red/Blue Rescue Team
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump BOSPIN
+Title = Boss Battle
+AltTitle = ...for Roasted Ravine 3
+Authors = Azusa Chiba, Masaharu Iwata, Kimihiro Abe
+Source = Learn With Pokémon: Typing Adventure
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump POGM
+Title = Pipes of Green
+Authors = VAdaPEGA
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump CRTIME
+Title = Corridors of Time
+AltTitle = ...for Empty Sanctum
+Authors = Yasunori Mitsuda, Nobuo Uematsu
+Source = Chrono Trigger
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump IAZMUS
+Title = Some piece of jazz
+AltTitle = ...for Illumination Aerie
+Authors = Rage
+Source = https://modarchive.org/module.php?57733
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GGZA2
+Title = Green Grove 2
+AltTitle = ...for Greenflower Grove 1
+Authors = Jun Senoue, Tatsuyuki Maeda, Masaru Setsumaru, Seirou Okamoto
+Source = Sonic 3D Blast (Genesis)
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump TDEFOR
+Title = Emerald Forest
+AltTitle = ...for Tropical Island
+Authors = Shigenori Masuko, Yoko Suzuki, Fumito Tamayama
+Source = Time Dominator 1st
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 150
+
+Lump TDLCLR
+Title = Level Complete
+AltTitle = ...for Tropical Island
+Authors = Shigenori Masuko, Yoko Suzuki, Fumito Tamayama
+Source = Time Dominator 1st
+SoundTestPage = 2
+SoundTestCond = 0
+StoppingTime = 5.2
+BPM = 125
+
+Lump MEMRYS
+Title = Memories
+AltTitle = ...for Unknown Temple 1
+Authors = Masanobu Tsukamoto, Akiyoshi Nagao
+Source = Puyo Puyo
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump FANGTT
+Title = Fang the Sniper
+AltTitle = ...for Unknown Temple 1
+Authors = Yayoi Fujimori
+Source = Sonic the Hedgehog Triple Trouble
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SHADEM
+Title = Castle City
+AltTitle = ...for Shade Mountain
+Authors = Alexander Brandon
+Source = https://www.jazz2online.com/j3f/jj3music.htm
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump AZUREM
+Title = Azure Lake
+AltTitle = ...for Soniguri
+Authors = Brad Buxer, Sachio Ogawa, Tatsuyuki Maeda, Jun Senoue
+Source = Sonic the Hedgehog 3
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump DMSDAY
+Title = Doomsday
+AltTitle = ...for Soniguri
+Authors = Howard Drossin, Sachio Ogawa, Tatsuyuki Maeda, Jun Senoue
+Source = Sonic & Knuckles
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ETERNL
+Title = Eternal Shrine Maiden
+AltTitle = ...for Highly Responsive
+Authors = ZUN
+Source = Touhou Project: Highly Responsive to Prayers
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump POSNEG
+Title = The Positive and Negative
+AltTitle = ...for Highly Responsive to Hedgehogs
+Authors = ZUN
+Source = Touhou Project: Highly Responsive to Prayers
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump MRGADO
+Title = Adonato
+AltTitle = ...for Final Tower
+Authors = MrGamer
+Source = https://modarchive.org/module.php?52663
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ALCHM2
+Title = !!!alchemist2
+AltTitle = ...for Egg World
+Authors = Author unknown
+Source = https://modarchive.org/module.php?120875
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump WINNER
+Title = You Win
+AltTitle = ...for SUBARASHII Ending
+Authors = Koujiro Mikusa
+Source = Sonic the Hedgehog's Gameworld
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SWITCH
+Title = Egg Switch
+AltTitle = ...for SUBARASHII Ending
+Authors = Koujiro Mikusa
+Source = Sonic the Hedgehog's Gameworld
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump BLACK
+Title = Black Paint
+AltTitle = ...for Star Genesis
+Authors = Takeru Kanazaki, Fumihiro Isobe
+Source = Paper Mario: Color Splash
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump MLFEAR
+Title = Fear
+AltTitle = ...for Star Genesis
+Authors = Author unknown
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump AMBITN
+Title = Marx's Ambition
+AltTitle = ...for Star Genesis
+Authors = Jun Ishikawa, Hirokazu Ando
+Source = Kirby Super Star Ultra
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump STRINT
+Title = Star Dream Appears
+AltTitle = ...for Star Genesis
+Authors = Hirokazu Ando, Jun Ishikawa
+Source = Kirby: Planet Robobot
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump STRDRM
+Title = vs. Star Dream
+AltTitle = ...for Star Genesis
+Authors = Hirokazu Ando, Jun Ishikawa
+Source = Kirby: Planet Robobot
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ATTACK
+Title = Cutscene - Attack
+AltTitle = ...for Star Genesis
+Authors = Tomoya Ohtani, Seirou Okamoto, Mariko Nanba
+Source = Sonic Rush Adventure
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump DRKFOR
+Title = Intermezzo Without A Leader
+AltTitle = ...for Star Genesis
+Authors = Hirokazu Ando, Jun Ishikawa
+Source = Kirby: Planet Robobot
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump FREE
+Title = Major Boss Battle
+AltTitle = ...for Star Genesis
+Authors = Leila Wilson, Sabrina DiDuro, Shane Ellis
+Source = Freedom Planet
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump RGMOVR
+Title = Game Over
+AltTitle = ...for SUBARASHII Alt. Ending
+Authors = Tomoko Sasaki
+Source = Ristar
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SDOVER
+Title = s0ftdrink 0verdose
+AltTitle = ...for SUBARASHII Alt. Ending
+Authors = Okeanos & Shinobi
+Source = https://modarchive.org/module.php?65307
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump DROVER
+Title = Dream Over
+AltTitle = ...for SUBARASHII Alt. Ending
+Authors = Yoshitaka Hirota, Hidenobu Otsuki, Ryo Fukuda, Takeo Suzuki, Kazumi Mitome
+Source = Sonic Shuffle
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SKYPAL
+Title = Enemy Hall (MMX Style)
+AltTitle = ...for Skyport Albatross
+Authors = JX444444, Ippo Yamada
+Source = https://smwc.me/s/25289
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GALLHA
+Title = gall-ha-snar
+AltTitle = ...for Saccharine Springs
+Authors = mac_of_doom
+Source = https://modarchive.org/module.php?111252
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 125
+
+Lump DELETE
+Title = Vibes from past
+AltTitle = ...for Deleted Domain
+Authors = Fegolhuzz / Databrothers
+Source = https://demozoo.org/music/4613/
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump THESIS
+Title = A Cruel Angel's Thesis (XM)
+AltTitle = ...for Unfinished SUBARASHII Trailer
+Authors = Veritas, Neko Oikawa, Hidetoshi Sato, Toshiyuki Omori
+Source = https://modarchive.org/module.php?152754
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump EGGMSK
+Title = The Hallow Palace
+AltTitle = ...for Masked Eggman
+Authors = Blowitch
+Source = https://soundcloud.com/plrusek-chan/blowitch-the-hallow-palace
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GATE1
+Title = Kawaii Sanctuary
+AltTitle = ...for Gateway Sanctuary
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SHOPB
+Title = Serenity Shopping
+AltTitle = ...for Owl's Shop
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump KBB1
+Title = Cappy's Stage (KDL3 Style)
+AltTitle = ...for Lilac Acreage
+Authors = Pinci, Sukezo Ouyama, Ryoue Takagi
+Source = https://smwc.me/s/8818
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 152
+
+Lump YIWAT
+Title = The Flower Garden (Fuzzy)
+AltTitle = ...for Lilac Acreage
+Authors = Koji Kondo
+Source = Yoshi's Island
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 120
+
+Lump MSZ
+Title = Starry Beach
+AltTitle = ...for Midnight Shores
+Authors = Robby Coker
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 126
+
+Lump GRASSL
+Title = Grasslands
+AltTitle = ...for Oceanside Cave
+Authors = RedNGreen
+Source = https://smwc.me/s/20513
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump AAPREB
+Title = Interrupted Sleep
+AltTitle = ...for Aurora Atoll 3
+Authors = Jun Ishikawa
+Source = Kirby Super Star
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump AABOSS
+Title = Boss Battle
+AltTitle = ...for Aurora Atoll 3
+Authors = Jun Ishikawa
+Source = Kirby Super Star
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ISCREA
+Title = Ice Scream
+AltTitle = ...for Verdant Valley
+Authors = Tomoko Sasaki
+Source = Ristar
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump MBRIEF
+Title = Mission Briefing
+AltTitle = ...for Morning Heights
+Authors = Tim Follin
+Source = Time Trax
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump THEME
+Title = Theme of Puyo Puyo
+AltTitle = ...for Arle Satan Bayoen Tsuu
+Authors = Masanobu Tsukamoto, Akiyoshi Nagao
+Source = Puyo Puyo
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump AREAA
+Title = Area A
+AltTitle = ...for Arle Satan Bayoen Tsuu
+Authors = Masanobu Tsukamoto, Akiyoshi Nagao
+Source = Puyo Puyo Tsuu
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump STICKR
+Title = Sticker of Puyo Puyo
+AltTitle = ...for Arle Satan Bayoen Tsuu
+Authors = Masanobu Tsukamoto, Akiyoshi Nagao
+Source = Puyo Puyo
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump LAST
+Title = Last Area
+AltTitle = ...for Arle Satan Bayoen Tsuu
+Authors = Masanobu Tsukamoto, Akiyoshi Nagao
+Source = Puyo Puyo Tsuu
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump FINAL
+Title = Final of Puyo Puyo
+AltTitle = ...for Arle Satan Bayoen Tsuu
+Authors = Masanobu Tsukamoto, Akiyoshi Nagao
+Source = Puyo Puyo
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump WARNG
+Title = Warning of Puyo Puyo
+AltTitle = ...for Arle Satan Bayoen Tsuu
+Authors = Masanobu Tsukamoto, Akiyoshi Nagao
+Source = Puyo Puyo
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SORROW
+Title = Sorrow of Puyo Puyo
+AltTitle = ...for Arle Satan Bayoen Tsuu
+Authors = Masanobu Tsukamoto, Akiyoshi Nagao
+Source = Puyo Puyo
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump PALACE
+Title = Angel Eyes
+AltTitle = ...for Scarlet Palace
+Authors = Velvet, Milva H.
+Source = https://modarchive.org/module.php?167583
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump MURDER
+Title = murder
+AltTitle = ...for BoBo the Bouncy Boi
+Authors = Reed Richards
+Source = https://modarchive.org/module.php?165689
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ELECTR
+Title = electricity
+AltTitle = ...for The
+Authors = Strobo
+Source = https://modarchive.org/module.php?161352
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump MEADOW
+Title = Evening Star
+AltTitle = ...for Lush Meadow
+Authors = Junko Shiratsu, Mariko Nanba
+Source = Knuckles Chaotix
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump CHERRY
+Title = Cherry Jam
+AltTitle = ...for Decrepit Plant
+Authors = Reed Richards
+Source = https://modarchive.org/module.php?36415
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump CYBOB
+Title = Boss
+AltTitle = ...for Cyber Deton
+Authors = Jun Chikuma, Tomoyuki Hamada
+Source = Super Bomberman
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump KNOTHV
+Title = Ice World
+AltTitle = ...for Knothole Valley
+Authors = Retro64
+Source = Best Friends
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GROSEL
+Title = Groselha
+AltTitle = ...for Redcurrant Brewery
+Authors = Lactozilla
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 114
+
+Lump SEV
+Title = Twilight Space
+AltTitle = ...for Extraterrestrial Ruin
+Authors = Masaaki Nishizawa, Keiji Ueki, Kennosuke Suemura
+Source = Super Bonk
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SUNS
+Title = Sunset Hill 2 (MIDI)
+AltTitle = ...for Mr. Triangle
+Authors = Jace, Hideaki Kobayashi, Kenichi Tokoi
+Source = Sonic Advance 3
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump KDL3B
+Title = Boss
+AltTitle = ...for Mr. Triangle
+Authors = Jun Ishikawa
+Source = Kirby's Dreamland 3
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump DR1
+Title = Dr. Wily Stage 1-2
+AltTitle = ...for Robotnik's Fortress
+Authors = Kinuyo Yamashita
+Source = Mega Man: The Wily Wars
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump UMAGMA
+Title = Under Magma
+AltTitle = ...for Icy Hot Cave
+Authors = Tomoko Sasaki
+Source = Ristar
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump DIAVAL
+Title = Jazz Castle
+AltTitle = ...for Diamond Valley
+Authors = Alexander Brandon
+Source = Jazz Jackrabbit 2
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump PTYEGG
+Title = Jazz Boss Tune 2
+AltTitle = ...for Pointy Egg
+Authors = Alexander Brandon
+Source = Jazz Jackrabbit 2
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump HIDOUT
+Title = Outside Shredder's Hideout
+AltTitle = ...for Shogun Stronghold
+Authors = Masahiro Ikariko, You Takamine, Kaori Kinouchi, Hideto Inoue, Kozo Nakamura
+Source = Teenage Mutant Ninja Turtles: The Hyperstone Heist
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SMC
+Title = Meditation
+AltTitle = ...for Submerged Corridors
+Authors = ArchAngel
+Source = https://modarchive.org/module.php?28
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GHZLJ
+Title = Green Hill
+Authors = Masato Nakamura
+Source = Sonic the Hedgehog
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GDMINT
+Title = Boss Introduction
+AltTitle = ...for Summit Showdown
+Authors = Masato Kouda, Yuko Takehara
+Source = Marvel vs. Capcom: Clash of Super Heroes
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GUNDAM
+Title = Onslaught II
+AltTitle = ...for Summit Showdown
+Authors = Masato Kouda, Yuko Takehara
+Source = Marvel vs. Capcom: Clash of Super Heroes
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump BOOTC
+Title = Boo Takes Charge
+AltTitle = ...for Summit Showdown
+Authors = ThinkOneMoreTime
+Source = https://www.smwcentral.net/?p=section&a=details&id=7179
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ENDA
+Title = Ending B
+AltTitle = ...for Side Flip
+Authors = Masanobu Tsukamoto, Akiyoshi Nagao
+Source = Puyo Puyo Tsuu
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump BLAPCK
+Title = Big Boss Confrontation 2
+AltTitle = ...for Side Flip
+Authors = Kenji Yamamoto, Minako Hamano
+Source = Super Metroid
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump INTROB
+Title = The Other
+AltTitle = ...for Side Flip
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GATE2
+Title = Kimoi Dimension
+AltTitle = ...for Gateway Dimension
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SHOPC
+Title = Whatcha Buying
+AltTitle = ...for Manegg's Shop
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump LALONE
+Title = Left Alone
+AltTitle = ...for Mechanical Garden
+Authors = MasterMind
+Source = https://modarchive.org/module.php?33341
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump LJ
+Title = joes#10
+AltTitle = ...for LJ Sonic
+Authors = --echo--
+Source = https://modarchive.org/module.php?45584
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump CONFLG
+Title = Act 2 Boss
+AltTitle = ...for Confleggator
+Authors = Brad Buxer, Sachio Ogawa, Tatsuyuki Maeda, Jun Senoue
+Source = Sonic the Hedgehog 3
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump AALPXM
+Title = Acidic Alpines
+Authors = Lach
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 84
+
+Lump ODBOSS
+Title = Capsule Calamity!
+AltTitle = ...for Acidic Alpines
+Authors = Lach
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 148
+
+Lump VOLVAL
+Title = Volcano Valley 1
+AltTitle = ...for Magmor
+Authors = Jun Senoue, Tatsuyuki Maeda, Masaru Setsumaru, Seirou Okamoto
+Source = Sonic 3D Blast (Genesis)
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump 3DS4BS
+Title = Unused Boss
+AltTitle = ...for Egg Flambe
+Authors = Jun Senoue, Tatsuyuki Maeda, Masaru Setsumaru, Seirou Okamoto
+Source = Sonic 3D Blast (Genesis)
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump 3DBOSS
+Title = Boss 1
+AltTitle = ...for Egg Flambe
+Authors = Jun Senoue, Tatsuyuki Maeda, Masaru Setsumaru, Seirou Okamoto
+Source = Sonic 3D Blast (Genesis)
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump 3DBS01
+Title = Boss 2
+AltTitle = ...for Egg Flambe
+Authors = Jun Senoue, Tatsuyuki Maeda, Masaru Setsumaru, Seirou Okamoto
+Source = Sonic 3D Blast (Genesis)
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump DESCAN
+Title = Desolation Canyon
+AltTitle = ...for Wasted Wayward
+Authors = Hiroyuki Iwatsuki, Haruo Ohashi
+Source = Wild Guns
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump EWJ2LS
+Title = Lorenzen's Soil
+AltTitle = ...for Glacier Glaze
+Authors = Tommy Tallarico
+Source = Earthworm Jim 2
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump MISSIO
+Title = Mission Acomplished
+AltTitle = ...for Desolate Woods
+Authors = Maniac of Alter
+Source = https://modarchive.org/module.php?112242
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump TREASU
+Title = Treasure Box
+AltTitle = ...for Desolate Woods
+Authors = Farmer
+Source = https://modarchive.org/module.php?99252
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump RTIO
+Title = Return to Io
+AltTitle = ...for Desolate Woods
+Authors = GraveDigger
+Source = https://modarchive.org/module.php?72380
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump DEPEC
+Title = depeche maxi
+AltTitle = ...for Dark Stabot
+Authors = tsc
+Source = https://modarchive.org/module.php?122882
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump EUPHO
+Title = euphoriosion
+AltTitle = ...for Dark Stabot
+Authors = tkg
+Source = https://modarchive.org/module.php?117794
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ESNOVA
+Title = dream in blue water
+AltTitle = ...for Nova Shore
+Authors = 4mat
+Source = https://modarchive.org/module.php?78462
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump DOPFSH
+Title = You Got to Eat Your Vegetables
+AltTitle = ...for Nova Shore
+Authors = Bobby Prince
+Source = Commander Keen 4: Secret of the Oracle
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump DESDRE
+Title = desert dream
+AltTitle = ...for Raspberry Desert
+Authors = laxity/kefrens
+Source = https://modarchive.org/module.php?108472
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump BIOSAT
+Title = Millennium
+AltTitle = ...for Bio Satellite
+Authors = Sidewinder
+Source = https://modarchive.org/module.php?128056
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump EGGLAS
+Title = kalomie
+AltTitle = ...for Egg Lasershow
+Authors = toady
+Source = https://modarchive.org/module.php?123855
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump RXDSRT
+Title = Desert
+AltTitle = ...for Quandary Canyon
+Authors = Yoshinobu Hiraiwa
+Source = Ranger-X
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump CAVERN
+Title = Camel Jazz
+AltTitle = ...for Quandary Canyon
+Authors = Tommy Tallarico, Donald Griffin
+Source = Aladdin (Genesis)
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump FUNNEE
+Title = Funeral
+AltTitle = ...for Ruby Castle
+Authors = Mick Rippon
+Source = https://modarchive.org/module.php?43840
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SLEPEG
+Title = Sleeping Egg
+Authors = Kojiro Mikusa, Masayuki Nagao
+Source = Sonic Chaos
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump WEEBM
+Title = YO-KAI Disco
+AltTitle = ...for Dimension Disaster
+Authors = Yousuke Yasui
+Source = Mamorukun Curse!
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump HERO
+Title = Super Hero
+AltTitle = ...for Doomsday Disaster
+Authors = Yousuke Yasui
+Source = Mamorukun Curse!
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump MANTRA
+Title = Mantra
+AltTitle = ...for Doomsday Disaster
+Authors = Yousuke Yasui
+Source = Mamorukun Curse!
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump TERROR
+Title = Ultimate Terror
+AltTitle = ...for Doomsday Disaster
+Authors = Yousuke Yasui
+Source = Mamorukun Curse!
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump TAVERN
+Title = Mineshaft Tavern
+AltTitle = ...for Sunken Shafts
+Authors = stinkbug
+Source = https://modarchive.org/module.php?174185
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump AZP
+Title = Azure Paradise
+Authors = LazyMK
+SoundTestPage = 2
+SoundTestCond = 0
+BPM = 135
+
+Lump TRAGIC
+Title = tragical song
+AltTitle = ...for Cosmic Valley
+Authors = FLYER/R-Age/Psycho
+Source = https://modarchive.org/module.php?139164
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump PROTAG
+Title = Last Boss
+AltTitle = ...for True Protagonist
+Authors = Junichi Masuda
+Source = Magical Taruruuto-Kun
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump GENESS
+Title = Main Title Part 2
+AltTitle = ...for Pure Rock
+Authors = Matt Furniss
+Source = Alien 3 (Genesis)
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump CHLNGE
+Title = Sanctuary Guardian's Challenge
+AltTitle = ...for Backyard Bother
+Authors = Keiichi Suzuki, Hirokazu Tanaka
+Source = Earthbound
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump CHLNGE
+Title = Oncoming Boss
+AltTitle = ...for Backyard Bother
+Authors = Keiichi Suzuki, Hirokazu Tanaka
+Source = Earthbound
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump BBATL1
+Title = Sanctuary Guardian
+AltTitle = ...for Backyard Bother
+Authors = Keiichi Suzuki, Hirokazu Tanaka
+Source = Earthbound
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump ENRAGE
+Title = Enraged Ones
+AltTitle = ...for Backyard Bother
+Authors = Yuzo Koshiro
+Source = 7th Dragon
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump BLOST
+Title = A Bad Dream
+AltTitle = ...for Backyard Bother
+Authors = Keiichi Suzuki, Hirokazu Tanaka
+Source = Earthbound
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump BWIN
+Title = You Defeated the Boss!
+AltTitle = ...for Backyard Bother
+Authors = Keiichi Suzuki, Hirokazu Tanaka
+Source = Earthbound
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump AQUARI
+Title = aquarium
+AltTitle = ...for Amethyst Aqueducts
+Authors = Awesome
+Source = https://modarchive.org/module.php?34415
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump JOREND
+Title = Boundless Remorse
+AltTitle = ...for Long Journey's End
+Authors = Blowitch, +TEK
+Source = https://plustek.bandcamp.com/album/melolignia2
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump OLDLJE
+Title = Last Area (FM)
+AltTitle = ...for Long Journey's End
+Authors = Blowitch, Masanobu Tsukamoto, Akiyoshi Nagao
+Source = https://soundcloud.com/blowitch/super-puyo-puyo-2-the-top-floor-fm-1
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump LASTGB
+Title = Celestial Serenade
+AltTitle = ...for One Last Goodbye
+Authors = Lach
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SOAES
+Title = Shadow Showdown
+AltTitle = ...for Shadow of Anime Eyes Sonic
+Authors = Lach
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump EWOH
+Title = johnathan taylor thomas (SNES)
+AltTitle = ...for Heaven
+Authors = Wild Matsu, CBoyardee, Nobuo Uematsu
+SoundTestPage = 2
+SoundTestCond = 0
+
+Lump SGCRED
+Title = Fillin' The Room With Cuteness
+AltTitle = ...for Credits
+Authors = AxelMoon
+SoundTestPage = 2
+SoundTestCond = 0

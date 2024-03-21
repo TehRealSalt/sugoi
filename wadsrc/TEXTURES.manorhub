@@ -1,0 +1,28 @@
+// Joestar Manor
+WallTexture WALLPAPR, 128, 1024
+{
+	Patch WALLPAPP, 0, 0
+	Patch WALLPAPP, 0, 128
+	Patch WALLPAPP, 0, 256
+	Patch WALLPAPP, 0, 384
+	Patch WALLPAPP, 0, 512
+	Patch WALLPAPP, 0, 640
+	Patch WALLPAPP, 0, 768
+	Patch WALLPAPP, 0, 896
+	Patch WALLPAPP, 64, 0
+	Patch WALLPAPP, 64, 128
+	Patch WALLPAPP, 64, 256
+	Patch WALLPAPP, 64, 384
+	Patch WALLPAPP, 64, 512
+	Patch WALLPAPP, 64, 640
+	Patch WALLPAPP, 64, 768
+	Patch WALLPAPP, 64, 896
+	Patch HUBWBORD, 0, 0
+}
+
+WallTexture HUBWALLB, 128, 128
+{
+	Patch HUBVBORD, 0, 0
+	Patch HUBWBORD, 0, 0
+	Patch HUBBBORD, 0, 120
+}

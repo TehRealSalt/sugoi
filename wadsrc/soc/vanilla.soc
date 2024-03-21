@@ -1,0 +1,666 @@
+# All vanilla SP stages re-defined with hidden & hideinstats
+# (Please make level header changes insert instead of overwrite...
+# there's no point to Clear Levels and makes stuff like this annoying.)
+
+Level 1
+Levelname = Greenflower
+Act = 1
+Music = GFZ1
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 2
+SkyNum = 1
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+SkyboxScale = 64
+FlickyList = Bluebird,Chipmunk
+#Flicky selection is final.
+
+Level 2
+Levelname = Greenflower
+Act = 2
+Music = GFZ2
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 3
+SkyNum = 1
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+SkyboxScale = 64
+FlickyList = Bluebird,Chipmunk
+#see act 1
+
+Level 3
+Levelname = Greenflower
+Act = 3
+Music = VSBOSS
+MusicPostBoss = GFZ1
+TypeOfLevel = Singleplayer,Co-op
+NextLevel = 4
+SkyNum = 1
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+SkyboxScale = 64
+BonusType = Boss
+FlickyList = Bluebird,Chipmunk
+StartRings = 10
+ForceResetMusic = On
+WarningTitle = true
+#see act 1
+
+Level 4
+Levelname = Techno Hill
+Act = 1
+Music = THZ1
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 5
+SkyNum = 4
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+FlickyList = Rabbit,Chicken
+#Flicky selection is final.
+
+Level 5
+Levelname = Techno Hill
+Act = 2
+Music = THZ2
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 6
+SkyNum = 6
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+SkyboxScale = 16
+FlickyList = Rabbit,Chicken
+#see act 1
+
+Level 6
+Levelname = Techno Hill
+Act = 3
+Music = VSBOSS
+MusicPostBoss = THZ2
+TypeOfLevel = Singleplayer,Co-op
+NextLevel = 7
+SkyNum = 4
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+BonusType = Boss
+FlickyList = Rabbit,Chicken
+StartRings = 10
+ForceResetMusic = On
+WarningTitle = true
+#see act 1
+
+Level 7
+Levelname = Deep Sea
+Act = 1
+Music = DSZ1
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 8
+SkyNum = 8
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+SkyboxScale = 32
+FlickyList = Fish,Fish,Seal
+#Flicky selection is final. Two sets of fish because they come in two colours.
+
+Level 8
+Levelname = Deep Sea
+Act = 2
+Music = DSZ2
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 9
+SkyNum = 8
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+SkyboxScale = 32
+FlickyList = Fish,Fish,Seal
+#see act 1
+
+Level 9
+Levelname = Deep Sea
+Act = 3
+Music = VSBOSS
+MusicPostBoss = DSZ1
+TypeOfLevel = Singleplayer,Co-op
+NextLevel = 10
+SkyNum = 8
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+SkyboxScale = 32
+BonusType = Boss
+FlickyList = Fish,Fish,Seal
+StartRings = 10
+ForceResetMusic = On
+WarningTitle = true
+#see act 1
+
+Level 10
+Levelname = Castle Eggman
+Act = 1
+Music = CEZ1
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 11
+SkyNum = 10
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+Weather = PRECIP_STORM
+SkyboxScale = 64
+FlickyList = Rat,Bear
+#Flicky selection is final.
+
+Level 11
+Levelname = Castle Eggman
+Act = 2
+Music = CEZ2
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 12
+SkyNum = 11
+Weather = PRECIP_STORM_NORAIN
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+SkyboxScale = 16
+FlickyList = Rat,Bear
+#Flicky selection is final.
+
+Level 12
+Levelname = Castle Eggman
+Act = 3
+Music = VSBOSS
+MusicPostBoss = CEZ2
+TypeOfLevel = Singleplayer,Co-op
+NextLevel = 13
+Weather = 1
+SkyNum = 10
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+BonusType = Boss
+FlickyList = Rat,Bear
+StartRings = 10
+ForceResetMusic = On
+WarningTitle = true
+#see act 1
+
+Level 13
+Levelname = Arid Canyon
+Act = 1
+Music = ACZ1
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 14
+SkyNum = 13
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+SkyboxScale = 64
+FlickyList = Canary,Ram
+#Flicky selection is final.
+
+Level 14
+Levelname = Arid Canyon
+Act = 2
+Music = ACZ2
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 15
+SkyNum = 14
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+SkyboxScale = 32
+FlickyList = Canary,Ram
+
+Level 15
+Levelname = Arid Canyon
+Act = 3
+Music = VSFANG
+MusicPostBoss = ACZ1
+TypeOfLevel = Singleplayer,Co-op
+NextLevel = 16
+SkyNum = 15
+SkyboxScale = 16
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+FlickyList = Canary,Ram
+BonusType = Boss
+StartRings = 10
+ForceResetMusic = On
+WarningTitle = true
+
+Level 16
+Levelname = Red Volcano
+Act = 1
+Music = RVZ1
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 22
+SkyNum = 159
+SkyboxScaleZ = 32
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+FlickyList = Pig,Cat
+#Cow and Pig will be replaced with Monkey and Iguana when complete.
+
+Level 22
+Levelname = Egg Rock
+Act = 1
+Music = ERZ1
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 23
+SkyNum = 22
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+FlickyList = All
+#Probably final.
+
+Level 23
+Levelname = Egg Rock
+Act = 2
+Music = ERZ2
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 25
+SkyNum = 22
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+FlickyList = All
+
+Level 25
+Levelname = Black Core
+Act = 1
+Music = BCZ1
+NextLevel = 26
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 22
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+FlickyList = All
+SaveGame = true
+ForceResetMusic = On
+WarningTitle = true
+
+Level 26
+Levelname = Black Core
+Act = 2
+Music = VSMETL
+MusicPostBoss = BCZ2
+TypeOfLevel = Singleplayer,Co-op
+NextLevel = 27
+SkyNum = 22
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+BonusType = Boss
+StartRings = 10
+ForceResetMusic = On
+WarningTitle = true
+
+Level 27
+Levelname = Black Core
+Act = 3
+Music = VSBRAK
+TypeOfLevel = Singleplayer,Co-op
+NextLevel = ENDING
+SkyNum = 22
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+BonusType = Boss
+SkyboxScale = 64
+StartRings = 10
+ForceResetMusic = On
+WarningTitle = true
+
+Level 30
+Levelname = Frozen Hillside
+Act = 0
+Music = FHZ
+NextLevel = 1100
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 30
+Weather = 2
+FlickyList = Penguin,Seal
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+
+Level 31
+LevelName = Pipe Towers
+Music = MARIO1
+TypeOfLevel = Singleplayer,Co-op,Competition,Race,Mario
+NextLevel = 1100
+SkyNum = 31
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+
+Level 32
+Levelname = Forest Fortress
+Music = CEZ1
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 1100
+SkyNum = 20
+Weather = 3
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+SkyboxScale = 64
+FlickyList = Rat,Bear
+
+Level 33
+levelname = Techno Legacy
+subtitle = Original Techno Hill 2 Design
+act = 0
+music = THZALT
+typeoflevel = Singleplayer,Co-op,Competition,Race
+nextlevel = 1100
+skynum = 1
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+weather = 0
+
+#Challenge Stages
+
+level 40
+levelname = Haunted Heights
+music = HAUNTD
+skynum = 172
+nextlevel = 41
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+typeoflevel = Solo,Co-op,Competition,Race
+SkyboxScale = 0
+flickylist = Spider,Bat
+
+Level 41
+Levelname = Aerial Garden
+Music = AGZ
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 42
+SkyNum = 40
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+FlickyList = Puffin,Dove
+#Flicky selection is final.
+
+Level 42
+Levelname = Azure Temple
+Music = ATZ
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+NextLevel = 1100
+SkyNum = 35
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+FlickyList = Fish,Bluebird
+#Bluebird will be replaced with Flicky's Island Redbird when complete.
+
+#Special Stages
+
+Level 50
+LevelName = Floral Field
+Subtitle = Special Stage 1
+Music = SPEC1
+TypeOfLevel = Singleplayer,NiGHTS
+NiGHTSAttack = false
+Hidden = true
+HideInStats = true
+SelectHeading = Special Stages
+SkyNum = 1
+Grades1 = 0,20000,30000,90000,180000,260000
+
+Level 51
+LevelName = Toxic Plateau
+Subtitle = Special Stage 2
+Music = SPEC2
+TypeOfLevel = Singleplayer,NiGHTS
+NiGHTSAttack = false
+Hidden = true
+HideInStats = true
+SelectHeading = Special Stages
+SkyNum = 6
+Grades1 = 0,35000,50000,100000,190000,300000
+
+Level 52
+LevelName = Flooded Cove
+Subtitle = Special Stage 3
+Music = SPEC3
+TypeOfLevel = Singleplayer,NiGHTS
+NiGHTSAttack = false
+Hidden = true
+HideInStats = true
+SelectHeading = Special Stages
+SkyNum = 8
+Grades1 = 0,70000,90000,180000,270000,360000
+
+Level 53
+LevelName = Cavern Fortress
+Subtitle = Special Stage 4
+Music = SPEC4
+TypeOfLevel = Singleplayer,NiGHTS
+NiGHTSAttack = false
+Hidden = true
+HideInStats = true
+SelectHeading = Special Stages
+Weather = 1
+SkyNum = 10
+Grades1 = 0,40000,60000,140000,240000,300000
+
+Level 54
+LevelName = Dusty Wasteland
+Subtitle = Special Stage 5
+Music = SPEC5
+TypeOfLevel = Singleplayer,NiGHTS
+NiGHTSAttack = false
+Hidden = true
+HideInStats = true
+SelectHeading = Special Stages
+SkyNum = 15
+Grades1 = 0,35000,50000,80000,120000,150000
+
+Level 55
+LevelName = Magma Caves
+Subtitle = Special Stage 6
+Music = SPEC6
+TypeOfLevel = Singleplayer,NiGHTS
+NiGHTSAttack = false
+Hidden = true
+HideInStats = true
+SelectHeading = Special Stages
+SkyNum = 20
+Grades1 = 0,30000,45000,60000,90000,110000
+
+Level 56
+LevelName = Egg Satellite
+Subtitle = Special Stage 7
+Music = SPEC7
+TypeOfLevel = Singleplayer,NiGHTS
+NiGHTSAttack = false
+Hidden = true
+HideInStats = true
+SelectHeading = Special Stages
+SkyNum = 22
+Grades1 = 0,60000,70000,80000,90000,140000
+
+Level 57
+LevelName = Black Hole
+Subtitle = Special Stage 8
+Music = BHZ
+TypeOfLevel = Singleplayer,NiGHTS
+SelectHeading = Special Stages
+NiGHTSAttack = false
+Hidden = true
+HideInStats = true
+NoVisitNeeded = true
+SkyNum = 99
+Hidden = true
+Grades1 = 0,50000,60000,70000,80000,140000
+
+#NiGHTs Stages
+
+Level 70
+Levelname = Christmas Chime
+Music = CCZ
+MixNightsCountdown = 1
+MusicInterFadeOut = 5*MUSICRATE
+TypeOfLevel = Singleplayer,Xmas,NiGHTS
+NextLevel = 1100
+SkyNum = 17
+NiGHTSAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+BonusType = NiGHTS
+MaxBonusLives = 0
+Grades1 = 0,30000,40000,60000,90000,110000
+FlickyList = Bluebird,Canary,Puffin,Dove
+#Canary, Puffin and Dove will be replaced with the Redbird, Pinkbird and Greenbird from Flickies Island when complete.
+
+Level 71
+Levelname = Dream Hill
+SubTitle = ^1~The Slumber~
+NoZone = true
+Act = 0
+Music = DHZ
+TypeOfLevel = Singleplayer,NiGHTS
+NextLevel = 1100
+SkyNum = 40
+NiGHTSAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+NoVisitNeeded = true
+Grades1 = 0,10000,15000,50000,80000,120000
+Grades2 = 0,5000,10000,30000,40000,60000
+Grades3 = 0,10000,15000,40000,50000,60000
+Grades4 = 0,15000,20000,25000,40000,60000
+BonusType = NiGHTS
+MaxBonusLives = 0
+MixNightsCountdown = 1
+MusicInterFadeOut = 5000
+
+LEVEL 72
+LEVELNAME = Alpine Paradise
+ACT = 1
+NEXTLEVEL = 1100
+MUSIC = APZ1
+WEATHER = 0
+SKYNUM = 300
+TYPEOFLEVEL = Singleplayer,Co-op,NiGHTS
+NiGHTSAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+NoVisitNeeded = true
+BONUSTYPE = NIGHTS
+MAXBONUSLIVES = 0
+MIXNIGHTSCOUNTDOWN = 1
+MUSICINTERFADEOUT = 5*MUSICRATE
+Grades1 = 0,40000,60000,80000,120000,160000
+
+LEVEL 73
+LEVELNAME = Alpine Paradise
+ACT = 2
+NEXTLEVEL = 1100
+MUSIC = APZ2
+WEATHER = 0
+SKYNUM = 301
+TYPEOFLEVEL = Singleplayer,Co-op,NiGHTS
+NiGHTSAttack = false
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+NoVisitNeeded = true
+BONUSTYPE = NIGHTS
+MAXBONUSLIVES = 0
+MIXNIGHTSCOUNTDOWN = 1
+MUSICINTERFADEOUT = 5*MUSICRATE
+Grades1 = 0,15000,20000,35000,50000,70000
+Grades2 = 0,15000,20000,35000,50000,70000
+Grades3 = 0,15000,20000,35000,50000,80000
+Grades4 = 0,15000,20000,35000,50000,60000
+
+Level Z0
+Levelname = Tutorial
+Act = 0
+Music = TUTORL
+NextLevel = 1
+TypeOfLevel = Singleplayer
+LevelSelect = 0
+SaveGame = false
+Hidden = true
+HideInStats = true
+SkyNum = 99

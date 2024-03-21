@@ -1,0 +1,14 @@
+PROMPT 1
+NumPages 1
+PAGE 1
+Lines = 3
+TimeToNext = TICRATE*3
+PageText = Due to recent thefts, Hulk Hogan has been relocated...
+        #
+
+FREESLOT
+sfx_M64PT
+sfx_K3SEC
+
+Sound sfx_K3SEC
+caption Discovery

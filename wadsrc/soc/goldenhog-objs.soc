@@ -1,0 +1,358 @@
+# Pure Rock Zone junk
+
+Freeslot
+MT_PRZSAWSOUND
+MT_PRZCRUSHSOUND
+MT_PRZWASTESOUND
+MT_PRZCRUSHSOUNDB
+MT_PRZREDCRUSHSOUND
+MT_PRZCRUSHSOUNDC
+MT_PRZCRUSHSOUNDD
+S_PRZCRUSHSOUND1
+S_PRZCRUSHSOUND2
+S_PRZCRUSHSOUND3
+S_PRZCRUSHSOUNDB1
+S_PRZCRUSHSOUNDB2
+S_PRZCRUSHSOUNDB3
+S_PRZREDCRUSHSOUND1
+S_PRZREDCRUSHSOUND2
+S_PRZREDCRUSHSOUND3
+S_PRZCRUSHSOUNDC1
+S_PRZCRUSHSOUNDC2
+S_PRZCRUSHSOUNDC3
+S_PRZCRUSHSOUNDD1
+S_PRZCRUSHSOUNDD2
+S_PRZCRUSHSOUNDD3
+
+# MT_PRZSAWSOUND - Ambient sound player, used for the buzzsaws
+
+Object MT_PRZSAWSOUND
+MapThingNum = 2514
+SpawnState = S_INVISIBLE
+SpawnHealth = 70
+SeeState = S_NULL
+SeeSound = sfx_grind
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 255
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 1000
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOSECTOR|MF_NOBLOCKMAP|MF_NOGRAVITY|MF_AMBIENT
+RaiseState = S_NULL
+
+# MT_PRZCRUSHSOUND - Sound player, used for the orange crushers
+# First state helps the sound match with the first crush, third state is to help the sound match with further ones
+
+Object MT_PRZCRUSHSOUND
+MapThingNum = 2515
+SpawnState = S_PRZCRUSHSOUND1
+SpawnHealth = 512
+SeeState = S_NULL
+SeeSound = sfx_pstop
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 255
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 1000
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOSECTOR|MF_NOBLOCKMAP|MF_NOGRAVITY
+RaiseState = S_NULL
+
+State S_PRZCRUSHSOUND1
+SpriteName = NULL
+SpriteFrame = A
+Duration = 35
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PRZCRUSHSOUND2
+
+State S_PRZCRUSHSOUND2
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Action = A_PlaySeeSound
+Var1 = 0
+Var2 = 0
+Next = S_PRZCRUSHSOUND3
+
+State S_PRZCRUSHSOUND3
+SpriteName = NULL
+SpriteFrame = A
+Duration = 32
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PRZCRUSHSOUND1
+
+# MT_PRZWASTESOUND - Ambient sound player, used for the green waste
+
+Object MT_PRZWASTESOUND
+MapThingNum = 2516
+SpawnState = S_INVISIBLE
+SpawnHealth = 70
+SeeState = S_NULL
+SeeSound = sfx_lavbub
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 255
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 1000
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOSECTOR|MF_NOBLOCKMAP|MF_NOGRAVITY|MF_AMBIENT
+RaiseState = S_NULL
+
+# MT_PRZCRUSHSOUNDB - Sound player, used for the orange crusher in the saw overdrive route
+# It needs its own because it's a lot slower
+
+Object MT_PRZCRUSHSOUNDB
+MapThingNum = 2517
+SpawnState = S_PRZCRUSHSOUNDB1
+SpawnHealth = 512
+SeeState = S_NULL
+SeeSound = sfx_pstop
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 255
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 1000
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOSECTOR|MF_NOBLOCKMAP|MF_NOGRAVITY
+RaiseState = S_NULL
+
+State S_PRZCRUSHSOUNDB1
+SpriteName = NULL
+SpriteFrame = A
+Duration = 43
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PRZCRUSHSOUNDB2
+
+State S_PRZCRUSHSOUNDB2
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Action = A_PlaySeeSound
+Var1 = 0
+Var2 = 0
+Next = S_PRZCRUSHSOUNDB3
+
+State S_PRZCRUSHSOUNDB3
+SpriteName = NULL
+SpriteFrame = A
+Duration = 46
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PRZCRUSHSOUNDB1
+
+# MT_PRZREDCRUSHSOUND - Sound player, used by the red crusher hall
+
+Object MT_PRZREDCRUSHSOUND
+MapThingNum = 2518
+SpawnState = S_PRZREDCRUSHSOUND1
+SpawnHealth = 512
+SeeState = S_NULL
+SeeSound = sfx_pstop
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 255
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 1000
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOSECTOR|MF_NOBLOCKMAP|MF_NOGRAVITY
+RaiseState = S_NULL
+
+State S_PRZREDCRUSHSOUND1
+SpriteName = NULL
+SpriteFrame = A
+Duration = 25
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PRZREDCRUSHSOUND2
+
+State S_PRZREDCRUSHSOUND2
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Action = A_PlaySeeSound
+Var1 = 0
+Var2 = 0
+Next = S_PRZREDCRUSHSOUND3
+
+State S_PRZREDCRUSHSOUND3
+SpriteName = NULL
+SpriteFrame = A
+Duration = 4
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PRZREDCRUSHSOUND1
+
+# MT_PRZCRUSHSOUNDC - Sound player, used for the lone orange crusher over the pit in the tree area
+
+Object MT_PRZCRUSHSOUNDC
+MapThingNum = 2919
+SpawnState = S_PRZCRUSHSOUNDC1
+SpawnHealth = 512
+SeeState = S_NULL
+SeeSound = sfx_pstop
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 255
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 1000
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOSECTOR|MF_NOBLOCKMAP|MF_NOGRAVITY
+RaiseState = S_NULL
+
+State S_PRZCRUSHSOUNDC1
+SpriteName = NULL
+SpriteFrame = A
+Duration = 33
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PRZCRUSHSOUNDC2
+
+State S_PRZCRUSHSOUNDC2
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Action = A_PlaySeeSound
+Var1 = 0
+Var2 = 0
+Next = S_PRZCRUSHSOUNDC3
+
+State S_PRZCRUSHSOUNDC3
+SpriteName = NULL
+SpriteFrame = A
+Duration = 30
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PRZCRUSHSOUNDC1
+
+# MT_PRZCRUSHSOUNDD - Sound player, used for the orange crusher "ladder" at the end
+
+Object MT_PRZCRUSHSOUNDD
+MapThingNum = 2520
+SpawnState = S_PRZCRUSHSOUNDD1
+SpawnHealth = 512
+SeeState = S_NULL
+SeeSound = sfx_pstop
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 255
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 1000
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOSECTOR|MF_NOBLOCKMAP|MF_NOGRAVITY
+RaiseState = S_NULL
+
+State S_PRZCRUSHSOUNDD1
+SpriteName = NULL
+SpriteFrame = A
+Duration = 28
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PRZCRUSHSOUNDD2
+
+State S_PRZCRUSHSOUNDD2
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Action = A_PlaySeeSound
+Var1 = 0
+Var2 = 0
+Next = S_PRZCRUSHSOUNDD3
+
+State S_PRZCRUSHSOUNDD3
+SpriteName = NULL
+SpriteFrame = A
+Duration = 5
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PRZCRUSHSOUNDD1

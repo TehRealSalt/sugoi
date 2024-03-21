@@ -1,0 +1,120 @@
+# Special thanks to Toaster for the lua (returning from Pipes of Green)
+# If by any chance this script exists in KIMOKAWAIII in any shape or form
+# Make sure to delete it, as it may conflict or otherwise waste precious bytes
+#
+# WARNING: do NOT change the angle of the things!
+# 10º angles should be fine however, but otherwise, be wary!
+FREESLOT
+MT_GUIMO_SCENERY
+S_GUIMO_SCENERY_INIT
+S_GUIMO_SCENERY_SPAWN
+S_GUIMO_SCENERY_A
+S_GUIMO_SCENERY_B
+S_GUIMO_SCENERY_C
+S_GUIMO_SCENERY_D
+S_GUIMO_SCENERY_E
+S_GUIMO_SCENERY_F
+S_GUIMO_SCENERY_G
+S_GUIMO_SCENERY_H
+S_GUIMO_SCENERY_I
+S_GUIMO_SCENERY_J
+SPR_GUSA
+SPR_GUSB
+
+# The one and only object
+# Height value necessary to avoid clipping
+Object MT_GUIMO_SCENERY
+MapThingNum =  2259
+SpawnState =  S_GUIMO_SCENERY_INIT
+Flags = MF_NOBLOCKMAP|MF_SCENERY|MF_NOCLIP|MF_NOGRAVITY
+Height = 1
+
+# Pre spawning state
+State S_GUIMO_SCENERY_INIT
+DURATION = 1
+NEXT = S_GUIMO_SCENERY_SPAWN
+
+# Get state from angle and that's it! Everything else should be self explanatory
+State S_GUIMO_SCENERY_SPAWN
+ACTION = A_AngleToState
+VAR1 = S_GUIMO_SCENERY_A
+VAR2 = 10
+DURATION = -1
+
+
+# ----
+#0 Grass tall 
+State S_GUIMO_SCENERY_A
+SPRITENAME = GUSA
+SPRITEFRAME = FF_ANIMATE|A
+VAR1 = 7
+VAR2 = 2
+DURATION = -1
+
+#1 Grass not so tall
+State S_GUIMO_SCENERY_B
+SPRITENAME = GUSA
+SPRITEFRAME = FF_ANIMATE|I
+VAR1 = 7
+VAR2 = 2
+DURATION = -1
+
+#2 Grass not so small
+State S_GUIMO_SCENERY_C
+SPRITENAME = GUSA
+SPRITEFRAME = FF_ANIMATE|Q
+VAR1 = 7
+VAR2 = 2
+DURATION = -1
+
+#3 Grass small
+State S_GUIMO_SCENERY_D
+SPRITENAME = GUSB
+SPRITEFRAME = FF_ANIMATE|A
+VAR1 = 7
+VAR2 = 2
+DURATION = -1
+
+#4 Grass
+State S_GUIMO_SCENERY_E
+SPRITENAME = GUSB
+SPRITEFRAME = FF_ANIMATE|I
+VAR1 = 7
+VAR2 = 2
+DURATION = -1
+
+#5 tree top
+State S_GUIMO_SCENERY_F
+SPRITENAME = GUSB
+SPRITEFRAME = Q
+DURATION = -1
+
+#6 tree folliage
+State S_GUIMO_SCENERY_G
+SPRITENAME = GUSB
+SPRITEFRAME = R
+DURATION = -1
+
+#7 fire 1
+State S_GUIMO_SCENERY_H
+SPRITENAME = GUSB
+SPRITEFRAME = FF_ANIMATE|FF_FULLBRIGHT|S
+VAR1 = 3
+VAR2 = 3
+DURATION = -1
+
+#8 fire 2
+State S_GUIMO_SCENERY_I
+SPRITENAME = GUSB
+SPRITEFRAME = FF_ANIMATE|FF_FULLBRIGHT|W
+VAR1 = 3
+VAR2 = 3
+DURATION = -1
+
+#9 fire 3 
+State S_GUIMO_SCENERY_J
+SPRITENAME = GUSB
+SPRITEFRAME = FF_ANIMATE|FF_FULLBRIGHT|26
+VAR1 = 4
+VAR2 = 2
+DURATION = -1

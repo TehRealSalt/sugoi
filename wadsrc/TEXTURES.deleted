@@ -1,0 +1,16 @@
+// Deleted Domain Zone
+WallTexture DCZROCKL, 256, 256
+{
+	Patch DCZROCKA, 0, 0
+	Patch DCZROCKB, 0, 128
+}
+
+WallTexture PALMTRS, 256, 128
+{
+	Patch PALMTRG, 0, 0
+}
+
+WallTexture PALMTRS2, 256, 128
+{
+	Patch PALMTRG2, 0, 0
+}

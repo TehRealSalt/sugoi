@@ -1,0 +1,1403 @@
+# Organization HACK
+MainCfg
+GameData = sugoi.dat
+
+# MAPE0: Gateway Dimension Zone (hub 4)
+# by TehRealSalt
+Level E0
+LevelName = Gateway Dimension
+Subtitle = (TehRealSalt)
+NoTitleCard = true
+TypeOfLevel = SP,Coop
+SkyNum = 56
+SkyboxScale = 0
+Music = GATE2
+Weather = PRECIP_NONE
+Palette = 101
+NextLevel = E0
+BonusType = None
+LevelSelect = 1
+SelectHeading = Hub
+HideInStats = true
+SaveGame = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+Lua.Author = TehRealSalt
+Lua.SUGOIProgress = 3
+Lua.PortalStart = 244
+Lua.PortalSprite = 2
+Lua.PortalLock = 19
+Lua.HubDarken = true
+
+# MAPE1: Mechanical Garden Zone
+# by BronsoKip
+Level E1
+LevelName = Mechanical Garden
+Subtitle = (BronsoKip)
+TypeOfLevel = SP,Coop,Competition,Race
+NoReload = true
+Music = LALONE
+SkyNum = 40
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = Seal,Penguin
+Lua.CountMap = true
+Lua.Author = BronsoKip
+Lua.Difficulty = 3
+Lua.Length = 4
+
+Emblem
+Hint = A hole in the wall\\the room with the hex display\\back the way you came
+Type = Global
+Tag = 1
+MapNum = E1
+Sprite = E
+Color = SKINCOLOR_LAVENDER
+
+Emblem
+Hint = Past the cyan gate\\is a wide hidden air vent\\close to the ceiling
+Type = Global
+Tag = 2
+MapNum = E1
+Sprite = A
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Through water and glass\\after you see it, backtrack\\find a small alcove
+Type = Global
+Tag = 3
+MapNum = E1
+Sprite = C
+Color = SKINCOLOR_BLACK
+
+Emblem
+Type = Score
+MapNum = E1
+Var = 50000
+
+Emblem
+Type = Rings
+MapNum = E1
+Var = 150
+
+Emblem
+Type = Time
+MapNum = E1
+Var = 120*TICRATE
+
+Emblem
+Type = Map
+MapNum = E1
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPE2: LJ Sonic
+# by LJ Sonic
+Level E2
+LevelName = LJ Sonic
+NoZone = true
+Subtitle = (LJ Sonic)
+TypeOfLevel = SP,Coop
+Music = LJ
+SkyNum = 66
+StartRings = 10
+BonusType = Boss
+#PreCutsceneNum = 3
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+WarningTitle = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+Lua.kawaiii_ljsonic = true
+Lua.CountMap = true
+Lua.Author = LJ Sonic
+Lua.Difficulty = 2
+Lua.Length = 3
+
+Emblem
+Type = Map
+MapNum = E2
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPE3: Confleggrator
+# by 742mph
+Level E3
+Levelname = Confleggrator
+NoZone = true
+Subtitle = (742mph)
+TypeOfLevel = SP,Coop
+Music = CONFLG
+MusicPostBoss = RVZ2
+ForceResetMusic = On
+SkyNum = 9
+StartRings = 5
+BonusType = Boss
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+WarningTitle = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+Lua.SUGOIBossMeter = Confleggrator
+Lua.CountMap = true
+Lua.Author = 742mph
+Lua.Difficulty = 3
+Lua.Length = 1
+
+Emblem
+Type = Map
+MapNum = E3
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPE4: Acidic Alpines Zone
+# by Lach
+Level E4
+LevelName = Acidic Alpines
+SubTitle = (Lach)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = AALPXM
+SkyNum = 6258
+Weather = PRECIP_NONE
+Palette = 28
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = Puffin,Ram
+Lua.SBC_NumClouds = 32
+Lua.SBC_CloudState = S_AALPCLOUD
+Lua.SBC_MinHeight = 128
+Lua.SBC_MaxHeight = 256
+Lua.SBC_MinDistance = 200
+Lua.SBC_MaxDistance = 400
+Lua.SBC_CloudSpeed = 1
+Lua.CountMap = true
+Lua.Author = Lach
+Lua.Difficulty = 3
+Lua.Length = 3
+
+Emblem
+Hint = A hidden cavern!\\But this wall is far too steep\\to simply walk up.
+Type = Global
+Tag = 1001
+MapNum = E4
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = Two arrows of rose,\\pointing behind sloped platforms.\\The alpines' last tree...
+Type = Global
+Tag = 1002
+MapNum = E4
+Sprite = B
+Color = SKINCOLOR_LAVENDER
+
+Emblem
+Hint = Rolling down is fun!\\Falling down is also fun.\\Just kidding... unless?
+Type = Global
+Tag = 1003
+MapNum = E4
+Sprite = C
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Go swim in the stream.\\Wait! Don't jump in right away.\\Where does the flow start?
+Type = Global
+Tag = 1004
+MapNum = E4
+Sprite = D
+Color = SKINCOLOR_ORANGE
+
+Emblem
+Hint = Peek around the cliff,\\outside the battle chamber.\\How well can you bounce?
+Type = Global
+Tag = 1005
+MapNum = E4
+Sprite = E
+Color = SKINCOLOR_EMERALD
+Var = 0
+
+Emblem
+Hint = The bridge at the beginning can easily\\be accessed by a flying character.
+Type = Time
+MapNum = E4
+Sprite = T
+Color = SKINCOLOR_GREY
+Var = 100*TICRATE
+
+Emblem
+Hint = Take the Attraction Shield everywhere.\\Be careful of the acid capsules!
+Type = Rings
+MapNum = E4
+Sprite = R
+Color = SKINCOLOR_GOLD
+Var = 300
+
+Emblem
+Type = Map
+MapNum = E4
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPE5: Magmor Zone
+# by Glaber
+Level E5
+LevelName = Magmor
+Subtitle = (Glaber)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = VOLVAL
+SkyNum = 11
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = Bat,Rabbit
+Lua.CountMap = true
+Lua.Author = Glaber
+Lua.Difficulty = 4
+Lua.Length = 4
+
+Emblem
+Hint = A good Trickshot and a set of breaks will help net this one.
+Type = Global
+Tag = 0
+MapNum = E5
+Sprite = N
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Hidden in a lava cave, behind a brick wall. Does this room look familiar?
+Type = Global
+Tag = 1
+MapNum = E5
+Sprite = N
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = A lone robohood guards this one in a swarm of Flashers.
+Type = Global
+Tag = 2
+MapNum = E5
+Sprite = N
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Inside another lava cave and behind bars. Watch your head as you try to pull a "Mario".
+Type = Global
+Tag = 3
+MapNum = E5
+Sprite = N
+Color = SKINCOLOR_RED
+
+Emblem
+Type = Map
+MapNum = E5
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPE6: Egg Flambe
+# by Glaber
+Level E6
+LevelName = Egg Flambe
+NoZone = true
+Subtitle = (Glaber)
+TypeOfLevel = SP,Coop
+Music = 3DS4BS
+SkyNum = 11
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+WarningTitle = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = Bat,Rabbit
+Lua.SUGOIBossMeter = Egg Flambe
+Lua.CountMap = true
+Lua.Author = Glaber
+Lua.Difficulty = 3
+Lua.Length = 1
+
+Emblem
+Type = Map
+MapNum = E6
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPE7: Wasted Wayward
+# by PersistantRubine
+Level E7
+LevelName = Wasted Wayward
+NoZone = true
+Subtitle = (PersistantRubine)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = DESCAN
+SkyNum = 16
+FlickyList = Ram,Canary
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+Lua.CountMap = true
+Lua.Author = PersistantRubine
+Lua.Difficulty = 3
+Lua.Length = 3
+
+Emblem
+Type = Map
+MapNum = E7
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPE8: Glacier Glaze Zone
+# by Snu
+Level E8
+LevelName = Glacier Glaze
+Subtitle = (Snu)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = EWJ2LS
+SkyNum = 132
+FlickyList = Seal,Penguin,Fish
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+Lua.glacierglaze = true
+Lua.CountMap = true
+Lua.Author = Snu
+Lua.Difficulty = 3
+Lua.Length = 3
+
+Emblem
+Hint = Can't seem to get back up from here... Can't see that well here, either...
+Type = Global
+Tag = 1
+MapNum = E8
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = There's a satisfying way to get to an upper path, but can we go even further beyond that?
+Type = Global
+Tag = 2
+MapNum = E8
+Sprite = B
+Color = SKINCOLOR_LAVENDER
+
+Emblem
+Hint = You've fallen down with no easy way back up, but is there anything hidden in these depths?
+Type = Global
+Tag = 3
+MapNum = E8
+Sprite = C
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = You could rise to the surface here, but maybe there's another way you could go.
+Type = Global
+Tag = 4
+MapNum = E8
+Sprite = D
+Color = SKINCOLOR_ORANGE
+
+Emblem
+Hint = The goal's finally in sight, but wait! Don't forget to check for something important!
+Type = Global
+Tag = 5
+MapNum = E8
+Sprite = E
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Type = Time
+Var = 70*TICRATE
+MapNum = E8
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+MapNum = E8
+Sprite = R
+Color = SKINCOLOR_GOLD
+Var = 300
+
+Emblem
+Type = Map
+MapNum = E8
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPE9: Desolate Woods Zone
+# by Manimi & Strike
+Level E9
+LevelName = Desolate Woods
+Subtitle = (Manimi & Strike)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = MISSIO
+SkyNum = 64
+#Weather = PRECIP_RAIN
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = Bluebird,Cat
+Lua.dwz = true
+Lua.CountMap = true
+Lua.Author = Manimi & Strike
+Lua.Difficulty = 3
+Lua.Length = 3
+
+Emblem
+Hint = Come out to a field\\Spring up and crisscross over\\Spin under the wall
+Type = Global
+Tag = 1
+MapNum = E9
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = Before the turret\\Ignore "don't step on the grass"\\To reveal the prize
+Type = Global
+Tag = 2
+MapNum = E9
+Sprite = A
+Color = SKINCOLOR_ORANGE
+
+Emblem
+Hint = Don't crash down the leaves\\Fly down, inspect the left wall\\Find an odd texture
+Type = Global
+Tag = 3
+MapNum = E9
+Sprite = A
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Pulleys are more fun!\\Why is there a bridge at all?\\Statue has to cross
+Type = Global
+Tag = 4
+MapNum = E9
+Sprite = A
+Color = SKINCOLOR_PURPLE
+
+Emblem
+Type = Time
+Var = 125*TICRATE
+MapNum = 33
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Type = Map
+MapNum = E9
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEA: Dark Stabot
+# by Manimi
+Level EA
+LevelName = Dark Stabot
+NoZone = true
+Subtitle = (Manimi)
+NoTitleCard = true
+TypeOfLevel = SP,Coop
+Music = DEPEC
+SkyNum = 4
+BonusType = Boss
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+WarningTitle = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+Lua.darkstabot = true
+Lua.SUGOIBossMeter = Dark Stabot
+Lua.CountMap = true
+Lua.Author = Manimi
+Lua.Difficulty = 4
+Lua.Length = 2
+
+Emblem
+Type = Map
+MapNum = EA
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEB: Nova Shore Zone
+# by DrTapeworm
+Level EB
+LevelName = Nova Shore
+Subtitle = (DrTapeworm)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = ESNOVA
+SkyNum = 180
+Palette = 35
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = Fish,Fish,Dove
+Lua.Moonlit = true
+Lua.CountMap = true
+Lua.Author = DrTapeworm
+Lua.SUGOIAward = 2
+Lua.Difficulty = 3
+Lua.Length = 3
+
+Emblem
+Hint = Following the stars\\beneath the tree in the depths\\will fish your reward.
+Type = Global
+Tag = 0
+MapNum = EB
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Type = Map
+MapNum = EB
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEC: Raspberry Desert Zone
+# by Revan
+Level EC
+LevelName = Raspberry Desert
+Subtitle = (Revan)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = DESDRE
+SkyNum = 21
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = Bat,Cat
+Lua.CountMap = true
+Lua.Author = Revan
+Lua.Difficulty = 3
+Lua.Length = 3
+
+Emblem
+Type = Map
+MapNum = EC
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPED: Bio Satellite Zone
+# by Chaobrother
+Level ED
+LevelName = Bio Satellite
+Subtitle = (Chaobrother)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = BIOSAT
+SkyNum = 9
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = All
+Lua.ChargeSmoke = 1
+Lua.CountMap = true
+Lua.Author = Chaobrother
+Lua.Difficulty = 4
+Lua.Length = 4
+
+Emblem
+Hint = Speed through the left route\\crash into the other path.\\Or outpace a plant.
+Type = Global
+Tag = 1
+MapNum = ED
+Sprite = A
+Color = SKINCOLOR_BLUE
+Var = 0
+
+Emblem
+Hint = The big lights go out.\\The doors lift, but pause midway.\\Search in the side tanks.
+Type = Global
+Tag = 2
+MapNum = ED
+Sprite = B
+Color = SKINCOLOR_LAVENDER
+Var = 0
+
+Emblem
+Hint = Go low gravity.\\Stay low, admire the vines.\\Walk around, treasure.
+Type = Global
+Tag = 3
+MapNum = ED
+Sprite = C
+Color = SKINCOLOR_RED
+Var = 0
+
+Emblem
+Hint = Alternating beams.\\Two lanes of adversity.\\Turn back while you can.
+Type = Global
+Tag = 4
+MapNum = ED
+Sprite = D
+Color = SKINCOLOR_ORANGE
+Var = 0
+
+Emblem
+Hint = Give up near the end.\\Deftly avoid the challenge.\\Rewards in failure.
+Type = Global
+Tag = 5
+MapNum = ED
+Sprite = E
+Color = SKINCOLOR_EMERALD
+Var = 0
+
+Emblem
+Type = Score
+MapNum = ED
+Sprite = S
+Color = SKINCOLOR_BROWN
+Var = 60000
+
+Emblem
+Type = Time
+MapNum = ED
+Sprite = T
+Color = SKINCOLOR_GREY
+Var = 2870
+
+Emblem
+Type = Rings
+MapNum = ED
+Sprite = R
+Color = SKINCOLOR_GOLD
+Var = 300
+
+Emblem
+Type = Map
+MapNum = ED
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEE: Egg Lasershow
+# by Chaobrother
+Level EE
+LevelName = Egg Lasershow
+NoZone = true
+Subtitle = (Chaobrother)
+TypeOfLevel = SP,Coop
+Music = EGGLAS
+SkyNum = 9
+BonusType = ERZ3
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+WarningTitle = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+Lua.CountMap = true
+Lua.Author = Chaobrother
+Lua.Difficulty = 4
+Lua.Length = 4
+
+Emblem
+Type = Score
+MapNum = EE
+Sprite = S
+Color = SKINCOLOR_BROWN
+Var = 51600
+
+Emblem
+Type = Time
+MapNum = EE
+Sprite = T
+Color = SKINCOLOR_GREY
+Var = 7700
+
+Emblem
+Type = Rings
+MapNum = EE
+Sprite = R
+Color = SKINCOLOR_GOLD
+Var = 16
+
+Emblem
+Type = Map
+MapNum = EE
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEF: Quandary Canyon Zone
+# by RomioTheBadass
+Level EF
+LevelName = Quandary Canyon
+Subtitle = (RomioTheBadass)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = RXDSRT
+SkyNum = 89
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = Canary,Rabbit
+Lua.CountMap = true
+Lua.Author = RomioTheBadass
+Lua.Difficulty = 3
+Lua.Length = 3
+
+Emblem
+Type = Time
+MapNum = EF
+Sprite = T
+Color = SKINCOLOR_GREY
+Var = 2170
+
+Emblem
+Type = Rings
+MapNum = EF
+Sprite = R
+Color = SKINCOLOR_GOLD
+Var = 274
+
+Emblem
+Type = Map
+MapNum = EF
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEG: Ruby Castle Zone
+# by Shiron
+Level EG
+LevelName = Ruby Castle
+Subtitle = (Shiron)
+TypeOfLevel = SP,Coop,Competition,Race
+NoReload = true
+Music = FUNNEE
+SkyNum = 55
+SkyboxScale = 0
+Weather = PRECIP_STORM
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = Bat,Spider
+Lua.CountMap = true
+Lua.Author = Shiron
+Lua.Difficulty = 3
+Lua.Length = 4
+
+Emblem
+Type = Map
+MapNum = EG
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEH: Sleeping Egg Zone
+# by Nintensis
+Level EH
+LevelName = Sleeping Egg
+Subtitle = (Nintensis)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = SLEPEG
+SkyNum = 1
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = Puffin,Bear
+Lua.CountMap = true
+Lua.Author = Nintensis
+Lua.Difficulty = 4
+Lua.Length = 4
+
+Emblem
+Type = Map
+MapNum = EH
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEI: Dimension Disaster Zone
+# by Lat'
+Level EI
+LevelName = Dimension Disaster
+Subtitle = (Lat')
+NoTitleCard = true
+TypeOfLevel = SP,Coop,Competition
+Music = WEEBM
+SkyNum = 169
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+LUA.dvdss = true
+LUA.dvdtimer = 200
+LUA.dvdcriticaltime = 30
+LUA.dvdemeraldcolor = SKINCOLOR_RED
+LUA.dvdwatercolor = SKINCOLOR_BLACK
+LUA.dvdshadowcolor = SKINCOLOR_PURPLE
+LUA.dvdss6 = true
+Lua.CountMap = true
+Lua.Author = Lat'
+Lua.Difficulty = 3
+Lua.Length = 2
+
+Emblem
+Type = Time
+MapNum = EI
+Sprite = T
+Color = SKINCOLOR_BEIGE
+Var = TICRATE*150
+
+Emblem
+Type = Rings
+MapNum = EI
+Sprite = R
+Color = SKINCOLOR_GOLD
+Var = 1320
+
+Emblem
+Type = Map
+MapNum = EI
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEJ: Doomsday Disaster Zone
+# by Lat'
+Level EJ
+Levelname = Doomsday Disaster
+Subtitle = (Lat')
+TypeOfLevel = SP
+Music = HERO
+SkyNum = 169
+BonusType = None
+#CutsceneNum = 12
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+WarningTitle = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+LUA.dvdboss = true
+Lua.CountMap = true
+Lua.Author = Lat'
+Lua.Difficulty = 4
+Lua.Length = 2
+Lua.SUGOIAward = 5
+
+Emblem
+Type = Map
+MapNum = EJ
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEK: Sunken Shafts Zone
+# by Inferno Dragon
+Level EK
+LevelName = Sunken Shafts
+Subtitle = (Inferno Dragon)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = TAVERN
+SkyNum = 7
+Weather = PRECIP_RAIN
+NoReload = true
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = Fish,Fish,Rat
+Lua.CountMap = true
+Lua.Author = Inferno Dragon
+Lua.Difficulty = 4
+Lua.Length = 4
+
+Emblem
+Type = Map
+MapNum = EK
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEL: Azure Paradise Zone
+# by LazyMK
+Level EL
+LevelName = Azure Paradise
+Subtitle = (LazyMK)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = AZP
+SkyNum = 91
+FlickyList = Ram,Dove
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+Lua.CountMap = true
+Lua.Author = LazyMK
+Lua.Difficulty = 3
+Lua.Length = 3
+
+Emblem
+Hint = Big slope launch and high up, even the blue blur can get me.
+Type = Global
+Tag = 1
+MapNum = EL
+Sprite = A
+Color = SKINCOLOR_CORNFLOWER
+
+Emblem
+Hint = Two gargoyles watch over me as I admire a MASSIVE waterfall.
+Type = Global
+Tag = 2
+MapNum = EL
+Sprite = B
+Color = SKINCOLOR_SKY
+
+Emblem
+Hint = Im wet and I know Sonic cant reach me. But that guy with a corks and that red dude? They worry me.
+Type = Global
+Tag = 3
+MapNum = EL
+Sprite = C
+Color = SKINCOLOR_TEAL
+
+Emblem
+Hint = High up but with some simple slope trickery you can reach me.
+Type = Global
+Tag = 4
+MapNum = EL
+Sprite = D
+Color = SKINCOLOR_AQUA
+
+Emblem
+Hint = Braching off the main path, locked up in a small acove you will find me.
+Type = Global
+Tag = 5
+MapNum = EL
+Sprite = E
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Type = Rings
+Var = 256
+MapNum = EL
+Sprite = R
+Color = SKINCOLOR_APPLE
+
+Emblem
+Type = Time
+Var = 70*TICRATE
+MapNum = EL
+Sprite = T
+Color = SKINCOLOR_GOLD
+
+Emblem
+Type = Map
+MapNum = EL
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEM: Cosmic Valley Zone
+# by Dave Lite
+Level EM
+LevelName = Cosmic Valley
+Subtitle = (Dave Lite)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = TRAGIC
+SkyNum = 21
+SkyboxScaleZ = 19
+Flickylist = BlueBird,Penguin
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+Lua.CountMap = true
+Lua.Author = Dave Lite
+Lua.Difficulty = 4
+Lua.Length = 4
+
+Emblem
+Type = Global
+MapNum = EM
+Sprite = A
+Color = SKINCOLOR_RUBY
+Tag = 0
+
+Emblem
+Type = Global
+MapNum = EM
+Sprite = A
+Color = SKINCOLOR_AQUA
+Tag = 1
+
+Emblem
+Type = Global
+MapNum = EM
+Sprite = A
+Color = SKINCOLOR_SAPPHIRE
+Tag = 2
+
+Emblem
+Type = Global
+MapNum = EM
+Sprite = A
+Color = SKINCOLOR_ORANGE
+Tag = 3
+
+Emblem
+Type = Global
+MapNum = EM
+Sprite = A
+Color = SKINCOLOR_AETHER
+Var = 4
+
+Emblem
+Type = Time
+MapNum = EM
+Sprite = T
+Color = SKINCOLOR_BONE
+Var = 150*TICRATE
+
+Emblem
+Type = Rings
+MapNum = EM
+Sprite = R
+Color = SKINCOLOR_YELLOW
+Var = 250
+
+Emblem
+Type = Map
+MapNum = EM
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEN: True Protagonist
+# by Goldenhog
+Level EN
+LevelName = True Protagonist
+NoZone = true
+Subtitle = (Goldenhog)
+TypeOfLevel = SP,Coop,2D
+Music = PROTAG
+SkyNum = 6
+SkyboxScaleX = 8
+SkyboxScaleY = 0
+SkyboxScaleZ = 8
+BonusType = Boss
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = E0
+WarningTitle = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+LUA.trueprotagonist = true
+Lua.SUGOIBossMeter = ?
+Lua.CountMap = true
+Lua.Author = Goldenhog
+Lua.Difficulty = 5
+Lua.Length = 1
+
+Emblem
+Type = Map
+MapNum = EN
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEO: Long Journey's End (B Side final level)
+# by multiple authors
+Level EO
+LevelName = Long Journey's End
+NoZone = true
+Subtitle = (multiple authors)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = JOREND
+ForceResetMusic = Off
+SkyNum = 3223
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = EP
+NoTitleCard = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = All
+Lua.CountMap = true
+Lua.Author = multiple authors
+Lua.StaticOverlay = true
+Lua.Difficulty = 5
+Lua.Length = 5
+
+Emblem
+Type = Time
+MapNum = EO
+Var = 360*TICRATE
+
+Emblem
+Type = Rings
+MapNum = EO
+Var = 150
+
+Emblem
+Type = Map
+MapNum = EO
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEP: Shadow of Anime Eyes Sonic (B Side final boss)
+# by Lach & TehRealSalt
+Level EP
+LevelName = One Last Goodbye
+SubTitle = (Lach & TehRealSalt)
+NoZone = true
+TypeOfLevel = SP,Coop
+Music = LASTGB
+SkyNum = 7100
+BonusType = Boss
+#BonusType = ERZ3
+StartRings = 10
+InterScreen = INTERBLK
+CutsceneNum = 13
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Gateway Dimension
+NextLevel = 98
+NoTitleCard = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+Lua.CountMap = true
+Lua.Author = Lach & TehRealSalt
+Lua.StaticOverlay = true
+Lua.Difficulty = 5
+Lua.Length = 5
+Lua.JumpLeniency = true
+
+Emblem
+Type = Map
+MapNum = EP
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEQ: Orbital Rush Zone (bonus reel 1)
+# by HyperFlare957
+Level EQ
+LevelName = Orbital Rush
+SubTitle = (HyperFlare957)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = JOREND
+ForceResetMusic = Off
+SkyNum = 22
+RecordAttack = false
+Hidden = true
+HideInStats = true
+LevelSelect = 4
+SelectHeading = Finale Extra Reel
+NextLevel = ER
+NoTitleCard = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = All
+Lua.CountMap = true
+Lua.Author = HyperFlare957
+Lua.Difficulty = 5
+Lua.Length = 5
+Lua.Axis2D = true
+Lua.SkipIntermission = true
+
+Emblem
+Type = Map
+MapNum = EQ
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPER: Flooded Place Zone (bonus reel 2)
+# by Chicmunk
+Level ER
+LevelName = Flooded Place
+SubTitle = (Chicmunk)
+TypeOfLevel = SP,Coop,Competition,Race
+Music = JOREND
+ForceResetMusic = Off
+SkyNum = 29
+Weather = PRECIP_STORM
+RecordAttack = false
+Hidden = true
+HideInStats = true
+LevelSelect = 4
+SelectHeading = Finale Extra Reel
+NextLevel = ES
+NoTitleCard = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = All
+Lua.CountMap = true
+Lua.Author = Chicmunk
+Lua.Difficulty = 5
+Lua.Length = 5
+Lua.SkipIntermission = true
+
+Emblem
+Type = Map
+MapNum = ER
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPES: Egg Lasershow MKII (bonus reel 3)
+# by Chaobrother
+Level ES
+LevelName = Egg Lasershow MKII
+NoZone = true
+SubTitle = (Chaobrother)
+TypeOfLevel = SP,Coop
+Music = JOREND
+ForceResetMusic = Off
+SkyNum = 8
+RecordAttack = false
+Hidden = true
+HideInStats = true
+LevelSelect = 4
+SelectHeading = Finale Extra Reel
+NextLevel = ET
+NoTitleCard = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = All
+Lua.CountMap = true
+Lua.Author = Chaobrother
+Lua.Difficulty = 5
+Lua.Length = 5
+Lua.ChargeSmoke = 2
+Lua.SkipIntermission = true
+
+Emblem
+Type = Map
+MapNum = ES
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPET: Sleeping Chamber Zone (bonus reel 4)
+# by Nintensis
+Level ET
+LevelName = Sleeping Chamber
+SubTitle = (Nintensis)
+TypeOfLevel = SP,Coop
+Music = JOREND
+ForceResetMusic = Off
+SkyNum = 3223
+RecordAttack = false
+Hidden = true
+HideInStats = true
+LevelSelect = 4
+SelectHeading = Finale Extra Reel
+NextLevel = EU
+NoTitleCard = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = All
+Lua.CountMap = true
+Lua.Author = Nintensis
+Lua.Difficulty = 5
+Lua.Length = 5
+Lua.SkipIntermission = true
+
+Emblem
+Type = Map
+MapNum = ET
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPEU: Mechanical Gauntlet Zone (bonus reel 5)
+# by BronsoKip
+Level EU
+LevelName = Mechanical Gauntlet
+SubTitle = (BronsoKip)
+TypeOfLevel = SP,Coop
+NoReload = true
+Music = JOREND
+ForceResetMusic = Off
+SkyNum = 22
+RecordAttack = false
+Hidden = true
+HideInStats = true
+LevelSelect = 4
+SelectHeading = Finale Extra Reel
+NextLevel = E0
+NoTitleCard = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+FlickyList = All
+Lua.CountMap = true
+Lua.Author = BronsoKip
+Lua.Difficulty = 5
+Lua.Length = 5
+#Lua.SkipIntermission = true
+
+Emblem
+Type = Map
+MapNum = EU
+Sprite = F
+Color = SKINCOLOR_GOLD

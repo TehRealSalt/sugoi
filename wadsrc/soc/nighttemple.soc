@@ -1,0 +1,193 @@
+FREESLOT
+MT_EGGDOMINATOR
+S_EGGDOMINATORSTATE
+S_EGGDOMINATORPAIN
+S_EGGDOMINATORFIRE1
+S_EGGDOMINATORFIRE2
+S_EGGDOMINATORFIRE3
+S_EGGDOMINATORZAP1
+S_EGGDOMINATORZAP2
+S_EGGDOMINATORZAP3
+S_EGGDOMINATORREFUSE1
+S_EGGDOMINATORREFUSE2
+S_EGGDOMINATORREFUSE3
+S_EGGDOMINATORREFUSE4
+S_EGGDOMINATORREFUSE5
+S_EGGDOMINATORREFUSE6
+S_EGGDOMINATORREFUSE7
+sfx_rhurt
+
+#EGG DOMINATOR (SURPRISE MATAFAKA! mini boss)
+
+Thing MT_EGGDOMINATOR
+#$Name Egg Dominator
+#$Sprite GWLGA0
+#$Category SUGOI Bosses
+MAPTHINGNUM = 2109
+SPAWNSTATE = S_EGGDOMINATORSTATE
+SPAWNHEALTH = 6
+SEESTATE = S_EGGDOMINATORSTATE
+SEESOUND = 0
+REACTIONTIME = 16
+ATTACKSOUND = 0
+PAINSTATE = S_EGGDOMINATORPAIN
+PAINCHANCE = 200
+PAINSOUND = sfx_rhurt
+MELEESTATE = S_EGGDOMINATORZAP1
+MISSILESTATE = S_EGGDOMINATORFIRE1
+DEATHSTATE = S_EGGDOMINATORREFUSE1
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 5
+RADIUS = 12*FRACUNIT
+HEIGHT = 12*FRACUNIT
+MASS = 100
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_FLOAT|MF_NOGRAVITY|MF_BOSS|MF_SPECIAL|MF_SHOOTABLE
+
+
+State S_EGGDOMINATORSTATE
+spritename = GWLG
+spriteframe = A
+duration = 1
+next = S_EGGDOMINATORSTATE
+action = A_Boss1Chase
+var1 = 0
+var2 = 0
+
+State S_EGGDOMINATORFIRE1
+spritename = GWLR
+spriteframe = A
+duration = 26
+next = S_EGGDOMINATORFIRE2
+action = A_PlaySound
+var1 = sfx_s3k86
+var2 = 0
+
+State S_EGGDOMINATORFIRE2
+spritename = GWLR
+spriteframe = A
+duration = 1
+next = S_EGGDOMINATORFIRE3
+action = A_PlaySound
+var1 = sfx_s3k54
+var2 = 0
+
+State S_EGGDOMINATORFIRE3
+spritename = GWLR
+spriteframe = A
+duration = 1
+next = S_EGGDOMINATORSTATE
+action = A_BrakFireShot
+var1 = MT_ENERGYBALL
+var2 = 0
+
+State S_EGGDOMINATORZAP1
+spritename = GWLR
+spriteframe = A
+duration = 26
+next = S_EGGDOMINATORZAP2
+action = A_PlaySound
+var1 = sfx_s3k78
+var2 = 0
+
+State S_EGGDOMINATORZAP2
+spritename = GWLR
+spriteframe = A
+duration = 26
+next = S_EGGDOMINATORZAP3
+action = A_TurretFire
+var1 = 0
+var2 = 0
+
+State S_EGGDOMINATORZAP3
+spritename = GWLG
+spriteframe = A
+duration = 10
+next = S_EGGDOMINATORSTATE
+action = A_TurretStop
+var1 = 0
+var2 = 0
+
+State S_EGGDOMINATORPAIN
+spritename = GWLG
+spriteframe = A
+duration = 30
+next = S_EGGDOMINATORSTATE
+action = A_Pain
+var1 = 0
+var2 = 0
+
+State S_EGGDOMINATORREFUSE1
+spritename = GWLR
+spriteframe = A
+duration = 30
+next = S_EGGDOMINATORREFUSE2
+action = A_FireShot
+var1 = MT_CYBRAKDEMON_ELECTRIC_BARRIER
+var2 = 0
+
+State S_EGGDOMINATORREFUSE2
+spritename = GWLR
+spriteframe = A
+duration = 30
+next = S_EGGDOMINATORREFUSE2
+action = A_BossScream
+var1 = MT_SONIC3KBOSSEXPLODE
+var2 = 0
+
+State S_EGGDOMINATORREFUSE2
+spritename = GWLR
+spriteframe = A
+duration = 30
+next = S_EGGDOMINATORREFUSE3
+action = A_BossScream
+var1 = MT_SONIC3KBOSSEXPLODE
+var2 = 0
+
+State S_EGGDOMINATORREFUSE3
+spritename = GWLR
+spriteframe = A
+duration = 1
+next = S_EGGDOMINATORREFUSE4
+action = A_PlaySound
+var1 = sfx_bebomb
+var2 = 0
+
+State S_EGGDOMINATORREFUSE4
+spritename = GWLR
+spriteframe = A
+duration = 1
+next = S_EGGDOMINATORREFUSE5
+action = A_LobShot
+var1 = MT_CYBRAKDEMON_FLAMEREST
+var2 = 100
+
+State S_EGGDOMINATORREFUSE5
+spritename = GWLR
+spriteframe = A
+duration = 1
+next = S_EGGDOMINATORREFUSE6
+action = A_LinedefExecute
+var1 = 1000
+var2 = 0
+
+State S_EGGDOMINATORREFUSE6
+spritename = GWLR
+spriteframe = A
+duration = 1
+next = S_EGGDOMINATORREFUSE7
+action = A_NapalmScatter
+var1 = MT_CYBRAKDEMON_NAPALM_FLAMES+(12<<16)
+var2 = 128+(40<<16)
+
+State S_EGGDOMINATORREFUSE7
+spritename = GWLR
+spriteframe = A
+duration = 1
+next = S_EGGDOMINATORREFUSE7
+action = A_BossDeath
+var1 = 0
+var2 = 0

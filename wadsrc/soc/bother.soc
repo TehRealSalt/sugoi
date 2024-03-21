@@ -1,0 +1,20 @@
+FREESLOT
+MT_PINETREE
+S_PINETREE
+SPR_BPIN
+
+Thing MT_PINETREE
+#$Sprite BPINA0
+#$Name Bother Pine Tree
+MapThingNum = 3765
+SpawnState = S_PINETREE
+SpawnHealth = 1000
+Radius = 32*FRACUNIT
+Height = 192*FRACUNIT
+Mass = 1000
+Flags = MF_SOLID|MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY
+
+State S_PINETREE
+SpriteName = BPINA0
+SpriteFrame = A
+Duration = -1

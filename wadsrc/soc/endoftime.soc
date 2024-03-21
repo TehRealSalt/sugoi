@@ -1,0 +1,1334 @@
+Freeslot
+S_SILVER_2001
+SPR_SLVB
+S_SILVER_2002
+S_SILVER_2003
+S_SILVER_2004
+S_SILVER_2005
+S_SILVER_2006
+S_SILVER_2007
+S_SILVER_2008
+S_SILVER_2009
+S_SILVER_2010
+S_SILVER_2110
+S_SILVER_2201
+S_SILVER_2203
+S_SILVER_2011
+S_SILVER_2012
+S_SILVER_2013
+S_SILVER_2152
+S_SILVER_2172
+S_SILVER_2014
+S_SILVER_2015
+MT_SILVER_390
+S_SILVER_2016
+S_SILVER_2017
+S_SILVER_2018
+S_SILVER_2019
+S_SILVER_2020
+S_SILVER_2021
+S_SILVER_2022
+S_SILVER_2023
+S_SILVER_2024
+S_SILVER_2025
+S_SILVER_2026
+S_SILVER_2027
+S_SILVER_2028
+S_SILVER_2029
+S_SILVER_2030
+S_SILVER_2031
+S_SILVER_2162
+S_SILVER_2113
+S_SILVER_2111
+S_SILVER_2112
+S_SILVER_2114
+S_SILVER_2115
+S_SILVER_2116
+S_SILVER_2117
+S_SILVER_2118
+S_SILVER_2119
+S_SILVER_2120
+S_SILVER_2121
+S_SILVER_2122
+S_SILVER_2123
+S_SILVER_2124
+S_SILVER_2125
+S_SILVER_2126
+S_SILVER_2127
+S_SILVER_2128
+S_SILVER_2129
+S_SILVER_2130
+S_SILVER_2131
+S_SILVER_2132
+S_SILVER_2133
+S_SILVER_2134
+S_SILVER_2135
+S_SILVER_2136
+S_SILVER_2137
+S_SILVER_2138
+S_SILVER_2139
+S_SILVER_2140
+S_SILVER_2141
+S_SILVER_2142
+S_SILVER_2143
+S_SILVER_2144
+S_SILVER_2145
+S_SILVER_2146
+S_SILVER_2050
+S_SILVER_2051
+S_SILVER_2052
+S_SILVER_2053
+S_SILVER_2202
+S_SILVER_2204
+S_SILVER_2070
+sfx_silrip
+S_SILVER_2071
+S_SILVER_2072
+S_SILVER_2073
+S_SILVER_2074
+S_SILVER_2075
+S_SILVER_2076
+sfx_thrw1
+sfx_silvjm
+sfx_psbost
+sfx_vow2
+sfx_vtant4
+sfx_float
+sfx_joke
+sfx_cancel
+S_SILVER_2300
+S_SILVER_2301
+S_SILVER_2302
+S_SILVER_2303
+S_SILVER_2304
+S_SILVER_2305
+S_SILVER_2306
+S_SILVER_2307
+S_SILVER_2308
+S_SILVER_2309
+S_SILVER_2310
+S_SILVER_2311
+S_SILVER_2312
+S_SILVER_2313
+S_SILVER_2314
+S_SILVER_2315
+S_SILVER_2316
+S_SILVER_2317
+S_SILVER_2318
+S_SILVER_2319
+S_SILVER_2320
+S_SILVER_2321
+S_SILVER_2322
+S_SILVER_2323
+S_SILVER_2299
+S_SILVER_2205
+S_SILVER_2206
+S_SILVER_2054
+MT_SILVER_145
+SPR_SLTK
+#-------------------------SILVER-THE-HEDGEHOG-----------------------
+
+# Big Credit for Morph! The was by him, and I edited it a little.
+# To make it Silver-like
+
+# start look around
+
+State S_SILVER_2001
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 2
+Next = S_SILVER_2002
+Action A_Look
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2002
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 2
+Next = S_SILVER_2001
+Action A_Look
+Var1 = 0
+Var2 = 0
+
+# End look around
+
+
+
+
+
+# Start choosing
+
+State S_SILVER_2003
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2004
+Action A_CheckHealth
+Var1 = 3
+Var2 = S_SILVER_2299
+
+State S_SILVER_2004
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 5
+Next = S_SILVER_2005
+Action A_FaceTarget
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2005
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 4
+Next = S_SILVER_2006
+Action A_FaceTarget
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2006
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 3
+Next = S_SILVER_2007
+Action A_FaceTarget
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2007
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 2
+Next = S_SILVER_2007
+Action A_RandomState
+Var1 = S_SILVER_2008
+Var2 = S_SILVER_2009
+
+State S_SILVER_2008
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 2
+Next = S_SILVER_2008
+Action A_RandomState
+Var1 = S_SILVER_2010
+Var2 = S_SILVER_2110
+
+State S_SILVER_2009
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 2
+Next = S_SILVER_2009
+Action A_RandomState
+Var1 = S_SILVER_2201
+Var2 = S_SILVER_2203
+
+# End choosing
+
+
+
+#Start Spinning
+
+State S_SILVER_2010
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2011
+Action A_FaceTarget
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2011
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2012
+Action A_SetObjectFlags
+Var1 = MF_SHOOTABLE
+Var2 = 1
+
+State S_SILVER_2012
+SpriteName = SPR_SLVB
+SpriteFrame = 1
+Duration = 1
+Next = S_SILVER_2013
+Action A_DualAction
+Var1 = S_SILVER_2152
+Var2 = S_SILVER_2172
+
+State S_SILVER_2013
+SpriteName = SPR_SLVB
+SpriteFrame = 1
+Duration = 1
+Next = S_SILVER_2014
+Action A_PlaySound
+Var1 = sfx_vtant4
+Var2 = 0
+
+State S_SILVER_2014
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2015
+Action A_TurretFire
+Var1 = MT_SILVER_390
+Var2 = 0
+
+State S_SILVER_2015
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2016
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2016
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2017
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2017
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2018
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2018
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2019
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2019
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2020
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2020
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2021
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2021
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2022
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2022
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2023
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2023
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2024
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2024
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2025
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2025
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2026
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2026
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2027
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2027
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2028
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2028
+SpriteName = SPR_SLVB
+SpriteFrame = H
+Duration = 1
+Next = S_SILVER_2029
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2029
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2030
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2030
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2031
+Action A_TurretStop
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2031
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2003
+Action A_SetObjectFlags
+Var1 = MF_SHOOTABLE
+Var2 = 2
+
+#End Spinning
+
+
+
+
+
+
+#start attack stuff
+
+State S_SILVER_2152
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2013
+Action A_BunnyHop
+Var1 = 0
+Var2 = 48
+
+State S_SILVER_2172
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2172
+Action A_TurretFire
+Var1 = MT_SILVER_390
+Var2 = 0
+
+State S_SILVER_2162
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2113
+Action A_BunnyHop
+Var1 = 8
+Var2 = 14
+
+#end attack stuff
+
+
+
+
+
+
+#Start Jumping
+
+State S_SILVER_2110
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2111
+Action A_FaceTarget
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2111
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2112
+Action A_SetObjectFlags
+Var1 = MF_SHOOTABLE
+Var2 = 1
+
+State S_SILVER_2112
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2113
+Action A_DualAction
+Var1 = S_SILVER_2162
+Var2 = S_SILVER_2172
+
+State S_SILVER_2113
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2114
+Action A_PlaySound
+Var1 = sfx_silvjm
+Var2 = 0
+
+State S_SILVER_2114
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2115
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2115
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2116
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2116
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2117
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2117
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2118
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2118
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2119
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2119
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2120
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2120
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2121
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2121
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2122
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2122
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2123
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2123
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2124
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2124
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2125
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2125
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2126
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2126
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2127
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2127
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2128
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2128
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2129
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2129
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2130
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2130
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2131
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2131
+SpriteName = SPR_SLVB
+SpriteFrame = 2
+Duration = 1
+Next = S_SILVER_2132
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2132
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2133
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2133
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2134
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2134
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2135
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2135
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2136
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2136
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2137
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2137
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2138
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2138
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2139
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2139
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2140
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2140
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2141
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2141
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2142
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2142
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2143
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2143
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2144
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2144
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2145
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2145
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2146
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2146
+SpriteName = SPR_SLVB
+SpriteFrame = 3
+Duration = 1
+Next = S_SILVER_2029
+Action A_TurretStop
+Var1 = 0
+Var2 = 0
+
+#End Jumping
+
+
+
+
+
+# start pain
+
+State S_SILVER_2050
+SpriteName = SPR_SLVB
+SpriteFrame = 1
+Duration = 1
+Next = S_SILVER_2051
+Action A_SetObjectFlags
+Var1 = MF_SHOOTABLE
+Var2 = 1
+
+State S_SILVER_2051
+SpriteName = SPR_SLVB
+SpriteFrame = 1
+Duration = 1
+Next = S_SILVER_2052
+Action A_PlaySound
+Var1 = sfx_vow2
+Var2 = 0
+
+State S_SILVER_2052
+SpriteName = SPR_SLVB
+SpriteFrame = 1
+Duration = 11
+Next = S_SILVER_2053
+Action A_BunnyHop
+Var1 = 5
+Var2 = -10
+
+State S_SILVER_2053
+SpriteName = SPR_SLVB
+SpriteFrame = 1
+Duration = 15
+Next = S_SILVER_2054
+Action A_TurretFire
+Var1 = MT_SILVER_390
+Var2 = 0
+
+State S_SILVER_2054
+SpriteName = SPR_SLVB
+SpriteFrame = 1
+Duration = 1
+Next = S_SILVER_2001
+Action A_SetObjectFlags
+Var1 = MF_SHOOTABLE
+Var2 = 2
+# end pain
+
+
+
+
+#start throw 1
+
+State S_SILVER_2201
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2202
+Action A_TurretStop
+Var1 = MT_SILVER_390
+Var2 = 0
+
+State S_SILVER_2202
+SpriteName = SPR_SLVB
+SpriteFrame = 5
+Duration = 35
+Next = S_SILVER_2206
+Action A_PlaySound
+Var1 = sfx_psbost
+Var2 = 0
+
+State S_SILVER_2206
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 8
+Next = S_SILVER_2003
+Action A_FireShot
+Var1 = MT_ENERGYBALL
+Var2 = 0
+#end throw 1
+
+
+
+
+
+#start throw 2
+
+
+State S_SILVER_2203
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 1
+Next = S_SILVER_2204
+Action A_TurretStop
+Var1 = MT_SILVER_390
+Var2 = 0
+
+State S_SILVER_2204
+SpriteName = SPR_SLVB
+SpriteFrame = 5
+Duration = 17
+Next = S_SILVER_2205
+Action A_PlaySound
+Var1 = sfx_thrw1
+Var2 = 0
+
+State S_SILVER_2205
+SpriteName = SPR_SLVB
+SpriteFrame = 0
+Duration = 8
+Next = S_SILVER_2003
+Action A_FireShot
+Var1 = MT_TURRETLASER
+Var2 = 0
+
+#end throw 2
+
+# Pinch Start
+State S_SILVER_2299
+SpriteName = SPR_SLVB
+SpriteFrame = A
+Duration = 1
+Next = S_SILVER_2300
+Action A_TurretFire
+Var1 = MT_SILVER_390
+Var2 = 0
+
+State S_SILVER_2300
+SpriteName = SPR_SLVB
+SpriteFrame = F
+Duration = 0
+Next = S_SILVER_2301
+Action A_SetObjectFlags
+Var1 = MF_NOGRAVITY|MF_SPECIAL|MF_BOSS
+Var2 = 0
+
+State S_SILVER_2301
+SpriteName = SPR_SLVB
+SpriteFrame = F
+Duration = 10
+Next = S_SILVER_2302
+Action A_PlaySound
+Var1 = sfx_float
+Var2 = 0
+
+State S_SILVER_2302
+SpriteName = SPR_SLVB
+SpriteFrame = F
+Duration = 20
+Next = S_SILVER_2303
+Action A_PlaySound
+Var1 = sfx_joke
+Var2 = 0
+
+State S_SILVER_2303
+SpriteName = SPR_SLVB
+SpriteFrame = F
+Duration = 35
+Next = S_SILVER_2318
+Action A_ZThrust
+Var1 = 10
+Var2 = 0|1
+
+State S_SILVER_2318
+SpriteName = SPR_SLVB
+SpriteFrame = F
+Duration = 10
+Next = S_SILVER_2304
+Action A_ForceStop
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2304
+SpriteName = SPR_SLVB
+SpriteFrame = G
+Duration = 1
+Next = S_SILVER_2305
+Action A_PlaySound
+Var1 = sfx_zoom
+Var2 = 0
+
+State S_SILVER_2305
+SpriteName = SPR_SLVB
+SpriteFrame = G
+Duration = 1
+Next = S_SILVER_2306
+Action A_FindTracer
+Var1 = MT_BOSS3WAYPOINT
+Var2 = 0
+
+State S_SILVER_2306
+SpriteName = SPR_SLVB
+SpriteFrame = G
+Duration = 35
+Next = S_SILVER_2317
+Action A_Thrust
+Var1 = 30
+Var2 = 0
+
+State S_SILVER_2317
+SpriteName = SPR_SLVB
+SpriteFrame = G
+Duration = 1
+Next = S_SILVER_2307
+Action A_ForceStop
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2307
+SpriteName = SPR_SLVB
+SpriteFrame = F
+Duration = 1
+Next = S_SILVER_2308
+Action A_FaceTarget
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2308
+SpriteName = SPR_SLVB
+SpriteFrame = F
+Duration = 35
+Next = S_SILVER_2309
+Action A_PlaySound
+Var1 = sfx_thrw1
+Var2 = 0
+
+State S_SILVER_2309
+SpriteName = SPR_SLVB
+SpriteFrame = F
+Duration = 10
+Next = S_SILVER_2310
+Action A_FireShot
+Var1 = MT_ENERGYBALL
+Var2 = 0
+
+State S_SILVER_2310
+SpriteName = SPR_SLVB
+SpriteFrame = F
+Duration = 10
+Next = S_SILVER_2311
+Action A_FireShot
+Var1 = MT_ENERGYBALL
+Var2 = 0
+
+State S_SILVER_2311
+SpriteName = SPR_SLVB
+SpriteFrame = F
+Duration = 10
+Next = S_SILVER_2312
+Action A_FireShot
+Var1 = MT_ENERGYBALL
+Var2 = 0
+
+State S_SILVER_2312
+SpriteName = SPR_SLVB
+SpriteFrame = D
+Duration = 1
+Next = S_SILVER_2313
+Action A_SetObjectFlags
+Var1 = MF_NOGRAVITY
+Var2 = 1
+
+State S_SILVER_2313
+SpriteName = SPR_SLVB
+SpriteFrame = D
+Duration = 0
+Next = S_SILVER_2314
+Action A_PlaySound
+Var1 = sfx_cancel
+Var2 = 0
+
+State S_SILVER_2314
+SpriteName = SPR_SLVB
+SpriteFrame = D
+Duration = 40
+Next = S_SILVER_2320
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2320
+SpriteName = SPR_SLVB
+SpriteFrame = D
+Duration = 1
+Next = S_SILVER_2315
+Action A_TurretStop
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2315
+SpriteName = SPR_SLVB
+SpriteFrame = F
+Duration = 35
+Next = S_SILVER_2319
+Action A_MultiShot
+Var1 = MT_THROWNSCATTER*65536+16
+Var2 = 0
+
+State S_SILVER_2319
+SpriteName = SPR_SLVB
+SpriteFrame = A
+Duration = 0
+Next = S_SILVER_2316
+Action A_SetObjectFlags
+Var1 = MF_SHOOTABLE
+Var2 = 2
+
+State S_SILVER_2316
+SpriteName = SPR_SLVB
+SpriteFrame = A
+Duration = 35
+Next = S_SILVER_2001
+Action A_FaceTarget
+Var1 = 0
+Var2 = 0
+
+#Pinch End
+
+#death
+State S_SILVER_2071
+SpriteName = SPR_SLVB
+SpriteFrame = E
+Duration = 1
+Next = S_SILVER_2072
+Action A_SetObjectFlags
+Var1 = MF_SHOOTABLE
+Var2 = 1
+
+State S_SILVER_2072
+SpriteName = SPR_SLVB
+SpriteFrame = E
+Duration = 1
+Next = S_SILVER_2073
+Action A_PlaySound
+Var1 = sfx_silrip
+Var2 = 0
+
+State S_SILVER_2073
+SpriteName = SPR_SLVB
+SpriteFrame = E
+Duration = 1
+Next = S_SILVER_2074
+Action A_SetObjectFlags
+Var1 = MF_NOCLIP|MF_NOCLIPHEIGHT
+Var2 = 0
+
+State S_SILVER_2074
+SpriteName = SPR_SLVB
+SpriteFrame = E
+Duration = 10
+Next = S_SILVER_2075
+Action A_BunnyHop
+Var1 = 10
+Var2 = 0
+
+State S_SILVER_2075
+SpriteName = SPR_SLVB
+SpriteFrame = E
+Duration = 52
+Next = S_SILVER_2076
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2076
+SpriteName = SPR_NULL
+SpriteFrame = 0
+Duration = 1
+Next = S_NULL
+Action A_BossDeath
+Var1 = 0
+Var2 = 0
+# Silver Thing
+
+Object MT_SILVER_318
+#$Name End of Time Silver
+#$Sprite SLVBA1
+#$Category SUGOI Bosses
+MapThingNum = 1350
+SpawnState = S_SILVER_2001
+SpawnHealth = 8
+SeeState = S_SILVER_2003
+SeeSound = sfx_None
+ReactionTime = 32
+AttackSound = sfx_None
+PainState = S_SILVER_2050
+PainChance = S_NULL
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_SILVER_2071
+DeathSound = sfx_None
+XDeathState = S_NULL
+Speed = 3
+Radius = 16*FRACUNIT
+Height = 56*FRACUNIT
+Mass = 100
+Damage = 0
+ActiveSound = sfx_None
+RaiseState = S_NULL
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_BOSS
+
+
+
+
+
+#collision orb
+
+Object MT_SILVER_390
+MapThingNum = -1
+SpawnState = S_SILVER_2070
+SpawnHealth = 1
+SeeState = S_NULL
+SeeSound = sfx_None
+ReactionTime = 32
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 0
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+DeathSound = sfx_None
+XDeathState = S_NULL
+Speed = 1
+Radius = 19*FRACUNIT
+Height = 56*FRACUNIT
+Mass = 100
+Damage = 1
+ActiveSound = sfx_None
+RaiseState = S_NULL
+Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_MISSILE
+
+
+State S_SILVER_2070
+SpriteName = SPR_NULL
+SpriteFrame = 0
+Duration = 2
+Next = S_NULL
+Action A_SetScale
+Var1 = 2*FRACUNIT
+Var2 = 0
+
+Object MT_SILVER_145
+MapThingNum = -1
+SpawnState = S_SILVER_2321
+SpawnHealth = 1
+SeeState = S_NULL
+SeeSound = sfx_None
+ReactionTime = 32
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 0
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+DeathSound = sfx_None
+XDeathState = S_NULL
+Speed = 30
+Radius = 50*FRACUNIT
+Height = 56*FRACUNIT
+Mass = 100
+Damage = 1
+ActiveSound = sfx_None
+RaiseState = S_NULL
+Flags = MF_NOBLOCKMAP|MF_NOGRAVITY
+
+State S_SILVER_2321
+SpriteName = SPR_SLTK
+SpriteFrame = A
+Duration = 1
+Next = S_SILVER_2322
+Action A_FindTarget
+Var1 = 0
+Var2 = 0
+
+State S_SILVER_2322
+SpriteName = SPR_SLTK
+SpriteFrame = A
+Duration = 70
+Next = S_NULL
+Action A_HomingChase
+Var1 = 10*FRACUNIT
+Var2 = 0
+
+# Sal: captions
+Sound sfx_silrip
+Caption = "Ahhhhhhh!!"
+      #
+
+Sound sfx_thrw1
+Caption = "Take this!"
+      #
+
+Sound sfx_silvjm
+Caption = Jump
+      #
+
+Sound sfx_psbost
+Caption = "It's no use!"
+      #
+
+Sound sfx_vow2
+Caption = "Uwaaa...!"
+      #
+
+Sound sfx_vtant4
+Caption = "Hmh."
+      #
+
+Sound sfx_float
+Caption = Float
+      #
+
+Sound sfx_joke
+Caption = "Hmph! Is this a joke?"
+      #
+
+Sound sfx_cancel
+Caption = Float ends
+      #

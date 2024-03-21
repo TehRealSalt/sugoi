@@ -1,0 +1,573 @@
+MAPA1: Retro Hill Zone, Act 1 (Pogofen)
+
+MAPA2: Hilltop Hunt Zone (Fres)
+
+MAPA3: Groggy Gale Zone (TehRealSalt)
+	- Music: "Mountain Journey" by Supergoose
+
+MAPA4: Skytop Zone (Glaber)
+	- Music: "Mysticism" by Necros/PM
+	- Sprites: Drilla by SSNTails
+	- Lua: toaster, Prime 2.0
+
+MAPA5: Concrete Jungle Zone (JStheguy)
+
+MAPA6: Jello Factory Zone (Mystyc Cheez)
+
+MAPA7: Quartzite Crag Zone (SeventhSentinel)
+
+MAPA8: Contaminated Water Zone (LazyMK)
+	- Music: "Trip to Blue" by minomus of DOMU
+	- SOC: Zippy_Zolton
+
+MAPA9: Nightlight Ruins Zone (SteelT)
+	- Music: "16bit brain" by madbrain
+
+MAPAA: Robotnik Park Zone (FuriousFox)
+	- Music: "Pleasure Castle" from Sonic Adventure
+
+MAPAB: Aquatic Corridors Zone (Revan)
+	- Music: "Waves" by kid pixel
+
+MAPAC: Overgrown Castle Zone (Chaobrother)
+	- Music: "Fillmore Act-1" from Actraiser
+
+MAPAD: Lilac Conservatory Zone (RoyKirbs)
+	- Music: "Moonlight Capital (VRC6+FDS)" by MistSomething
+	- Music (Secret): "Real American (MIDI)" by WrstlCraze
+	- Textures: Kwiin, sphere
+
+MAPAE-AF: Sunset Ruins Zone (StellarStardust)
+	- Music (Act 1): "Neo Green Hill" from Sonic 2 Beta
+	- Music (Act 2): "Boss 2" from Sonic 3D Blast", nil, V_ALLOWLOWERCASE},
+
+MAPAG: Lavender World Zone (CarlosGamer72)
+	- Music: "Jumper" by Waterflame
+
+MAPAH: Sky Labyrinth Zone (Tripel the fox)
+	- Music: "Act 1" from Sonic Labyrinth
+	- Lua: Additional fixes by toaster
+
+MAPAI: Fiery Volcano Zone (Lactozilla)
+	- Music: "Memorydust" by Codex
+
+MAPAJ: Mine Maze Zone (RomioTheBadass)
+	- SOC: Drilla from Glaber's SRB2 The Past
+
+MAPAK: End of Time (Sapheros)
+	- SOC: Boss derived from work by Morph and Thompson", nil, V_ALLOWLOWERCASE},
+	- Music (Cutscene): "void" by nutcase
+	- Music: "Heaven of Pain" by MADOKAN
+
+MAPAL: Cute Ice (Zipper)
+	- Music: "REMNANT" from Megadimension Neptunia Victory II
+
+MAPAM-AN: Robotnik Laboratory Zone (Manimi)
+	- Music (Act 1): "Mechanical Resonance" from Sonic Adventure
+	- Music (Act 2): "Bullet Station" from Sonic Heroes
+	- Sprites: strikezee
+
+MAPAO: Fudge Canyon Zone (VAdaPEGA)
+	- Music (Easter Egg): From Soup 0.9
+
+MAPAP: Orbital Complex Zone (Knux576)
+	- Music: "Okta-xy-geen" by Skaven252
+	- Textures: sphere
+
+MAPAQ: Gravity Well Zone (Goldenhog)
+	- Music: "Galactical Galaxies" from Speedy Gonzales in Los Gatos Bandidos
+
+MAPAR: Kodachrome Void Zone (Boinciel)
+	- Music: "Overscan" by Andreas Bilke
+	- Inspiration: The Doom level "Dada" by Scientist
+	- Special Thanks: MonsterIestyn
+
+MAPAS: The Grand Finale (Zipper)
+	- Music: "Continuous Hits" from Megadimension Neptunia Victory II
+	- Music (Boss): "Purple Heart's Theme" from Hyperdimension Neptunia Re;Birth 3
+	- Music (Dogoo): "Game Over" from Hyperdimension Neptunia Re;Birth
+	- Special Thanks: Boinciel
+
+MAPAT: Garanz Site 16 (Boinciel)
+	- Music: "Mystic Forest" from Umineko: When They Cry
+	- Music (Alt): "Jungle ~A Lush Load~ (MIDI)" by Stacy Anne Christiansen
+
+MAPA0: Teleport Station (TehRealSalt)
+	- Music: "bump-n-knock" by phaser
+
+MAPB1-B2, MAPB9-BA: Green Flowers Zone (StellarStardust)
+	- Music (Act 1): "Green Hills Zone" from Sonic 2 8-Bit
+	- Music (Act 2): "Aqua Lake Zone" from Sonic 2 8-Bit
+	- Music (Act 3): "Rainy Savannah" from Sonic Drift 2
+	- Music (Act 4): "Boss (GG)" & "Boss (MS)" from Sonic 2 8-Bit
+	- Boss (Act 4): Manimi
+	- Additional assistance: White T.U
+
+MAPB3: Holiday House Zone (TexDreemurr/PSI Pikachu)
+	- Music: "Snow Mountain" from Super Mario 64
+	- Additional assistance: Sapheros
+
+MAPB4: Sunlit Cavern Zone (BronsoKip)
+
+MAPB5: Frozen Valley Zone (Tonic ze Hedgefox)
+	- Music: "Butterfly Flew Away" by TB
+
+MAPB6: Steel Valley Zone (Elvin & Revan)
+
+MAPB7: Holiday Hill Zone (SeventhSentinel)
+	- Sprites: VAdaPEGA
+
+MAPB8: Bubble Tides Zone (TehRealSalt)
+	- Music: "Pacific Paradise Zone Act 2" by SeventhSentinel
+	- Additional assistance: SeventhSentinel
+
+MAPBB: Plastic Factory Zone (SteelT)
+	- Sprites: From Massmouth
+	- Music: "crux-mas" by maniac/crux
+
+MAPBC: Funky Headquarters Zone (Puppyluvv)
+	- Textures: Ritz
+	- Music: "118 in 64 and 194" by Reed
+
+MAPBD: Sapphire Frost Zone (Glaber)
+	- Sprites: From SRB2 Christmas
+	- Lua: Larz T.
+	- Music: "Diamond Dust Zone Act 1" from Sonic 3D Blast (Genesis)
+
+MAPBE: Polluted Polis Zone (a guy)
+
+MAPBF: Night Temple Zone (Manimi)
+	- Music: "Bureautique" by art & ytpmvp0
+	- Music (Boss): "International Karate" by Whiskeymusic
+
+MAPBG: Crimson Castle Zone (Elvin)
+	- Music: "The Portals of Chaos" from Heretic
+	- Textures: Ripped from Heretic and Hexen
+
+MAPBH: Ice Cap Zone (Chicmunk & SSG3)
+	- Music: "Ice Cap Zone Act 1" from Sonic the Hedgehog 3
+
+MAPBI: Dusty Desert Zone, Act 1 (Lilac)
+	- Music: "not fragile"
+	- Additional assistance: AxelMoon
+
+MAPBJ: Abandoned Airbase Zone (ICE)
+
+MAPBK: Magma Peaks Zone (Inferno Drag)
+	- Additional assistance: Boinciel & Chicmunk", nil, V_ALLOWLOWERCASE},
+
+MAPBL: Atlantis (DarkTechno)
+	- Music: "-xTREMELY xECUTABLE-" by Anders Akerheden
+
+MAPBM: Snow Summit Zone (SAMMY SWAG)
+	- Music: "Diamond Dust Zone Act 1" from Sonic 3D Blast (Saturn)
+
+MAPBN: Twilight Grove Zone (Knux576)
+	- Music: "Secret Forest Shrine" by FearofDark
+
+MAPBO-BP: Mount Torval Zone (Boo)
+	- Music (Act 1): "Torval - Hoverbike or Bust" from Ratchet: Deadlocked
+	- Music (Act 2): "Mount Vesuvius" from Ducktales: Remastered
+
+MAPBQ: Stone Shuttle Zone (Gunla)
+	- Music: "Difficult Fight" from Live-A-Live
+
+MAPBR: Mix It All Together ! Zone, Act 1 (RomioTheBadass)
+	- Music: "High and Broken (Levitated Ruin)" from Sonic and the Secret Rings
+
+MAPBS: Steaming Towers Zone (DirkTheHusky)
+	- Music: "Tower to the Skies" by Lucifer
+
+MAPBT: Sundial Veld Zone (Wind Takadiyami)
+	- Music: "Plant Kingdom Act 1" from Sonic Rush Adventure, ported to .it by SteelT
+	- Additional assistance: Boinciel & Garrean
+	- Testing: Enodesix/PIRY & Danieldad2244
+
+MAPBU: Leaps of Faith Zone (LazyMK)
+	- Music: "Stage 2 Boss - Strike Ants" from Dangerous Seed
+
+MAPBV: Palace Peaks Zone (Garrean)
+	- Music: "Sealed Ground (Gigan Rocks)" from Sonic Riders: Zero Gravity
+
+MAPBW, MAPC1: Roasted Ravine Zone (Lat' and SAMMY SWAG)
+	- Music (Act 1): "Great Canyon" from Pokemon Mystery Dungeon Red/Blue Rescue Team
+	- Music (Boss): "Versus Boss" from Pokemon Mystery Dungeon Red/Blue Rescue Team
+	- Music (Pinch): "Boss Battle" from Learn With Pokemon: Typing Adventure
+
+MAPBX: Propulsion Peaks Zone (Inferno Drag)
+	- Music: "Mysticism" by Necros/PM
+	- Additional assistance: Boinciel & Chicmunk
+	- Theme: Based off Skytop Zone by Glaber
+
+MAPBY: Pipes of Green (VAdaPEGA)
+
+MAPBZ: Empty Sanctum Zone (Chaobrother)
+	- Music: "Corridors of Time" from Chrono Trigger
+
+MAPC0: Illumination Aerie Zone (JMRante)
+	- Music: "Some piece of jazz" by Rage
+
+MAPC2: Final Tower Zone (TehRealSalt)
+	- Music: "Adonato" by MrGamer
+	- Music (Boss): "!!!alchemist2"
+	- Textures: Ripped/edited from Earthworm Jim & Gunstar Heroes
+	- Boss HUD: Ripped/edited from JoJo's Bizarre Adventure (Arcade)
+
+MAPS1: Greenflower Grove Zone, Act 1 (Maximus Universal & Tripel the fox)
+	- Music: "Green Grove Zone Act 2" from Sonic 3D Blast
+	- Textures: Edited from 2.2 Xmas Textures
+
+MAPS2: Tropical Island (Lactozilla)
+	- Music: "Emerald Forest" from Time Dominator 1st
+	- Music (Results): "Level Complete" from Time Dominator 1st
+
+MAPS3: A Minesweeper Field (Rapidgame7)
+	- Inspiration: Uh, Minesweeper, dude
+
+MAPS4: Unknown Temple, Act 1 (Sapheros)
+	- Lua: Fixes by TehRealSalt
+	- Music: "Memories" from Puyo Puyo
+	- Music (Boss): "Fang the Sniper's Theme" from Sonic Triple Trouble
+
+MAPS5: Shade Mountain Zone (Badz)
+	- Sprites: VelocitOni
+	- Music: "Castle" from Jazz Jackrabbit 3
+
+MAPS6: Soniguri (Yacker & Root)
+	- Sprites: Edit of MotorRoach's FSonic, rips from Sonic & Knuckles
+	- Sound Effects: From SUGURI
+	- Music: "Azure Lake Zone" from Sonic the Hedgehog 3
+	- Music (Boss): "Doomsday Zone" from Sonic & Knuckles
+	- Made OpenGL compatible by frozenLake
+
+MAPS7: Highly Responsive to Hedgehogs (LunarDestroyer)
+	- Sprites: Ripped using Anex86
+	- Music: Touhou MIDI Central
+	- Made OpenGL compatible by frozenLake
+
+MAPC3-C5: Star Genesis (altalune)
+	- Lua: altalune
+	- Lua (Flight): Nev3r
+	- Lua (Assistance): fickleheart
+	- Sprites (Intruder): toaster
+	- Sprites (Ship, Cracking): TehRealSalt
+	- Sprites (Death): Inazuma
+	- Music (Level): "Continuous Hits" from Megadimension Neptunia Victory II
+	- Music (Intruder): "Black Paint" from Paper Mario: Color Splash
+	- Music (Take Off): "Marx's Ambition" from Kirby Super Star Ultra
+	- Music (Phase 1): "vs. Star Dream" from Kirby: Planet Robobot
+	- Music (Transition): "Cutscene - Attack" from Sonic Rush Adventure
+	- Music (Phase 2): "Intermezzo Without A Leader" from Kirby: Planet Robobot
+	- Music (Phase 3): "Major Boss Battle" from Freedom Planet
+
+MAPC6: Skyport Albatross Zone (Chromatian)
+	- Music: "Enemy Hall (MMX Style)" by JX444444
+
+MAPC7: Saccharine Springs Zone (Lach)
+	- Music: "gall-ha-snar" by mac_of_doom
+
+MAPC8: Deleted Domain Zone (Garrean)
+	- Music: "Vibes from past" by Fegolhuzz / Databrothers
+	- Levels featured:
+		- "Totem Island" by Root
+		- "Green Meadow" by Bluesfire
+		- "Alpine Heights" by Simsmagic
+		- "Verdant Valley" by Fres
+		- "Storm Stronghold" by frozenLake
+		- "Greenflower Caves" by Potatosack
+		- "Sunset Mine" by White T.U
+		- "Acid Plant" by CoatRack
+		- "Disco Foundry" by Kuja
+
+MAPB0: Joestar Manor (TehRealSalt)
+	- Music: "The Magic House" from Final Fantasy VI
+	- Music (Shop): "Slashed Prices" by AxelMoon
+	- Additional assistance: SeventhSentinel
+
+MAPD1: Lilac Acreage Zone (RoyKirbs)
+	- Music: "Cappy's Stage - Kirby's Block Ball (KDL3 Remix)" by Pinci
+
+MAPD2: Midnight Shores Zone (SteelT)
+	- Music: "Starry Beach" by Robby Coker
+	- Textures: AxelMoon
+
+MAPD3: Oceanside Cave Zone (Rumia1)
+	- Music: "Grasslands" by RedNGreen
+	- SFX: "Radio Funk - Sonic OVA Reconstruction" by MrKingalocious
+	- Textures: Kirby's Dream Land 3
+
+MAPD4: Aurora Atoll Zone, Act 3 (TehRealSalt & SeventhSentinel)
+	- Music (Pre-fight): "Interrupted Sleep" from Kirby Super Star
+	- Music (Boss): "Boss Battle" from Kirby Super Star
+
+MAPD5: Verdant Valley Zone (Fres)
+	- Music: "Round 5-2 - Ice Scream" from Ristar
+	- Lua: Emerald Hunt Advanced by Latius/ah2190
+	- SOC: AMT Crawla by Lat'
+
+MAPD6: Morning Heights Zone (Firework917)
+	- Music: "Mission Briefing" from Time Trax
+	- Skybox: .Jazz.
+
+MAPD7: Arle Satan Bayoen Zone, Act Tsuu (Tripel the Fox)
+	- Music (Stage 1): "Theme of Puyo Puyo" from Puyo Puyo
+	- Music (Stage 2): "Area A" from Puyo Puyo Tsuu
+	- Music (Stage 3): "Sticker of Puyo Puyo" from Puyo Puyo
+	- Music (Stage 4): "Last Area" from Puyo Puyo Tsuu
+	- Music (Stage 5): "Final of Puyo Puyo" from Puyo Puyo
+	- Music (Warning): "Warning of Puyo Puyo" from Puyo Puyo
+	- Music (Game Over): "Sorrow of Puyo Puyo" from Puyo Puyo
+
+MAPD8: Scarlet Palace (.Jazz.)
+	- Music: "Angel Eyes" by Velvet
+	- Sprites: LordPotatoSack, VAdaPEGA
+
+MAPD9: BoBo the Bouncy Boi (TrustyGun)
+	- Music: "murder" by Reed Richards
+
+MAPDA: The Zone (Boinciel)
+	- Music: "electricity" by Strobo
+
+MAPDB: Lush Meadow Zone (Flare957)
+	- Music: "Evening Star" from Knuckles Chaotix
+
+MAPDC: Decrepit Plant Zone (TrustyGun)
+	- Music: "Cherry Jam" by Reed Richards
+
+MAPDD: Cyber Deton (WellDoneSnake)
+	- Music: "Boss" from Super Bomberman
+
+MAPDE: Knothole Valley Zone (Wumbo)
+	- Music: "Ice World" from Best Friends
+
+MAPDF: Redcurrant Brewery (Lactozilla)
+
+MAPDG: Extraterrestrial Ruin Zone (SeventhSentinel)
+	- Music: "Twilight Space" from Super Bonk
+
+MAPDH: Mr. Triangle The Pizza Delivery Guy (Root & Yacker)
+	- Music: "Sunset Hill Zone, Act 2 - Sonic Advance 3 (MIDI)" by Jace
+	- Music (Boss): "Boss" from Kirby's Dreamland 3
+
+MAPDI: Robotnik's Fortress, Act 1 (Swift)
+	- Music: "Dr. Wily Stage 1-2" from Mega Man: The Wily Wars
+	- Textures: Sonic Mania
+
+MAPDJ: Icy Hot Cave Zone, Act 1 (Sleeperz)
+	- Music: "Round 3-2 - Under Magma" from Ristar", nil, V_ALLOWLOWERCASE},
+	- Additional assistance: Champ
+
+MAPDK: Diamond Valley Zone (Badz)
+	- Music: "Jazz Castle" from Jazz Jackrabbit 2
+
+MAPDL: Pointy Egg (Badz)
+	- Music: "Jazz Boss Tune 2" from Jazz Jackrabbit 2
+
+MAPDM: Shogun Stronghold Zone (TehRealSalt)
+	- Music: "Outside Shredder's Hideout" from Teenage Mutant Ninja Turtles: The Hyperstone Heist
+
+MAPDN: Submerged Corridors Zone (Q.T.D.)
+	- Music: "Meditation" by ArchAngel
+
+MAPDO: Green Hill Zone (LJ Sonic)
+	- Music: "Green Hill Zone" from Sonic the Hedgehog
+
+MAPDP: Summit Showdown (TehRealSalt)
+	- Music: "Onslaught II" from Marvel vs. Capcom
+	- Music (Alt): "Boo Takes Charge" by ThinkOneMoreTime
+
+MAPDQ: Pure Rock Zone (Goldenhog)
+	- Music: "Main Title Part 2" from Alien 3 (Genesis)
+
+MAPDR: Backyard Bother (Sryder & Chromatian)
+	- Special Thanks: TehRealSalt, DrTapeworm, Boinciel, VelocitOni
+	- Music (Overworld): "The Magic House" from Final Fantasy VI
+	- Music (Boss Intro): "Sanctuary Guardian's Challenge" from Earthbound
+	- Music (Boss Start): "Oncoming Boss" from Earthbound
+	- Music (Phase 1): "Sanctuary Guardian" from Earthbound
+	- Music (Phase 2): "Enraged Ones" from 7th Dragon
+	- Music (Defeat): "A Bad Dream" from Earthbound
+	- Music (Victory): "You Defeated the Boss!" from Earthbound
+	- In Memory Of: Tyler52
+
+MAPDS: Amethyst Aqueducts Zone (Ikkarou Tatsuru)
+	- Music: "aquarium" by awesome
+	- SOC: Flasher by Glaber
+
+MAPDT: Acceleration of Soniguri (Tripel the Fox)
+	- Sprites: MotorRoach, Lat'
+	- SFX: Acceleration of Suguri
+
+MAPD0: Gateway Sanctuary Zone (TehRealSalt)
+	- Music: "Kawaii Sanctuary" by AxelMoon
+	- Music (Shop): "Serenity Shopping" by AxelMoon
+
+MAPE1: Mechanical Garden Zone (BronsoKip)
+	- Music: "Left Alone" by MasterMind
+
+MAPE2: LJ Sonic (LJ Sonic)
+	- Music: "joes#10"
+
+MAPE3: Confleggator (742mph)
+	- Music: "Act 2 Boss" from Sonic the Hedgehog 3
+	- Sprites: CoatRack
+
+MAPE4: Acidic Alpines Zone (Lach)
+	- Additional assistance: fickleheart
+
+MAPE5: Magmor Zone (Glaber)
+	- Music: "Volcano Valley Zone" from Sonic 3D Blast (Genesis)
+
+MAPE6: Egg Flambe (Glaber)
+	- Music (Pre-fight): "Unused Boss" from Sonic 3D Blast (Genesis)
+	- Music (Boss): "Boss 1" from Sonic 3D Blast (Genesis)
+	- Music (Pinch): "Boss 2" from Sonic 3D Blast (Genesis)
+
+MAPE7: Wasted Wayward Zone (PersistantRubine)
+	- Music: "Desolation Canyon" from Wild Guns
+
+MAPE8: Glacier Glaze Zone (Snu)
+	- Music: "Lorenzen's Soil" from Earthworm Jim 2 (SNES)
+
+MAPE9: Desolate Woods Zone (Manimi & Strike)
+	- Music (Part 1): "Mission Acomplished" [sic]
+	- Music (Cutscene): "Treasure Box" by Farmer
+	- Music (Part 2): "Return to Io" by GraveDigger
+
+MAPEA: Dark Stabot (Manimi)
+	- Music: "depeche maxi" by tsc
+	- Music (Pinch): "euphoriosion" by tkg
+
+MAPEB: Nova Shore Zone (DrTapeworm)
+	- Music: "dream in blue water" by 4mat
+
+MAPEC: Raspberry Desert Zone (Revan)
+	- Music: "desert dream" by laxity/kefrens
+	- Textures: Sonic Mania, cesar993, DanielMania123
+
+MAPED: Bio Satellite Zone (Chaobrother)
+	- Music: "Millennium" by Sidewinder
+
+MAPEF: Egg Lasershow (Chaobrother)
+	- Music: "kalomie" by toady
+
+MAPEG: Quandary Canyon Zone (RomioTheBadass)
+	- Music: "Stage 1-1 (Desert)" from Ranger-X
+	- Music (Secret): "Camel Jazz" from Aladdin (Genesis)
+	- Textures: Dolphman
+
+MAPEH: Ruby Castle Zone (Shiron)
+	- Music: "Funeral" by Mick Rippon
+	- Music (Secret): "Emperor At Work 8:11" by KurtZ
+	- Textures: Castlevania, Paper Mario, Kingdom Hearts, Sonic Heroes, Cho Aniki
+
+MAPEI: Sleeping Egg Zone (Nintensis)
+	- Textures: FearsomeFang
+	- Lua: Pogo Spring originally by Lat', remade by TehRealSalt
+
+MAPEJ: Dimension Disaster Zone (Lat')
+	- Music: "YO-KAI Disco" from Mamorukun Curse!
+	- Textures: Sonic 2, Sonic Mania
+	- Sprites: MotorRoach
+
+MAPEK: Doomsday Disaster Zone (Lat')
+	- Music (Phase 1): "Super Hero" from Mamorukun Curse!
+	- Music (Phase 2): "Mantra" from Mamorukun Curse!
+	- Music (Phase 3): "Ultimate Terror" from Mamorukun Curse!
+	- SFX: Pokemon, Angel Beats
+
+MAPEL: Sunken Shafts Zone (Inferno Dragon)
+	- Music: "Mineshaft Tavern" by stinkbug
+
+MAPEM: Azure Paradise Zone (LazyMK)
+	- Music: "funky trousers" by vim!
+
+MAPEN: Cosmic Valley Zone (davee0)
+	- Music: "tragical song" by FLYER/R-Age/Psycho
+	- Textures: Nev3r
+
+MAPEO: True Protagonist (Goldenhog)
+	- Music: "Last Boss" from Magical Taruruuto-Kun
+	- Sprites: Megaman 8, Prinny, Makai Kingdom
+	- SFX: Megaman 8
+
+MAPEO: Long Journey's End (multiple authors)
+	- Music: "Boundless Remorse" by Blowitch, +TEK
+	- Music (Alt): "Last Area - Puyo Puyo Tsuu (FM Cover)" by Blowitch
+	- Intermission segments: TehRealSalt
+	- Level segments contributed by:
+		- Room 1: Revan
+		- Room 2: SteelT
+		- Room 3: VAdaPEGA
+		- Room 4: ICE
+		- Room 5: Rumia1
+		- Room 6: .Jazz.
+		- Room 7: TrustyGun
+		- Room 8: RoyKirbs
+		- Room 9: Manimi
+		- Room 10: Glaber
+		- Room 11: DrTapeworm
+		- Room 12: Zipper
+		- Room 13: LJSonic
+		- Room 14: Wumbo
+		- Room 15: Q.T.D.
+		- Room 16: Badz
+		- Room 17: LazyMK
+		- Room 18: Garrean
+
+MAPEP: One Last Goodbye (Lach & TehRealSalt)
+	- Music (Level): "Celestial Serenade" by Lach
+	- Music (Boss): "Shadow Showdown" by Lach
+	- Inspiration: toaster
+
+MAPE0: Gateway Dimension Zone (TehRealSalt)
+	- Music: "Kimoi Dimension" by AxelMoon
+	- Music (Shop): "Whatcha Buying" by AxelMoon
+	- Skybox: sphere
+
+Additional Credits:
+	- FreeDoom textures: FreeDoom team", nil, V_YELLOWMAP|V_ALLOWLOWERCASE},
+		- Ported to SRB2 by ShadowHog
+		- FreeDoom's full credits & license are included in CREDITS.freedoom & COPYING.freedoom
+	- Combine Ring: Lach
+	- Axis2D: altalune, fickleheart
+	Finale Extra Reel segments (in order):
+		- HyperFlare957
+		- Chicmunk
+		- Chaobrother
+		- Nintensis
+		- BronsoKip
+	- Cutscenes: Boinciel & TehRealSalt
+		- SUGOI, Reveal: "Hellraiser ~The Mastermind Behind The Scheme~" from Megadimension Neptunia Victory II
+		- SUBARASHII, Intro Happy: "Misato's Theme - Neon Genesis Evangelion (XM)" by Veritas
+		- SUBARASHII, Intro Dark: "Attack On Dogma - Neon Genesis Evangelion (IT)" by Veritas
+		- SUBARASHII, Eggman: "Egg Switch" from Sonic's Gameworld
+		- SUBARASHII, Victory: "You Win" from Sonic's Gameworld
+		- SUBARASHII, Secret Intro: "Game Over" from Ristar
+		- SUBARASHII, Contemplation: "s0ftdrink 0verdose" by Okeanos
+		- SUBARASHII, Death: "Dream Over" from Sonic Shuffle
+		- KIMOKAWAIII, Masked Eggman: "The Hallow Palace" by Blowitch
+		- KIMOKAWAIII, Egg Gundam Intro: "Boss Introduction" from Marvel vs Capcom
+		- KIMOKAWAIII, Side A Ending: "Ending B" from Puyo Puyo Tsuu
+		- KIMOKAWAIII, Black Hole: "Big Boss Confrontation 2" from Super Metroid
+		- KIMOKAWAIII, Side B Intro: "The Other Dimension" by AxelMoon
+	- Additional Music:
+		- Title Screen (Scary): "Dracula Battle" from Super Castlevania IV
+		- Title Screen: "KIMOKAWAIII" by AxelMoon
+		- Record Attack: "Warming Up" by AxelMoon
+		- Character Select: "Starting Out" by AxelMoon
+		- Invincibility: "Sparkle Power" by AxelMoon
+		- Super Sneakers: "Faster, Faster!" by AxelMoon
+		- Super Form: "Feeling Like A Superstar" by AxelMoon
+		- Level Clear: "Sugoi Victory" by AxelMoon
+		- Drowning: "You're Drowning!" by AxelMoon
+		- Game Over: "You've Let Us Down" by AxelMoon
+		- Continue: "Continue? Try Again?" by AxelMoon
+		- Credits: "Fillin' The Room With Cuteness" by AxelMoon
+	- Special Thanks:
+		- MonsterIestyn
+		- Sryder
+		- Lach
+		- Jeck Jims
+		- Larz T.
+		- AxelMoon

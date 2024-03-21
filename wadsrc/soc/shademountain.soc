@@ -1,0 +1,334 @@
+#------------------------------Mines------------------------------#
+FREESLOT
+SPR_TMIN
+MT_TDMINE
+S_REDMINE
+S_MINEEXPLODE
+S_MINEDELAY
+S_MINEEXIST
+S_MINEFLASH
+S_MINEFLASH2
+S_MINEFLASH3
+S_MINEEXPLODE1
+S_MINEEXPLODE2
+S_MINEEXPLODE3
+S_MINEEXPLODE4
+MT_FATMINE
+S_BLACKMINE
+S_FATMINE
+MT_BLUEMINE
+S_BLUEMINE
+MT_PURPLEMINE
+S_PURPLEMINE
+
+#--------------------Basic mine--------------------#
+Thing MT_TDMINE
+#$Name Shade Mountain Mine
+#$Sprite TMINA0
+#$Category SUGOI Items & Hazards
+Mapthingnum = 2164
+Spawnstate = S_REDMINE
+SpawnHealth = 1
+ReactionTime = 8
+Damage = 192*FRACUNIT
+DeathState = S_MINEEXPLODE
+ActiveSound = sfx_brakrx
+Height = 64*FRACUNIT
+Radius = 32*FRACUNIT
+Speed = 0
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_RUNSPAWNFUNC
+
+State S_REDMINE
+Spritenumber = SPR_TMIN
+Duration = 1
+Next = S_MINEDELAY
+Action A_ChangeColorAbsolute
+Var1 = 0
+Var2 = SKINCOLOR_RED
+
+State S_MINEDELAY
+Spritenumber = SPR_TMIN
+Duration = 1
+Next = S_MINEEXIST
+Action A_SetRandomTics
+Var1 = 1
+Var2 = 5
+
+State S_MINEEXIST
+Spritenumber = SPR_TMIN
+Spritesubnumber = 0
+Duration = 70
+Next = S_MINEFLASH
+Action None
+
+State S_MINEFLASH
+Spritenumber = SPR_TMIN
+Spritesubnumber = 3|FF_FULLBRIGHT
+Duration = 2
+Next = S_MINEFLASH2
+Action None
+
+State S_MINEFLASH2
+Spritenumber = SPR_TMIN
+Spritesubnumber = 2|FF_FULLBRIGHT
+Duration = 2
+Next = S_MINEFLASH3
+Action None
+
+State S_MINEFLASH3
+Spritenumber = SPR_TMIN
+Spritesubnumber = 1|FF_FULLBRIGHT
+Duration = 2
+Next = S_MINEEXIST
+Action None
+
+State S_MINEEXPLODE
+SpriteNumber = SPR_NULL
+Duration = 1
+Next = S_MINEEXPLODE1
+Action A_PlaySound
+Var1 = sfx_brakrx
+Var2 = 1
+
+State S_MINEEXPLODE1
+Duration = 0
+Next = S_MINEEXPLODE2
+Action A_Explode
+
+State S_MINEEXPLODE2
+Spritenumber = SPR_NULL
+Duration = 0
+Next = S_MINEEXPLODE3
+Action A_BossScream
+Var1 = 0
+Var2 = MT_SONIC3KBOSSEXPLODE
+
+State S_MINEEXPLODE3
+Duration = 0
+Next = S_MINEEXPLODE4
+Action A_Repeat
+Var1 = 20
+Var2 = S_MINEEXPLODE2
+
+State S_MINEEXPLODE4
+Spritenumber = SPR_NULL
+Duration = 35
+Next = S_NULL
+Action none
+
+#--------------------Big mine--------------------#
+Thing MT_FATMINE
+#$Name Shade Mountain Fat Mine
+#$Sprite TMINA0
+#$Category SUGOI Items & Hazards
+Mapthingnum = 2165
+Spawnstate = S_BLACKMINE
+SpawnHealth = 1
+ReactionTime = 8
+Damage = 192*FRACUNIT
+DeathState = S_MINEEXPLODE
+ActiveSound = sfx_brakrx
+Height = 64*FRACUNIT
+Radius = 32*FRACUNIT
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_RUNSPAWNFUNC
+
+State S_BLACKMINE
+Spritenumber = SPR_TMIN
+Duration = 1
+Next = S_FATMINE
+Action A_ChangeColorAbsolute
+Var1 = 0
+Var2 = SKINCOLOR_BLACK
+
+State S_FATMINE
+Duration = 0
+Next = S_MINEDELAY
+Action A_SetScale
+Var1 = 2*FRACUNIT
+Var2 = 1
+
+#Hey! I don't need complicated antics to make rotating mines anymore!
+#--------------------Blue mine--------------------#
+Thing MT_BLUEMINE
+#$Name Shade Mountain Blue Mine
+#$Sprite TMINA0
+#$Category SUGOI Items & Hazards
+Mapthingnum = 2166
+Spawnstate = S_BLUEMINE
+SpawnHealth = 1
+ReactionTime = 8
+Damage = 128*FRACUNIT
+DeathState = S_MINEEXPLODE
+ActiveSound = sfx_brakrx
+Height = 64*FRACUNIT
+Radius = 32*FRACUNIT
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_RUNSPAWNFUNC
+
+State S_BLUEMINE
+Spritenumber = SPR_TMIN
+Duration = 1
+Next = S_MINEDELAY
+Action A_ChangeColorAbsolute
+Var1 = 0
+Var2 = SKINCOLOR_BLUE
+
+#--------------------Purple mine--------------------#
+Thing MT_PURPLEMINE
+#$Name Shade Mountain Purple Mine
+#$Sprite TMINA0
+#$Category SUGOI Items & Hazards
+Mapthingnum = 2167
+Spawnstate = S_PURPLEMINE
+SpawnHealth = 1
+ReactionTime = 8
+Damage = 128*FRACUNIT
+DeathState = S_MINEEXPLODE
+ActiveSound = sfx_brakrx
+Height = 64*FRACUNIT
+Radius = 32*FRACUNIT
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_RUNSPAWNFUNC
+
+State S_PURPLEMINE
+Spritenumber = SPR_TMIN
+Duration = 1
+Next = S_MINEDELAY
+Action A_ChangeColorAbsolute
+Var1 = 0
+Var2 = SKINCOLOR_PURPLE
+
+#------------------------------Ring things------------------------------#
+FREESLOT
+MT_SMZRING
+MT_SMZSPARK
+S_SMZRING
+S_SMZRINGGIVE1
+S_SMZRINGGIVE2
+S_SMZSPARK
+MT_GLOBALRING
+S_GLOBALRINGCOLLECT
+
+Object MT_SMZRING
+#$Name Shade Mountain Hoop
+#$Sprite SPRKS0
+#$Category SUGOI Powerups
+Mapthingnum = 2163
+SpawnState = S_SMZRING
+DeathState = S_SMZRINGGIVE1
+SeeSound = sfx_itemup
+ReactionTime = 1
+SpawnHealth = 1
+Speed = 0
+Radius = 96*FRACUNIT
+Height = 192*FRACUNIT
+Flags = MF_NOGRAVITY|MF_SPECIAL
+
+State S_SMZRING
+Duration = 2
+Next = S_SMZRING
+Action A_SMZRingFX
+Var1 = MT_SMZSPARK
+Var2 = 96
+
+State S_SMZRINGGIVE1
+Spritenumber = SPR_NULL
+Duration = 2
+Next = S_SMZRINGGIVE2
+Action A_GlobalRingBox
+
+State S_SMZRINGGIVE2
+Duration = 0
+Next = S_NULL
+Action A_Repeat
+Var1 = 3
+Var2 = S_SMZRINGGIVE1
+
+Object MT_SMZSPARK
+SpawnState = S_SMZSPARK
+SpawnHealth = 1000
+Speed = 8
+Height = 32*FRACUNIT
+Radius = 32*FRACUNIT
+Mass = 16
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOGRAVITY|MF_SCENERY
+
+State S_SMZSPARK
+Spritename = SPR_SPRK
+Spriteframe = A|FF_ANIMATE|FF_FULLBRIGHT
+Duration = 4
+Action none
+Next = S_SPRK1
+Var1 = 3
+var2 = 1
+
+Object MT_GLOBALRING
+#$Name Shade Mountain Global Ring
+#$Sprite RINGA0
+#$Category SUGOI Powerups
+MapThingNum = 2170
+SpawnState = S_RING
+SpawnHealth = 1000
+ReactionTime = 1
+SeeSound = sfx_itemup
+Speed = 38*FRACUNIT
+Radius = 16*FRACUNIT
+Height = 24*FRACUNIT
+Mass = 100
+DeathState = S_GLOBALRINGCOLLECT
+Flags = MF_SLIDEME|MF_SPECIAL|MF_NOGRAVITY|MF_NOCLIPHEIGHT
+
+State S_GLOBALRINGCOLLECT
+Spritenumber = SPR_NULL
+Duration = 0
+Next = S_SPRK1
+Action A_GlobalRingBox
+
+#------------------------------Glider------------------------------#
+FREESLOT
+MT_SMZGLIDER
+S_GLIDERWAIT
+S_GLIDERMOVE
+
+Object MT_SMZGLIDER
+#$Name Shade Mountain Glider
+#$Sprite VLTRA2A8
+#$Category SUGOI Powerups
+Mapthingnum = 2162
+SpawnState = S_GLIDERWAIT
+SeeState = S_GLIDERMOVE
+DeathState = S_MINEEXPLODE2
+DeathSound = sfx_cybdth
+SpawnHealth = 800
+Speed = 18*FRACUNIT
+Radius = 16*FRACUNIT
+Height = 12*FRACUNIT
+Flags = MF_NOGRAVITY|MF_SPECIAL
+
+State S_GLIDERWAIT
+Spritenumber = SPR_VLTR
+SpriteSubNumber = 4
+Duration = 1
+Next = S_GLIDERWAIT
+Action None
+
+State S_GLIDERMOVE
+SpriteNumber = SPR_VLTR
+SpriteSubNumber = 0
+Duration = 1
+Next = S_GLIDERMOVE
+Action None
+
+#------------------------------Level-ending emerald------------------------------#
+Object MT_SMZEMERALD
+#$Name Shade Mountain Emerald
+#$Sprite CEMGE0
+#$Category SUGOI Powerups
+Mapthingnum = 2168
+SpawnState = S_CEMG5
+SpawnHealth = 1000
+DeathState = S_SPRK1
+ReactionTime = 1
+Radius = 32*FRACUNIT
+Height = 64*FRACUNIT
+Mass = 100
+Flags = MF_SPECIAL|MF_NOGRAVITY
+

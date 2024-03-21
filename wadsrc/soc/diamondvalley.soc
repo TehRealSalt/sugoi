@@ -1,0 +1,75 @@
+#----------Pointy----------
+FREESLOT
+MT_DPOINTY
+MT_DPOINTY_SPIKE
+S_DPOINTY_INIT
+S_DPOINTY_LOOK
+S_DPOINTY_CHASE
+S_DPOINTY_SPIKE_ORBIT
+S_DPOINTY_SPIKE_BREAK
+
+Thing MT_DPOINTY
+Mapthingnum = 2160
+Spawnstate = S_DPOINTY_INIT
+SpawnHealth = 1
+SeeState = S_DPOINTY_CHASE
+ReactionTime = 8
+Damage = 192*FRACUNIT
+DeathState = S_XPLD_FLICKY
+DeathSound = sfx_pop
+Height = 8*FRACUNIT
+Radius = 4*FRACUNIT
+Speed = 0
+Flags = MF_SLIDEME|MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_RUNSPAWNFUNC
+
+Thing MT_DPOINTY_SPIKE
+SpawnState = S_DPOINTY_SPIKE_ORBIT
+Speed = 5*FRACUNIT
+SpawnHealth = 1000
+Height = 8*FRACUNIT
+Radius = 4*FRACUNIT
+Damage = 1
+Flags = MF_PAIN|MF_NOGRAVITY
+
+State S_DPOINTY_INIT
+Spritenumber = SPR_PNTY
+SpriteSubNumber = A
+Duration = 1
+Action A_DPointyInit
+Next = S_DPOINTY_LOOK
+
+State S_DPOINTY_LOOK
+Spritenumber = SPR_PNTY
+SpriteSubNumber = A
+Duration = 10
+Next = S_DPOINTY_LOOK
+Action A_Look
+Var1 = 1
+Var2 = 1
+
+State S_DPOINTY_CHASE
+Spritenumber = SPR_PNTY
+SpriteSubNumber = A
+Duration = 1
+Next = S_DPOINTY_CHASE
+Action A_DPointyChase
+Var1 = 0
+Var2 = 0
+
+State S_DPOINTY_SPIKE_ORBIT
+Spritenumber = SPR_PNTY
+SpriteSubNumber = B
+Duration = 1
+Next = S_DPOINTY_SPIKE_ORBIT
+Action A_DPointyBall
+Var1 = 0
+Var2 = 0
+
+State S_DPOINTY_SPIKE_BREAK
+Spritenumber = SPR_PNTY
+SpriteSubNumber = B
+Duration = 1
+Next = S_DPOINTY_SPIKE_BREAK
+Action None
+Var1 = 0
+Var2 = 0

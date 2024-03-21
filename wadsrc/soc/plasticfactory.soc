@@ -1,0 +1,115 @@
+Freeslot
+MT_STOCKING
+S_STOCKING
+MT_TOYBEAR
+S_TOYBEAR
+MT_TOYSOLDIER
+S_TOYSOLDIER
+MT_BLUEPRESENT
+S_BLUEPRESENT
+MT_SMALLPRESENT
+S_SMALLPRESENT
+SPR_STCK
+SPR_BEAR
+SPR_BRCK
+SPR_MEDI
+SPR_SOLD
+SPR_STIM
+
+State S_STOCKING
+SpriteName = STCK
+SpriteFrame = A
+Duration = -1
+Next = S_STOCKING
+Action = None
+Var1 = 0
+Var2 = 0
+
+Object MT_STOCKING
+#$Name Stocking
+#$Sprite STCKA0
+#$Category SUGOI Decoration
+MapThingNum =  2060
+SpawnState = S_STOCKING
+Speed = 25*FRACUNIT
+Radius = 16*FRACUNIT
+Height = 80*FRACUNIT
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOGRAVITY|MF_SCENERY
+
+State S_TOYBEAR
+SpriteName = BEAR
+SpriteFrame = A
+Duration = -1
+Next = S_TOYBEAR
+Action = None
+Var1 = 0
+Var2 = 0
+
+Object MT_TOYBEAR
+#$Name Toy Bear
+#$Sprite BEARA0
+#$Category SUGOI Decoration
+MapThingNum =  2061
+SpawnState = S_TOYBEAR
+Radius = 8*FRACUNIT
+Height = 120*FRACUNIT
+Flags = MF_SOLID
+
+State S_BLUEPRESENT
+SpriteName = MEDI
+SpriteFrame = A
+Duration = -1
+Next = S_BLUEPRESENT
+Action = None
+Var1 = 0
+Var2 = 0
+
+Object MT_BLUEPRESENT
+#$Name Blue Present
+#$Sprite MEDIA0
+#$Category SUGOI Decoration
+MapThingNum =  2062
+SpawnState = S_BLUEPRESENT
+Speed = 25*FRACUNIT
+Radius = 16*FRACUNIT
+Height = 18*FRACUNIT
+Flags = MF_SOLID|MF_NOGRAVITY|MF_SCENERY
+
+State S_SMALLPRESENT
+SpriteName = STIM
+SpriteFrame = A
+Duration = -1
+Next = S_SMALLPRESENT
+Action = None
+Var1 = 0
+Var2 = 0
+
+Object MT_SMALLPRESENT
+#$Name Small Green Present
+#$Sprite STIMA0
+#$Category SUGOI Decoration
+MapThingNum =  2063
+SpawnState = S_SMALLPRESENT
+Speed = 25*FRACUNIT
+Radius = 16*FRACUNIT
+Height = 18*FRACUNIT
+Flags = MF_SOLID|MF_NOGRAVITY|MF_SCENERY
+
+State S_TOYSOLDIER
+SpriteName = SOLD
+SpriteFrame = A
+Duration = -1
+Next = S_TOYSOLDIER
+Action = None
+Var1 = 0
+Var2 = 0
+
+Object MT_TOYSOLDIER
+#$Name Toy Soldier
+#$Sprite SOLDA0
+#$Category SUGOI Decoration
+MapThingNum =  2064
+SpawnState = S_TOYSOLDIER
+Radius = 8*FRACUNIT
+Height = 120*FRACUNIT
+Flags = MF_SOLID

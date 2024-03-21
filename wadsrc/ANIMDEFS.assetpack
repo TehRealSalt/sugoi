@@ -1,0 +1,13 @@
+Flat	Optional	DEZZAPF2 	Range	DEZZAPWF 	Tics 2
+Flat	Optional	DEZBLKF1 	Range	DEZBLKF8 	Tics 4
+
+Texture	Optional	BUZZSAW1  	Range	BUZZSAW2  	Tics 2
+Texture	Optional	DEZGRAT1  	Range	DEZGRAT4  	Tics 4
+Texture	Optional	DEZZAPW1  	Range	DEZZAPW2  	Tics 2
+Texture	Optional	DEZBLOK1  	Range	DEZBLOK8  	Tics 4
+Texture	Optional	STLBLUE1  	Range	STLBLUE6  	Tics 4
+Texture	Optional	STLLITE1  	Range	STLLITE6  	Tics 4
+Texture	Optional	STLREDL1  	Range	STLREDL6  	Tics 4
+Texture	Optional	STLREDU1  	Range	STLREDU6  	Tics 4
+Texture	Optional	STLBLUE1  	Range	STLBLUE6  	Tics 4
+Texture	Optional	STLYELW1  	Range	STLYELW6  	Tics 4

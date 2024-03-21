@@ -1,0 +1,1111 @@
+#HTZ Tree
+FREESLOT
+MT_PINE
+S_HTZTREE
+SPR_HTTR
+
+FRAME S_HTZTREE
+SPRITENUMBER = SPR_HTTR
+SPRITESUBNUMBER = 0
+DURATION = -1
+NEXT = 0
+ACTION None
+VAR1 = 0
+VAR2 = 0
+
+Thing MT_PINE
+#$Name Skytop Pinetree
+#$Sprite HTTRA0
+#$Category SUGOI Decoration
+MAPTHINGNUM = 2020
+SPAWNSTATE = S_HTZTREE
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = 0
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 0
+RADIUS = 1048576
+HEIGHT = 2621440
+MASS = 100
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NOCLIP|MF_SCENERY
+
+#HTZ Tree2
+FREESLOT
+MT_PINESOL
+S_HTZTREE2
+SPR_HTT2
+
+FRAME S_HTZTREE2
+SPRITENUMBER = SPR_HTT2
+SPRITESUBNUMBER = 0
+DURATION = -1
+NEXT = 0
+ACTION None
+VAR1 = 0
+VAR2 = 0
+
+Thing MT_PINESOL
+#$Name Skytop Pinetree (Large)
+#$Sprite HTT2A0
+#$Category SUGOI Decoration
+MAPTHINGNUM = 2021
+SPAWNSTATE = S_HTZTREE2
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = 0
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 0
+RADIUS = 1048576
+HEIGHT = 2621440
+MASS = 100
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NOCLIP|MF_SCENERY
+
+#Daimond flower
+FREESLOT
+MT_DAIMOND
+S_DAIMOND
+SPR_DMFL
+
+FRAME S_DAIMOND
+SPRITENUMBER = SPR_DMFL
+SPRITESUBNUMBER = 0
+DURATION = -1
+NEXT = 0
+ACTION None
+VAR1 = 0
+VAR2 = 0
+
+Thing MT_DAIMOND
+#$Name Skytop Diamond Flower
+#$Sprite DMFLA0
+#$Category SUGOI Decoration
+MAPTHINGNUM = 2023
+SPAWNSTATE = S_DAIMOND
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = 0
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 0
+RADIUS = 1048576
+HEIGHT = 2621440
+MASS = 100
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NOCLIP|MF_SCENERY
+
+#Heart flower
+FREESLOT
+MT_HEART
+S_HEART
+SPR_HERT
+
+FRAME S_HEART
+SPRITENUMBER = SPR_HERT
+SPRITESUBNUMBER = 0
+DURATION = -1
+NEXT = 0
+ACTION None
+VAR1 = 0
+VAR2 = 0
+
+Thing MT_HEART
+#$Name Skytop Heart Flower
+#$Sprite HERTA0
+#$Category SUGOI Decoration
+MAPTHINGNUM = 2024
+SPAWNSTATE = S_HEART
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = 0
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 0
+RADIUS = 1048576
+HEIGHT = 2621440
+MASS = 100
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NOCLIP|MF_SCENERY
+
+#the return of the Drilla
+FREESLOT
+MT_Drilla
+S_DRIL_STAND
+S_DRIL_STAND2
+S_DRIL_RUN
+S_DRIL_RUN2
+S_DRIL_RUN3
+S_DRIL_RUN4
+SPR_DRIL
+
+Thing MT_Drilla
+#$Name Drilla
+#$Sprite DRILA2A8
+#$Category SUGOI Enemies
+MAPTHINGNUM = 4028
+SPAWNSTATE = S_DRIL_STAND
+SPAWNHEALTH = 1
+SEESTATE = S_DRIL_RUN
+SEESOUND = 0
+REACTIONTIME = 3
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 5
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = S_XPLD_FLICKY
+DEATHSOUND = sfx_pop
+XDEATHSTATE = 160
+SPEED = 3
+RADIUS = 1048576
+HEIGHT = 1572864
+MASS = 100
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY
+
+FRAME S_DRIL_STAND
+SPRITENUMBER = DRIL
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_DRIL_STAND2
+ACTION A_Look
+VAR1 = 0
+VAR2 = 0
+
+FRAME S_DRIL_STAND2
+SPRITENUMBER = DRIL
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_DRIL_STAND
+ACTION A_Look
+VAR1 = 0
+VAR2 = 0
+
+FRAME S_DRIL_RUN
+SPRITENUMBER = DRIL
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_DRIL_RUN2
+ACTION A_Chase
+VAR1 = 0
+VAR2 = 0
+
+FRAME S_DRIL_RUN2
+SPRITENUMBER = DRIL
+SPRITESUBNUMBER = 1
+DURATION = 2
+NEXT = S_DRIL_RUN3
+ACTION A_Chase
+VAR1 = 0
+VAR2 = 0
+
+FRAME S_DRIL_RUN3
+SPRITENUMBER = DRIL
+SPRITESUBNUMBER = 2
+DURATION = 2
+NEXT = S_DRIL_RUN4
+ACTION A_Chase
+VAR1 = 0
+VAR2 = 0
+
+FRAME S_DRIL_RUN4
+SPRITENUMBER = DRIL
+SPRITESUBNUMBER = 3
+DURATION = 2
+NEXT = S_DRIL_RUN
+ACTION A_Chase
+VAR1 = 0
+VAR2 = 0
+
+#The Silver Ring box
+FREESLOT
+MT_HYPERRINGBOX
+MT_HYPERRINGICON
+S_HYPERRINGBOX
+S_HYPERRINGBOX1
+S_HYPERRINGBOX2
+S_HYPERRINGBOX3
+SPR_SILR
+S_HYPERRINGICON
+S_HYPERRINGICON2
+
+FRAME S_HYPERRINGBOX
+SPRITENUMBER = SPR_SILR
+SPRITESUBNUMBER = 0
+DURATION = 2
+NEXT = S_HYPERRINGBOX1
+ACTION None
+VAR1 = 0
+VAR2 = 0
+
+FRAME S_HYPERRINGBOX1
+SPRITENUMBER = SPR_MSTV
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_HYPERRINGBOX
+ACTION None
+VAR1 = 0
+VAR2 = 0
+
+FRAME S_HYPERRINGBOX2
+SPRITENUMBER = SPR_SILR
+SPRITESUBNUMBER = 1
+DURATION = 18
+NEXT = S_HYPERRINGBOX3
+ACTION A_MonitorPop
+VAR1 = 0
+VAR2 = 0
+
+FRAME S_HYPERRINGBOX3
+SPRITENUMBER = SPR_SILR
+SPRITESUBNUMBER = 1
+DURATION = 18
+NEXT = S_NULL
+ACTION A_RingBox
+VAR1 = 0
+VAR2 = 0
+
+Thing MT_HYPERRINGBOX
+#$Name Hyper Ring (25 Rings)
+#$Sprite SILRA0
+#$Category SUGOI Powerups
+MAPTHINGNUM = 4032
+SPAWNSTATE = S_HYPERRINGBOX
+SPAWNHEALTH = 1
+SEESTATE = S_NULL
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = S_HYPERRINGBOX
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = S_NULL
+MISSILESTATE = S_NULL
+DEATHSTATE = S_BOX_POP1
+DEATHSOUND = sfx_pop
+XDEATHSTATE = 0
+SPEED = 1
+RADIUS = 18*FRACUNIT
+HEIGHT = 40*FRACUNIT
+MASS = 100
+DAMAGE = MT_HYPERRINGICON
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_SOLID|MF_SHOOTABLE|MF_MONITOR
+
+FRAME S_HYPERRINGICON
+SPRITENUMBER = SPR_TVRI
+SPRITESUBNUMBER = FF_ANIMATE|2
+DURATION = 18
+ACTION None
+VAR1 = 3
+VAR2 = 4
+NEXT = S_HYPERRINGICON2
+
+FRAME S_HYPERRINGICON2
+SPRITENUMBER = SPR_SILR
+SPRITESUBNUMBER = 1
+DURATION = 18
+ACTION A_RingBox
+VAR1 = 0
+VAR2 = 0
+NEXT = S_NULL
+
+Thing MT_HYPERRINGICON
+MAPTHINGNUM = -1
+SPAWNSTATE = S_HYPERRINGICON
+SPAWNHEALTH = 1
+SEESTATE = 0
+SEESOUND = sfx_itemup
+REACTIONTIME = 25
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = S_NULL
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 2*FRACUNIT
+RADIUS = 8*FRACUNIT
+HEIGHT = 14*FRACUNIT
+MASS = 100
+DAMAGE = 62*FRACUNIT
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_NOCLIP|MF_BOXICON|MF_SCENERY
+
+#Speed Booster
+FREESLOT
+MT_BBOOSTER
+S_BBOOST
+S_BBOOST2
+S_BBOOST3
+S_BBOOST4
+SPR_BBST
+
+Object MT_BBOOSTER
+#$Name Minor Speed Booster
+#$Sprite BBSTA1
+#$Category SUGOI Items & Hazards
+MapThingNum = 2045
+SpawnState = S_BBOOST
+SpawnHealth = 1
+SeeState = S_BBOOST3
+SeeSound = sfx_None
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = S_NULL
+PainSound = sfx_spring
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+DeathSound = sfx_None
+XDeathState = S_NULL
+Speed = 0
+Radius = 16*FRACUNIT
+Height = 20*FRACUNIT
+Mass = 0
+Damage = 50*FRACUNIT
+ActiveSound = sfx_None
+RaiseState = S_BBOOST3
+Flags = MF_SOLID|MF_SPRING
+
+State S_BBOOST
+SpriteName = SPR_BBST
+SpriteFrame = 0
+Duration = 2
+Next = S_BBOOST2
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_BBOOST2
+SpriteName = SPR_BBST
+SpriteFrame = 1
+Duration = 2
+Next = S_BBOOST
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_BBOOST3
+SpriteName = SPR_BBST
+SpriteFrame = 0
+Duration = 2
+Next = S_BBOOST
+Action A_Pain
+Var1 = 0
+Var2 = 0
+
+State S_BBOOST4
+SpriteName = SPR_BBST
+SpriteFrame = 1
+Duration = 2
+Next = S_BBOOST
+Action None
+Var1 = 0
+Var2 = 0
+
+#MEGA Speed Booster
+FREESLOT
+MT_SPEEDBOOSTER
+S_BOOST
+S_BOOST2
+S_BOOST3
+S_BOOST4
+SPR_YBST
+
+Object MT_SPEEDBOOSTER
+#$Name Mega Speed Booster
+#$Sprite YBSTA1
+#$Category SUGOI Items & Hazards
+MapThingNum = 2046
+SpawnState = S_BOOST
+SpawnHealth = 1
+SeeState = S_BOOST3
+SeeSound = sfx_None
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = S_NULL
+PainSound = sfx_spring
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+DeathSound = sfx_None
+XDeathState = S_NULL
+Speed = 0
+Radius = 16*FRACUNIT
+Height = 20*FRACUNIT
+Mass = 0
+Damage = 150*FRACUNIT
+ActiveSound = sfx_None
+RaiseState = S_BOOST3
+Flags = MF_SOLID|MF_SPRING
+
+State S_BOOST
+SpriteName = SPR_YBST
+SpriteFrame = 0
+Duration = 2
+Next = S_BOOST2
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_BOOST2
+SpriteName = SPR_YBST
+SpriteFrame = 1
+Duration = 2
+Next = S_BOOST
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_BOOST3
+SpriteName = SPR_YBST
+SpriteFrame = 0
+Duration = 2
+Next = S_BOOST
+Action A_Pain
+Var1 = 0
+Var2 = 0
+
+State S_BOOST4
+SpriteName = SPR_YBST
+SpriteFrame = 1
+Duration = 2
+Next = S_BOOST
+Action None
+Var1 = 0
+Var2 = 0
+
+#ULTRA Speed Booster
+FREESLOT
+MT_USPEEDBOOSTER
+S_UBOOST
+S_UBOOST2
+S_UBOOST3
+S_UBOOST4
+SPR_RBST
+
+Object MT_USPEEDBOOSTER
+#$Name ULTRA Speed Booster
+#$Sprite RBSTA3A7
+#$Category SUGOI Items & Hazards
+MapThingNum = 2052
+SpawnState = S_UBOOST
+SpawnHealth = 1
+SeeState = S_UBOOST3
+SeeSound = sfx_None
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = S_NULL
+PainSound = sfx_spring
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+DeathSound = sfx_None
+XDeathState = S_NULL
+Speed = 0
+Radius = 16*FRACUNIT
+Height = 20*FRACUNIT
+Mass = 0
+Damage = 250*FRACUNIT
+ActiveSound = sfx_None
+RaiseState = S_UBOOST3
+Flags = MF_SOLID|MF_SPRING
+
+State S_UBOOST
+SpriteName = SPR_RBST
+SpriteFrame = 0
+Duration = 2
+Next = S_UBOOST2
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_UBOOST2
+SpriteName = SPR_RBST
+SpriteFrame = 1
+Duration = 2
+Next = S_UBOOST
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_UBOOST3
+SpriteName = SPR_RBST
+SpriteFrame = 0
+Duration = 2
+Next = S_UBOOST
+Action A_Pain
+Var1 = 0
+Var2 = 0
+
+State S_UBOOST4
+SpriteName = SPR_RBST
+SpriteFrame = 1
+Duration = 2
+Next = S_UBOOST
+Action = None
+Var1 = 0
+Var2 = 0
+
+
+#Ice Cap Tree
+FREESLOT
+MT_ICETREE
+S_ICETREE
+SPR_ICZT
+
+FRAME S_ICETREE
+SPRITENUMBER = SPR_ICZT
+SPRITESUBNUMBER = 0
+DURATION = -1
+NEXT = S_ICETREE
+ACTION None
+VAR1 = 0
+VAR2 = 0
+
+Thing MT_ICETREE
+#$Name Sapphire Frost Tree
+#$Sprite ICZTA0
+#$Category SUGOI Decoration
+MAPTHINGNUM = 2047
+SPAWNSTATE = S_ICETREE
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = 0
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 0
+RADIUS = 1048576
+HEIGHT = 2621440
+MASS = 100
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NOCLIP|MF_SCENERY
+
+#Wind sound
+FREESLOT
+MT_Wind
+sfx_WIND
+
+Object MT_Wind
+#$Name Wind Ambience (Unused?)
+#$Category SUGOI Decoration
+MAPTHINGNUM = 4043
+SPAWNSTATE = 0
+SPAWNHEALTH = 115
+SEESTATE = 0
+SEESOUND = sfx_WIND
+REACTIONTIME = 0
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = 0
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 0
+RADIUS = 1048576
+HEIGHT = 1048576
+MASS = 1000
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = 1560
+
+SOUND sfx_WIND
+PRIORITY = 0
+SINGULAR = 0
+FLAGS = SF_X4AWAYSOUND|SF_X8AWAYSOUND
+Caption = Wind
+      #
+
+#FLASHER
+FREESLOT
+MT_FLASHER
+MT_ORB
+SPR_FLSH
+SPR_LORB
+S_ORB1
+S_ORB2
+S_ORB3
+S_ORB4
+S_FLASH1
+S_FLASH2
+S_FLASHINPLACE1
+S_FLASHINPLACE2
+S_FLASHMOVE1
+S_FLASHMOVE2
+S_FLASHMOVE3
+S_FLASHMOVE4
+S_FLASHATTACK1
+S_FLASHATTACK2
+S_FLASHATTACK3
+S_FLASHATTACK4
+S_FLASHATTACK5
+S_FLASHATTACK6
+S_FLASHATTACK7
+S_FLASHATTACK8
+S_FLASHATTACK9
+S_FLASHATTACK10
+S_FLASHATTACK11
+S_FLASHATTACK12
+S_FLASHATTACK13
+S_FLASHATTACK14
+S_FLASHATTACK15
+S_FLASHATTACK16
+S_FLASHATTACK17
+S_FLASHATTACK18
+S_FLASHATTACK19
+S_FLASHATTACK20
+S_FLASHATTACK21
+S_FLASHATTACK22
+
+Object MT_FLASHER
+#$Name Flasher
+#$Sprite FLSHA1
+#$Category SUGOI Enemies
+MapThingNum = 2048
+SpawnState = S_FLASHINPLACE1
+SpawnHealth = 1
+SeeState = S_FLASHMOVE1
+SeeSound = sfx_None
+ReactionTime = 2
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = S_NULL
+PainSound = sfx_None
+MeleeState = S_FLASHATTACK1
+MissileState = S_FLASHATTACK1
+DeathState = S_XPLD_FLICKY
+DeathSound = sfx_pop
+XDeathState = S_NULL
+Speed = 4*FRACUNIT
+Radius = 20*FRACUNIT
+Height = 24*FRACUNIT
+Mass = 100
+Damage = 0
+ActiveSound = sfx_None
+RaiseState = S_NULL
+Flags = MF_SLIDEME|MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY
+
+State S_FLASHINPLACE1
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 2
+Next = S_FLASHINPLACE2
+Action = A_Look
+Var1 = 0
+Var2 = 0
+
+State S_FLASHINPLACE2
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 2
+Next = S_FLASHINPLACE1
+Action = A_Look
+Var1 = 0
+Var2 = 0
+
+State S_FLASHMOVE1
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 16
+Next = S_FLASHMOVE2
+Action = A_BuzzFly
+Var1 = 0
+Var2 = 0
+
+State S_FLASHMOVE2
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 16
+Next = S_FLASHMOVE3
+Action = A_BuzzFly
+Var1 = 0
+Var2 = 0
+
+State S_FLASHMOVE3
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 16
+Next = S_FLASHMOVE4
+Action = A_BuzzFly
+Var1 = 0
+Var2 = 0
+
+State S_FLASHMOVE4
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 16
+Next = S_FLASHATTACK1
+Action = A_BuzzFly
+Var1 = 0
+Var2 = 0
+
+State S_FLASHATTACK1
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 1
+Next = S_FLASHATTACK2
+Action = A_SpawnObjectRelative
+Var1 = 0
+Var2 = 0+MT_ORB
+
+State S_FLASHATTACK2
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 2
+Next = S_FLASHATTACK3
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+
+State S_FLASHATTACK3
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 1
+Next = S_FLASHATTACK4
+Action = A_SpawnObjectRelative
+Var1 = 0
+Var2 = 0+MT_ORB
+
+State S_FLASHATTACK4
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 2
+Next = S_FLASHATTACK5
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+
+State S_FLASHATTACK5
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 1
+Next = S_FLASHATTACK6
+Action = A_SpawnObjectRelative
+Var1 = 0
+Var2 = 0+MT_ORB
+
+State S_FLASHATTACK6
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 2
+Next = S_FLASHATTACK7
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+
+State S_FLASHATTACK7
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 1
+Next = S_FLASHATTACK8
+Action = A_SpawnObjectRelative
+Var1 = 0
+Var2 = 0+MT_ORB
+
+State S_FLASHATTACK8
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 2
+Next = S_FLASHATTACK9
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+
+State S_FLASHATTACK9
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 1
+Next = S_FLASHATTACK10
+Action = A_SpawnObjectRelative
+Var1 = 0
+Var2 = 0+MT_ORB
+
+State S_FLASHATTACK10
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 2
+Next = S_FLASHATTACK11
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+
+State S_FLASHATTACK11
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 1
+Next = S_FLASHATTACK12
+Action = A_SpawnObjectRelative
+Var1 = 0
+Var2 = 0+MT_ORB
+
+State S_FLASHATTACK12
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 2
+Next = S_FLASHATTACK13
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+
+State S_FLASHATTACK13
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 1
+Next = S_FLASHATTACK14
+Action = A_SpawnObjectRelative
+Var1 = 0
+Var2 = 0+MT_ORB
+
+State S_FLASHATTACK14
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 2
+Next = S_FLASHATTACK15
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+
+State S_FLASHATTACK15
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 1
+Next = S_FLASHATTACK16
+Action = A_SpawnObjectRelative
+Var1 = 0
+Var2 = 0+MT_ORB
+
+State S_FLASHATTACK16
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 2
+Next = S_FLASHATTACK17
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+
+State S_FLASHATTACK17
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 1
+Next = S_FLASHATTACK18
+Action = A_SpawnObjectRelative
+Var1 = 0
+Var2 = 0+MT_ORB
+
+State S_FLASHATTACK18
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 2
+Next = S_FLASHATTACK19
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+
+State S_FLASHATTACK19
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 1
+Next = S_FLASHATTACK20
+Action = A_SpawnObjectRelative
+Var1 = 0
+Var2 = 0+MT_ORB
+
+State S_FLASHATTACK20
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 2
+Next = S_FLASHATTACK21
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+
+State S_FLASHATTACK21
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 1
+Next = S_FLASHATTACK22
+Action = A_SpawnObjectRelative
+Var1 = 0
+Var2 = 0+MT_ORB
+
+State S_FLASHATTACK22
+SpriteName = SPR_FLSH
+SpriteFrame = A
+Duration = 2
+Next = S_FLASHMOVE1
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+
+
+
+Object MT_ORB
+SpawnState = S_ORB1
+SpawnHealth = 1
+SeeState = S_ORB1
+SeeSound = sfx_None
+ReactionTime = 2
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = S_NULL
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+DeathSound = sfx_s3k40
+XDeathState = S_NULL
+Speed = 2*FRACUNIT
+Radius = 25*FRACUNIT
+Height = 30*FRACUNIT
+Mass = 100
+Damage = 1
+ActiveSound = sfx_None
+RaiseState = S_NULL
+Flags = MF_PAIN|MF_NOGRAVITY|MF_RUNSPAWNFUNC
+
+State S_ORB1
+SpriteName = SPR_LORB
+SpriteFrame = FF_FULLBRIGHT|A
+Duration = 2
+Next = S_ORB2
+Action = A_PlaySound
+Var1 = sfx_s3kd9l
+Var2 = 1
+
+State S_ORB2
+SpriteName = SPR_LORB
+SpriteFrame = B
+Duration = 2
+Next = S_ORB3
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_ORB3
+SpriteName = SPR_NULL
+SpriteFrame = A
+Duration = 2
+Next = S_ORB4
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_ORB4
+SpriteName = SPR_NULL
+SpriteFrame = A
+Duration = 1
+Next = S_ORB3
+Action = A_RemoteDamage
+Var1 = 0
+Var2 = 2
+
+#Chain
+FREESLOT
+MT_GCHAIN
+S_GCHAIN
+
+
+FRAME S_GCHAIN
+SPRITENUMBER = SPR_CHAN
+SpriteFrame = D
+DURATION = -1
+NEXT = 0
+ACTION None
+VAR1 = 0
+VAR2 = 0
+
+Thing MT_GCHAIN
+#$Name Magmor Chain
+#$Sprite CHAND0
+#$Category SUGOI Decoration
+MAPTHINGNUM = 2049
+SPAWNSTATE = S_GCHAIN
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = 0
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 0
+RADIUS =  4*FRACUNIT
+HEIGHT = 128*FRACUNIT
+MASS = 100
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NOCLIP|MF_SCENERY|MF_STICKY

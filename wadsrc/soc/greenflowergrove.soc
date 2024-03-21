@@ -1,0 +1,62 @@
+#########################################
+# SOC_FLKY
+# Contains soc data for LUA_FLKY
+#########################################
+
+# Flickies
+Object MT_THREEDBLASTFLICKY
+SpawnState = S_TDBFLICKY1
+ActiveSound = SFX_FGET
+PainSound = SFX_FHURT2
+Speed = 5*FRACUNIT
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+Mass = 1000
+Flags = MF_SPECIAL|MF_SLIDEME
+
+# Warp Ring
+Object MT_THREEDBLASTRING
+#$Name 3D Blast Warp Ring
+#$Sprite WRNGA0
+#$Category SUGOI Items & Hazards
+MapThingNum = 3000
+SpawnState = S_TDBRING
+ActiveSound = SFX_S3K68
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+Mass = 1000
+Flags = MF_SPECIAL|MF_NOGRAVITY
+
+# Flicky states
+State S_TDBFLICKY1
+SpriteName = SPR_FLKY
+SpriteFrame = A
+Duration = 3
+Next = S_TDBFLICKY2
+Var1 = 0
+Var2 = 0
+
+State S_TDBFLICKY2
+SpriteName = SPR_FLKY
+SpriteFrame = B
+Duration = 3
+Next = S_TDBFLICKY3
+Var1 = 0
+Var2 = 0
+
+State S_TDBFLICKY3
+SpriteName = SPR_FLKY
+SpriteFrame = C
+Duration = 3
+Next = S_TDBFLICKY1
+Var1 = 0
+Var2 = 0
+
+# Warp Ring state
+State S_TDBRING
+SpriteName = SPR_WRNG
+SpriteFrame = A
+Duration = -1
+Next = S_TDBRING
+Var1 = 0
+Var2 = 0

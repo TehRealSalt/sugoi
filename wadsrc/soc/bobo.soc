@@ -1,0 +1,139 @@
+# SOC_BLOB
+
+Freeslot
+MT_BLOB
+MT_TINYBLOB
+S_BLOB
+S_BLOB_SHOOT
+S_BLOB_GHOST
+S_TINYBLOB
+S_TINYBLOB_SHOOT
+S_TINYBLOB_GHOST
+SPR_BLOB
+
+Object MT_BLOB
+MapThingNum = -1
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+Speed = 4
+SpawnState = S_BLOB
+Flags = MF_MISSILE
+
+State S_BLOB
+SpriteName = BLOB
+SpriteFrame = B|TR_TRANS30
+Duration = 1
+Action = A_DualAction
+Var1 = S_BLOB_SHOOT
+Var2 = S_BLOB_GHOST
+Next = S_BLOB
+
+State S_BLOB_SHOOT
+Action = A_Thrust
+Var1 = 4
+Var2 = 0
+
+State S_BLOB_GHOST
+Action = A_GhostMe
+
+Object MT_TINYBLOB
+MapThingNum = -1
+Radius = 4*FRACUNIT
+Height = 8*FRACUNIT
+SpawnState = S_TINYBLOB
+Flags = MF_MISSILE|MF_NOGRAVITY
+
+State S_TINYBLOB
+SpriteName = BLOB
+SpriteFrame = A|TR_TRANS30
+Duration = 1
+Action = A_DualAction
+Var1 = S_TINYBLOB_SHOOT
+Var2 = S_TINYBLOB_GHOST
+Next = S_TINYBLOB
+
+State S_TINYBLOB_SHOOT
+Action = A_Thrust
+Var1 = 2
+Var2 = 0
+
+State S_TINYBLOB_GHOST
+Action = A_GhostMe
+
+# SOC_SABO
+
+Freeslot
+MT_SAD_BOBO
+S_SAD_BOBO_LOOP1
+S_SAD_BOBO_LOOP2
+S_SAD_BOBO_LOOP3
+S_SAD_BOBO_LOOP4
+S_SAD_BOBO_LOOP5
+S_SAD_BOBO_LOOP6
+S_SAD_BOBO_LOOP7
+S_SAD_BOBO_LOOP8
+S_SAD_BOBO_DEATH
+SPR_SABO
+
+Object MT_SAD_BOBO
+MapThingNum = -1
+Radius = 64*FRACUNIT
+Height = 128*FRACUNIT
+DeathSound = sfx_s3k87
+DeathState = S_SAD_BOBO_DEATH
+SpawnState = S_SAD_BOBO_LOOP1
+Flags = MF_MISSILE
+
+State S_SAD_BOBO_LOOP1
+SpriteName = SABO
+SpriteFrame = A
+Duration = 1
+Next = S_SAD_BOBO_LOOP2
+
+State S_SAD_BOBO_LOOP2
+SpriteName = SABO
+SpriteFrame = B
+Duration = 1
+Next = S_SAD_BOBO_LOOP3
+
+State S_SAD_BOBO_LOOP3
+SpriteName = SABO
+SpriteFrame = C
+Duration = 1
+Next = S_SAD_BOBO_LOOP4
+
+State S_SAD_BOBO_LOOP4
+SpriteName = SABO
+SpriteFrame = D
+Duration = 1
+Next = S_SAD_BOBO_LOOP5
+
+State S_SAD_BOBO_LOOP5
+SpriteName = SABO
+SpriteFrame = E
+Duration = 1
+Next = S_SAD_BOBO_LOOP6
+
+State S_SAD_BOBO_LOOP6
+SpriteName = SABO
+SpriteFrame = F
+Duration = 1
+Next = S_SAD_BOBO_LOOP7
+
+State S_SAD_BOBO_LOOP7
+SpriteName = SABO
+SpriteFrame = G
+Duration = 1
+Next = S_SAD_BOBO_LOOP8
+
+State S_SAD_BOBO_LOOP8
+SpriteName = SABO
+SpriteFrame = H
+Duration = 1
+Next = S_SAD_BOBO_LOOP1
+
+State S_SAD_BOBO_DEATH
+SpriteName = SABO
+SpriteFrame = A
+Duration = 1
+Action = A_ForceWin

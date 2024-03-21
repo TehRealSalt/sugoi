@@ -1,0 +1,323 @@
+WallTexture PP_RCK00, 256, 256
+{
+	Patch PP_ROKHX, 0, 0
+	Patch PP_ROKTR, 0, 0
+}
+
+WallTexture PP_RCK01, 256, 256
+{
+	Patch PP_ROKHX, 0, 0
+	Patch PP_DIATR, 0, 0
+	Patch PP_DIATR, 128, 0
+	Patch PP_DIATR, -64, 128
+	Patch PP_DIATR, 64, 128
+	Patch PP_DIATR, 192, 128
+}
+
+WallTexture PP_RCK02, 256, 256
+{
+	Patch PP_DIAHX, 0, 0
+	Patch PP_DIAHX, 128, 0
+	Patch PP_DIAHX, 64, 128
+	Patch PP_DIAHX, -64, 128
+	Patch PP_DIAHX, 192, 128
+	Patch PP_ROKTR, 0, 0
+}
+
+WallTexture PP_RCK03, 256, 256
+{
+	Patch PP_DIAHX, 0, 0
+	Patch PP_DIAHX, 128, 0
+	Patch PP_DIAHX, 64, 128
+	Patch PP_DIAHX, -64, 128
+	Patch PP_DIAHX, 192, 128
+	Patch PP_DIATR, 0, 0
+	Patch PP_DIATR, 128, 0
+	Patch PP_DIATR, -64, 128
+	Patch PP_DIATR, 64, 128
+	Patch PP_DIATR, 192, 128
+}
+
+WallTexture PP_RCK04, 256, 256
+{
+	Patch PP_SAND, 0, 0
+	Patch PP_ROKHX, 0, 0
+}
+
+WallTexture PP_RCK05, 256, 256
+{
+	Patch PP_SAND, 0, 0
+	Patch PP_ROKTR, 0, 0
+}
+
+WallTexture PP_RCK06, 256, 256
+{
+	Patch PP_SAND, 0, 0
+	Patch PP_DIAHX, 0, 0
+	Patch PP_DIAHX, 128, 0
+	Patch PP_DIAHX, 64, 128
+	Patch PP_DIAHX, -64, 128
+	Patch PP_DIAHX, 192, 128
+}
+
+WallTexture PP_RCK07, 256, 256
+{
+	Patch PP_SAND, 0, 0
+	Patch PP_DIATR, 0, 0
+	Patch PP_DIATR, 128, 0
+	Patch PP_DIATR, 64, 128
+	Patch PP_DIATR, -64, 128
+	Patch PP_DIATR, 192, 128
+}
+
+WallTexture PP_RCK08, 256, 256
+{
+	Patch PP_SAND2, 0, 0
+	Patch PP_ROKHX, 0, 0
+}
+
+WallTexture PP_RCK09, 256, 256
+{
+	Patch PP_SAND2, 0, 0
+	Patch PP_ROKTR, 0, 0
+}
+
+WallTexture PP_RCK0A, 256, 256
+{
+	Patch PP_SAND2, 0, 0
+	Patch PP_DIAHX, 0, 0
+	Patch PP_DIAHX, 128, 0
+	Patch PP_DIAHX, 64, 128
+	Patch PP_DIAHX, -64, 128
+	Patch PP_DIAHX, 192, 128
+}
+
+WallTexture PP_RCK0B, 256, 256
+{
+	Patch PP_SAND2, 0, 0
+	Patch PP_DIATR, 0, 0
+	Patch PP_DIATR, 128, 0
+	Patch PP_DIATR, 64, 128
+	Patch PP_DIATR, -64, 128
+	Patch PP_DIATR, 192, 128
+}
+
+WallTexture PP_RCK0C, 256, 256
+{
+	Patch PP_SAND3, 0, 0
+	Patch PP_ROKHX, 0, 0
+}
+
+WallTexture PP_RCK0D, 256, 256
+{
+	Patch PP_SAND3, 0, 0
+	Patch PP_ROKTR, 0, 0
+}
+
+WallTexture PP_RCK0E, 256, 256
+{
+	Patch PP_SAND3, 0, 0
+	Patch PP_DIAHX, 0, 0
+	Patch PP_DIAHX, 128, 0
+	Patch PP_DIAHX, 64, 128
+	Patch PP_DIAHX, -64, 128
+	Patch PP_DIAHX, 192, 128
+}
+
+WallTexture PP_RCK0F, 256, 256
+{
+	Patch PP_SAND3, 0, 0
+	Patch PP_DIATR, 0, 0
+	Patch PP_DIATR, 128, 0
+	Patch PP_DIATR, 64, 128
+	Patch PP_DIATR, -64, 128
+	Patch PP_DIATR, 192, 128
+}
+
+WallTexture PP_RK00B, 512, 512
+{
+	Patch PP_SAND, 0, 0
+	Patch PP_SAND, 256, 0
+	Patch PP_SAND, 0, 255
+	Patch PP_SAND, 256, 256
+	Patch PP_ROKHB, 0, 0
+	Patch PP_ROKTB, 0, 0
+}
+
+WallTexture PP_RK01B, 512, 512
+{
+	Patch PP_SAND, 0, 0
+	Patch PP_SAND, 256, 0
+	Patch PP_SAND, 0, 255
+	Patch PP_SAND, 256, 256
+	Patch PP_ROKHB, 0, 0
+	Patch PP_DIATB, 0, 0
+	Patch PP_DIATB, 256, 0
+	Patch PP_DIATB, 128, 256
+	Patch PP_DIATB, -128, 256
+	Patch PP_DIATB, 384, 256
+}
+
+WallTexture PP_RK02B, 512, 512
+{
+	Patch PP_SAND, 0, 0
+	Patch PP_SAND, 256, 0
+	Patch PP_SAND, 0, 255
+	Patch PP_SAND, 256, 256
+	Patch PP_DIAHB, 0, 0
+	Patch PP_DIAHB, 256, 0
+	Patch PP_DIAHB, 128, 256
+	Patch PP_DIAHB, -128, 256
+	Patch PP_DIAHB, 384, 256
+	Patch PP_ROKTB, 0, 0
+}
+
+WallTexture PP_RK03B, 512, 512
+{
+	Patch PP_SAND, 0, 0
+	Patch PP_SAND, 256, 0
+	Patch PP_SAND, 0, 255
+	Patch PP_SAND, 256, 256
+	Patch PP_DIAHB, 0, 0
+	Patch PP_DIAHB, 256, 0
+	Patch PP_DIAHB, 128, 256
+	Patch PP_DIAHB, -128, 256
+	Patch PP_DIAHB, 384, 256
+	Patch PP_DIATB, 0, 0
+	Patch PP_DIATB, 256, 0
+	Patch PP_DIATB, -128, 256
+	Patch PP_DIATB, 128, 256
+	Patch PP_DIATB, 384, 256
+}
+
+WallTexture PP_RK04B, 512, 512
+{
+	Patch PP_SAND, 0, 0
+	Patch PP_SAND, 256, 0
+	Patch PP_SAND, 0, 255
+	Patch PP_SAND, 256, 256
+	Patch PP_ROKHB, 0, 0
+}
+
+WallTexture PP_RK05B, 512, 512
+{
+	Patch PP_SAND, 0, 0
+	Patch PP_SAND, 256, 0
+	Patch PP_SAND, 0, 255
+	Patch PP_SAND, 256, 256
+	Patch PP_ROKTB, 0, 0
+}
+
+WallTexture PP_RK06B, 512, 512
+{
+	Patch PP_SAND, 0, 0
+	Patch PP_SAND, 256, 0
+	Patch PP_SAND, 0, 255
+	Patch PP_SAND, 256, 256
+	Patch PP_DIAHB, 0, 0
+	Patch PP_DIAHB, 256, 0
+	Patch PP_DIAHB, 128, 256
+	Patch PP_DIAHB, -128, 256
+	Patch PP_DIAHB, 384, 256
+}
+
+WallTexture PP_RK07B, 512, 512
+{
+	Patch PP_SAND, 0, 0
+	Patch PP_SAND, 256, 0
+	Patch PP_SAND, 0, 255
+	Patch PP_SAND, 256, 256
+	Patch PP_DIATB, 0, 0
+	Patch PP_DIATB, 256, 0
+	Patch PP_DIATB, 128, 256
+	Patch PP_DIATB, -128, 256
+	Patch PP_DIATB, 384, 256
+}
+
+WallTexture PP_RK08B, 512, 512
+{
+	Patch PP_SAND2, 0, 0
+	Patch PP_SAND2, 256, 0
+	Patch PP_SAND2, 0, 255
+	Patch PP_SAND2, 256, 256
+	Patch PP_ROKHB, 0, 0
+}
+
+WallTexture PP_RK09B, 512, 512
+{
+	Patch PP_SAND2, 0, 0
+	Patch PP_SAND2, 256, 0
+	Patch PP_SAND2, 0, 255
+	Patch PP_SAND2, 256, 256
+	Patch PP_ROKTB, 0, 0
+}
+
+WallTexture PP_RK0AB, 512, 512
+{
+	Patch PP_SAND2, 0, 0
+	Patch PP_SAND2, 256, 0
+	Patch PP_SAND2, 0, 255
+	Patch PP_SAND2, 256, 256
+	Patch PP_DIAHB, 0, 0
+	Patch PP_DIAHB, 256, 0
+	Patch PP_DIAHB, 128, 256
+	Patch PP_DIAHB, -128, 256
+	Patch PP_DIAHB, 384, 256
+}
+
+WallTexture PP_RK0BB, 512, 512
+{
+	Patch PP_SAND2, 0, 0
+	Patch PP_SAND2, 256, 0
+	Patch PP_SAND2, 0, 255
+	Patch PP_SAND2, 256, 256
+	Patch PP_DIATB, 0, 0
+	Patch PP_DIATB, 256, 0
+	Patch PP_DIATB, 128, 256
+	Patch PP_DIATB, -128, 256
+	Patch PP_DIATB, 384, 256
+}
+
+WallTexture PP_RK0CB, 512, 512
+{
+	Patch PP_SAND3, 0, 0
+	Patch PP_SAND3, 256, 0
+	Patch PP_SAND3, 0, 255
+	Patch PP_SAND3, 256, 256
+	Patch PP_ROKHB, 0, 0
+}
+
+WallTexture PP_RK0DB, 512, 512
+{
+	Patch PP_SAND3, 0, 0
+	Patch PP_SAND3, 256, 0
+	Patch PP_SAND3, 0, 255
+	Patch PP_SAND3, 256, 256
+	Patch PP_ROKTB, 0, 0
+}
+
+WallTexture PP_RK0EB, 512, 512
+{
+	Patch PP_SAND3, 0, 0
+	Patch PP_SAND3, 256, 0
+	Patch PP_SAND3, 0, 255
+	Patch PP_SAND3, 256, 256
+	Patch PP_DIAHB, 0, 0
+	Patch PP_DIAHB, 256, 0
+	Patch PP_DIAHB, 128, 256
+	Patch PP_DIAHB, -128, 256
+	Patch PP_DIAHB, 384, 256
+}
+
+WallTexture PP_RK0FB, 512, 512
+{
+	Patch PP_SAND3, 0, 0
+	Patch PP_SAND3, 256, 0
+	Patch PP_SAND3, 0, 255
+	Patch PP_SAND3, 256, 256
+	Patch PP_DIATB, 0, 0
+	Patch PP_DIATB, 256, 0
+	Patch PP_DIATB, 128, 256
+	Patch PP_DIATB, -128, 256
+	Patch PP_DIATB, 384, 256
+}

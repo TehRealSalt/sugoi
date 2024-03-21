@@ -1,0 +1,1142 @@
+# Organization HACK
+MainCfg
+GameData = sugoi.dat
+
+# MAPA0: Teleport Station (hub 1)
+# by TehRealSalt
+Level A0
+LevelName = Teleport Station
+NoZone = true
+SubTitle = (TehRealSalt)
+NoTitleCard = true
+TypeOfLevel = SP,Coop
+SkyNum = 29
+Music = BUMPNK
+Weather = PRECIP_NONE
+NoReload = true
+NextLevel = A0
+BonusType = None
+LevelSelect = 1
+SelectHeading = Hub
+HideInStats = true
+SaveGame = true
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = All
+Lua.Author = TehRealSalt
+Lua.SUGOIProgress = 1
+
+# MAPA1: Retro Hill Zone 1
+# by Pogofen
+Level A1
+LevelName = Retro Hill
+Act = 1
+SubTitle = (Pogofen)
+TypeOfLevel = SP,Coop,Competition,Race,2D
+SkyNum = 29
+Music = MP_GHZ
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 0
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Puffin,Rabbit
+Lua.CountMap = true
+Lua.Author = Pogofen
+Lua.Difficulty = 2
+Lua.Length = 1
+
+Emblem
+Type = Map
+MapNum = A1
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPA2: Hilltop Hunt Zone
+# by Fres
+Level A2
+LevelName = Hilltop Hunt
+SubTitle = (Fres)
+TypeOfLevel = SP,Coop
+SkyNum = 1
+Music = GFZ1
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 1
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Puffin,Rabbit
+Lua.CountMap = true
+Lua.Author = Fres
+Lua.Difficulty = 1
+Lua.Length = 1
+
+Emblem
+Type = Map
+MapNum = A2
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPA3: Groggy Gale Zone
+# by TehRealSalt
+Level A3
+LevelName = Groggy Gale
+SubTitle = (TehRealSalt)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 150
+Music = MTJRNY
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 1
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Dove,Bat
+Lua.CountMap = true
+Lua.Author = TehRealSalt
+Lua.Difficulty = 2
+Lua.Length = 1
+
+Emblem
+Hint = Up somewhat high, in an alcove hard to reach.
+Type = Global
+MapNum = A3
+Tag = 0
+Sprite = C
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Before continuing down the sunken passage, take a look behind you.
+Type = Global
+MapNum = A3
+Tag = 1
+Sprite = E
+Color = SKINCOLOR_GREEN
+
+Emblem
+Hint = Experiment with a barrier of Whirlwind to reach new heights.
+Type = Global
+MapNum = A3
+Tag = 2
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Type = Time
+MapNum = A3
+Var = 35*TICRATE
+
+Emblem
+Type = Rings
+MapNum = A3
+Var = 150
+
+Emblem
+Type = Map
+MapNum = A3
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPA4: Skytop Zone
+# by Glaber
+Level A4
+LevelName = Skytop
+Music = MYSTIC
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 2
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 1
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Puffin,Dove
+Lua.CountMap = true
+Lua.Author = Glaber
+Lua.Difficulty = 3
+Lua.Length = 3
+
+Emblem
+Hint = Off to the side, A Waterfall in a tunnel.
+Type = Global
+Tag = 0
+MapNum = A4
+Sprite = N
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Find a Secret path opend near a slope A lone old robot guards this one.
+Type = Global
+Tag = 1
+MapNum = A4
+Sprite = N
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Double the secrets, double the fun.\\Lower the ramp and look under the bridge.
+Type = Global
+Tag = 2
+MapNum = A4
+Sprite = N
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Down the ramp and off the jump. Make soure you built up speed first
+Type = Global
+Tag = 3
+MapNum = A4
+Sprite = N
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Near by 2 ramps, one in a tunnel, the other a hill.
+Type = Global
+Tag = 4
+MapNum = A4
+Sprite = N
+Color = SKINCOLOR_RED
+
+Emblem
+Type = Map
+MapNum = A4
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPA5: Concrete Jungle Zone
+# by JStheguy
+Level A5
+LevelName = Concrete Jungle
+SubTitle = (JStheguy)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 6
+Music = DCZ
+Weather = PRECIP_STORM
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 1
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Rat,Pig
+Lua.CountMap = true
+Lua.Author = JStheguy
+Lua.Difficulty = 3
+Lua.Length = 2
+
+Emblem
+Hint = One step forward and two steps back.
+Type = Global
+MapNum = A5
+Tag = 0
+Sprite = A
+Color = SKINCOLOR_BROWN
+
+Emblem
+Hint = Lost and found.
+Type = Global
+MapNum = A5
+Tag = 1
+Sprite = A
+Color = SKINCOLOR_GREEN
+
+Emblem
+Type = Rings
+MapNum = A5
+Sprite = R
+Color = SKINCOLOR_GOLD
+Var = 120
+
+Emblem
+Type = Time
+MapNum = A5
+Sprite = T
+Color = SKINCOLOR_BLUE
+Var = 60*TICRATE
+
+Emblem
+Type = Map
+MapNum = A5
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPA6: Jello Factory Zone
+# by Mystyc Cheez
+Level A6
+LevelName = Jello Factory
+SubTitle = (Mystyc Cheez)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 5
+Music = MP_MED
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 1
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Chicken,Cow
+Lua.CountMap = true
+Lua.Author = Mystyc Cheez
+Lua.Difficulty = 2
+Lua.Length = 2
+
+Emblem
+Type = Map
+MapNum = A6
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPA7: Quartzite Crag Zone
+# by SeventhSentinel
+Level A7
+LevelName = Quartzite Crag
+SubTitle = (SeventhSentinel)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 1
+Music = QUARTZ
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 1
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Bat,Cat
+Lua.CountMap = true
+Lua.Author = SeventhSentinel
+Lua.Difficulty = 3
+Lua.Length = 2
+
+Emblem
+Type = Map
+MapNum = A7
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPA8: Contaminated Water Zone
+# by LazyMK
+Level A8
+LevelName = Contaminated Water
+SubTitle = (LazyMK)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 10
+Music = CWZ1
+Weather = PRECIP_STORM
+FlickyList = Seal,Spider
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 1
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+Lua.CountMap = true
+Lua.Author = LazyMK
+Lua.Difficulty = 3
+Lua.Length = 4
+
+Emblem
+Hint = Take a detor at the start
+Type = Global
+Tag = 0
+MapNum = A8
+Sprite = A
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Venture in the Contaminated water and find a sneaky acove
+Type = Global
+Tag = 1
+MapNum = A8
+Sprite = B
+Color = SKINCOLOR_ORANGE
+
+Emblem
+Hint = Follow a trail of rings along water. But beware, theres a long drop below
+Type = Global
+Tag = 2
+MapNum = A8
+Sprite = C
+Color = SKINCOLOR_YELLOW
+
+Emblem
+Hint = Near a strong current of dirty water, You might even get swept in here
+Type = Global
+Tag = 3
+MapNum = A8
+Sprite = D
+Color = SKINCOLOR_LIME
+
+Emblem
+Type = Rings
+Var = 154
+MapNum = A8
+Sprite = R
+Color = SKINCOLOR_APPLE
+
+Emblem
+Type = Time
+Var = 75*TICRATE
+MapNum = A8
+Sprite = T
+Color = SKINCOLOR_GOLD
+
+Emblem
+Type = Map
+MapNum = A8
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPA9: Nightlight Ruins Zone
+# by SteelT
+Level A9
+LevelName = Nightlight Ruins
+SubTitle = (SteelT)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 6
+Music = 16BBRA
+Weather = PRECIP_NONE
+Palette = 51
+NoReload = true
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 1
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Canary,Rabbit
+Lua.CountMap = true
+Lua.Author = SteelT
+Lua.Difficulty = 2
+Lua.Length = 2
+
+Emblem
+Hint = Near the start\\What's up with the sand\\Go look into it.
+Type = Global
+Tag = 1
+MapNum = A9
+Sprite = A
+Color = SKINCOLOR_BLUE
+Var = 0
+
+Emblem
+Hint = You can see it\\But can't get it\\Find another way around
+Type = Global
+Tag = 2
+MapNum = A9
+Sprite = A
+Color = SKINCOLOR_GREEN
+Var = 0
+
+Emblem
+Hint = On the path split\\With the huge pillar\\Look around the area
+Type = Global
+Tag = 3
+MapNum = A9
+Sprite = A
+Color = SKINCOLOR_RED
+Var = 0
+
+Emblem
+Hint = Just before the forth starpost\\Look around the area\\You will see it
+Type = Global
+Tag = 4
+MapNum = A9
+Sprite = A
+Color = SKINCOLOR_YELLOW
+Var = 0
+
+Emblem
+Hint = Instead of finishing the level\\How about one last exploration?
+Type = Global
+Tag = 5
+MapNum = A9
+Sprite = A
+Color = SKINCOLOR_BLUEBELL
+Var = 0
+
+Emblem
+Type = Rings
+MapNum = A9
+Sprite = R
+Color = SKINCOLOR_RASPBERRY
+Var = 300
+
+Emblem
+Type = Time
+MapNum = A9
+Sprite = T
+Color = SKINCOLOR_BUBBLEGUM
+Var = 70*TICRATE
+
+Emblem
+Type = Map
+MapNum = A9
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAA: Robotnik Park Zone
+# by FuriousFox
+Level AA
+LevelName = Robotnik Park
+SubTitle = (FuriousFox)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 6
+Music = TWINKP
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 1
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Bluebird,Seal
+Lua.CountMap = true
+Lua.Author = FuriousFox
+Lua.Difficulty = 3
+Lua.Length = 2
+
+Emblem
+Type = Map
+MapNum = AA
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAB: Aquatic Corridors Zone
+# by Revan
+Level AB
+LevelName = Aquatic Corridors
+SubTitle = (Revan)
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 35
+Music = WAVES
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 1
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Fish,Fish,Seal
+Lua.CountMap = true
+Lua.Author = Revan
+Lua.Difficulty = 2
+Lua.Length = 2
+
+Emblem
+Type = Map
+MapNum = AB
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAC: Overgrown Castle Zone
+# by Chaobrother
+Level AC
+LevelName = Overgrown Castle
+SubTitle = (Chaobrother)
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 21
+Music = FILMOA
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 1
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Bear,Rat
+Lua.CountMap = true
+Lua.Author = Chaobrother
+Lua.Difficulty = 3
+Lua.Length = 2
+
+Emblem
+Type = Map
+MapNum = AC
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAD: Lilac Conservatory Zone
+# by RoyKirbs
+Level AD
+LevelName = Lilac Conservatory
+SubTitle = (RoyKirbs)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 1001
+SkyboxScale = 0
+Music = KTDMC
+Weather = PRECIP_NONE
+FlickyList = Seed
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 1
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+Lua.CountMap = true
+Lua.Author = RoyKirbs
+Lua.Difficulty = 4
+Lua.Length = 4
+
+Emblem
+Hint = It used to be here!\\An object of great power,\\It's an emblem now?!
+Type = Global
+Tag = 0
+MapNum = AD
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = The church of the Egg,\\Draped with banners of the God\\Is where we hid it.
+Type = Global
+Tag = 1
+MapNum = AD
+Sprite = B
+Color = SKINCOLOR_LAVENDER
+
+Emblem
+Hint = Author's favourite,\\Lives amongst the paintings here.\\They think it's very fire.
+Type = Global
+Tag = 2
+MapNum = AD
+Sprite = C
+Color = SKINCOLOR_RED
+
+Emblem
+Type = Time
+Var = 70*TICRATE
+MapNum = AD
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 300
+MapNum = AD
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Type = Map
+MapNum = AD
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAE: Sunset Ruins Zone 1
+# by StellarStardust
+Level AE
+LevelName = Sunset Ruins
+Act = 1
+SubTitle = (StellarStardust)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 6984
+Music = S2ARZB
+Weather = PRECIP_NONE
+FlickyList = Seal,Chipmunk
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 1
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+Lua.CountMap = true
+Lua.Author = StellarStardust
+Lua.Difficulty = 3
+Lua.Length = 4
+
+Emblem
+Type = Map
+MapNum = AE
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAF: Sunset Ruins Zone 2
+# by StellarStardust
+Level AF
+LevelName = Sunset Ruins
+Act = 2
+SubTitle = (StellarStardust)
+TypeOfLevel = SP,Coop
+SkyNum = 6984
+Music = 3DBOS2
+Weather = PRECIP_NONE
+StartRings = 10
+ForceResetMusic = On
+WarningTitle = true
+BonusType = Boss
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 2
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+Lua.CountMap = true
+Lua.SUGOIBossMeter = Egg Zapper
+Lua.Author = StellarStardust
+Lua.Difficulty = 3
+Lua.Length = 1
+
+Emblem
+Type = Map
+MapNum = AF
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAG: Lavender World Zone
+# by CarlosGamer72
+Level AG
+LevelName = Lavender World
+SubTitle = (CarlosGamer72)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 40
+Music = JUMPER
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 2
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Spider,Penguin
+Lua.CountMap = true
+Lua.Author = CarlosGamer72
+Lua.Difficulty = 2
+Lua.Length = 2
+
+Emblem
+Type = Map
+MapNum = AG
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAH: Sky Labyrinth Zone
+# by Tripel the fox
+Level AH
+LevelName = Sky Labyrinth
+SubTitle = (Tripel the fox)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 2
+Music = LBYRTH
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 2
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Bluebird,Rabbit
+Lua.SUGOIGolfMode = true
+Lua.CountMap = true
+Lua.Author = Tripel the fox
+Lua.Difficulty = 4
+Lua.Length = 2
+
+Emblem
+Hint = Complete Sky Labyrinth in 1 minute and 15 seconds.
+Type = Time
+MapNum = AH
+Sprite = T
+Color = SKINCOLOR_GREY
+Var = 75*TICRATE
+
+Emblem
+Hint = Get 50 rings in Sky Labyrinth.
+Type = Rings
+MapNum = AH
+Sprite = R
+Color = SKINCOLOR_GOLD
+Var = 50
+
+Emblem
+Type = Map
+MapNum = AH
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAI: Fiery Volcano Zone
+# by Lactozilla
+Level AI
+LevelName = Fiery Volcano
+SubTitle = (Lactozilla)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 159
+Music = MEMDST
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 2
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Cat,Pig
+Lua.CountMap = true
+Lua.Author = Lactozilla
+Lua.Difficulty = 2
+Lua.Length = 1
+
+Emblem
+Type = Map
+MapNum = AI
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAJ: Mine Maze Zone
+# by RomioTheBadass
+Level AJ
+LevelName = Mine Maze
+SubTitle = (RomioTheBadass)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 20
+Music = MP_MIN
+Weather = PRECIP_STORM
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 2
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Bat,Rat
+Lua.CountMap = true
+Lua.Author = RomioTheBadass
+Lua.Difficulty = 4
+Lua.Length = 5
+
+Emblem
+Type = Map
+MapNum = AJ
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAK: End of Time
+# by Sapheros
+Level AK
+LevelName = End of Time
+NoZone = true
+SubTitle = (Sapheros)
+TypeOfLevel = SP,Coop
+SkyNum = 66
+Music = HEAVEN
+Weather = PRECIP_NONE
+BonusType = Boss
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 2
+NextLevel = A0
+PreCutsceneNum = 2
+StartRings = 10
+ForceResetMusic = On
+WarningTitle = true
+BonusType = Boss
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+Lua.SUGOIBossMeter = Silver
+Lua.CountMap = true
+Lua.Author = Sapheros
+Lua.Difficulty = 3
+Lua.Length = 2
+
+Emblem
+Type = Map
+MapNum = AK
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAL: Cute Ice
+# by Zipper
+Level AL
+LevelName = Cute Ice
+Act = 0
+NoZone = true
+SubTitle = (Zipper)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 8
+Music = ISEE
+Weather = PRECIP_SNOW
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 2
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Penguin,Seal
+Lua.CountMap = true
+Lua.Author = Zipper
+Lua.Difficulty = 3
+Lua.Length = 3
+
+Emblem
+Type = Map
+MapNum = AL
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAM: Robotnik Laboratory Zone 1
+# by ManimiFire
+Level AM
+LevelName = Robotnik Laboratory
+Act = 1
+SubTitle = (ManimiFire)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 8
+Music = FINEGG
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 2
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Chicken,Pig
+Lua.CountMap = true
+Lua.Author = ManimiFire
+Lua.Difficulty = 4
+Lua.Length = 5
+
+Emblem
+Type = Map
+MapNum = AM
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAN: Robotnik Laboratory Zone 2
+# by ManimiFire
+Level AN
+LevelName = Robotnik Laboratory
+Act = 2
+SubTitle = (ManimiFire)
+TypeOfLevel = SP,Coop
+SkyNum = 22
+Music = BULLTS
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 3
+NextLevel = A0
+StartRings = 20
+ForceResetMusic = On
+WarningTitle = true
+BonusType = Boss
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Chicken,Pig
+Lua.SUGOIBossMeter = Turret Mobile
+Lua.CountMap = true
+Lua.Author = ManimiFire
+Lua.Difficulty = 4
+Lua.Length = 3
+
+Emblem
+Type = Map
+MapNum = AN
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAO: Fudge Canyon Zone
+# by VAdaPEGA
+Level AO
+LevelName = Fudge Canyon
+SubTitle = (VAdaPEGA)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 4
+Music = FUDGEC
+Weather = PRECIP_NONE
+AnimalList = Demo
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 3
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Cow,Ram
+Lua.CountMap = true
+Lua.Author = VAdaPEGA
+Lua.Difficulty = 4
+Lua.Length = 4
+
+Emblem
+Type = Map
+MapNum = AO
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAP: Orbital Complex Zone
+# by Knux576
+Level AP
+LevelName = Orbital Complex
+SubTitle = (Knux576)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 21
+Music = OKXYGN
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 3
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = All
+Lua.CountMap = true
+Lua.Author = Knux576
+Lua.Difficulty = 5
+Lua.Length = 4
+
+Emblem
+Type = Map
+MapNum = AP
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAQ: Gravity Well Zone
+# by Goldenhog
+Level AQ
+LevelName = Gravity Well
+SubTitle = (Goldenhog)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 59
+Music = GRVWEL
+MusicInterFadeOut = 4000
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area 3
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = All
+Lua.GWZSound = yes
+Lua.CountMap = true
+Lua.Author = Goldenhog
+Lua.Difficulty = 5
+Lua.Length = 5
+
+Emblem
+Type = Map
+MapNum = AQ
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAR: Kodachrome Void Zone (secret)
+# by Boinciel
+Level AR
+LevelName = Kodachrome Void
+SubTitle = (Boinciel)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 1
+Music = KVZ
+Weather = PRECIP_NONE
+Palette = 2
+FlickyList = Fish
+RecordAttack = true
+LevelSelect = 0
+SelectHeading = Area X
+NextLevel = A0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+Lua.CountMap = true
+Lua.Author = Boinciel
+Lua.Difficulty = 4
+Lua.Length = 3
+
+Emblem
+Type = Map
+MapNum = AR
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAS: The Grand Finale
+# by Zipper
+Level AS
+LevelName = The Grand Finale
+SubTitle = (Zipper)
+NoZone = true
+NoTitleCard = true
+TypeOfLevel = SP,Coop
+SkyNum = 35
+Music = CONHIT
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 4
+SelectHeading = Area X
+CutsceneNum = 3
+NextLevel = A0
+StartRings = 10
+ForceResetMusic = On
+WarningTitle = true
+BonusType = Boss
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+Lua.CountMap = true
+Lua.Author = Zipper
+Lua.StaticOverlay = true
+Lua.Difficulty = 3
+Lua.Length = 2
+
+Emblem
+Type = Map
+MapNum = AS
+Sprite = F
+Color = SKINCOLOR_GOLD
+
+# MAPAT: Garanz Site 16
+# by Boinciel
+Level AT
+LevelName = Garanz Site
+NoZone = true
+Act = 16
+SubTitle = (Boinciel)
+TypeOfLevel = SP,Coop,Competition,Race
+SkyNum = 20
+Music = GARANZ
+Weather = PRECIP_NONE
+RecordAttack = true
+LevelSelect = 0
+SelectHeading = Area X
+NextLevel = B0
+PreCutsceneNum = 5
+CutsceneNum = 6
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUGOITX
+FlickyList = Demo
+Lua.Author = Boinciel
+Lua.Difficulty = 4
+Lua.Length = 4
+
+Emblem
+Type = Map
+MapNum = AT
+Sprite = F
+Color = SKINCOLOR_GOLD

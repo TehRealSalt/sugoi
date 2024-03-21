@@ -1,0 +1,56 @@
+// Spherallic's SRB2 Asset Pack v2.0
+
+WALLTEXTURE "DEZWAL3", 256, 256
+{
+	Patch "DEZWAL3A", 0, 0
+	Patch "DEZWAL3B", 0, 128
+}
+
+// Shadowhog's FreeDoom texture pack for SRB2
+
+WALLTEXTURE COMPBLUE, 64, 128
+{
+	Patch COMP03_1, 0, 0
+	Patch COMP03_2, 0, 64
+}
+
+WALLTEXTURE GRAY4, 64, 128
+{
+	Patch W33_5, 0, 0
+	Patch W33_5, 0, 64
+}
+
+WALLTEXTURE LITEMET, 128, 128
+{
+	Patch WALL03_7, 0, 0
+	Patch WALL03_7, 64, 0
+	Patch WALL03_7, 0, 64
+	Patch WALL03_7, 64, 64
+	Patch FLAMP, 81, 34
+	Patch FLAMP, 19, 34
+}
+
+WALLTEXTURE METAL6, 64, 128
+{
+	Patch RW38_1, 0, 0
+}
+
+WALLTEXTURE METAL7, 64, 128
+{
+	Patch RW38_2, 0, 0
+}
+
+WALLTEXTURE MIDBARS3, 64, 72
+{
+	Patch RW45_1, 0, 0
+}
+
+WALLTEXTURE MODWALL4, 64, 128
+{
+	Patch RW31_4, 0, 0
+}
+
+WALLTEXTURE SILVER1, 64, 128
+{
+	Patch RW32_1, 0, 0
+}

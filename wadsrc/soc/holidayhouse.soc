@@ -1,0 +1,16 @@
+FREESLOT
+MT_ICEBLOSSOM
+S_ICEBLOSSOM
+SPR_ICEB
+
+State S_ICEBLOSSOM
+SpriteName = ICEB
+SpriteSubNumber = 0
+
+Object MT_ICEBLOSSOM
+#$Name Ice Blossom
+#$Sprite ICEBA0
+#$Category SUGOI Decoration
+MapThingNum =  1860
+SpawnState = S_ICEBLOSSOM
+Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY

@@ -1,0 +1,336 @@
+FREESLOT
+MT_POINTYEGG
+MT_POINTYEGG_SPIKEB
+MT_POINTYEGG_SPIKEP
+MT_POINTYEGG_SPIKEU
+S_POINTYEGG_START
+S_POINTYEGG_DEPLOY
+S_POINTYEGG_LOOK
+S_POINTYEGG_FLOAT
+S_POINTYEGG_DASHSTART
+S_POINTYEGG_DASHSOUND
+S_POINTYEGG_DASH
+S_POINTYEGG_RISE
+S_POINTYEGG_PAIN
+S_POINTYEGG_RESTART
+S_POINTYEGG_PRESS
+S_POINTYEGG_FLEE
+S_POINTYEGG_ESCAPE1
+S_POINTYEGG_ESCAPE2
+S_POINTYEGG_ESCAPE3
+S_POINTYEGG_SPIKEB_ORBIT1
+S_POINTYEGG_SPIKEB_ORBIT2
+S_POINTYEGG_SPIKEB_ORBIT3
+S_POINTYEGG_SPIKEB_ORBIT4
+S_POINTYEGG_SPIKEB_ORBIT5
+S_POINTYEGG_SPIKEB_ORBIT6
+S_POINTYEGG_SPIKEB_ORBIT7
+S_POINTYEGG_SPIKEB_ORBIT8
+S_POINTYEGG_SPIKEB_DELAY
+S_POINTYEGG_SPIKEP_ORBIT
+S_POINTYEGG_SPIKEP_DROP
+S_POINTYEGG_SPIKEP_DELAY
+S_POINTYEGG_SPIKEU_ORBIT
+S_POINTYEGG_SPIKEU_LAUNCH
+S_POINTYEGG_SPIKEU_DELAY
+S_POINTYEGG_SPIKE_EXPLODE
+
+#----------Pointy Egg----------
+Thing MT_POINTYEGG
+Mapthingnum = 2161
+Spawnstate = S_POINTYEGG_START
+SpawnHealth = 8
+SeeState = S_POINTYEGG_RISE
+ReactionTime = 8
+Damage = 192*FRACUNIT
+XDeathState = S_POINTYEGG_FLEE
+DeathState = S_EGGMOBILE_DIE1
+DeathSound = sfx_cybdth
+PainSound = sfx_dmpain
+PainState = S_POINTYEGG_PAIN
+Height = 76*FRACUNIT
+Radius = 24*FRACUNIT
+Speed = 0
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_BOSS
+
+State S_POINTYEGG_START
+Spritenumber = SPR_EGGM
+SpriteSubNumber = A
+Duration = 1
+Action None
+Next = S_POINTYEGG_DEPLOY
+
+State S_POINTYEGG_DEPLOY
+Duration = 0
+Action A_PointyEggDeploy
+Next = S_POINTYEGG_LOOK
+
+State S_POINTYEGG_LOOK
+Spritenumber = SPR_EGGM
+SpriteSubNumber = A
+Duration = 10
+Next = S_POINTYEGG_LOOK
+Action A_Look
+Var1 = 1
+Var2 = 1
+
+State S_POINTYEGG_FLOAT
+Spritenumber = SPR_EGGM
+SpriteSubNumber = A
+Duration = 1
+Action A_PointyEggFloat
+Next = S_POINTYEGG_FLOAT
+
+State S_POINTYEGG_DASHSTART
+Spritenumber = SPR_EGGM
+SpriteSubNumber = D
+Duration = 20
+Next = S_POINTYEGG_DASHSOUND
+
+State S_POINTYEGG_DASHSOUND
+Duration = 0
+Next = S_POINTYEGG_DASH
+Action A_PlaySound
+Var1 = sfx_telept
+Var2 = 0
+
+State S_POINTYEGG_DASH
+Spritenumber = SPR_EGGM
+SpriteSubNumber = E
+Duration = 10
+Action A_PointyEggDash
+Next = S_POINTYEGG_RISE
+
+State S_POINTYEGG_RISE
+Spritenumber = SPR_EGGM
+SpriteSubNumber = A
+Duration = 1
+Action A_PointyEggRise
+Next = S_POINTYEGG_RISE
+
+State S_POINTYEGG_PAIN
+Spritenumber = SPR_EGGM
+SpriteSubNumber = R
+Duration = 24
+Action A_PointyEggPain
+Next = S_POINTYEGG_RESTART
+
+State S_POINTYEGG_RESTART
+Spritenumber = SPR_EGGM
+SpriteSubNumber = D
+Duration = 10
+Action A_ForceStop
+Next = S_POINTYEGG_PRESS
+
+State S_POINTYEGG_PRESS
+Spritenumber = SPR_EGGM
+SpriteSubNumber = E
+Duration = 10
+Next = S_POINTYEGG_START
+Action A_PlaySound
+Var1 = sfx_cannon
+Var2 = 1
+
+State S_POINTYEGG_FLEE
+Spritenumber = SPR_EGGM
+SpriteSubNumber = A
+Duration = 1
+Next = S_POINTYEGG_FLEE
+Action A_CheckRange
+Var1 = (1<<16)+16
+Var2 = S_POINTYEGG_ESCAPE1
+
+State S_POINTYEGG_ESCAPE1
+Spritenumber = SPR_EGGM
+SpriteSubNumber = A
+Duration = 1
+Next = S_POINTYEGG_ESCAPE2
+Action A_PointyEggFlee
+
+State S_POINTYEGG_ESCAPE2
+Spritenumber = SPR_EGGM
+SpriteSubNumber = A
+Duration = 1
+Next = S_POINTYEGG_ESCAPE3
+Action A_Thrust
+Var1 = 1
+Var2 = 0
+
+State S_POINTYEGG_ESCAPE3
+Spritenumber = SPR_EGGM
+SpriteSubNumber = A
+Duration = 70
+Next = S_NULL
+Action A_Repeat
+Var1 = 50
+Var2 = S_POINTYEGG_ESCAPE2
+
+#----------Pointy Egg Spike: Type B----------
+Thing MT_POINTYEGG_SPIKEB
+SpawnState = S_POINTYEGG_SPIKEB_ORBIT1
+Speed = 5*FRACUNIT
+SpawnHealth = 1000
+Height = 8*FRACUNIT
+Radius = 4*FRACUNIT
+Damage = 1
+DeathState = S_POINTYEGG_SPIKEB_DELAY
+XDeathState = S_POINTYEGG_SPIKE_EXPLODE
+Flags = MF_PAIN|MF_NOGRAVITY
+
+State S_POINTYEGG_SPIKEB_ORBIT1
+Spritenumber = SPR_SPIK
+SpriteSubNumber = A
+Duration = 1
+Next = S_POINTYEGG_SPIKEB_ORBIT2
+Action A_PointyEggSpike
+Var1 = 0
+Var2 = 0
+
+State S_POINTYEGG_SPIKEB_ORBIT2
+Spritenumber = SPR_SPIK
+SpriteSubNumber = B
+Duration = 1
+Next = S_POINTYEGG_SPIKEB_ORBIT3
+Action A_PointyEggSpike
+Var1 = 0
+Var2 = 0
+
+State S_POINTYEGG_SPIKEB_ORBIT3
+Spritenumber = SPR_SPIK
+SpriteSubNumber = C
+Duration = 1
+Next = S_POINTYEGG_SPIKEB_ORBIT4
+Action A_PointyEggSpike
+Var1 = 0
+Var2 = 0
+
+State S_POINTYEGG_SPIKEB_ORBIT4
+Spritenumber = SPR_SPIK
+SpriteSubNumber = D
+Duration = 1
+Next = S_POINTYEGG_SPIKEB_ORBIT5
+Action A_PointyEggSpike
+Var1 = 0
+Var2 = 0
+
+State S_POINTYEGG_SPIKEB_ORBIT5
+Spritenumber = SPR_SPIK
+SpriteSubNumber = E
+Duration = 1
+Next = S_POINTYEGG_SPIKEB_ORBIT6
+Action A_PointyEggSpike
+Var1 = 0
+Var2 = 0
+
+State S_POINTYEGG_SPIKEB_ORBIT6
+Spritenumber = SPR_SPIK
+SpriteSubNumber = F
+Duration = 1
+Next = S_POINTYEGG_SPIKEB_ORBIT7
+Action A_PointyEggSpike
+Var1 = 0
+Var2 = 0
+
+State S_POINTYEGG_SPIKEB_ORBIT7
+Spritenumber = SPR_SPIK
+SpriteSubNumber = G
+Duration = 1
+Next = S_POINTYEGG_SPIKEB_ORBIT8
+Action A_PointyEggSpike
+Var1 = 0
+Var2 = 0
+
+State S_POINTYEGG_SPIKEB_ORBIT8
+Spritenumber = SPR_SPIK
+SpriteSubNumber = H
+Duration = 1
+Next = S_POINTYEGG_SPIKEB_ORBIT1
+Action A_PointyEggSpike
+Var1 = 0
+Var2 = 0
+
+State S_POINTYEGG_SPIKEB_DELAY
+Spritenumber = SPR_SPIK
+SpriteSubNumber = A
+Duration = 100
+Next = S_POINTYEGG_SPIKE_EXPLODE
+Action None
+
+#----------Pointy Egg Spike: Type P----------
+Thing MT_POINTYEGG_SPIKEP
+SpawnState = S_POINTYEGG_SPIKEP_ORBIT
+Speed = 5*FRACUNIT
+SpawnHealth = 1000
+Height = 8*FRACUNIT
+Radius = 4*FRACUNIT
+Damage = 1
+DeathState = S_POINTYEGG_SPIKEP_DELAY
+XDeathState = S_POINTYEGG_SPIKE_EXPLODE
+Flags = MF_PAIN|MF_NOGRAVITY
+
+State S_POINTYEGG_SPIKEP_ORBIT
+Spritenumber = SPR_PNTY
+SpriteSubNumber = B
+Duration = 1
+Next = S_POINTYEGG_SPIKEP_ORBIT
+Action A_PointyEggSpikeP
+Var1 = 0
+Var2 = 0
+
+State S_POINTYEGG_SPIKEP_DROP
+Spritenumber = SPR_PNTY
+SpriteSubNumber = B
+Duration = 1
+Next = S_POINTYEGG_SPIKEP_DROP
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_POINTYEGG_SPIKEP_DELAY
+Spritenumber = SPR_PNTY
+SpriteSubNumber = B
+Duration = 100
+Next = S_POINTYEGG_SPIKE_EXPLODE
+Action None
+
+#----------Pointy Egg Spike: Type U----------
+Thing MT_POINTYEGG_SPIKEU
+SpawnState = S_POINTYEGG_SPIKEU_ORBIT
+Speed = 5*FRACUNIT
+SpawnHealth = 1000
+Height = 8*FRACUNIT
+Radius = 4*FRACUNIT
+Damage = 1
+DeathState = S_POINTYEGG_SPIKEU_DELAY
+XDeathState = S_POINTYEGG_SPIKE_EXPLODE
+Flags = MF_PAIN|MF_NOGRAVITY
+
+State S_POINTYEGG_SPIKEU_ORBIT
+Spritenumber = SPR_UNID
+SpriteSubNumber = B
+Duration = 1
+Next = S_POINTYEGG_SPIKEU_ORBIT
+Action A_PointyEggSpikeU
+Var1 = 0
+Var2 = 0
+
+State S_POINTYEGG_SPIKEU_LAUNCH
+Spritenumber = SPR_UNID
+SpriteSubNumber = B
+Duration = -1
+Action None
+Next = S_NULL
+
+State S_POINTYEGG_SPIKEU_DELAY
+Spritenumber = SPR_UNID
+SpriteSubNumber = B
+Duration = 100
+Next = S_POINTYEGG_SPIKE_EXPLODE
+Action None
+
+State S_POINTYEGG_SPIKE_EXPLODE
+Duration 0
+Next = S_XPLD1
+Action A_PlaySound
+Var1 = sfx_cybdth
+Var2 = 1

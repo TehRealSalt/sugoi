@@ -1,0 +1,33 @@
+// The Zone (Boinciel)
+Flat	WHIZFL01	Range	WHIZFL16	Tics 2
+// Quandary Canyon Zone (RomioTheBadass)
+Texture	DSTFALL1  	Range	DSTFALL3  	Tics 5
+// Dimension Disaster Zone (Lat')
+Flat	DFAN1		Range	DFAN2		Tics 2
+Flat	DWATER1		Range	DWATER16	Tics 4
+Flat	DWATER21	Range	DWATER22	Tics 16
+Flat	DWATER31	Range	DWATER32	Tics 12
+// Lilac Acreage Zone (RoyKirbs)
+Texture	UCFALL1		Range	UCFALL4		Tics 2
+// Nova Shore Zone (DrTapeworm)
+Texture	ESNFALL1	Range	ESNFALL4	Tics 2
+// Raspberry Desert Zone (Revan)
+Texture	RFALL1		Range	RFALL4		Tics 2
+// Amethyst Aqueducts Zone (Ikkarou Tatsuru)
+Texture	AAFALL1  	Range	AAFALL4  	Tics 2
+// Backyard Bother (Sryder & Chromatian)
+Texture RBBG1_01 Range RBBG1_14 Tics 7
+Texture RBBG1_15 Range RBBG1_28 Tics 7
+Texture RBBG2_01 Range RBBG2_14 Tics 8
+Flat RBBG3_01 Range RBBG3_14 Tics 9
+Flat BBBG1_01 Range BBBG1_06 Tics 9
+// Long Joruney's End (VAdaPEGA)
+Texture GUSAA0 Range GUSAH0 Tics 2
+Texture GUSAI0 Range GUSAP0 Tics 2
+Texture GUSAQ0 Range GUSAX0 Tics 2
+Texture GUSBA0 Range GUSBH0 Tics 2
+Texture GUIMTXE0 RANGE GUIMTXEF Tics 2
+Texture GUIMTB00 RANGE GUIMTB0F Tics 1
+Texture GUIMTC00 RANGE GUIMTC07 Tics 2
+// Long Journey's End (.Jazz)
+Flat PWATER1 Range PWATER4 Tics 3

@@ -1,0 +1,63 @@
+FREESLOT
+MT_PINETREE
+SPR_PINT
+S_PINETREE
+MT_PINESNOW
+SPR_PINS
+S_PINESNOW
+MT_XMASTREE
+SPR_XMST
+S_XMASTREE
+
+#Original sprite by VAdaPEGA, modified by SeventhSentinel w/ permission
+
+Object MT_PINETREE
+#$Name Holiday Hill Pinetree
+#$Sprite PINTA0
+#$Category SUGOI Decoration
+MapThingNum = 2120
+SpawnState = S_PINETREE
+SpawnHealth = 1000
+Radius = 12*FRACUNIT
+Height = 192*FRACUNIT
+Mass = 1000
+Flags = MF_SOLID
+
+State S_PINETREE
+SpriteName = PINT
+SpriteFrame = A
+Duration = -1
+
+Object MT_PINESNOW
+#$Name Holiday Hill Snowy Pinetree
+#$Sprite PINSA0
+#$Category SUGOI Decoration
+MapThingNum = 2121
+SpawnState = S_PINESNOW
+SpawnHealth = 1000
+Radius = 12*FRACUNIT
+Height = 192*FRACUNIT
+Mass = 1000
+Flags = MF_SOLID
+
+State S_PINESNOW
+SpriteName = PINS
+SpriteFrame = A
+Duration = -1
+
+Object MT_XMASTREE
+#$Name Holiday Hill Xmas Pinetree
+#$Sprite XMSTA0
+#$Category SUGOI Decoration
+MapThingNum = 2122
+SpawnState = S_XMASTREE
+SpawnHealth = 1000
+Radius = 12*FRACUNIT
+Height = 192*FRACUNIT
+Mass = 1000
+Flags = MF_SOLID
+
+State S_XMASTREE
+SpriteName = XMST
+SpriteFrame = A
+Duration = -1

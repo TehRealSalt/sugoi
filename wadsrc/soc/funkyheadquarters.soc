@@ -1,0 +1,23 @@
+# Sal: Wood debris for the extra path that I added.
+# (I kinda went overboard with this one...)
+
+Freeslot
+MT_DISCOWOODDEBRIS
+S_DISCOWOODDEBRIS
+SPR_DWDB
+
+Object MT_DISCOWOODDEBRIS
+SpawnState = S_DISCOWOODDEBRIS
+ActiveSound = sfx_wbreak
+Radius = 16*FRACUNIT
+Height = 16*FRACUNIT
+Flags = MF_NOBLOCKMAP|MF_NOCLIPTHING|MF_SCENERY|MF_NOCLIPHEIGHT|MF_RUNSPAWNFUNC
+
+State S_DISCOWOODDEBRIS
+SpriteName = DWDB
+SpriteFrame = A|FF_ANIMATE
+Duration = -1
+Action = A_DebrisRandom
+Var1 = 7
+Var2 = 2
+Next = S_NULL

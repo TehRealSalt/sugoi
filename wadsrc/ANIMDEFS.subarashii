@@ -1,0 +1,20 @@
+// Bubble Tides Zone
+Texture		PP_FWTR1	Range	PP_FWTR4	Tics 4
+
+// Funky Headquarters Zone
+Flat BLUTIL1 Range BLUTIL10 Tics 3
+Flat REDTIL1 Range REDTIL10 Tics 3
+Flat GRNTIL1 Range GRNTIL10 Tics 3
+Flat YLWTIL1 Range YLWTIL10 Tics 3
+
+// Crimson Castle Zone
+Flat		FLATHUH1 	Range	FLATHUH4	Tics 4
+
+// Atlantis
+Texture		DEZGRATA	Range	DEZGRATD	Tics 4
+
+// Twilight Grove Zone
+Flat		GWATER01	Range	GWATER16	Tics 4
+
+// Final Tower Zone
+Texture		FIN_BT01  	Range	FIN_BT36  	Tics 2

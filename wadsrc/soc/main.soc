@@ -1,0 +1,614 @@
+# Shut Up and Get On It
+MainCfg
+CustomVersion = SUGOI Beta 3
+SpStage_Start = A0
+IntroToPlay = 1
+CreditsCutscene = 4
+TitlePicsMode = Hide
+TitleMap = 99
+TitleScrollSpeed = 16
+LoopTitle = true
+TutorialMap = 0
+NumDemos = 0
+#Use1UpSound = true
+GameData = sugoi.dat
+ShareEmblems = true
+UseBlackRock = false
+
+Clear Unlockables
+Clear Emblems
+Clear ExtraEmblems
+Clear ConditionSets
+
+#
+# == TITLE MAP ==
+#
+
+Level 99
+LevelName = Flooded Sea
+SkyNum = 1234
+BonusType = None
+LevelSelect = 0
+Hidden = true
+HideInStats = true
+Lua.SUGOITitle = true
+
+#
+# == CREDITS MAP ==
+#
+
+Level 98
+LevelName = Credits
+NoZone = true
+TypeOfLevel = SP,Coop
+Music = SGCRED
+SkyNum = 7401
+SkyboxScaleZ = -1
+Palette = 100
+LevelSelect = 0
+Hidden = true
+HideInStats = true
+NextLevel = EVALUATION
+NoTitleCard = true
+Lua.CreditsMap = true
+Lua.SUGOIProgress = 4
+
+#
+# == Post-game unlockables ==
+#
+
+# MAPU1: Custom Minesweeper
+# by Rapidgame7
+Level U1
+LevelName = Custom Minesweeper
+NoZone = true
+SubTitle = (Rapidgame7)
+TypeOfLevel = SP,Coop
+Music =
+SkyNum = 95
+Weather = PRECIP_NONE
+RecordAttack = false
+HideInStats = true
+NoVisitNeeded = true
+Unlockable = 25
+LevelSelect = 0
+SelectHeading = Minigames
+NextLevel = B0
+BonusType = None
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUBARTX
+Lua.Minesweeper = 1
+Lua.CustomBoard = 1
+Lua.NoItemsAllowed = true
+Lua.Author = Rapidgame7
+
+# MAPU2: Puyo Puyo VS
+# by Tripel the Fox
+Level U2
+LevelName = Puyo Puyo VS
+NoZone = true
+SubTitle = (Tripel the Fox)
+TypeOfLevel = Coop
+Music =
+RecordAttack = false
+HideInStats = true
+NoVisitNeeded = true
+Unlockable = 26
+LevelSelect = 0
+SelectHeading = Minigames
+NextLevel = D0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+Lua.ArlePuyoPopTsuu = true
+Lua.MultiPuyo = true
+Lua.Author = Tripel the Fox
+
+# MAPU3: GHZ Builder
+# by LJ Sonic
+Level U3
+LevelName = GHZ Builder
+NoZone = true
+Subtitle = (LJ Sonic)
+TypeOfLevel = SP,Coop
+Music =
+RecordAttack = false
+HideInStats = true
+NoVisitNeeded = true
+Unlockable = 27
+LevelSelect = 0
+SelectHeading = Minigames
+NextLevel = D0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = KKAWATX
+Lua.kawaiii_mapbuilder = true
+Lua.Author = LJ Sonic
+
+# MAPU4: Heaven Zone
+# by TehRealSalt
+Level U4
+LevelName = Heaven
+SubTitle = (TehRealSalt)
+NoTitleCard = true
+TypeOfLevel = SP,Coop
+Music =
+SkyNum = 8874
+SkyboxScaleZ = 0
+StartRings = 10
+BonusType = Boss
+InterScreen = INTERWHT
+WarningTitle = true
+Hidden = true
+RecordAttack = true
+LevelSelect = 0
+SelectHeading = Heaven
+NextLevel = E0
+TitleCardActDiamond = SUGOIAC
+TitleCardZigZag = SUGOIZZ
+TitleCardZigZagText = SUBARTX
+Lua.CountMap = true
+Lua.Author = TehRealSalt
+Lua.Difficulty = 5
+Lua.Length = 1
+
+#
+# == EXTRA EMBLEMS ==
+#
+
+# EXTRA EMBLEM 1: SUGOI clear
+ConditionSet 1
+Condition1 = MapBeaten AT
+
+ExtraEmblem 1
+Name = SUGOI!
+Objective = SUGOI Clear
+ConditionSet = 1
+Sprite = U
+Color = SKINCOLOR_SAPPHIRE
+
+# EXTRA EMBLEM 2: SUBARASHII clear
+ConditionSet 2
+Condition1 = MapBeaten C2
+
+ExtraEmblem 2
+Name = SUBARASHII!!
+Objective = SUBARASHII Clear
+ConditionSet = 2
+Sprite = W
+Color = SKINCOLOR_MAGENTA
+
+# EXTRA EMBLEM 3: SUBARASHII secret ending clear
+ConditionSet 3
+Condition1 = MapBeaten XX
+
+ExtraEmblem 3
+Name = SAMURAII?!
+Objective = SUBARASHII Secret Clear
+ConditionSet = 3
+Sprite = A
+Color = SKINCOLOR_SANDY
+
+# EXTRA EMBLEM 4: KIMOKAWAIII Side A clear
+ConditionSet 4
+Condition1 = MapBeaten DP
+
+ExtraEmblem 4
+Name = KAWAIII!!!
+Objective = KIMOKAWAIII A-Side Clear
+ConditionSet = 4
+Sprite = L
+Color = SKINCOLOR_SUNSET
+
+# EXTRA EMBLEM 5: KIMOKAWAIII Side B clear
+ConditionSet 5
+Condition1 = GameClear
+#Condition1 = MapBeaten EP
+
+ExtraEmblem 5
+Name = KIMOIII!!!
+Objective = KIMOKAWAIII B-Side Clear
+ConditionSet = 5
+Sprite = M
+Color = SKINCOLOR_NEON
+
+# EXTRA EMBLEM 6: Emerald Clear
+# Gotten by getting all emeralds and beating the game
+ConditionSet 6
+Condition1 = AllEmeralds
+
+ExtraEmblem 6
+Name = KIMOKAWAIII!!!!!
+Objective = All Emeralds Clear
+ConditionSet = 6
+Sprite = H
+Color = SKINCOLOR_EMERALD
+
+# EXTRA EMBLEM 7: Extra Reel Clear
+# Gotten by completing the KIMOKAWAIII bonus reel
+ConditionSet 7
+Condition1 = MapBeaten EU
+
+ExtraEmblem 7
+Name = Behind the Scenes
+Objective = Extra Reel Clear
+ConditionSet = 7
+Sprite = H
+Color = SKINCOLOR_EMERALD
+
+#
+# == UNLOCKABLES ==
+#
+
+# UNLOCKABLE 1: Open SUGOI Area 1
+# Unlocked by getting 1 emblem
+ConditionSet 11
+Condition1 = TotalEmblems 1
+
+Unlockable 1
+Name = Area 1
+ConditionSet = 11
+Type = None
+
+# UNLOCKABLE 2: Open SUGOI Area 2
+# Unlocked by getting 10 emblems
+ConditionSet 12
+Condition1 = TotalEmblems 10
+
+Unlockable 2
+Name = Area 2
+ConditionSet = 12
+Type = None
+
+# UNLOCKABLE 3: Open SUGOI Area 3
+# Unlocked by getting 15 emblems
+ConditionSet 13
+Condition1 = TotalEmblems 15
+
+Unlockable 3
+Name = Area 3
+ConditionSet = 13
+Type = None
+
+# UNLOCKABLE 4: Open SUGOI Finale
+# Unlocked by getting 18 emblems
+ConditionSet 14
+Condition1 = TotalEmblems 18
+
+Unlockable 4
+Name = Area EGG
+ConditionSet = 14
+Type = None
+
+# UNLOCKABLE 5: Open SUGOI Area X
+# Unlocked by getting the secret collectible
+ConditionSet 15
+Condition1 = Trigger 31
+
+Unlockable 5
+Name = Area X
+Objective = Find the Lilac Conservatory secret
+ConditionSet = 15
+ShowConditionSet = 1
+Type = None
+
+# UNLOCKABLE 6: Garanz Site 16
+# Unlocked by beating the SUGOI fake ending
+ConditionSet 16
+Condition1 = MapBeaten AS
+
+Unlockable 6
+Name = Garanz Site 16
+Objective = Clear Grand Cavern
+ConditionSet = 16
+#Height = 20
+Type = None #Warp
+Var = AT
+
+# UNLOCKABLE 7: Open SUBARASHII area 1
+# Unlocked by getting 22 emblems & visiting SUBARASHII's hub
+ConditionSet 17
+Condition1 = TotalEmblems 22
+Condition1 = MapVisited B0
+
+Unlockable 7
+Name = Living Room
+ConditionSet = 17
+ShowConditionSet = 1
+Type = None
+
+# UNLOCKABLE 8: Open SUBARASHII area 2
+# Unlocked by getting 30 emblems & visiting SUBARASHII's hub
+ConditionSet 18
+Condition1 = TotalEmblems 30
+Condition1 = MapVisited B0
+
+Unlockable 8
+Name = Dining Room
+ConditionSet = 18
+ShowConditionSet = 1
+Type = None
+
+# UNLOCKABLE 9: Open SUBARASHII area 3
+# Unlocked by getting 35 emblems & visiting SUBARASHII's hub
+ConditionSet 19
+Condition1 = TotalEmblems 35
+Condition1 = MapVisited B0
+
+Unlockable 9
+Name = Library
+ConditionSet = 19
+ShowConditionSet = 1
+Type = None
+
+# UNLOCKABLE 10: Open SUBARASHII area 4
+# Unlocked by getting 40 emblems & visiting SUBARASHII's hub
+ConditionSet 20
+Condition1 = TotalEmblems 40
+Condition1 = MapVisited B0
+
+Unlockable 10
+Name = Ballroom
+ConditionSet = 20
+ShowConditionSet = 1
+Type = None
+
+# UNLOCKABLE 11: Open SUBARASHII finale
+# Unlocked by getting 45 emblems & visiting SUBARASHII's hub
+ConditionSet 21
+Condition1 = TotalEmblems 45
+Condition1 = MapVisited B0
+
+Unlockable 11
+Name = Final Tower
+ConditionSet = 21
+ShowConditionSet = 1
+Type = None
+
+# UNLOCKABLE 12: Open SUBARASHII extra
+# Unlocked by getting 50 emblems & visiting SUBARASHII's hub
+ConditionSet 22
+Condition1 = TotalEmblems 50
+Condition1 = MapVisited B0
+
+Unlockable 12
+Name = Bedroom
+ConditionSet = 22
+ShowConditionSet = 1
+Type = None
+
+# UNLOCKABLE 13: Open SUBARASHII bonus
+# Unlocked by beating the SUBARASHII secret ending
+ConditionSet 23
+Condition1 = TotalEmblems 60
+Condition1 = MapBeaten C5
+
+Unlockable 13
+Name = Gallery
+Objective = Complete the secret ending
+ConditionSet = 23
+ShowConditionSet = 2
+Type = None
+
+# UNLOCKABLE 14: Open Side A area 1
+# Unlocked by getting 47 emblems & visiting Side A's hub
+ConditionSet 24
+Condition1 = TotalEmblems 47
+Condition1 = MapVisited D0
+
+Unlockable 14
+Name = Lake
+ConditionSet = 24
+ShowConditionSet = 2
+Type = None
+
+# UNLOCKABLE 15: Open Side A area 2
+# Unlocked by getting 55 emblems & visiting Side A's hub
+ConditionSet 25
+Condition1 = TotalEmblems 55
+Condition1 = MapVisited D0
+
+Unlockable 15
+Name = Islands
+ConditionSet = 25
+ShowConditionSet = 2
+Type = None
+
+# UNLOCKABLE 16: Open Side A area 3
+# Unlocked by getting 60 emblems & visiting Side A's hub
+ConditionSet 26
+Condition1 = TotalEmblems 60
+Condition1 = MapVisited D0
+
+Unlockable 16
+Name = Mountain
+ConditionSet = 26
+ShowConditionSet = 2
+Type = None
+
+# UNLOCKABLE 17: Open Side A finale
+# Unlocked by getting 65 emblems & visiting Side A's hub
+ConditionSet 27
+Condition1 = TotalEmblems 65
+Condition1 = MapVisited D0
+
+Unlockable 17
+Name = Summit
+ConditionSet = 27
+ShowConditionSet = 2
+Type = None
+
+# UNLOCKABLE 18: Open Side A extra
+# Unlocked by getting 80 emblems & visiting Side A's hub
+ConditionSet 28
+Condition1 = TotalEmblems 80
+Condition1 = MapVisited D0
+
+Unlockable 18
+Name = Hidden Base
+ConditionSet = 28
+ShowConditionSet = 2
+Type = None
+
+# UNLOCKABLE 19: Open Side B area 1
+# Unlocked by getting 70 emblems & visiting Side A's hub
+ConditionSet 29
+Condition1 = TotalEmblems 70
+Condition1 = MapVisited E0
+
+Unlockable 19
+Name = Arches
+ConditionSet = 29
+ShowConditionSet = 4
+Type = None
+
+# UNLOCKABLE 20: Open Side B area 2
+# Unlocked by getting 75 emblems & visiting Side B's hub
+ConditionSet 30
+Condition1 = TotalEmblems 75
+Condition1 = MapVisited E0
+
+Unlockable 20
+Name = Towers
+ConditionSet = 30
+ShowConditionSet = 4
+Type = None
+
+# UNLOCKABLE 21: Open Side B finale
+# Unlocked by getting 80 emblems & visiting Side B's hub
+ConditionSet 31
+Condition1 = TotalEmblems 80
+Condition1 = MapVisited E0
+
+Unlockable 21
+Name = Final Portal
+ConditionSet = 31
+ShowConditionSet = 4
+Type = None
+
+# UNLOCKABLE 22: Finale Extra Reel
+# Unlocked by getting 140 emblems & beating the game
+ConditionSet 32
+Condition1 = TotalEmblems 140
+Condition1 = GameClear
+
+Unlockable 22
+Name = Finale Extra Reel
+ConditionSet = 32
+ShowConditionSet = 4
+Height = 40
+Type = Warp
+Var = EQ
+
+# UNLOCKABLE 23: Emblem Hints
+# Unlocked by getting 5 emblems
+ConditionSet 50
+Condition1 = TotalEmblems 5
+
+Unlockable 23
+Name = Emblem Hints
+ConditionSet = 50
+Type = EmblemHints
+
+# UNLOCKABLE 24: Emblem Radar
+# Unlocked by getting 10 emblems
+ConditionSet 51
+Condition1 = TotalEmblems 10
+
+Unlockable 24
+Name = Emblem Radar
+ConditionSet = 51
+Type = ItemFinder
+
+# UNLOCKABLE 25: Custom Minesweeper
+# Unlocked by getting 160 emblems
+ConditionSet 53
+Condition1 = TotalEmblems 160
+
+Unlockable 25
+Name = Custom Minesweeper
+ConditionSet = 53
+ShowConditionSet = 1
+Height = 60
+Type = Warp
+Var = U1
+
+# UNLOCKABLE 26: Puyo Puyo VS
+# Unlocked by getting 180 emblems
+ConditionSet 54
+Condition1 = TotalEmblems 180
+
+Unlockable 26
+Name = Puyo Puyo VS
+ConditionSet = 54
+ShowConditionSet = 2
+Type = Warp
+Var = U2
+Height = 70
+
+# UNLOCKABLE 27: GHZ Builder
+# Unlocked by getting 200 emblems
+ConditionSet 55
+Condition1 = TotalEmblems 200
+
+Unlockable 27
+Name = GHZ Builder
+ConditionSet = 55
+ShowConditionSet = 2
+Type = Warp
+Var = U3
+Height = 80
+
+# UNLOCKABLE 28: Sound Test
+# Unlocked after completing the game
+Unlockable 28
+Name = Sound Test
+ConditionSet = 5
+NoCecho = true
+Type = SoundTest
+Var = 2
+Height = 20
+
+# UNLOCKABLE 29: Record Attack
+# Unlocked after beating the first level
+ConditionSet 127
+Condition1 = MapBeaten A1
+
+Unlockable 29
+ConditionSet = 127
+NoCecho = true
+NoChecklist = true
+Type = RecordAttack
+
+# UNLOCKABLE 30: NiGHTS Mode
+# Unlocked after beating any NiGHTS map
+ConditionSet 128
+Condition1 = MapBeaten B8
+Condition2 = MapBeaten BZ
+
+Unlockable 30
+ConditionSet = 128
+NoCecho = true
+NoChecklist = true
+Type = NightsMode
+
+# UNLOCKABLE 31: Cheat Menu
+# Unlocked by getting 100% completion (number is dummy for now)
+ConditionSet 126
+Condition1 = TotalEmblems 430
+
+Unlockable 31
+Name = Cheat Menu
+ConditionSet = 126
+Type = Pandora
+
+# UNLOCKABLE 32: Level Select
+# Unlocked by getting 100% completion
+Unlockable 32
+Name = Level Select
+ConditionSet = 126
+Height = 100
+NoCecho = true
+Type = LevelSelect
+Var = 4

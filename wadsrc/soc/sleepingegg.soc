@@ -1,0 +1,109 @@
+FREESLOT
+MT_LargeBush
+MT_Foilage1
+MT_Foilage2
+MT_Foilage3
+MT_Foilage4
+MT_Foilage5
+S_LARGEBUSH
+S_FOILAGE1
+S_FOILAGE2
+S_FOILAGE3
+S_FOILAGE4
+S_FOILAGE5
+SPR_SLEB
+SPR_FOI1
+SPR_FOI2
+SPR_FOI3
+SPR_FOI4
+SPR_FOI5
+
+Object MT_LARGEBUSH
+MapThingNum = 2522
+SpawnState = S_LARGEBUSH
+Deathstate = S_NULL
+Height = 1*FRACUNIT
+Radius = 1*FRACUNIT
+Flags = MF_SCENERY|MF_SOLID
+
+Object MT_FOILAGE1
+MapThingNum = 2523
+SpawnState = S_FOILAGE1
+Deathstate = S_NULL
+Height = 1*FRACUNIT
+Radius = 1*FRACUNIT
+Flags = MF_SCENERY|MF_SOLID|MF_NOGRAVITY|MF_NOCLIP
+
+Object MT_FOILAGE2
+MapThingNum = 2524
+SpawnState = S_FOILAGE2
+Deathstate = S_NULL
+Height = 1*FRACUNIT
+Radius = 1*FRACUNIT
+Flags = MF_SCENERY|MF_SOLID|MF_NOGRAVITY|MF_NOCLIP
+
+Object MT_FOILAGE3
+MapThingNum = 2525
+SpawnState = S_FOILAGE3
+Deathstate = S_NULL
+Height = 1*FRACUNIT
+Radius = 1*FRACUNIT
+Flags = MF_SCENERY|MF_SOLID|MF_NOGRAVITY|MF_NOCLIP
+
+Object MT_FOILAGE4
+MapThingNum = 2526
+SpawnState = S_FOILAGE4
+Deathstate = S_NULL
+Height = 1*FRACUNIT
+Radius = 1*FRACUNIT
+Flags = MF_SCENERY|MF_SOLID|MF_NOGRAVITY|MF_NOCLIP
+
+Object MT_FOILAGE5
+MapThingNum = 2527
+SpawnState = S_FOILAGE5
+Deathstate = S_NULL
+Height = 1*FRACUNIT
+Radius = 1*FRACUNIT
+Flags = MF_SCENERY|MF_SOLID|MF_NOGRAVITY|MF_NOCLIP
+
+State S_LARGEBUSH
+SpriteName = SPR_SLEB
+SpriteFrame = A
+Duration = -1
+Action None
+Next = S_LARGEBUSH
+
+State S_FOILAGE1
+SpriteName = SPR_FOI1
+SpriteFrame = A
+Duration = -1
+Action None
+Next = S_FOILAGE1
+
+State S_FOILAGE2
+SpriteName = SPR_FOI2
+SpriteFrame = A
+Duration = -1
+Action None
+Next = S_FOILAGE2
+
+State S_FOILAGE3
+SpriteName = SPR_FOI3
+SpriteFrame = A
+Duration = -1
+Action None
+Next = S_FOILAGE3
+
+State S_FOILAGE4
+SpriteName = SPR_FOI4
+SpriteFrame = A
+Duration = -1
+Action None
+Next = S_FOILAGE4
+
+State S_FOILAGE5
+SpriteName = SPR_FOI5
+SpriteFrame = A
+Duration = -1
+Action None
+Next = S_FOILAGE5

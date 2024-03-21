@@ -1,0 +1,58 @@
+#Lavender Enemy
+
+Freeslot
+S_LAVENDERENEMY_STND
+S_LAVENDERENEMY_MOVE1
+S_LAVENDERENEMY_MOVE2
+MT_LAVENDER_ENEMY
+SPR_ENLA
+
+State S_LAVENDERENEMY_STND
+SpriteName = SPR_ENLA
+SPRITEFRAME = A
+action = a_look
+DURATION = 1
+NEXT = S_LAVENDERENEMY_STND
+
+STATE S_LAVENDERENEMY_MOVE1
+SPRITENAME = SPR_ENLA
+SPRITEFRAME = A
+action = A_chase
+DURATION = 1
+NEXT = S_LAVENDERENEMY_MOVE2
+
+STATE S_LAVENDERENEMY_MOVE2
+SPRITENAME = SPR_ENLA
+SPRITEFRAME = B
+Action = A_Chase
+DURATION = 1
+NEXT = S_LAVENDERENEMY_MOVE1
+
+Object MT_LAVENDER_ENEMY
+#$Name Lavender Enemy
+#$Sprite ENLAA2A8
+#$Category SUGOI Enemies
+MapThingNum = 2080
+SpawnState = S_LAVENDERENEMY_STND
+SpawnHealth = 1
+SeeState = S_LAVENDERENEMY_MOVE2
+SeeSound = sfx_None
+ReactionTime = 32
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 200
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_pop
+Speed = 7
+Radius = 24*FRACUNIT
+Height = 22*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
+RaiseState = S_NULL

@@ -1,0 +1,177 @@
+##Scarlet Palace by .Jazz.##
+##Catgirl and Robo-Hood sprites by Potatosack##
+##Original Bush sprites by VAdaPEGA##
+##Music "Angel Eyes" by Velvet##
+
+##CUSTOM OBJECTS##
+
+freeslot
+SPR_CATG
+MT_CATGIRL
+S_CATGIRL
+SPR_BUSR
+MT_REDBUSH
+S_REDBUSH
+SPR_RFLA
+MT_REDFLOWER1
+S_REDFLOWER1
+SPR_RFLB
+MT_REDFLOWER2
+S_REDFLOWER2
+SPR_RARC
+MT_CRIMSONHOOD
+S_CRIMSONHOOD_LOOK
+S_CRIMSONHOOD_STAND
+S_CRIMSONHOOD_FIRE1
+S_CRIMSONHOOD_FIRE2
+S_CRIMSONHOOD_JUMP1
+S_CRIMSONHOOD_JUMP2
+S_CRIMSONHOOD_JUMP3
+
+Object MT_CATGIRL
+#$Name CATGIRL
+#$Sprite CATGA0
+#$Category SUGOI Decoration
+MapThingNum = 1337
+SpawnState = S_CATGIRL
+Radius = 8*FRACUNIT
+Height = 94*FRACUNIT
+Flags = MF_SOLID|MF_SCENERY
+
+State S_CATGIRL
+SpriteName = CATG
+SpriteSubNumber = 0
+
+Object MT_REDBUSH
+#$Name Scarlet Bush
+#$Sprite BUSRA0
+#$Category SUGOI Decoration
+MapThingNum = 3766
+SpawnState = S_REDBUSH
+Radius = 8*FRACUNIT
+Height = 64*FRACUNIT
+Flags = MF_SCENERY
+
+State S_REDBUSH
+SpriteName = BUSR
+SpriteSubNumber = 0
+
+Object MT_REDFLOWER1
+#$Name Scarlet Flower A
+#$Sprite RFLAA0
+#$Category SUGOI Decoration
+MapThingNum = 3767
+SpawnState = S_REDFLOWER1
+Radius = 19*FRACUNIT
+Height = 96*FRACUNIT
+Flags = MF_SCENERY
+
+State S_REDFLOWER1
+SpriteName = RFLA
+SpriteSubNumber = 0
+
+Object MT_REDFLOWER2
+#$Name Scarlet Flower B
+#$Sprite RFLBA0
+#$Category SUGOI Decoration
+MapThingNum = 3768
+SpawnState = S_REDFLOWER2
+Radius = 16*FRACUNIT
+Height = 40*FRACUNIT
+Flags = MF_SCENERY
+
+State S_REDFLOWER2
+SpriteName = RFLB
+SpriteSubNumber = 0
+
+Object MT_CRIMSONHOOD
+#$Name Crimson Robo-Hood
+#$Sprite RARCA1
+#$Category SUGOI Enemies
+MapThingNum = 2521
+SpawnState = S_CRIMSONHOOD_LOOK
+SpawnHealth = 1
+SeeState = S_CRIMSONHOOD_STAND
+SeeSound = sfx_None
+ReactionTime = TICRATE
+AttackSound = sfx_ngjump
+PainState = S_NULL
+PainChance = 0
+PainSound = sfx_None
+MeleeState = S_CRIMSONHOOD_JUMP3
+MissileState = S_CRIMSONHOOD_FIRE1
+DeathState = S_XPLD_FLICKY
+XDeathState = S_NULL
+DeathSound = sfx_pop
+Speed = 3
+Radius = 24*FRACUNIT
+Height = 32*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 0
+ActiveSound = sfx_s3k4a
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
+RaiseState = S_CRIMSONHOOD_JUMP1
+
+State S_CRIMSONHOOD_LOOK
+SpriteName = RARC
+SpriteFrame = A
+Duration = 4
+Action = A_Look
+Var1 = (2048<<16)
+Var2 = 0
+Next = S_CRIMSONHOOD_LOOK
+
+State S_CRIMSONHOOD_STAND
+SpriteName = RARC
+SpriteFrame = A
+Duration = 1
+Action = A_HoodThink
+Var1 = 0
+Var2 = 0
+Next = S_CRIMSONHOOD_STAND
+
+State S_CRIMSONHOOD_FIRE1
+SpriteName = RARC
+SpriteFrame = C
+Duration = 35
+Action = A_PlayActiveSound
+Var1 = 0
+Var2 = 0
+Next = S_CRIMSONHOOD_FIRE2
+
+State S_CRIMSONHOOD_FIRE2
+SpriteName = RARC
+SpriteFrame = C
+Duration = 20
+Action = A_HoodFire
+Var1 = MT_ARROW
+Var2 = 0
+Next = S_CRIMSONHOOD_STAND
+
+State S_CRIMSONHOOD_JUMP1
+SpriteName = RARC
+SpriteFrame = B
+Duration = 1
+Action = A_FaceTarget
+Var1 = 0
+Var2 = 0
+Next = S_CRIMSONHOOD_JUMP2
+
+State S_CRIMSONHOOD_JUMP2
+SpriteName = RARC
+SpriteFrame = B
+Duration = 1
+Action = A_BunnyHop
+Var1 = 4
+Var2 = -10
+Next = S_CRIMSONHOOD_JUMP3
+
+State S_CRIMSONHOOD_JUMP3
+SpriteName = RARC
+SpriteFrame = B
+Duration = 1
+Action = A_HoodFall
+Var1 = 0
+Var2 = 0
+Next = S_CRIMSONHOOD_JUMP3

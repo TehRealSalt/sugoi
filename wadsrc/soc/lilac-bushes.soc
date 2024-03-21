@@ -1,0 +1,55 @@
+#Large Scenery Bushes
+
+Freeslot
+MT_EARLESS_BUSH
+MT_AMY_BUSH
+MT_SONIC_BUSH
+S_EARLESS
+S_AMY_BUSH
+S_SONIC_BUSH
+SPR_CBSH
+
+Object MT_EARLESS_BUSH
+#$Name "Earless Bush"
+#$Sprite CBSHA0
+#$Category SUGOI Decoration
+MapThingNum = 926
+Radius = 288*FRACUNIT
+Height = 408*FRACUNIT
+SpawnState = S_EARLESS
+Flags = MF_SCENERY
+
+State S_EARLESS
+SpriteName = CBSH
+SpriteFrame = A
+Duration = -1
+
+Object MT_AMY_BUSH
+#$Name "Amy Bush"
+#$Sprite CBSHB0
+#$Category SUGOI Decoration
+MapThingNum = 927
+Radius = 222*FRACUNIT
+Height = 250*FRACUNIT
+SpawnState = S_AMY_BUSH
+Flags = MF_SCENERY
+
+State S_AMY_BUSH
+SpriteName = CBSH
+SpriteFrame = B
+Duration = -1
+
+Object MT_SONIC_BUSH
+#$Name "Sonic Bush"
+#$Sprite CBSHD0
+#$Category SUGOI Decoration
+MapThingNum = 928
+Radius = 222*FRACUNIT
+Height = 250*FRACUNIT
+SpawnState = S_SONIC_BUSH
+Flags = MF_SCENERY
+
+State S_SONIC_BUSH
+SpriteName = CBSH
+SpriteFrame = D
+Duration = -1

@@ -1,0 +1,474 @@
+FREESLOT
+MT_EGGCANYON
+S_ECSTND1
+S_ECSTND2
+S_ECSTND3
+S_ECSTND4
+S_ECPAIN1
+S_ECPAIN2
+S_ECPAIN3
+S_ECSHOOT1
+S_ECSHOOT2
+S_ECSHOOT3
+S_ECSHOOT4
+S_ECSHOOT5
+S_ECTRAP1
+S_ECTRAP2
+S_ECTRAP3
+S_ECTRAP4
+S_ECTRAP5
+S_ECTRAP6
+S_ECTRAP7
+S_ECTRAP8
+S_ECRAGEATK
+S_ECRAGEATK2
+S_ECSHUTDOWN1
+S_ECSHUTDOWN2
+S_ECSHUTDOWN3
+S_ECSHUTDOWN4
+S_ECSHUTDOWN5
+S_ECSHUTDOWN6
+S_ECSHUTDOWN7
+S_ECSHUTDOWN8
+S_ECDIE1
+S_ECDIE2
+S_ECDIE3
+S_ECDIE4
+S_ECDIE5
+S_ECDIE6
+S_ECDIE7
+S_ECDIE8
+S_ECDIE9
+MT_TRAP
+S_TRAP
+S_TRAPPOWER1
+S_TRAPPOWER2
+S_TRAPPOWER3
+S_TRAPPOWER4
+S_TRAPPOWER5
+
+#Egg Canyon by Manimi.
+Object MT_EGGCANYON
+#$Name Egg Canyon
+#$Sprite EGGPA1
+#$Category SUGOI Bosses
+MapThingNum = 2220
+SpawnState = S_ECSTND1
+SpawnHealth = 10
+SeeState = S_ECSTND1
+SeeSound = sfx_none
+ReactionTime = 32
+AttackSound = sfx_none
+PainState = S_ECPAIN1
+PainChance = 20
+PainSound = sfx_dmpain
+MeleeState = S_ECSHOOT1
+MissileState = S_ECTRAP1
+DeathState = S_ECDIE1
+DeathSound = sfx_cybdth
+XDeathState = S_EGGMOBILE4_FLEE1
+Speed = 3
+Radius = 24*FRACUNIT
+Height = 56*FRACUNIT
+Mass = 100
+Damage = 0
+ActiveSound = sfx_telept
+RaiseState = S_ECSHUTDOWN1
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_BOSS
+
+
+State S_ECSTND1
+SpriteName = EGGP
+SpriteFrame = A
+Duration = 20
+Next = S_ECSTND2
+Action = A_BunnyHop
+Var1 = 10
+Var2 = 20
+
+State S_ECSTND2
+SpriteName = EGGP
+SpriteFrame = A
+Duration = 5
+Next = S_ECSTND3
+Action = A_FaceTarget
+Var1 = 0
+Var2 = 0
+
+State S_ECSTND3
+SpriteName = EGGP
+SpriteFrame = A
+Duration = 20
+Next = S_ECSTND4
+Action = A_BunnyHop
+Var1 = 10
+Var2 = 20
+
+State S_ECSTND4
+SpriteName = EGGP
+SpriteFrame = A
+Duration = 1
+Next = S_ECSTND1
+Action = A_RandomState
+Var1 = S_ECSHOOT1
+Var2 = S_ECTRAP1
+
+State S_ECPAIN1
+SpriteName = EGGP
+SpriteFrame = L
+Duration = 24
+Next = S_ECPAIN2
+Action = A_Pain
+Var1 = 0
+Var2 = 0
+
+State S_ECPAIN2
+SpriteName = EGGP
+SpriteFrame = K
+Duration = 50
+Next = S_ECSTND1
+Action = A_BunnyHop
+Var1 = 10
+Var2 = -30
+
+State S_ECPAIN3
+SpriteName = EGGP
+SpriteFrame = A
+Duration = 20
+Next = S_ECSTND1
+Action = A_CheckHealth
+Var1 = 5
+Var2 = S_ECSHUTDOWN1
+
+State S_ECTRAP1
+SpriteName = EGGP
+SpriteFrame = A
+Duration = 1
+Next = S_ECTRAP2
+Action = A_CheckHealth
+Var1 = 5
+Var2 = S_ECRAGEATK
+
+State S_ECTRAP2
+SpriteName = EGGP
+SpriteFrame = C
+Duration = 30
+Next = S_ECTRAP3
+Action = A_FocusTarget
+Var1 = 0
+Var2 = 0
+
+State S_ECTRAP3
+SpriteName = EGGP
+SpriteFrame = E
+Duration = 1
+Next = S_ECTRAP4
+Action = A_PlaySound
+Var1 = sfx_s3k4d
+Var2 = 0
+
+State S_ECTRAP4
+SpriteName = EGGP
+SpriteFrame = E
+Duration = 3
+Next = S_ECTRAP5
+Action = A_FireShot
+Var1 = MT_JETTBULLET
+Var2 = 1
+
+State S_ECTRAP5
+SpriteName = EGGP
+SpriteFrame = B
+Duration = 1
+Next = S_ECTRAP6
+Action = A_PlaySound
+Var1 = sfx_s3k4d
+Var2 = 0
+
+State S_ECTRAP6
+SpriteName = EGGP
+SpriteFrame = B
+Duration = 3
+Next = S_ECTRAP7
+Action = A_FireShot
+Var1 = MT_JETTBULLET
+Var2 = 1
+
+State S_ECTRAP7
+SpriteName = EGGP
+SpriteFrame = E
+Duration = 1
+Next = S_ECTRAP8
+Action = A_PlaySound
+Var1 = sfx_s3k4d
+Var2 = 0
+
+State S_ECTRAP8
+SpriteName = EGGP
+SpriteFrame = E
+Duration = 3
+Next = S_ECSTND1
+Action = A_FireShot
+Var1 = MT_JETTBULLET
+Var2 = 1
+
+State S_ECSHOOT1
+SpriteName = EGGP
+SpriteFrame = A
+Duration = 1
+Next = S_ECSHOOT2
+Action = A_CheckHealth
+Var1 = 5
+Var2 = S_ECSHUTDOWN1
+
+State S_ECSHOOT2
+SpriteName = EGGP
+SpriteFrame = C
+Duration = 30
+Next = S_ECSHOOT3
+Action = A_FocusTarget
+Var1 = 0
+Var2 = 0
+
+State S_ECSHOOT3
+SpriteName = EGGP
+SpriteFrame = E
+Duration = 15
+Next = S_ECSHOOT4
+Action = A_ZThrust
+Var1 = 15
+Var2 = 1
+
+State S_ECSHOOT4
+SpriteName = EGGP
+SpriteFrame = C
+Duration = 10
+Next = S_ECSHOOT5
+Action = A_FocusTarget
+Var1 = -10
+Var2 = 1
+
+State S_ECSHOOT5
+SpriteName = EGGP
+SpriteFrame = E
+Duration = 25
+Next = S_ECSTND1
+Action = A_SkullAttack
+Var1 = 0
+Var2 = 0
+
+State S_ECRAGEATK
+SpriteName = EGGP
+SpriteFrame = B
+Duration = 20
+Next = S_ECRAGEATK2
+Action = A_PlaySound
+Var1 = sfx_s3kb7
+Var2 = 0
+
+State S_ECRAGEATK2
+SpriteName = EGGP
+SpriteFrame = E
+Duration = 20
+Next = S_ECSTND1
+Action = A_Boss7FireMissiles
+Var1 = MT_THROWNAUTOMATIC
+Var2 = 0
+
+State S_ECSHUTDOWN1
+SpriteName = EGGP
+SpriteFrame = C
+Duration = 20
+Next = S_ECSHUTDOWN2
+Action = A_FocusTarget
+Var1 = 0
+Var2 = 0
+
+State S_ECSHUTDOWN2
+SpriteName = EGGP|FF_FULLBRIGHT
+SpriteFrame = C
+Duration = 1
+Next = S_ECSHUTDOWN3
+Action = A_RandomState
+Var1 = S_ECSHUTDOWN3
+Var2 = S_ECSHUTDOWN4
+
+State S_ECSHUTDOWN3
+SpriteName = EGGP
+SpriteFrame = E
+Duration = 1
+Next = S_ECSTND1
+Action = A_LobShot
+Var1 = MT_TRAP
+Var2 = 32
+
+State S_ECSHUTDOWN4
+SpriteName = EGGP
+SpriteFrame = E
+Duration = 1
+Next = S_ECSTND1
+Action = A_FireShot
+Var1 = MT_TRAP
+Var2 = 0
+
+State S_ECDIE1
+SpriteName = EGGP
+SpriteFrame = M
+Duration = 8
+Next = S_ECDIE2
+Action = A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_ECDIE2
+SpriteName = EGGP
+SpriteFrame = M
+Duration = 8
+Next = S_ECDIE3
+Action = A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_ECDIE3
+SpriteName = EGGP
+SpriteFrame = M
+Duration = 8
+Next = S_ECDIE4
+Action = A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_ECDIE4
+SpriteName = EGGP
+SpriteFrame = M
+Duration = 8
+Next = S_ECDIE5
+Action = A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_ECDIE5
+SpriteName = EGGP
+SpriteFrame = M
+Duration = 8
+Next = S_ECDIE6
+Action = A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_ECDIE6
+SpriteName = EGGP
+SpriteFrame = M
+Duration = 8
+Next = S_ECDIE7
+Action = A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_ECDIE7
+SpriteName = EGGP
+SpriteFrame = M
+Duration = 8
+Next = S_ECDIE8
+Action = A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_ECDIE8
+SpriteName = EGGP
+SpriteFrame = L
+Duration = 10
+Next = S_ECDIE9
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_ECDIE9
+SpriteName = EGGP
+SpriteFrame = M
+Duration = -1
+Next = S_NULL
+Action = A_BossDeath
+Var1 = 0
+Var2 = 0
+
+
+Thing MT_TRAP
+MapThingNum = -1
+spawnstate = S_TRAP
+SeeState = S_TRAPPOWER1
+SeeSound = sfx_none
+AttackSound = sfx_none
+PainState = S_NULL
+PainSound = sfx_none
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_POP1
+XDeathState = S_NULL
+DeathSound = sfx_pop
+ActiveSound = sfx_bnce2
+RaiseState = S_NULL
+SpawnHealth = 1
+ReactionTime = 32
+PainChance = 0
+Speed = 5
+Radius = 16*FRACUNIT
+Height = 32*FRACUNIT
+Mass = 100
+Damage = 0
+Flags = MF_SPECIAL|MF_ENEMY|MF_SHOOTABLE
+
+State S_TRAP
+spritename = MNPL
+spriteframe = A
+action A_Look
+duration = 5
+next = S_TRAP
+Var1 = 0
+Var2 = 0
+
+state S_TRAPPOWER1
+spritename = MNPL
+spriteframe = A
+action A_BunnyHop
+duration = 18
+next = S_TRAPPOWER2
+Var1 = 5
+Var2 = 15
+
+state S_TRAPPOWER2
+spritename = MNPL
+spriteframe = A
+action A_SkullAttack
+duration = 5
+next = S_TRAPPOWER3
+Var1 = 0
+Var2 = 1
+
+state S_TRAPPOWER3
+spritename = MNPL
+spriteframe = A
+action A_FindTarget
+duration = 5
+next = S_TRAPPOWER4
+Var1 = 0
+Var2 = 0
+
+state S_TRAPPOWER4
+spritename = MNPL
+spriteframe = A
+action A_BunnyHop
+duration = 18
+next = S_TRAPPOWER5
+Var1 = 5
+Var2 = 15
+
+state S_TRAPPOWER5
+spritename = MNPL
+spriteframe = A
+action A_RingExplode
+duration = 5
+next = S_TRAPPOWER1
+Var1 = 0
+Var2 = 0
+#

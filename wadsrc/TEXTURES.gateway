@@ -1,0 +1,17 @@
+WallTexture "GATEWALL", 1024, 4096
+{
+	Patch "GATEROCK", 0, 0
+	Patch "GATEROCK", 0, 1024
+	Patch "GATEROCK", 0, 2048
+	Patch "GATEROCK", 0, 3072
+	Patch "GATEHANG", 0, 0
+}
+
+WallTexture "GATEWAL2", 1024, 4096
+{
+	Patch "GATEROCK", 0, 0
+	Patch "GATEROCK", 0, 1024
+	Patch "GATEROCK", 0, 2048
+	Patch "GATEROCK", 0, 3072
+	Patch "GATEHAN2", 0, 0
+}

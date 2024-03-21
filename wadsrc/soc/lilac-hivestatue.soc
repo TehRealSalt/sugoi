@@ -1,0 +1,65 @@
+#Suspicious Hive Statues
+
+Freeslot
+MT_SUSPICIOUS_HIVE_STATUE
+MT_HIVE_STATUE
+S_SUSPICIOUS_HIVE_STATUE
+S_SUSPICIOUS_HIVE_BURST1
+S_SUSPICIOUS_HIVE_BURST2
+S_HIVE_STATUE
+SPR_SHVE
+
+Object MT_HIVE_STATUE
+#$Name "Hive Elemental Statue"
+#$Sprite SHVEA0
+#$Category SUGOI Enemies
+MapThingNum = 929
+SpawnState = S_HIVE_STATUE
+Radius = 30*FRACUNIT
+Height = 80*FRACUNIT
+ReactionTime = 8
+Mass = 100
+Flags = MF_SLIDEME|MF_SOLID|MF_PUSHABLE
+
+State S_HIVE_STATUE
+SpriteName = SHVE
+SpriteFrame = A
+Duration = -1
+
+Object MT_SUSPICIOUS_HIVE_STATUE
+#$Name "Suspicious Hive Elemental Statue"
+#$Sprite SHVEA0
+#$Category SUGOI Enemies
+MapThingNum = 930
+SpawnState = S_SUSPICIOUS_HIVE_STATUE
+SeeState = S_SUSPICIOUS_HIVE_BURST1
+RaiseState = MT_ROCKCRUMBLE3
+SeeSound = sfx_s3k6f
+Radius = 30*FRACUNIT
+Height = 80*FRACUNIT
+ReactionTime = 8
+Mass = 100
+Flags = MF_SLIDEME|MF_SOLID|MF_PUSHABLE
+
+State S_SUSPICIOUS_HIVE_STATUE
+SpriteName = SHVE
+SpriteFrame = A
+Action = A_Look
+Var1 = 768*FRACUNIT
+Duration = 5
+Next = S_SUSPICIOUS_HIVE_STATUE
+
+State S_SUSPICIOUS_HIVE_BURST1
+SpriteName = SHVE
+SpriteFrame = A
+Duration = 23
+Next = S_SUSPICIOUS_HIVE_BURST2
+
+State S_SUSPICIOUS_HIVE_BURST2
+SpriteName = NULL
+SpriteFrame = A
+Action = A_StatueBurst
+Var1 = MT_HIVEELEMENTAL
+Var2 = S_HIVEELEMENTAL_LOOK
+Duration = 40
+Next = S_NULL

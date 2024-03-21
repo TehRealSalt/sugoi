@@ -1,0 +1,602 @@
+# MAINCFG
+
+FREESLOT
+S_XEYELOOK
+S_XEYEECO1
+S_XEYEECO2
+S_XEYESPAWN1
+S_XEYESPAWN2
+SPR_XEYE
+S_SFShark
+S_SFSharkMove
+S_SFSharkShot1
+S_SFSharkShot3
+SPR_SFSH
+MT_WWZVINE
+S_WWZVINE
+SPR_WWZV
+MT_WWZBUSH
+SPR_WWZB
+S_XEYECUTSCENELOOK
+S_XEYECUTSCENEECO1
+S_XEYECUTSCENEECO2
+S_XEYECUTSCENESPAWN1
+S_XEYECUTSCENESPAWN2
+S_XEYECUTSCENE_SHOCK1
+S_XEYECUTSCENE_SHOCK2
+SPR_XESE
+SPR_XEXE
+SPR_XPAI
+S_SFSHARKCUTSCENE
+S_SFSHARKCUTSCENETWO
+S_SFSharkCutSceneMove
+S_SFSharkCutSceneShot
+S_SFSharkCutScenePain
+S_STEALFACESSHARKCUTSCENE_SHOCK1
+S_STEALFACESSHARKCUTSCENE_SHOCK2
+SPR_SSHO
+MT_CAMERA
+S_CAMERA
+MT_MARK
+MT_QUESTION
+S_MARK
+S_QUESTION
+SPR_MARK
+SPR_QMAR
+
+
+Object MT_XEYE
+#$Name X-Eye
+#$Sprite XEYEA1
+#$Category Enemies
+MapThingNum = 2501
+SpawnState = S_XEYELOOK
+SpawnHealth = 1
+SeeState = S_XEYEECO1
+SeeSound = sfx_appear
+ReactionTime = 5
+AttackSound = sfx_s3kcfs
+PainState = S_NULL
+PainChance = 3072
+PainSound = sfx_appear
+MeleeState = 0
+MissileState = S_XEYEECO1
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_dmpain
+Speed = 1*FRACUNIT
+Radius = 20*FRACUNIT
+Height = 20*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 0
+ActiveSound = sfx_none
+Flags = MF_ENEMY|MF_SHOOTABLE|MF_SPECIAL|MF_NOGRAVITY|MF_SLIDEME
+RaiseState = 0
+
+State S_XEYELOOK
+SpriteName = XEYE
+SpriteFrame = A
+Duration = 1
+Next = S_XEYELOOK
+Action = A_Look
+Var1 = 0
+Var2 = 0
+
+State S_XEYEECO1
+SpriteName = XEYE
+SpriteFrame = A
+Duration = 1
+Next = S_XEYEECO2
+Action = A_JetgThink
+Var1 = 0
+Var2 = 0
+
+State S_XEYEECO2
+SpriteName = XEYE
+SpriteFrame = B
+Duration = 1
+Next = S_XEYEECO1
+Action = A_JetgThink
+Var1 = 0
+Var2 = 0
+
+State S_XEYESPAWN1
+SpriteName = NULL
+SpriteFrame = A
+Duration = 30
+Next = S_XEYESPAWN2
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_XEYESPAWN2
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_NULL
+Action = A_DropMine
+Var1 = 50
+Var2 = 0
+#
+
+Object MT_STEALFACESSHARK
+#$Name Steal Faces Shark
+#$Sprite SFSHA1
+#$Category Enemies
+MapThingNum = 2502
+SpawnState = S_SFShark
+SpawnHealth = 1
+SeeState = S_SFSharkMove
+SeeSound = sfx_sfshy
+ReactionTime = 32
+AttackSound = sfx_None
+PainState = S_XPLD1
+PainChance = 200
+PainSound = sfx_wbreak
+MeleeState = S_SFSharkShot1
+MissileState = S_SFSharkShot1
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_sfshy
+Speed = 5
+Radius = 50*FRACUNIT
+Height = 35*FRACUNIT
+DispOffset = 0
+Mass = 50
+Damage = 0
+ActiveSound = sfx_none
+Flags = MF_ENEMY|MF_SHOOTABLE|MF_SPECIAL|MF_FLOAT|MF_NOGRAVITY|MF_BOUNCE
+RaiseState = 0
+
+State S_SFShark
+SpriteName = SFSH
+SpriteFrame = A
+Duration = 5
+Next = S_SFShark
+Action = A_Look
+Var1 = 0
+Var2 = 0
+
+State S_SFSharkMove
+SpriteName = SFSH
+SpriteFrame = A
+Duration = 1
+Next = S_SFSharkMove
+Action = A_Chase
+Var1 = 0
+Var2 = 0
+
+State S_SFSharkShot1
+SpriteName = SFSH
+SpriteFrame = A
+Duration = 1
+Next = S_SFSHARKSHOT2
+Action = A_PlaySound
+Var1 = sfx_sfshy
+Var2 = 1
+
+State S_SFSHARKSHOT2
+SpriteName = SFSH
+SpriteFrame = A
+Duration = 50
+Next = S_SFSharkShot3
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_SFSharkShot3
+SpriteName = SFSH
+SpriteFrame = A
+Duration = 10
+Next = S_SFSharkMove
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+#
+
+Thing MT_WWZBUSH
+#$Name WWZ Bush
+#$Sprite WWZBA0
+#$Category Decoration
+MAPTHINGNUM = 2504
+SPAWNSTATE = S_WWZBUSH
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = 0
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 0
+RADIUS = 64*FRACUNIT
+HEIGHT = 64*FRACUNIT
+MASS = 100
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NOCLIP|MF_SCENERY
+
+FRAME S_WWZBUSH
+SPRITENAME = SPR_WWZB
+SPRITEFRAME = A
+DURATION = -1
+NEXT = S_WWZBUSH
+ACTION None
+#
+
+Thing MT_WWZVINE
+#$Name WWZ Vine
+#$Sprite WWZVA0
+#$Category Decoration
+MAPTHINGNUM = 2505
+SPAWNSTATE = S_WWZVINE
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = 0
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 0
+RADIUS = 64*FRACUNIT
+HEIGHT = 64*FRACUNIT
+MASS = 100
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NOCLIP|MF_SCENERY
+
+FRAME S_WWZVINE
+SPRITENAME = SPR_WWZV
+SPRITEFRAME = A
+DURATION = -1
+NEXT = S_WWZVINE
+ACTION None
+#
+
+Object MT_XEYECUTSCENE
+#$Name X-Eye CutScene
+#$Sprite XEYEB1
+#$Category Miscellaneous
+MapThingNum = 2506
+SpawnState = S_XEYECUTSCENELOOK
+SpawnHealth = 1
+SeeState = S_XEYECUTSCENELOOK
+SeeSound = sfx_appear
+ReactionTime = 5
+AttackSound = sfx_s3kcfs
+PainState = S_NULL
+PainChance = 3072
+PainSound = sfx_appear
+MeleeState = 0
+MissileState = S_XEYECUTSCENELOOK
+DeathState = S_XEYECUTSCENELOOK
+XDeathState = S_NULL
+DeathSound = sfx_none
+Speed = 0*FRACUNIT
+Radius = 40*FRACUNIT
+Height = 40*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 0
+ActiveSound = sfx_none
+Flags = MF_SPECIAL|MF_NOGRAVITY|MF_SLIDEME|MF_NOCLIP
+RaiseState = 0
+
+State S_XEYECUTSCENELOOK
+SpriteName = XEYE
+SpriteFrame = A|FF_ANIMATE
+Duration = -1
+Next = S_XEYECUTSCENELOOK
+Action = None
+Var1 = 1
+Var2 = 2
+
+State S_XEYECUTSCENEECO1
+SpriteName = XEYE
+SpriteFrame = A
+Duration = 1
+Next = S_XEYECUTSCENEECO2
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_XEYECUTSCENEECO2
+SpriteName = XEYE
+SpriteFrame = B
+Duration = 1
+Next = S_XEYECUTSCENEECO1
+Action = A_JetgThink
+Var1 = 0
+Var2 = 0
+
+State S_XEYECUTSCENESPAWN1
+SpriteName = NULL
+SpriteFrame = A
+Duration = 30
+Next = S_XEYECUTSCENESPAWN2
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_XEYECUTSCENESPAWN2
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_NULL
+Action = A_DropMine
+Var1 = 50
+Var2 = 0
+
+State S_XEYECUTSCENE_SHOCK1
+SpriteName = XESE
+SpriteFrame = A|FF_ANIMATE
+Duration = -1
+Next = S_XEYECUTSCENE_SHOCK1
+Action = None
+Var1 = 1
+Var2 = 2
+
+State S_XEYECUTSCENE_SHOCK2
+SpriteName = XEXE
+SpriteFrame = A|FF_ANIMATE
+Duration = -1
+Next = S_XEYECUTSCENE_SHOCK2
+Action = None
+Var1 = 1
+Var2 = 2
+#
+
+Object MT_STEALFACESSHARKCUTSCENE
+#$Name Steal Faces Shark CutScene
+#$Sprite SFSHA1
+#$Category Miscellaneous
+MapThingNum = 2507
+SpawnState = S_SFSHARKCUTSCENE
+SpawnHealth = 1
+SeeState = S_SFSHARKCUTSCENE
+SeeSound = sfx_appear
+ReactionTime = 32
+AttackSound = sfx_None
+PainState = S_SFSHARKCUTSCENE
+PainChance = 200
+PainSound = sfx_wbreak
+MeleeState = S_SFSHARKCUTSCENE
+MissileState = S_SFSHARKCUTSCENE
+DeathState = S_SFSHARKCUTSCENE
+XDeathState = S_NULL
+DeathSound = sfx_none
+Speed = 0*FRACUNIT
+Radius = 50*FRACUNIT
+Height = 35*FRACUNIT
+DispOffset = 0
+Mass = 50
+Damage = 5
+ActiveSound = sfx_none
+Flags = MF_SPECIAL|MF_FLOAT|MF_NOGRAVITY|MF_NOCLIP
+RaiseState = S_SFSHARKCUTSCENE
+
+State S_SFSHARKCUTSCENE
+SpriteName = SFSH
+SpriteFrame = A
+Duration = -1
+Next = S_SFSHARKCUTSCENE
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_SFSHARKCUTSCENETWO
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_NULL
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_SFSharkCutSceneMove
+SpriteName = SFSH
+SpriteFrame = A
+Duration = 1
+Next = S_SFSharkCutSceneMove
+Action = A_Chase
+Var1 = 0
+Var2 = 0
+
+State S_SFSharkCutSceneShot
+SpriteName = SFSH
+SpriteFrame = A
+Duration = 12
+Next = S_SFSharkCutScene
+Action = A_PlaySound
+Var1 = sfx_sfshy
+Var2 = 1
+
+State S_SFSharkCutScenePain
+SpriteName = SFSH
+SpriteFrame = A
+Duration = 50
+Next = S_SFSharkCutScene
+Action = A_Pain
+Var1 = 0
+Var2 = 0
+
+State S_STEALFACESSHARKCUTSCENE_SHOCK1
+SpriteName = SSHO
+SpriteFrame = A
+Duration = -1
+Next = S_STEALFACESSHARKCUTSCENE_SHOCK1
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_STEALFACESSHARKCUTSCENE_SHOCK2
+SpriteName = SSHO
+SpriteFrame = B
+Duration = -1
+Next = S_STEALFACESSHARKCUTSCENE_SHOCK2
+Action = None
+Var1 = 0
+Var2 = 0
+#
+
+Thing MT_CAMERA
+MAPTHINGNUM = -1
+SPAWNSTATE = S_CAMERA
+SPAWNHEALTH = 1000
+SEESTATE = S_CAMERA
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = S_CAMERA
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = S_CAMERA
+MISSILESTATE = S_CAMERA
+DEATHSTATE = S_CAMERA
+DEATHSOUND = 0
+XDEATHSTATE = S_CAMERA
+SPEED = 10
+RADIUS = 10
+HEIGHT = 10
+MASS = 100
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = S_CAMERA
+FLAGS = MF_NOGRAVITY|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_SPECIAL|MF_RUNSPAWNFUNC
+
+FRAME S_CAMERA
+SPRITENAME = SPR_NULL
+SPRITEFRAME = A
+DURATION = 1
+NEXT = S_CAMERA
+ACTION None
+VAR1 = 0
+VAR2 = 0
+#
+
+Object MT_MARK
+#$Name Cutscene Mark
+#$Sprite MARKA0
+MapThingNum = -1
+SpawnState = S_MARK
+SpawnHealth = 1
+SeeState = S_MARK
+SeeSound = sfx_appear
+ReactionTime = 32
+AttackSound = sfx_None
+PainState = S_MARK
+PainChance = 200
+PainSound = sfx_wbreak
+MeleeState = S_MARK
+MissileState = S_MARK
+DeathState = S_MARK
+XDeathState = S_NULL
+DeathSound = sfx_none
+Speed = 0*FRACUNIT
+Radius = 5*FRACUNIT
+Height = 10*FRACUNIT
+DispOffset = 0
+Mass = 50
+Damage = 5
+ActiveSound = sfx_none
+Flags = MF_SPECIAL|MF_NOGRAVITY|MF_FLOAT|MF_RUNSPAWNFUNC
+RaiseState = S_MARK
+
+State S_MARK
+SpriteName = MARK
+SpriteFrame = A
+Duration = 2
+Next = S_NULL
+Action = None
+Var1 = 0
+Var2 = 0
+#
+
+Object MT_QUESTION
+#$Name Cutscene Question
+#$Sprite QUESA0
+MapThingNum = -1
+SpawnState = S_QUESTION
+SpawnHealth = 1
+SeeState = S_QUESTION
+SeeSound = sfx_appear
+ReactionTime = 32
+AttackSound = sfx_None
+PainState = S_QUESTION
+PainChance = 200
+PainSound = sfx_wbreak
+MeleeState = S_QUESTION
+MissileState = S_QUESTION
+DeathState = S_QUESTION
+XDeathState = S_NULL
+DeathSound = sfx_none
+Speed = 0*FRACUNIT
+Radius = 5*FRACUNIT
+Height = 10*FRACUNIT
+DispOffset = 0
+Mass = 50
+Damage = 5
+ActiveSound = sfx_none
+Flags = MF_SPECIAL|MF_NOGRAVITY|MF_FLOAT|MF_RUNSPAWNFUNC
+RaiseState = S_QUESTION
+
+State S_QUESTION
+SpriteName = QMAR
+SpriteFrame = A
+Duration = 2
+Next = S_NULL
+Action = None
+Var1 = 0
+Var2 = 0
+
+
+# SOC_NPCS
+
+#NPCS (Original Script by ManimiFire)
+FREESLOT
+SPR_NPCT
+
+
+Object MT_TAILSS
+#$Name Bush NPC
+#$Sprite WWZBA0
+#$Category Miscellaneous
+MapThingNum = 2111
+spawnstate = S_TAILSS
+spawnhealth = 1
+seestate = S_TAILSS
+painstate = S_TAILSS
+painsound = 0
+deathstate = S_TAILSS
+deathsound = 0
+raisestate = 0
+speed = 1
+radius = 16*FRACUNIT
+height = 48*FRACUNIT
+mass = 1000
+damage = 0
+flags = MF_SHOOTABLE|MF_RUNSPAWNFUNC|MF_SOLID
+
+State S_TAILSS
+SpriteName = PLAY
+SpriteFrame = A
+Duration = 1
+Next = S_TAILSS
+Action = None
+Var1 = 0
+Var2 = 0
+#

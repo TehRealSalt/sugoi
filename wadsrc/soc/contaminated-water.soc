@@ -1,0 +1,64 @@
+# "Script by Zippy_Zolton"
+
+FREESLOT
+MT_BLUESPRINGBALL
+S_BLUESPRINGBALL
+S_BLUESPRINGBALL2
+S_BLUESPRINGBALL3
+S_BLUESPRINGBALL4
+S_BLUESPRINGBALL5
+SPR_BSPB
+
+Thing MT_BLUESPRINGBALL
+#$Name Blue Spring Ball
+#$Sprite BSPBA0
+#$Category Springs and Fans
+MapThingNum = 1133
+SpawnState = S_BLUESPRINGBALL
+SpawnHealth = 1000
+SeeState = S_BLUESPRINGBALL2
+SeeSound = sfx_None
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 200
+PainSound = sfx_spring
+Speed = 24*FRACUNIT
+Radius = 17*FRACUNIT
+Height = 34*FRACUNIT
+Mass = 11*FRACUNIT
+Damage = 0
+ActiveSound = 0
+RaiseState = S_BLUESPRINGBALL2
+Flags = MF_SCENERY|MF_SPRING|MF_NOGRAVITY
+
+State S_BLUESPRINGBALL
+SpriteName = BSPB
+SpriteFrame = A
+Duration = -1
+Next = S_NULL
+
+State S_BLUESPRINGBALL2
+SpriteName = BSPB
+SpriteFrame = E
+Duration = 4
+Action = A_Pain
+Next = S_BLUESPRINGBALL3
+
+State S_BLUESPRINGBALL3
+SpriteName = BSPB
+SpriteFrame = D
+Duration = 1
+Next = S_BLUESPRINGBALL4
+
+State S_BLUESPRINGBALL4
+SpriteName = BSPB
+SpriteFrame = C
+Duration = 1
+Next = S_BLUESPRINGBALL5
+
+State S_BLUESPRINGBALL5
+SpriteName = BSPB
+SpriteFrame = B
+Duration = 1
+Next = S_BLUESPRINGBALL

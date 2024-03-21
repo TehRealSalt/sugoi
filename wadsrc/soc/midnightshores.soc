@@ -1,0 +1,63 @@
+Freeslot
+MT_EHTL
+SPR_EHTL
+S_EHTL
+MT_EHTR
+SPR_EHTR
+S_EHTR
+
+#Emerald Hill Zone Tree(Right)
+State S_EHTR
+SPRITENAME = EHTR
+SPRITEFRAME = A
+DURATION = -1
+NEXT = S_EHTR
+ACTION None
+VAR1 = 0
+VAR2 = 0
+
+Object MT_EHTR
+#$Name EHZ Tree ( Right)
+#$Sprite EHTRA0
+#$Category Decoration
+MapThingNum = 3999
+SpawnState = S_EHTR
+SpawnHealth = 1
+SeeState = S_EHTR
+SeeSound = sfx_None
+ReactionTime = 0
+Speed = 1
+Radius = 40*FRACUNIT
+Height = 238*FRACUNIT
+DispOffset = 0
+Mass = 1000
+ActiveSound = sfx_None
+Flags = MF_NOCLIP|MF_NOTHINK|MF_SCENERY
+
+#Emerald Hill Zone Tree(Left)
+State S_EHTL
+SpriteName = EHTL
+SpriteFrame = A
+Duration = -1
+Next = S_EHTL
+Action = None
+Var1 = 0
+Var2 = 0
+
+Object MT_EHTL
+#$Name EHZ Tree ( Left)
+#$Sprite EHTLA0
+#$Category Decoration
+MapThingNum = 3998
+SpawnState = S_EHTL
+SpawnHealth = 1
+SeeState = S_EHTL
+SeeSound = sfx_None
+ReactionTime = 0
+Speed = 1
+Radius = 40*FRACUNIT
+Height = 238*FRACUNIT
+DispOffset = 0
+Mass = 1000
+ActiveSound = sfx_None
+Flags = MF_SCENERY

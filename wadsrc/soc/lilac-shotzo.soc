@@ -1,0 +1,159 @@
+#Shotzo Cannons
+
+FREESLOT
+MT_SHOTZO
+MT_SHOTZO_DELAYED
+MT_SHOTZO_SPINNING
+MT_SHOTZO_BULLET
+S_SHOTZO
+S_SHOTZO_DELAY
+S_SHOTZO_FIRE1
+S_SHOTZO_FIRE2
+S_SHOTZO_FIRE3
+S_SHOTZO_SPIN1
+S_SHOTZO_SPIN2
+S_SHOTZO_BULLET1
+S_SHOTZO_BULLET2
+S_SHOTZO_BULLET3
+S_SHOTZO_BULLET4
+SPR_SHZO
+SPR_SHBL
+
+Object MT_SHOTZO
+#$Name Shotzo
+#$Sprite SHZOA1
+#$Category SUGOI Items & Hazards
+MapThingNum = 922
+SpawnState = S_SHOTZO
+ReactionTime = 8
+Radius = 16*FRACUNIT
+Height = 48*FRACUNIT
+Flags = MF_SOLID|MF_NOGRAVITY
+
+Object MT_SHOTZO_SPINNING
+#$Name Shotzo (Spinning)
+#$Sprite SHZOA1
+#$Category SUGOI Items & Hazards
+MapThingNum = 923
+SpawnState = S_SHOTZO_SPIN1
+ReactionTime = 8
+Radius = 16*FRACUNIT
+Height = 48*FRACUNIT
+Flags = MF_SOLID|MF_NOGRAVITY
+
+Object MT_SHOTZO_DELAYED
+#$Name Shotzo (Delayed)
+#$Sprite SHZOA1
+#$Category SUGOI Items & Hazards
+MapThingNum = 924
+SpawnState = S_SHOTZO_DELAY
+ReactionTime = 8
+Radius = 16*FRACUNIT
+Height = 48*FRACUNIT
+Flags = MF_SOLID|MF_NOGRAVITY
+
+State S_SHOTZO
+SpriteName = SHZO
+SpriteFrame = A
+Var1 = 0
+Var2 = 0
+Duration = 65
+Next = S_SHOTZO_FIRE1
+
+State S_SHOTZO_DELAY
+SpriteName = SHZO
+SpriteFrame = A
+Var1 = 0
+Var2 = 0
+Duration = 45
+Next = S_SHOTZO
+
+State S_SHOTZO_FIRE1
+SpriteName = SHZO
+SpriteFrame = A
+Action = A_TrapShot
+Var1 = (16<<16)+MT_SHOTZO_BULLET
+Var2 = (17<<16)
+Duration = 10
+Next = S_SHOTZO_FIRE2
+
+State S_SHOTZO_FIRE2
+SpriteName = SHZO
+SpriteFrame = A
+Action = A_TrapShot
+Var1 = (16<<16)+MT_SHOTZO_BULLET
+Var2 = (17<<16)
+Duration = 10
+Next = S_SHOTZO_FIRE3
+
+State S_SHOTZO_FIRE3
+SpriteName = SHZO
+SpriteFrame = A
+Action = A_TrapShot
+Var1 = (16<<16)+MT_SHOTZO_BULLET
+Var2 = (17<<16)
+Duration = 10
+Next = S_SHOTZO
+
+State S_SHOTZO_SPIN1
+SpriteName = SHZO
+SpriteFrame = A
+Action = A_ChangeAngleRelative
+Var1 = 45
+Var2 = 45
+Duration = 5
+Next = S_SHOTZO_SPIN2
+
+State S_SHOTZO_SPIN2
+SpriteName = SHZO
+SpriteFrame = A
+Action = A_TrapShot
+Var1 = (16<<16)+MT_SHOTZO_BULLET
+Var2 = (17<<16)
+Duration = 5
+Next = S_SHOTZO_SPIN1
+
+Object MT_SHOTZO_BULLET
+MapThingNum = -1
+SpawnState = S_SHOTZO_BULLET1
+DeathState = S_XPLD1
+SeeSound = sfx_s3k4d
+DeathSound = sfx_S3K9A
+Speed = 16*FRACUNIT
+Radius = 8*FRACUNIT
+Height = 8*FRACUNIT
+Mass = 100
+Damage = 1
+Flags = MF_NOBLOCKMAP|MF_MISSILE|MF_NOGRAVITY
+
+State S_SHOTZO_BULLET1
+SpriteName = SHBL
+SpriteFrame = A
+Var1 = 0
+Var2 = 0
+Duration = 1
+Next = S_SHOTZO_BULLET2
+
+State S_SHOTZO_BULLET2
+SpriteName = SHBL
+SpriteFrame = B
+Var1 = 0
+Var2 = 0
+Duration = 1
+Next = S_SHOTZO_BULLET3
+
+State S_SHOTZO_BULLET3
+SpriteName = SHBL
+SpriteFrame = C
+Var1 = 0
+Var2 = 0
+Duration = 1
+Next = S_SHOTZO_BULLET4
+
+State S_SHOTZO_BULLET4
+SpriteName = SHBL
+SpriteFrame = D
+Var1 = 0
+Var2 = 0
+Duration = 1
+Next = S_SHOTZO_BULLET1

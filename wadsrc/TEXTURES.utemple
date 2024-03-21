@@ -1,0 +1,28 @@
+// Unknown Temple 1
+WallTexture DSZ13, 128, 128
+{
+	Patch DSZ12, 0, 0
+	Patch DSZ12, 64, 64
+	Patch DSZ6, 64, 0
+	Patch DSZ6, 0, 64
+}
+
+WallTexture DSZ14, 256, 256
+{
+	Patch DSZ12, 0, 0
+	Patch DSZ12, 0, 64
+	Patch DSZ12, 0, 128
+	Patch DSZ12, 0, 192
+	Patch DSZ12, 64, 0
+	Patch DSZ6, 64, 64
+	Patch DSZ6, 64, 128
+	Patch DSZ12, 64, 192
+	Patch DSZ12, 128, 0
+	Patch DSZ6, 128, 64
+	Patch DSZ6, 128, 128
+	Patch DSZ12, 128, 192
+	Patch DSZ12, 192, 0
+	Patch DSZ12, 192, 64
+	Patch DSZ12, 192, 128
+	Patch DSZ12, 192, 192
+}

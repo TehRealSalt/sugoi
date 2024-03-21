@@ -1,0 +1,2492 @@
+# CUTSCENES
+# CUTSCENE 1: Intro
+# "SUGOI Team Presents..." (it was a team effort, after all~)
+Cutscene 1
+NumScenes 1
+Scene 1
+NumberOfPics = 1
+Pic1Name = CONSBACK
+Pic1Duration = 90*TICRATE
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 128
+SceneText =
+      #
+
+# CUTSCENE 2: End of Time
+# VS Silver (He's Pissed)
+Cutscene 2
+NumScenes 1
+Scene 1
+NumberOfPics = 1
+Pic1Name = CNFRNT
+Pic1Duration = 1280
+Pic1XCoord = 32
+Pic1YCoord = 4
+TextXPos = 4
+TextYPos = 4
+Music = CNFRNT
+SceneText = Wh... Where am I...
+What did you do?!
+Whoever or whatever you are...
+...you caused this!
+Prepare to die intruder!
+For destroying this timeline!
+      #
+
+# CUTSCENE 4: Dogoo
+# Dogoo
+Cutscene 3
+NumScenes 1
+Scene 1
+NumberOfPics = 1
+Pic1Name = DOGOOS
+Pic1Hires = 1
+Pic1Duration = 500
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 128
+FadeOutID = 99
+Music = DOGOO
+SceneText =
+      #
+
+# CUTSCENE 4: Fake SUGOI Ending
+Cutscene 4
+NumScenes 17
+Scene 1
+NumberOfPics = 1
+Pic1Name = CRDPIC01
+Pic1Duration = 350
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 0
+TextYPos = 0
+Music = GLDOHC
+SceneText =
+      #
+
+# CUTSCENE 5: Garanz Site 16
+# Don't ask.
+CUTSCENE 5
+NUMSCENES 5
+Scene 1
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 477
+Pic1XCoord = 14
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 128
+Music = MP_WT2
+SceneText = "woah i think eggman is back"
+Sonic rather bluntly stated for
+no real specific reason.
+      #
+# this intro is inspired by s_bmcdrz2.wad, please give penopat your support and love <3
+Scene 2
+NumberofPics = 1
+Pic1Name = UGLYNAXX
+Pic1Duration = 550
+Pic1XCoord = 80
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 128
+SceneText = "Why the fuck you keep saying that?"
+Knuckles said back as he wondered
+why the hell they were suddenly
+playing another shitty level pack.
+      #
+Scene 3
+NumberofPics = 1
+Pic1Name = OLDREVNG
+Pic1Duration = 175
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 90
+SceneText = "
+                             "
+      #
+Scene 4
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 680
+Pic1XCoord = 14
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 90
+SceneText = "bcus the BLU guy is died
+now and only RED guy is alive
+so eegman will comeback to fight!!!
+bcus ihes redd to"
+      #
+Scene 5
+NumberOfPics = 1
+Pic1Name = UGLYNAXX
+Pic1Duration = 680
+Pic1XCoord = 80
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 100
+SceneText = "You're a fucking moron.
+Well, shit, guess we need to
+go break some eggs before
+AW SHIT A FOREST."
+      #
+
+# CUTSCENE 6: SUGOI ending, SUBARASHII intro
+CUTSCENE 6
+NUMSCENES 26
+Scene 1
+NumberOfPics = 1
+Pic1Name = OLDREVNG
+Pic1Duration = 480
+Pic1XCoord = 14
+Pic1YCoord = 14
+TextXPos = 32
+TextYPos = 32
+Music = VSALT
+SceneText = "eeegraman!
+i found u at last!!!"
+
+"its time!!!! to
+  DUDDUDUDUUDUDUDUEL
+ with pokemon go cards  "
+      #
+Scene 2
+NumberofPics = 1
+Pic1Name = OLDEGGD1
+Pic1Duration = 930
+Pic1XCoord = 14
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 70
+Music = BHZ
+SceneText = \A8"Why,\B9 if it isn't the horrendously
+snivelling pathetic worm brigade!\B9
+What have we here?\B9 Test subjects?\B9
+Perfect timing -\B9 I have here a new
+weapon,\B9 more powerful than anything
+you could possibly imagine!\B9 Your
+world is about to become a lot
+more terrifying..."
+      #
+Scene 3
+NumberOfPics = 1
+Pic1Name = OLDCRD05
+Pic1Duration = 512
+Pic1XCoord = 100
+Pic1YCoord = 14
+TextXPos = 32
+TextYPos = 32
+Music = VSALT
+SceneText = "terrifiying??
+i dont beeleve u eeegrass man,
+theres nothing more terrinfying
+than kuckle when he want to
+punch u in face !!!
+"
+      #
+Scene 4
+NumberofPics = 1
+Pic1Name = OLDEGGD1
+Pic1Duration = 880
+Pic1XCoord = 14
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 70
+Music = BHZ
+SceneText = \A8"If you will not heed my warning,\B9
+hedgehog,\B9 then perhaps you would
+like to feast your eyes on this beau-
+tiful product of Gamindustri,\B9 a new
+weapon of mass seduction and spell-
+binding hypnotic gaze!\B9 Behold,\B9 my
+latest masterpiece!\B9 The true
+antagonist of SUGOI itself!"
+      #
+Scene 5
+NumberOfPics = 1
+Pic1Name = UGLYNAXX
+Pic1Duration = 900
+Pic1XCoord = 80
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 100
+SceneText = "Get on with it already,
+I need to go take a sicknasty shit.
+Imma crack my knuckles on your egg-
+OH HOLY JESUS FUCK WHAT IS THAT"
+
+Knuckles looked on, horrified, as
+the true antagonist of SUGOI itself
+appeared in front of him...
+      #
+SCENE 6
+NUMBEROFPICS = 8
+Pic1Name = AESPOP1
+Pic1Duration = 2
+Pic1XCoord = 88
+Pic1YCoord = 74
+Pic2Name = AESPOP2
+Pic2Duration = 2
+Pic2XCoord = 88
+Pic2YCoord = 74
+Pic3Name = AESPOP3
+Pic3Duration = 2
+Pic3XCoord = 88
+Pic3YCoord = 74
+Pic4Name = AESPOP4
+Pic4Duration = 2
+Pic4XCoord = 88
+Pic4YCoord = 74
+Pic5Name = AESPOP5
+Pic5Duration = 2
+Pic5XCoord = 88
+Pic5YCoord = 74
+Pic6Name = AESPOP6
+Pic6Duration = 2
+Pic6XCoord = 88
+Pic6YCoord = 74
+Pic7Name = AESPOP7
+Pic7Duration = 2
+Pic7XCoord = 88
+Pic7YCoord = 74
+Pic8Name = AESPREP1
+Pic8Duration = 2
+Pic8XCoord = 84
+Pic8YCoord = 74
+TextXPos = 8
+TextYPos = 20
+Music = HLRAIS
+SceneText =
+#
+SCENE 7
+NUMBEROFPICS = 3
+Pic1Name = AESPREP2
+Pic1Duration = 5
+Pic1XCoord = 84
+Pic1YCoord = 74
+Pic2Name = AESWIP1
+Pic2Duration = 5
+Pic2XCoord = 84
+Pic2YCoord = 74
+Pic3Name = AESWAVE2
+Pic3Duration = 500
+Pic3XCoord = 84
+Pic3YCoord = 74
+TextXPos = 30
+TextYPos = 40
+SceneText =                    ANIME EYES SONIC
+      #
+Scene 8
+NumberOfPics = 2
+Pic1Name = OINTRO5
+Pic1Duration = 575
+Pic1XCoord = 0
+Pic1YCoord = 0
+Pic2Name = BECOME
+Pic2Duration = 350
+Pic2XCoord = 0
+Pic2YCoord = 0
+TextXPos = 8
+TextYPos = 2
+SceneText =
+"no not u!!!!!!!!!
+it cant be, no no no nononosonosonic
+sononosonosonicsonicSONICSONICSONIC
+
+
+ANIME EYES SONIC
+ITS U AT LAST, NOOOO !
+YOU HAVE RETURNED
+TO HAUNT ME!!!!!!!"
+
+ **dokkyun**
+
+"AND NOW,
+YOU ARE ME AND I AM YOU.
+I HAVE BECOME THE ANIMES."
+      #
+Scene 9
+NumberOfPics = 8
+Pic1Name = UGLYNAXX
+Pic1Duration = 450
+Pic1XCoord = 80
+Pic1YCoord = 14
+Pic2Name = UGLYNAXX
+Pic2Duration = 1
+Pic2XCoord = 90
+Pic2YCoord = 14
+Pic3Name = UGLYNAXX
+Pic3Duration = 1
+Pic3XCoord = 110
+Pic3YCoord = 14
+Pic4Name = UGLYNAXX
+Pic4Duration = 1
+Pic4XCoord = 140
+Pic4YCoord = 14
+Pic5Name = UGLYNAXX
+Pic5Duration = 1
+Pic5XCoord = 180
+Pic5YCoord = 14
+Pic6Name = UGLYNAXX
+Pic6Duration = 1
+Pic6XCoord = 230
+Pic6YCoord = 14
+Pic7Name = UGLYNAXX
+Pic7Duration = 1
+Pic7XCoord = 290
+Pic7YCoord = 14
+Pic8Name = UGLYNAXX
+Pic8Duration = 500
+Pic8XCoord = 360
+Pic8YCoord = 14
+TextXPos = 8
+TextYPos = 70
+SceneText = "Holy fuck, I can't deal with
+this gelbooru-tier garbage. Count me
+the fuck out of your adventures. I'm
+not saving you. You can stay anime."
+
+Knuckles brexited like a motherfucker.
+There was no hope remaining. Sonic
+would remain an anime forever.
+
+Oh well.
+      #
+Scene 10
+NumberofPics = 1
+Pic1Name = OLDEGGD1
+Pic1Duration = 1200
+Pic1XCoord = 14
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 70
+SceneText = \A8"At last, my revenge is finally
+complete.\B9 It serves you right for
+ruining my life with moe and weeaboo
+garbage.\B9 My life is now dedicated only
+to my waifus,\B9 of which there are far too
+many for one person to hold and care for.\B9
+
+You have become the animes.\B9
+I have become the animes too.\B9
+We have all become sugoi together."
+      #
+Scene 11
+NumberofPics = 1
+Pic1Name = NEXTDAY
+Pic1Duration = 100
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 320
+TextYPos = 200
+SceneText = ...
+      #
+Scene 12
+NumberOfPics = 1
+Pic1Name = TASTYEVA
+Pic1Duration = 70
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 128
+Music = MISATO
+SceneText =
+      #
+Scene 13
+NumberofPics = 1
+Pic1Name = TASTYDRK
+Pic1Duration = 780
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 8
+SceneText = \A8Eggman and Anime Eyes Sonic kicked
+back,\B9 loving the hell out of My Anime
+List and all of its wonders.\B9 Filled
+with a cup of green tea and rice balls,\B9
+the two looked deeply into one another's
+eyes -\B9 gazing longingly while cracking
+jokes about how awful the PSO2 anime was.
+      #
+Scene 14
+NumberofPics = 1
+Pic1Name = TASTYDRK
+Pic1Duration = 800
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 100
+SceneText = \A8"Oh, did you hear about the new
+Evangelion movie?\B9 I'm very eggcited, it
+looks great!"\B9 Eggman was quite chuffed,\B9
+making the lamest of egg-related puns in
+a vague attempt to entertain his guest.\B9
+As Sonic was an anime,\B9 he had no concept
+of bad dialogue or poorly thought out
+plot hooks.
+      #
+Scene 15
+NumberOfPics = 1
+Pic1Name = TASTYDRK
+Pic1Duration = 1050
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 8
+SceneText = \A8He did,\B9 however,\B9 know all about anime.\B9
+"Of course,\B9 egguman-senpai,\B9 I know about
+Evangelion 3.33 and 4.44 as well as all
+the other Evangelion content.\B9 I am what
+you would call the biggest weeaboo."\B9
+
+Eggman pondered as he twizzled his lovely
+moustache.\B9 "Hmm,"\B9 he thought.\B9 Immediately
+he leaned forward in order to ask Sonic the
+question that had been burning at him for
+the longest time.
+      #
+Scene 16
+NumberOfPics = 1
+Pic1Name = TASTYDRK
+Pic1Duration = 680
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 100
+SceneText = \A9"Who is best girl, Sonic?"\B9
+
+\A8Sonic didn't even have to think.\B9
+
+\A9"Ayanami Rei."\B9
+
+.\B9\B9 .\B9\B9 .\B9\B9 .\B9\B9 .\B9\B9 .\B9\B9 .
+
+      #
+Scene 17
+NumberOfPics = 1
+FadeOutID = 1
+Pic1Name = OLDEGGD1
+Pic1Duration = 640
+Pic1XCoord = 14
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 8
+Music = DOGMA
+SceneText = \A9"No, no, that won't do at all."
+
+\A7Eggman stood, shoving the table and all
+the doujinshi stacked on top of it off to
+the side. \B9
+
+\A7"I can't \A9believe\A7 you could betray me like
+this.\B9\A9 Asuka Soryuu Langley\A7 is the answer,
+right?\B9 There's no other candidate for the
+title of\A9 best girl.\B9\A7 You have failed me for
+all time.\B9 Off to the Shadow Realm with you."\B9
+
+	#
+Scene 18
+NumberOfPics = 1
+Pic1Name = OLDEGGD1
+Pic1Duration = 800
+Pic1XCoord = 14
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 64
+Music = DOGMA
+SceneText = \A8Eggman pulled a lever and a washpan fell on
+Anime Eyes Sonic's head,\B9 knocking the
+anime out of him.\B9 Then a black disruption
+in the fabric of space-time causality rift
+of empty darkness opened somewhere and
+Sonic was dragged in because of random
+plot bullshit.
+      #
+Scene 19
+FadeOutID = 1
+NumberOfPics = 1
+Pic1Name = SHDWRELM
+Pic1Duration = 680
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 100
+SceneText = \A7WHOOOOOOOOSHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHH!\B9\B9\B9!!!!!!!!\B9\B9\B9\B9\B9!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\B9\B9\B9\B9\B9!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\B9\B9\B9\B9\B9\B9\B9\B9!
+
+\B9\B9\B9\B9\B9\B9\B9\B9\B9\B9!
+	#
+Scene 20
+NumberOfPics = 1
+Pic1Name = SHDWRELM
+Pic1Duration = 680
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 8
+Music = OLDSCD
+SceneText = \A8Sonic was sucked into the Shadow Realm,
+represented by this scribble.\B9 Nobody knows
+just what happens there...\B9
+
+Suddenly, out of the empty darkness...
+#
+Scene 21
+FadeOutID = 1
+NumberOfPics = 1
+Pic1Name = SHADOWED
+Pic1Duration = 680
+Pic1XCoord = 160
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 100
+Music = MP_RAI
+SceneText = \A8"What the hell are you doing in my house?"\B9
+It was Shadow.\B9 Of course it was.\B9
+
+It's the Shadow Realm.\B9
+Literally his house.\B9
+
+
+What are you, stupid?
+#
+Scene 22
+FadeOutID = 66
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 640
+Pic1XCoord = 14
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 30
+Music = MP_FOR
+SceneText = ""omg my god!!!!!! sadow!!!!!\B9
+its u! fhow i missed u!
+were am i this place is dark and cold
+and smells like angst overflowing into
+the furniture  "
+
+#
+Scene 23
+FadeOutID = 65
+NumberOfPics = 1
+Pic1Name = SHADOWED
+Pic1Duration = 680
+Pic1XCoord = 160
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 100
+Music = MP_RAI
+SceneText = \A8"No,\B9 like why the hell are you even here.\B9
+You ruined anime forever.\B9 Get out."\B9
+Shadow turned his back to Sonic and
+walked away all cool like,\B9 except for
+his massive skate shoes making his
+gait look really stupid.
+
+#
+Scene 24
+FadeOutID = 66
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 640
+Pic1XCoord = 14
+Pic1YCoord = 14
+TextXPos = 0
+TextYPos = 31
+Music = MP_FOR
+SceneText = "eeeeeeeg said to ban me from
+all anime forever, this isn't correct?
+shit my br - en translator is not working
+also to destroy pueblo city with new wepon"
+(hint: wepon is not anime)"
+#
+Scene 25
+FadeOutID = 65
+NumberOfPics = 1
+Pic1Name = SHADOWED
+Pic1Duration = 800
+Pic1XCoord = 160
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 100
+Music = AGZ
+SceneText = \A8"Ugh,\B9 fine.\B9 I guess we should go do
+something so I can get rid of you and just
+cry myself to sleep until I can't wake up,\B9
+you annoying piece of shit.\B9 Do you have
+a plan.\B9.\B9.\B9 wait, \B9 of course you wouldn't.\B9
+You're like 5."
+
+#
+Scene 26
+FadeOutID = 1
+NumberOfPics = 1
+Pic1Name = OLDREVNG
+Pic1Duration = 1150
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 0
+Music = MP_FOR
+SceneText = IN ACTUAL, we go to,         " the
+place after flooded sea zone"" place to
+go get the hms123311, only being
+more powerful enog to stop aggronman,"\B9
+\B9\B9\B9\B9\B9
+
+
+
+
+
+\A8Shadow sighed a deep sigh and wondered
+if the time it took for SUBARASHII to
+release was actually worth it,\B9 but then
+remembered how long Top Down took.\B9 All he
+wanted was some reasonable release times.\B9\B9\B9
+Was that too much to ask?
+#
+
+# CUTSCENE 7: SUBARASHII ending, KIMOKAWAIII intro
+# < To Be Continued |\|
+CUTSCENE 7
+NUMSCENES 25
+Scene 1
+NumberOfPics = 8
+Pic1Name = EGGFIST2
+Pic1Duration = 20
+Pic1XCoord = 0
+Pic1YCoord = 0
+Pic2Name = EGGFIST
+Pic2Duration = 2
+Pic2XCoord = 0
+Pic2YCoord = 0
+Pic3Name = EGGFIST2
+Pic3Duration = 2
+Pic3XCoord = 0
+Pic3YCoord = 0
+Pic4Name = EGGFIST
+Pic4Duration = 2
+Pic4XCoord = 0
+Pic4YCoord = 0
+Pic5Name = EGGFIST2
+Pic5Duration = 2
+Pic5XCoord = 0
+Pic5YCoord = 0
+Pic6Name = EGGFIST
+Pic6Duration = 2
+Pic6XCoord = 0
+Pic6YCoord = 0
+Pic7Name = EGGFIST2
+Pic7Duration = 2
+Pic7XCoord = 0
+Pic7YCoord = 0
+Pic8Name = EGGFIST
+Pic8Duration = 580
+Pic8XCoord = 0
+Pic8YCoord = 0
+TextXPos = 4
+TextYPos = 4
+Music = WINNER
+SceneText = \B9\B9\B9\A8Eggman lost.\B9 The fight was over.\B9
+
+As it turns out,\B9 the whole reason Eggman
+wanted to destroy Pueblo City was because
+it produced Spanish subtitles on his anime
+and it made him mad when he accidentally
+ran into them.
+      #
+Scene 2
+FadeOutID = 1
+NumberOfPics = 2
+Pic1Name = EGGGLOAT
+Pic1Duration = 300
+Pic1XCoord = 0
+Pic1YCoord = 0
+Pic2Name = EGGTLK01
+Pic2Duration = 500
+Pic2XCoord = 0
+Pic2YCoord = 0
+TextXPos = 8
+TextYPos = 8
+Music = SWITCH
+SceneText = \A7"I lost this time!\B9 However,\B9 this was
+just the first step in my schemes.\B9 I have
+other plans,\B9 other ways I can destroy
+Pueblo City!\B9 Just wait and see! brb"
+\B9\B9\B9\B9\B9\B9\B9
+\A8Eggman zoomed off into the depths.\B9
+With Egg World defeated, there was
+nothing left here but an old, decrepit
+tower with magical teleporting abilities.\B9
+
+Sonic and Shadow stood,\B9 looking on.
+
+#
+Scene 3
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 640
+Pic1XCoord = 200
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 130
+Music = MP_COA
+SceneText = "we won!!!! but is
+this the real end? find out and see more
+next time on subarashii 2 the sequel
+coming soon to theartes tonear you!!"
+
+#
+Scene 4
+NumberOfPics = 2
+Pic1Name = EGGTLK01
+Pic1Duration = 640
+Pic1XCoord = 0
+Pic1YCoord = 0
+Pic2Name = HMSSPIKE
+Pic2Duration = 260
+Pic2XCoord = 0
+Pic2YCoord = 0
+TextXPos = 8
+TextYPos = 8
+Music = MP_COA
+SceneText = \A8Shadow looked around at the exploded top
+of Teleport Tower.\B9 Eggman was surely
+harnessing its power to ship inter-
+nationally for next to nothing,\B9 and Shadow
+was jealous.\B9 He wanted the limited edition
+Homura figurines but the shipping always
+cut heavily into his funds.\B9
+\B9\B9\B9
+
+
+
+
+"Huh, isn't that one of HMS123311's
+poorly-drawn spikes over there?"\B9
+#
+Scene 5
+NumberOfPics = 1
+Pic1Name = OLDREVNG
+Pic1Duration = 1000
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 0
+Music = MP_MRZ
+SceneText = omF sdlljfaljfl
+    shadow ur gsukinius!  we must to foloow
+ clue with immediate, to find hms123311
+ and go to, "the place after flooded sea"
+ zone place!
+ eggmans plans are not
+ over yet, we will protect pueblo city
+  by building wall around inocent people
+ inside" to save them\B9
+\B9\B9\B9"
+#
+Scene 6
+NumberOfPics = 1
+Pic1Name = SHADOWK
+Pic1Duration = 200
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 130
+Music = MISATO
+SceneText =
+\B9\B9\B9\B9
+#
+Scene 7
+FadeOutID = 1
+NumberOfPics = 1
+Pic1Name = EGGGLOAT
+Pic1Duration = 800
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 8
+Music = SWITCH
+SceneText = \A7"Hi,\B9 I'm back now!\B9 Did you miss me?\B9
+I actually just finished one of my plans,\B9
+do you want to see it?"
+\B9\B9
+\A8"No,\B9 and I don't care.\B9 Go play with
+your toys elsewhere," Shadow remarked.\B9
+
+\A7"Aww,\B9 come on.\B9 Pretty please?\B9 I promise
+it's cool!"\B9
+
+\A8"Uh-"
+
+\A7"GO MY ANIMEIZED KNUCKLES, WIN AT
+FIGHTING KTHXBYE"\B9
+
+\A8And so Eggman revealed the true boss!\B9\B9\B9
+He also ran away again, the coward.
+Its form was very mysterious and nobody
+could even see what it was, because
+the text was hidden below the bottom of
+the screen down here. You know what?
+It doesn't even matter what the final boss
+looks like, because the actual final
+boss is Egg World. There, I said it.
+There is no secret boss hidden away behind
+the text, and there is no Phase 2 for
+Egg World. What, you thought there was?
+Foolish child, you will come to see in time
+that there is no such thing as a good boss
+in this game with an equally good second
+phase. The first phase is already
+pretty good so why would you even risk
+making something that isn't as good
+as it already is, geez?
+#
+SCENE 8
+FadeOutID = 1
+NUMBEROFPICS = 8
+Pic1Name = JJSPOP1
+Pic1Duration = 2
+Pic1XCoord = 88
+Pic1YCoord = 74
+Pic2Name = JJSPOP2
+Pic2Duration = 2
+Pic2XCoord = 88
+Pic2YCoord = 74
+Pic3Name = JJSPOP3
+Pic3Duration = 2
+Pic3XCoord = 88
+Pic3YCoord = 74
+Pic4Name = JJSPOP4
+Pic4Duration = 2
+Pic4XCoord = 88
+Pic4YCoord = 74
+Pic5Name = JJSPOP5
+Pic5Duration = 2
+Pic5XCoord = 88
+Pic5YCoord = 74
+Pic6Name = JJSPOP6
+Pic6Duration = 2
+Pic6XCoord = 88
+Pic6YCoord = 74
+Pic7Name = JJSPOP7
+Pic7Duration = 2
+Pic7XCoord = 88
+Pic7YCoord = 74
+Pic8Name = JJSPREP1
+Pic8Duration = 2
+Pic8XCoord = 84
+Pic8YCoord = 74
+TextXPos = 8
+TextYPos = 20
+Music = ALCHM2
+SceneText =
+#
+SCENE 9
+FadeOutID = 1
+NUMBEROFPICS = 3
+Pic1Name = JJSPREP2
+Pic1Duration = 5
+Pic1XCoord = 84
+Pic1YCoord = 74
+Pic2Name = JJSWIP1
+Pic2Duration = 5
+Pic2XCoord = 84
+Pic2YCoord = 74
+Pic3Name = JJSWAVE2
+Pic3Duration = 500
+Pic3XCoord = 84
+Pic3YCoord = 74
+TextXPos = 30
+TextYPos = 40
+SceneText =                    OLD MAN KNUCKLES
+      #
+Scene 10
+NumberOfPics = 2
+Pic1Name = OINTRO5
+Pic1Duration = 766
+Pic1XCoord = 0
+Pic1YCoord = 0
+Pic2Name = EVILSONC
+Pic2Duration = 350
+Pic2XCoord = 40
+Pic2YCoord = 24
+TextXPos = 8
+TextYPos = 2
+SceneText =
+"no not u!!!!!!!!!
+it cant be, knuxles u were
+my greateset of friends !
+and now you are also the animes!
+the true antagronist of sugoi itself!"
+\B9\B9\B9
+
+\A8"No,\B9 Sonic.\B9 He is not the true antagonist
+of SUGOI itself.\B9 You are.\B9
+As for SUBARASHII...
+\B9\B9\B9\B9\B9\B9\B9
+It is I.\B9 Shadow\B9 the Hedgehog."#
+Scene 11
+NumberOfPics = 1
+Pic1Name = OLDREVNG
+Pic1Duration = 920
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 8
+Music = MP_COA
+SceneText = ?"???????????????
+shadow u tured out evil after all!
+
+i always knew it, that u were evil
+.\B9 .\B9 .\B9 .\B9 .\B9 .\B9 .\B9\B9
+are u ignoreing me!?\B9
+go dead sucker, *FART IN Shadow FACE*
+rot to hell.
+
+#
+Scene 12
+FadeOutID = 65
+NumberOfPics = 1
+Pic1Name = SHADOWED
+Pic1Duration = 500
+Pic1XCoord = 160
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 100
+Music = ALCHM2
+SceneText = \A8"Um?\B9 I'm over here, you moron.\B9
+That's totally and completely a knockoff,\B9
+he's a black Sonic with red eyes.\B9 Can't you
+even tell the difference?\B9 Holy shit."
+
+#
+Scene 13
+FadeOutID = 66
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 800
+Pic1XCoord = 100
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 8
+SceneText = "oh, but to me all the hedgehogs
+look the same..."
+
+\A8Shadow grimaced so hard his face turned
+to stone and began to crack.\B9 This was the
+exact same shit Amy pulled back in SA2,\B9 not
+even being able to tell one hedgehog apart
+from another.\B9 They don't look even REMOTELY
+similar,\B9 okay?\B9 Can we agree on that?
+
+
+#
+Scene 14
+FadeOutID = 65
+NumberOfPics = 1
+Pic1Name = SHADOWED
+Pic1Duration = 600
+Pic1XCoord = 160
+Pic1YCoord = 14
+TextXPos = 8
+TextYPos = 100
+SceneText = \A8"Uh,\B9 this guy looks too powerful to fight
+for now.\B9 Why don't I deal with him,\B9 and
+you can go look for HMS?\B9 That way I don't
+have to deal with you anymore and you
+can just do whatever you want,\B9 I don't even
+care anymore."
+
+#
+Scene 15
+FadeOutID = 66
+NumberOfPics = 8
+Pic1Name = OLDCRD03
+Pic1Duration = 200
+Pic1XCoord = 80
+Pic1YCoord = 14
+Pic2Name = OLDCRD08
+Pic2Duration = 1
+Pic2XCoord = 90
+Pic2YCoord = 14
+Pic3Name = OLDCRD08
+Pic3Duration = 1
+Pic3XCoord = 110
+Pic3YCoord = 14
+Pic4Name = OLDCRD08
+Pic4Duration = 1
+Pic4XCoord = 140
+Pic4YCoord = 14
+Pic5Name = OLDCRD08
+Pic5Duration = 1
+Pic5XCoord = 180
+Pic5YCoord = 14
+Pic6Name = OLDCRD08
+Pic6Duration = 1
+Pic6XCoord = 230
+Pic6YCoord = 14
+Pic7Name = OLDCRD08
+Pic7Duration = 1
+Pic7XCoord = 290
+Pic7YCoord = 14
+Pic8Name = OLDCRD08
+Pic8Duration = 1100
+Pic8XCoord = 360
+Pic8YCoord = 14
+TextXPos = 8
+TextYPos = 20
+Music = MISATO
+SceneText = "ok ill leeve it 2 u!
+good luck shadow!"
+\B9\B9\B9\B9\B9\B9
+\A8Sonic left to chase Eggman,\B9 and to use
+the clue Shadow had found to locate
+the true whereabouts of HMS123311.\B9
+Shadow sighed,\B9 and gave his brother a
+high five.\B9 The plan had worked,\B9 Sonic
+was finally gone.\B9 Now they could relax, put
+their feet up,\B9 and enjoy some peace and
+quiet in the Shadow Realm.\B9
+\B9\B9\B9
+As for what Sonic got up to,\B9 that's
+a tale for another day.\B9 Rest easy,\B9 Shadow...
+      #
+Scene 16
+NumberOfPics = 1
+Pic1Name = TIMELOOP
+Pic1Duration = 175
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 320
+TextYPos = 200
+Music = TIMELP
+SceneText =
+#
+Scene 17
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = MP_FOR
+MusicLoop = true
+SceneText = "wherd am i? i feel like i was
+portale d here
+
+
+this is floating island place looks like.
+cool but fimilar
+
+but I Dont remember any a thing....."
+#
+Scene 18
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 32
+Music = MP_FOR
+MusicLoop = true
+SceneText = \A8Sonic finds himself on a floating island,\B9
+lost of all of his memory,\B9 yet everything
+around him feels familiar.\B9 Can you help
+him get his memories back?\B9 Will he be able
+to finally find HMS?\B9 Will this plot ever
+have any sort of cohesion or make any
+amount of sense?\D2
+
+(Probably not.)\D2
+
+Suddenly,\B9 a masked man appears.
+#
+Scene 19
+NumberOfPics = 1
+Pic1Name = MASKEGG
+Pic1Duration = 1680
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 96
+Music = EGGMSK
+MusicLoop = true
+SceneText = \A7"Muhahaha!\BA Good mornafternevening Sonic,\BA
+it appears you've at long last showed up!\BA
+Though I don't have the foggiest idea why
+you wouldn't respond to my world
+domination calls\BA -- your answering
+machine just kept mumbling incoherently
+about the power of HMS\BA -- wait
+HOLD THE PHONE"
+#
+Scene 20
+NumberOfPics = 1
+Pic1Name = MASKEGG
+Pic1Duration = 1050
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 128
+Music = EGGMSK
+MusicLoop = true
+SceneText = \A7"I don't know a~~~nything about what you've
+said to the magnificent Dr. Ivo Robotnik,\BA
+for I am your newest adversary.\BA.\BA.\BA
+MASKED EGGMAN!!"
+#
+Scene 21
+NumberOfPics = 1
+Pic1Name = MASKEGG
+Pic1Duration = 385
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = EGGMSK
+MusicLoop = true
+SceneText = \A7"I am an entirely new villain who also
+coincidentially really hates your guts!\BA
+I'm harvesting the energy from this
+island to power my latest invention!\BA
+See if you can stop me!\D2\D2\D2
+
+
+
+\A5Please don't run away this time
+please it's been so boring without
+you PLEASE --
+#
+Scene 22
+NumberOfPics = 1
+Pic1Name = OLDCRD08
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 96
+Music = MP_FIR
+MusicLoop = true
+SceneText = "wait.... tharts right my identitny must
+be sonic h hedgedog!! I  must need to find
+a hmms one 23311 to defeat "agrossman"*
+unrelated to the man who is in directly
+in front of me
+
+thanks wierd fat guy ""
+#
+Scene 23
+NumberOfPics = 1
+Pic1Name = MASKEGG
+Pic1Duration = 385
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = EGGMSK
+MusicLoop = true
+SceneText = \A7"Please do not body shame the man behind
+the mask whose feelings are irrevocably
+hurt by your words!\D2
+
+I'll see you at the top of the mountain,
+where my latest greatest invention and
+also very hidden hidden base are!\BA
+Seeya chump!\BA
+#
+Scene 24
+NumberOfPics = 1
+Pic1Name = FLYAWAY
+Pic1Duration = 875
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 96
+Music = AGZ
+MusicLoop = true
+SceneText = \A8Masked Eggman jetpacks away towards the
+summit of the mountain,\B9 leaving Sonic
+on his own to figure out what to do next.\D2
+
+Well,\B9 Sonic?\B9 What will you do next?
+#
+Scene 25
+NumberOfPics = 1
+Pic1Name = OLDCRD08
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 144
+Music = MP_0RI
+MusicLoop = true
+SceneText = "i go to there"\D2
+
+\A7Good boy.\B9 Have a biscuit.
+#
+
+# CUTSCENE 8: Green Hill Zone intro
+# by LJSonic
+Cutscene 8
+NumScenes 5
+Scene 1
+NumberOfPics = 1
+Pic1Name = OSGRASS1
+Pic1Duration = 700
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 0
+TextYPos = 128
+Music = _INTRO
+SceneText = Hm, maybe I should start working
+on my KAWAIII entry...\D2\D2
+Oh well, I still have some time left anyway!
+No need to hurry, I'll do it later.
+#
+Scene 2
+NumberOfPics = 1
+Pic1Name = OLDWATCH
+Pic1Hires = 1
+Pic1Duration = 700
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 0
+TextYPos = 128
+SceneText = \A5"KAWAIII\B6 deadline\B6 will\B4 be\B6 in\B6 15\B6 seconds!"\A8\B8
+TehRealSalt said.
+\A5"10...\D29...\D28..."\A8\D2
+\A5"6...\D25...\D24..."\A8\D2
+\A5"3...\D22...\D21...\D2Zero."
+#
+Scene 3
+NumberOfPics = 2
+Pic1Name = OSGRASS1
+Pic1Duration = 105
+Pic1XCoord = 0
+Pic1YCoord = 0
+Pic2Name = OSGRASS5
+Pic2Duration = 700
+Pic2XCoord = 0
+Pic2YCoord = 0
+TextXPos = 0
+TextYPos = 128
+SceneText = \D2\D2\D2\D2...Uh?\D2
+What's happening?\D2
+I think people are coming.\D2
+Wait, does that mean... could it be...
+#
+Scene 4
+NumberOfPics = 1
+Pic1Name = OINTRO5
+Pic1Duration = 1050
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 0
+TextYPos = 128
+SceneText = The deadline? Already?!\D2
+N-No way...\D2 it can't be...\D2
+I haven't even started my level...\D2
+It's too late...\D2 I won't make it in time...\D2
+My hopes...\D2 my dreams...\D2 my life...\D2
+Everything...\D2 over...
+#
+Scene 5
+NumberOfPics = 1
+Pic1Name = OLDREVNG
+Pic1Duration = 1050
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 0
+TextYPos = 128
+SceneText = NO!\D2\D2
+I can't give up now.\D2
+I can still make it.\D2
+I will \C0*NEVER*\C0 give up!\D2
+
+\A0* Green Hill Zone music starts playing*
+#
+
+# CUTSCENE 9: Egg Gundam intro
+# The big reveal.
+Cutscene 9
+NumScenes 8
+Scene 1
+NumberOfPics = 1
+Pic1Name = MASKEGG
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = EGGMSK
+MusicLoop = true
+SceneText = \A7"Dohohohoho,\BA Sonic!\BA It looks
+like you've made it to my secret
+mountaintop lair!\BA So, how have you
+been?\BA Eating your veggies daily?\BA
+It's been a while since we've had a
+chance to chat.\BA Are you ready for
+my magnanimous masked monologue,\BA or
+would you like to catch up a little
+first?"
+#
+Scene 2
+NumberOfPics = 1
+Pic1Name = OLDREVNG
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 96
+Music = MP_MRZ
+MusicLoop = true
+SceneText = "eeegrronman! i will defeat u, and
+save the village\\\\\\\,
+and then find hums twenty !! !!!
+
+!so i can win (but not at chess]
+"
+#
+Scene 3
+NumberOfPics = 1
+Pic1Name = MASKEGG
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 96
+Music = EGGMSK
+MusicLoop = true
+SceneText = \A7"Okay seriously,\BA you're
+getting my name wrong.\BA My name is:\A6\BA
+
+M\BA-A\BA-S\BA-K\BA-E\BA-D \A7\D2Eggman.\BA
+
+Not Eggman."
+#
+Scene 4
+NumberOfPics = 1
+Pic1Name = MASKEGG
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 32
+Music = EGGMSK
+MusicLoop = true
+SceneText = \A7"Frankly,\BA getting me mixed up with
+this "Eggman" fellow,\BA as I am someone
+else entirely despite how lovely he
+sounds,\BA has me really hurt.\BA
+Wasn't really cool of you.\BA Not in
+the slightest.\BA Would you like it if
+I called you "Shadow"?\BA No,\BA you
+wouldn't.\BA You verbally dyslexic
+jerk,\BA I hope you pour curdled milk
+on your alphabet cereal."
+#
+Scene 5
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 96
+Music = MP_WTR
+MusicLoop = true
+SceneText = "oh.....
+sorry...
+your gueys names are samlar,, i left the
+mask in my speech"
+#
+Scene 6
+NumberOfPics = 1
+Pic1Name = MASKEGG
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 32
+Music = EGGMSK
+MusicLoop = true
+SceneText = \A7"It's too late to apologize.\BA That was
+the last straw.\BA I'm so offended,\BA that
+I'm just gonna use my invention on
+you as a test drive.\BA It's a giant
+death robot,\BA of course.\BA Have fun,\BA
+you blue bully.\BA :("\D2
+
+\A8Masked Eggman then reveals the final boss!
+#
+Scene 7
+NumberOfPics = 1
+Pic1Name = CUTSGUND
+Pic1Duration = 1750
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 32
+Music = GDMINT
+MusicLoop = true
+SceneText = \A0"HA\B9 HA\B9 HA.\D2
+
+I\B9 AM\B9 A\B9 GIANT\B9 DEATH\B9 ROBOT.\D2
+
+.\B9 .\B9 .\D2
+
+WHY\B9 WAS\B9 I\B9 GRANTED\B9 SENTIENCE.\D2
+IT'S\B9 NOT\B9 LIKE\B9 THIS\B9 IS\B9 USEFUL\B9 TO\B9 ME\B9
+DESTROYING\B9 ANYTHING.\D2
+
+OH\B9 GOD\B9 MY\B9 EXISTENCE\B9 IS\B9 ONLY\B9 SUFFERING.\D2
+END\B9 MY\B9 AGONY,\B9 BLUE\B9 COMET."
+#
+Scene 8
+NumberOfPics = 1
+Pic1Name = OLDREVNG
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 96
+Music = GDMINT
+MusicLoop = true
+SceneText = "no way! i will destroy your
+robbot like i have many others
+(like drill boss, and metal boss)!
+this wilnot stop my queest"\D2
+
+\A8Sonic then went on to lose several
+lives to the giant robot.
+#
+
+# CUTSCENE 10: Side A ending / Side B intro
+# The beginning of the end.
+Cutscene 10
+NumScenes 11
+Scene 1
+NumberOfPics = 8
+Pic1Name = MASKEGG
+Pic1Duration = 120
+Pic1XCoord = 0
+Pic1YCoord = 0
+Pic2Name = NORMEGG
+Pic2Duration = 2
+Pic2XCoord = 0
+Pic2YCoord = 0
+Pic3Name = MASKEGG
+Pic3Duration = 8
+Pic3XCoord = 0
+Pic3YCoord = 0
+Pic4Name = NORMEGG
+Pic4Duration = 4
+Pic4XCoord = 0
+Pic4YCoord = 0
+Pic5Name = MASKEGG
+Pic5Duration = 4
+Pic5XCoord = 0
+Pic5YCoord = 0
+Pic6Name = NORMEGG
+Pic6Duration = 8
+Pic6XCoord = 0
+Pic6YCoord = 0
+Pic7Name = MASKEGG
+Pic7Duration = 2
+Pic7XCoord = 0
+Pic7YCoord = 0
+Pic8Name = NORMEGG
+Pic8Duration = 1750
+Pic8XCoord = 0
+Pic8YCoord = 0
+TextXPos = 8
+TextYPos = 64
+Music = ENDA
+MusicLoop = true
+SceneText = \A7"Oh no!\BA My mask is coming off!\BA
+Due to the giant explosion!\D0\D0\D0
+
+
+
+It turns out that Masked Eggman was the
+ravishingly beautiful && delightfully
+long-legged Eggman that you already know
+and love!\BA Who knew...?"
+#
+Scene 2
+NumberOfPics = 1
+Pic1Name = OLDREVNG
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 128
+Music = ENDA
+MusicLoop = true
+SceneText = "eggeman?!
+
+i should have knowsm !"
+#
+Scene 3
+NumberOfPics = 1
+Pic1Name = NORMEGG
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 48
+Music = ENDA
+MusicLoop = true
+SceneText = \A7"That's it!\BA Absolute last time that I will
+ever custom order anything from Milanoo\BA -
+"high quality" and "guaranteed to arrive
+in less than three months" my foot!\D2
+
+...also,\BA it doesn't help that the energy
+of this island is much less powerful
+than my scanners initially read.\BA I could
+only harvest enough to move my
+magnificent machiavellian masterpiece's
+arms.\BA Curse this ginormous gunpla!"
+#
+Scene 4
+NumberOfPics = 1
+Pic1Name = OLDREVNG
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 32
+Music = ENDA
+MusicLoop = true
+SceneText = that coool, any way iam going to
+go now,
+i have to find hmans!23311"
+#
+Scene 5
+NumberOfPics = 1
+Pic1Name = NORMEGG
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 48
+Music = ENDA
+MusicLoop = true
+SceneText = \A7"Wait,\BA no,\BA Sonic,\BA don't go!\BA
+Why do you feel the desire to find HMS,\BA
+and not to pay attention to what's right
+in front of you?\BA What's happened to you?\D2
+
+Please, you don't have to do this.\BA
+I'm concerned about your obsession with
+HMS,\BA it's unhealthy.\BA We can talk
+about this,\BA it's making me worried.\BA
+Was it something that I said...?"
+#
+Scene 6
+NumberOfPics = 1
+Pic1Name = NORMEGG
+Pic1Duration = 175
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 96
+Music = ENDA
+MusicLoop = true
+SceneText = \A7"...also,\BA why is Egg Gundam *STILL*
+exploding,\BA it's been going at it for
+like,\BA 10 minutes now --
+#
+Scene 7
+NumberOfPics = 1
+Pic1Name = BLAKHOLE
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 96
+Music = BLAPCK
+MusicLoop = true
+SceneText = \A8Suddenly,\B9 a reaction within
+Egg Gundam causes a black hole to emerge.\B9
+Oops.\B9 Don't do drugs,\B9 stay in school.
+#
+Scene 8
+NumberOfPics = 8
+Pic1Name = NORMEGG
+Pic1Duration = 85
+Pic1XCoord = 8
+Pic1YCoord = 4
+Pic2Name = NORMEGG
+Pic2Duration = 1
+Pic2XCoord = 24
+Pic2YCoord = 5
+Pic3Name = NORMEGG
+Pic3Duration = 1
+Pic3XCoord = 40
+Pic3YCoord = 3
+Pic4Name = NORMEGG
+Pic4Duration = 1
+Pic4XCoord = 72
+Pic4YCoord = 6
+Pic5Name = NORMEGG
+Pic5Duration = 1
+Pic5XCoord = 120
+Pic5YCoord = 2
+Pic6Name = NORMEGG
+Pic6Duration = 1
+Pic6XCoord = 184
+Pic6YCoord = 8
+Pic7Name = NORMEGG
+Pic7Duration = 1
+Pic7XCoord = 264
+Pic7YCoord = 0
+Pic8Name = NORMEGG
+Pic8Duration = 1750
+Pic8XCoord = 360
+Pic8YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = BLAPCK
+MusicLoop = true
+SceneText = \A7"Oh.\BA Oh dearie,\BA dearie me."\D2
+
+\A8Eggman performs the two-foot shuffle on
+out of the crime scene,\B9 while Sonic is
+sucked in,\B9 like Eggman drinking a
+milkshake!
+#
+Scene 9
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 32
+Music = INTROB
+MusicLoop = true
+SceneText = \A8Sonic,\B9 now in an abstract void,\B9 left only
+to feel the true pits of despair.\B9 His smile
+and optimism,\B9 made vanished into the re:
+nether abyss.\D2\D2
+
+\A9"how wills  cant get home now?\D2\D2
+
+stuck here..\D2\D2
+
+so borring."
+#
+Scene 10
+NumberOfPics = 2
+Pic1Name = OLDCRD04
+Pic1Duration = 175
+Pic1XCoord = 8
+Pic1YCoord = 4
+Pic2Name = FSZRADAR
+Pic2Duration = 1750
+Pic2XCoord = 128
+Pic2YCoord = 64
+TextXPos = 8
+TextYPos = 160
+Music = FSBEEP
+MusicLoop = true
+SceneText = \A8But then,\B9 he hears the familiar ding of
+a radar,\B9 not unlike the SA1 radar.
+#
+Scene 11
+NumberOfPics = 2
+Pic1Name = FSZRADAR
+Pic1Duration = 420
+Pic1XCoord = 128
+Pic1YCoord = 64
+Pic2Name = OLDCRD04
+Pic2Duration = 630
+Pic2XCoord = 8
+Pic2YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = _SUPER
+MusicLoop = true
+SceneText = "its the floodes steam zonr radar!! !
+
+no wonder i could not detect hams12311
+before, he was hiding in the other
+dimension ."\D2
+
+\A8With newfound courage,\B9 and a
+conspicuous lack of hint orbs,\B9 Sonic
+sets out on foot to find HMS123311.\D2
+
+...for real                                                                                                     ?
+#
+
+# CUTSCENE 11: LJSonic intro
+# by LJSonic
+Cutscene 11
+NumScenes 1
+Scene 1
+NumberOfPics = 1
+Pic1Name = MAPS_DRAMAHOG
+Pic1Hires = false
+Pic1Duration = 700
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 0
+TextYPos = 128
+Music = VSBRAK
+SceneText = <You> LUA is an acronym\D2
+<You> A node is a player\D2
+<You> Indenting your code is useless\D2\D2
+<LJ Sonic> I will shorten
+<LJ Sonic> your lifespan by 100%
+#
+
+# CUTSCENE 12: Dimension Doomsday outro
+# by Lat'
+Cutscene 12
+NUMSCENES 15
+Scene 1
+NumberofPics = 1
+Pic1Name = SREVENGE
+Pic1Duration = 200
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 32
+Music = _SUPER
+SceneText = HAHA! I BEATED YOU MENTAL SONIC!
+#
+Scene 2
+NumberofPics = 1
+Pic1Name = DRAMAMTL
+Pic1Duration = 250
+Pic1XCoord = 0
+Pic1YCoord = 64
+TextXPos = 8
+TextYPos = 32
+Music = _GOVER
+SceneText = NO... HOW COULD THIS BE\AF...\A9
+EVEN WITH THE POWER OF ANIME\AF...\A9
+#
+Scene 3
+NumberofPics = 1
+Pic1Name = ODRAT
+Pic1Duration = 200
+Pic1XCoord = 0
+Pic1YCoord = 64
+Pic1Hires = 1
+TextXPos = 8
+TextYPos = 32
+Music = VSBOSS
+SceneText =  NO WAY! I CAN'T BELIEVE THIS!
+#
+Scene 4
+NumberofPics = 1
+Pic1Name = SREVENGE
+Pic1Duration = 210
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 32
+Music = _SUPER
+SceneText = I KNEW IT BALDY MCNOSEHAIR!
+YOUR INTO ANIME LOLIS!\AF
+\A9WHAT ARE YOU, SAPLING?
+#
+Scene 5
+NumberofPics = 1
+Pic1Name = ODRAT
+Pic1Duration = 40
+Pic1XCoord = 0
+Pic1YCoord = 64
+Pic1Hires = 1
+TextXPos = 8
+TextYPos = 32
+Music = VSBOSS
+SceneText =  \A2I'LL HAVE YOU KNOW, SMART HEDGEHOG YOU ARE,
+THAT SHE IS IN FACT PERFECTLY LEGAL.
+AND I'LL ALSO HAVE YOU KNOW THAT 13
+IS THE LEGAL AGE OF CONSENT IN JAPAN AND THAT THUS I AM PERFECTLY ALLOWED TO FUCK HER
+#
+Scene 6
+NumberofPics = 1
+Pic1Name = SDO
+Pic1Duration = 300
+Pic1XCoord = 0
+Pic1YCoord = 0
+Pic1Hires = 1
+TextXPos = 8
+TextYPos = 32
+Music = _SUPER
+SceneText = BUT Y AR YOU USING YOURE
+ROBOTS FOR YOURE WEIRD
+DEVIANTART FETISHS?
+#
+Scene 7
+NumberofPics = 1
+Pic1Name = OINTRO6
+Pic1Duration = 1100
+Pic1XCoord = 0
+Pic1YCoord = 0
+Pic1Hires = 1
+TextXPos = 64
+TextYPos = 32
+Music = VSBOSS
+SceneText = ..............................................
+\A0.......\AF.....\A8..............................................
+.......\A2...\A8........................
+\AF...\A8......................................................................
+#
+Scene 8
+NumberofPics = 1
+Pic1Name = DRAMAMTL
+Pic1Duration = 200
+Pic1XCoord = 0
+Pic1YCoord = 64
+TextXPos = 8
+TextYPos = 32
+Music = _GOVER
+SceneText = WHATEVER. I'M GOING HOME.
+#
+Scene 9
+NumberofPics = 1
+Pic1Name = SREVENGE
+Pic1Duration = 260
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 32
+Music = _SUPER
+SceneText = HEY MENTAL SONIC,
+HTIS TIEM WATCH REAL AIMNE
+#
+Scene 10
+NumberofPics = 1
+Pic1Name = OINTRO6
+Pic1Duration = 1100
+Pic1XCoord = 0
+Pic1YCoord = 0
+Pic1Hires = 1
+TextXPos = 64
+TextYPos = 32
+Music = VSBOSS
+SceneText = ..............................................
+\A0.......\AF.....\A8..............................................
+.......\A2...\A8........................
+\AF...\A8......................................................................
+#
+Scene 11
+NumberofPics = 1
+Pic1Name = DRAMAMTL
+Pic1Duration = 200
+Pic1XCoord = 0
+Pic1YCoord = 64
+TextXPos = 8
+TextYPos = 32
+Music = _GOVER
+SceneText = DO YOU HAVE ANY SUGGESTION?
+#
+Scene 12
+NumberofPics = 1
+Pic1Name = SDO
+Pic1Duration = 300
+Pic1XCoord = 0
+Pic1YCoord = 0
+Pic1Hires = 1
+TextXPos = 8
+TextYPos = 32
+Music = _SUPER
+SceneText = BOKU NO PICO.
+IT HAS GRET CHARACTERS & STORY
+VERY GOOD ANIME
+#
+Scene 13
+NumberofPics = 1
+Pic1Name = ODRAT
+Pic1Duration = 50
+Pic1XCoord = 0
+Pic1YCoord = 64
+Pic1Hires = 1
+TextXPos = 8
+TextYPos = 32
+Music = VSBOSS
+SceneText =  \A2WHAT NO METAL SONIC DO NOT WATCH THIS
+WATCH ANYTHING ELSE LITERALLY
+ANYTHING IS BETTER
+WATCH SOMETHING LIKE CITRUS
+SERIOUSLY YURI IS AMAZING
+YOU SHOULD WATCH CITRUS
+NO ACTUALLY YOU SHOULD READ
+IT THE MANGA IS MUCH BETTER
+#
+Scene 14
+NumberofPics = 1
+Pic1Name = SREVENGE
+Pic1Duration = 300
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 32
+Music = _SUPER
+SceneText = STFU BALDY MCNOSEHAIR DONT U DARE
+TO GIVE HIM MORE TRASH ANIME!
+#
+Scene 15
+NumberofPics = 1
+Pic1Duration = 3300
+TextXPos = 8
+TextYPos = 32
+Music = _SUPER
+SceneText = THUS EGGMAN AND SONIC STARTED ARGUING
+ABOUT THEIR ANIME TASTES.\AF
+\A8SUPER SONIC EVENTUALLY RAN
+OUT OF RINGS, FELL AND DIED.\AF		\A8
+\A8NOW YOU HAVE TO REPLAY THE STAGE.\AF					\A8
+\A8FROM THE START.\AF				\A8
+BELLEND.
+#
+
+# CUTSCENE 13: Ending
+# HMS is found, but at what cost...?
+Cutscene 13
+NumScenes 20
+Scene 1
+NumberOfPics = 1
+Pic1Name = THELITE
+Pic1Duration = 1750
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 64
+Music = CWIND
+MusicLoop = true
+SceneText = \A8Sonic stands before the edge of the
+universe.\B9 A pillar of light,\B9 splitting
+the horizon in twain as though it were a
+giant mirror,\B9 stands before him.\B9
+With nothing else in his surroundings,\B9
+he runs toward it.
+#
+Scene 2
+NumberOfPics = 8
+Pic1Name = WHOUT1
+Pic1Duration = 70
+Pic1XCoord = 0
+Pic1YCoord = 0
+Pic2Name = WHOUT2
+Pic2Duration = 3
+Pic2XCoord = 0
+Pic2YCoord = 0
+Pic3Name = WHOUT3
+Pic3Duration = 3
+Pic3XCoord = 0
+Pic3YCoord = 0
+Pic4Name = WHOUT4
+Pic4Duration = 3
+Pic4XCoord = 0
+Pic4YCoord = 0
+Pic5Name = WHOUT5
+Pic5Duration = 3
+Pic5XCoord = 0
+Pic5YCoord = 0
+Pic6Name = WHOUT6
+Pic6Duration = 3
+Pic6XCoord = 0
+Pic6YCoord = 0
+Pic7Name = WHOUT7
+Pic7Duration = 3
+Pic7XCoord = 0
+Pic7YCoord = 0
+Pic8Name = TITLESKY
+Pic8Duration = 70
+Pic8XCoord = 0
+Pic8YCoord = 0
+TextXPos = 320
+TextYPos = 200
+Music = CWIND
+MusicLoop = true
+SceneText =
+#
+Scene 3
+NumberOfPics = 1
+Pic1Name = TITLESKY
+Pic1Duration = 350
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 64
+Music = _TITLE
+MusicLoop = true
+SceneText = "this is it....
+the end to floodes see zone! i haved
+ACROSS it finnaly!
+
+but where is hms 123 311??"
+#
+Scene 4
+NumberOfPics = 1
+Pic1Name = HMSWAVE1
+Pic1Duration = 280
+Pic1XCoord = 96
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 128
+Music = _TITLE
+MusicLoop = true
+SceneText = \A8"Moreventernoon my broski,\B9
+welcome back.\B9 I'm over here."
+#
+Scene 5
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 350
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = _TITLE
+MusicLoop = true
+SceneText = "hmm3333! you were here the
+title sceen of the gamer
+ all along !"
+#
+Scene 6
+NumberOfPics = 1
+Pic1Name = FHMS
+Pic1Duration = 1750
+Pic1XCoord = 96
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 96
+Music = _TITLE
+MusicLoop = true
+SceneText = \A8"Yeah.\B9 All you needed to do
+was just come over here.\B9
+
+I've been watching your adventure from
+this place.\B9 How you thrashed Anime
+Eyes Sonic back there was pretty sick
+this time."
+#
+Scene 7
+NumberOfPics = 1
+Pic1Name = FHMS
+Pic1Duration = 1750
+Pic1XCoord = 96
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 48
+Music = _TITLE
+MusicLoop = true
+SceneText = \A8"Though,\B9 I hate to spoil the
+moment,\B9 but as I've said before,\B9
+that uncool dude can only be weakened,\B9
+not defeated.\B9 They're sort of a
+transdimensional being created by
+Eggman trying to clone me from one
+of my spines.\B9 I kinda shed a lot."
+#
+Scene 8
+NumberOfPics = 1
+Pic1Name = FHMS
+Pic1Duration = 1750
+Pic1XCoord = 96
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = _TITLE
+MusicLoop = true
+SceneText = \A8"But yeah,\B9 Eggman clumsily
+dropped a vinyl figurine into his vat
+while making them,\B9 so that's why
+they're all weird and destructive.\B9
+They're about as OP as me."
+#
+Scene 9
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 350
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 128
+Music = _TITLE
+MusicLoop = true
+SceneText = "tats cool but i am not care,
+just wana delfeet eggman. you shoul
+ddo that" for me
+#
+Scene 10
+NumberOfPics = 1
+Pic1Name = FHMS
+Pic1Duration = 105
+Pic1XCoord = 96
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 160
+Music = _TITLE
+MusicLoop = true
+SceneText = \A8"Nah."
+#
+Scene 11
+NumberOfPics = 1
+Pic1Name = OLDREVNG
+Pic1Duration = 350
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = VSALT
+MusicLoop = true
+SceneText =  " " ???  ? ? !! NO, y ou
+sucker, i came all of this
+way for this ):(
+#
+Scene 12
+NumberOfPics = 1
+Pic1Name = FHMS
+Pic1Duration = 1750
+Pic1XCoord = 96
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 32
+Music = VSALT
+MusicLoop = true
+SceneText = \A8"Don't feel like it.\B9
+I like being the title screen.\B9
+
+It's cathartic to sit in a ring,\B9
+watching the waves go by,\B9 and
+waggling my finger for all
+eternity."
+#
+Scene 13
+NumberOfPics = 1
+Pic1Name = OLDREVNG
+Pic1Duration = 350
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = VSALT
+MusicLoop = true
+SceneText = "you are false.
+
+I SHuld be title screen
+like i am in usual day, i want will
+climb into ring"
+#
+Scene 14
+NumberOfPics = 1
+Pic1Name = FHMS
+Pic1Duration = 420
+Pic1XCoord = 96
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = VSALT
+MusicLoop = true
+SceneText = \A8"Hey,\B9 quit that,\B9 dude.\B9
+You're not being very tubular right
+now.\B9 All you gotta do to be the
+title is leave for a bit and then
+come back."
+#
+Scene 15
+NumberOfPics = 2
+Pic1Name = OLDREVNG
+Pic1Duration = 175
+Pic1XCoord = 8
+Pic1YCoord = 4
+Pic2Name = SONICBAL
+Pic2Duration = 105
+Pic2XCoord = 96
+Pic2YCoord = 32
+TextXPos = 8
+TextYPos = 64
+Music = VSALT
+MusicLoop = true
+SceneText = "trying stop me when i am ball"
+#
+Scene 16
+NumberOfPics = 2
+Pic1Name = FHMS
+Pic1Duration = 1750
+Pic1XCoord = 96
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 32
+Music = VSALT
+MusicLoop = true
+SceneText = \A8"Whoa,\B9 you're being real
+aggressive and uncool right now.\B9
+You ought to take a time-out in the
+detention cube, dude."\B9
+
+HMS123311 snaps his fingers,\B9 and
+summons a time-bullshit-portal.\B9
+
+"Why not play nicer next time you
+get here?"
+#
+Scene 17
+NumberOfPics = 1
+Pic1Name = TIMELOOP
+Pic1Duration = 175
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 320
+TextYPos = 200
+Music = TIMELP
+SceneText =
+#
+Scene 18
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = MP_FOR
+MusicLoop = true
+SceneText = "wherd am i? i feel like i was
+portale d here
+
+
+this is floating island place looks like.
+cool but fimilar
+
+but I Dont remember any a thing....."
+#
+Scene 19
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 1750
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = MP_WTR
+MusicLoop = true
+SceneText = \A8Unbeknownst to Sonic,\B9 this was
+the 999,990th time that he had underwent
+this time loop.\B9 HMS never anticipated
+that Sonic's abmysal intellect stat
+prevents him from retaining the knowledge
+of their encounter,\B9 or learning not to
+request people to do things for him.
+#
+Scene 20
+NumberOfPics = 1
+Pic1Name = OLDCRD04
+Pic1Duration = 525
+Pic1XCoord = 8
+Pic1YCoord = 4
+TextXPos = 8
+TextYPos = 64
+Music = MP_WTR
+MusicLoop = true
+SceneText = \A8Sonic's hunt for HMS and quest
+to become the title screen is doomed to
+continue,\B9 forever and ever,\B9 without
+rest or end\B9.\B9.\B9.\D2 or is it?
+#
+
+# CUTSCENE 14: SUBARASHII secret
+# HMS is found, but at what cost...?
+# THIS PLACE IS A MESS
+CUTSCENE 14
+NUMSCENES 8
+Scene 1
+FadeOutID = 99
+NumberOfPics = 8
+Pic1Name = RGAMEOVR
+Pic1Duration = 1
+Pic1XCoord = 323
+Pic1YCoord = 93
+Pic2Name = RGAMEOVR
+Pic2Duration = 1
+Pic2XCoord = 289
+Pic2YCoord = 93
+Pic3Name = RGAMEOVR
+Pic3Duration = 1
+Pic3XCoord = 255
+Pic3YCoord = 93
+Pic4Name = RGAMEOVR
+Pic4Duration = 1
+Pic4XCoord = 221
+Pic4YCoord = 93
+Pic5Name = RGAMEOVR
+Pic5Duration = 1
+Pic5XCoord = 187
+Pic5YCoord = 93
+Pic6Name = RGAMEOVR
+Pic6Duration = 1
+Pic6XCoord = 153
+Pic6YCoord = 93
+Pic7Name = RGAMEOVR
+Pic7Duration = 1
+Pic7XCoord = 119
+Pic7YCoord = 93
+Pic8Name = RGAMEOVR
+Pic8Duration = 357
+Pic8XCoord = 85
+Pic8YCoord = 93
+TextXPos = 8
+TextYPos = 320
+Music = RGMOVR
+SceneText =
+       #
+Scene 2
+FadeOutID = 99
+NumberOfPics = 1
+Pic1Name = SHDWRELM
+Pic1Duration = 1300
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 8
+Music = SDOVER
+SceneText = \A8Sonic had defeated the mysterious star
+shaped being that had stolen some
+mysterious Kirby ripoff magic and used it
+to become almost as powerful as HMS123311,\B9
+but he didn't feel satisfied.\B9
+\B9\B9\B9
+Somewhere in his heart, he knew that he'd
+done a thing that was real bad,\B9 although
+he didn't cognitively grasp its identity.\B9
+\B9\B9\B9
+The shapeshifting monster formerly known
+as Ristar was dead,\B9 and its soul was
+banished from the Shadow Realm for the
+complete span of eternity.
+#
+Scene 3
+NumberOfPics = 1
+Pic1Name = SONICSAD
+Pic1Duration = 1380
+Pic1XCoord = 0
+Pic1YCoord = -20
+TextXPos = 8
+TextYPos = 8
+Music = SDOVER
+SceneText = \A8It felt much like an empty victory,\B9
+as he had not yet found HMS123311.\B9
+Eggman had been defeated,\B9 but that didn't
+really matter.\B9 Sonic lusted for violently
+thrashing Eggman at every turn,\B9 his
+bloodlust remained completely unsated.\B9
+
+Anime?\B9 What did that matter?\B9 Sonic
+has had enough of anime for a lifetime.\B9
+\B9\B9\B9\B9
+Actually then he realized he was just
+kinda hungry.\B9 That was the problem,\B9
+he hadn't eaten a thing since he got here!\B9
+Silly Sonic,\B9 go and eat some food.\B9 You
+can't fight on an empty stomach!\B9
+#
+Scene 4
+FadeOutID = 69
+NumberOfPics = 1
+Pic1Name = SONICHOM
+Pic1Duration = 1380
+Pic1XCoord = 0
+Pic1YCoord = -20
+TextXPos = 8
+TextYPos = 54
+Music = SDOVER
+SceneText = \A8Sonic's consciousness began to slip
+away from hunger,\B9 and he found himself
+experiencing a HOM in reality -\B9 he only
+knew of it because you used noclip that one
+time to see what was going on outside,\B9
+didn't you?\B9 Oh,\B9 by the way,\B9 he's scarred
+mentally now. Good job breaking it,\B9 hero.
+#
+Scene 5
+NumberOfPics = 1
+Pic1Name = UGLYSTAR
+Pic1Duration = 1000
+Pic1XCoord = 50
+Pic1YCoord = 3
+TextXPos = 8
+TextYPos = 20
+Music = MP_ICE
+SceneText = \A8"OH MY GOD,\B9 DID YOU FORGET ABOUT ME
+OR SOMETHING?\B9 I can't believe you just...\B9
+ignored me like that,\B9 after I popped up and
+became an anime JUST FOR YOU.\B9 Golly, you're
+such a big jerk sometimes,\B9 Sonic.\B9
+\B9\B9\B9
+...Sonic?\B9\B9\B9 Hello?\B9
+\B9\B9\B9
+Oh, I think he died of starvation.\B9 Oops."
+#
+Scene 6
+FadeOutID = 92
+NumberOfPics = 1
+Pic1Name = GAMEHOMR
+Pic1Duration = 300
+Pic1XCoord = 0
+Pic1YCoord = -20
+TextXPos = 8
+TextYPos = 320
+Music = DROVER
+SceneText =
+#
+Scene 7
+FadeOutID = 91
+NumberOfPics = 1
+Pic1Name = SHADGASP
+Pic1Duration = 1000
+Pic1XCoord = 220
+Pic1YCoord = 35
+TextXPos = 8
+TextYPos = 8
+Music = CONHIT
+SceneText = \A7NEXT TIME ON:\B9
+SHUT UP AND GET ON IT III\B9\B9
+KAWAIII:\B9\B9
+KAWAIII\B4 Actually\B4 Wants\B4 All\B4 Ideal\B4
+Interesting\B4 Inventions\B4
+\B9\B9\B9\B9
+KNUCKLES DATING SIMULATOR?\B9\B9\B9
+AMY'S MISTY SKY JSK COORDINATOR?\B9\B9\B9
+SHADOW BASKETBALL?\B9\B9\B9
+PUYO PUYO!?!?\B9\B9\B9
+
+WHO KNOWS, GO OUT AND MAKE NEW STUFF!!
+\B9\B9\B9
+\A8(you don't have to wait for it, do it now!)
+#
+Scene 8
+FadeOutID = 1
+NumberOfPics = 1
+Pic1Name = SEAGULLS
+Pic1Duration = 700
+Pic1XCoord = 0
+Pic1YCoord = -20
+Pic1Hires = 1
+TextXPos = 80
+TextYPos = 12
+Music = MP_COA
+SceneText = \A9T\B5H\B5I\B5S\B5 \B5P\B5L\B5A\B5C\B5E\B5 \B5I\B5S\B5 \B5A\B5 \B5M\B5E\B5S\B5S\B5
+#

@@ -1,0 +1,14 @@
+# Lots of maps used this as non-harmful scenery, and it doesn't even look dangerous...
+# So for backwards compatibility, I have decided that I'll just restore the old behavior :V
+
+Thing MT_CACTI1
+Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP
+
+Thing MT_CACTI2
+Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP
+
+Thing MT_CACTI3
+Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP
+
+Thing MT_CACTI4
+Flags = MF_NOTHINK|MF_NOBLOCKMAP|MF_NOCLIP

@@ -1,0 +1,1911 @@
+# MAINCFG
+Freeslot
+SPR_PROT
+SPR_PROW
+SPR_PROM
+SPR_PROB
+SPR_BASS
+SPR_CONF
+SPR_PROP
+MT_PROTAGONIST_BULLETBLAST
+MT_PROTAGONIST_BULLETBLAST_2
+MT_PROTAGONIST_BULLETBLAST_3
+MT_PROTAGONIST_BULLETBLAST_4
+MT_PROTAGONIST_BASSBALL
+MT_PROTAGONIST_CONFETTI
+S_PROTAGONIST_START1
+S_PROTAGONIST_START2
+S_PROTAGONIST_START3
+S_PROTAGONIST_START4
+S_PROTAGONIST_START5
+S_PROTAGONIST_START6
+S_PROTAGONIST_RUNSTART
+S_PROTAGONIST_RUN1
+S_PROTAGONIST_RUN2
+S_PROTAGONIST_RUN3
+S_PROTAGONIST_RUN4
+S_PROTAGONIST_RUN5
+S_PROTAGONIST_RUN6
+S_PROTAGONIST_RUNRESTART
+S_PROTAGONIST_RERUN
+S_PROTAGONIST_CHECK1A
+S_PROTAGONIST_CHECK1B
+S_PROTAGONIST_CHECK1C
+S_PROTAGONIST_CHECK1D
+S_PROTAGONIST_CHECK2A
+S_PROTAGONIST_CHECK2B
+S_PROTAGONIST_CHECK2C
+S_PROTAGONIST_CHECK2D
+S_PROTAGONIST_CHECK3A
+S_PROTAGONIST_CHECK3B
+S_PROTAGONIST_CHECK3C
+S_PROTAGONIST_CHECK3D
+S_PROTAGONIST_ATTACK1A
+S_PROTAGONIST_ATTACK1B
+S_PROTAGONIST_ATTACK1C
+S_PROTAGONIST_ATTACK1D
+S_PROTAGONIST_ATTACK1E
+S_PROTAGONIST_ATTACK1F
+S_PROTAGONIST_ATTACK1G
+S_PROTAGONIST_ATTACK1H
+S_PROTAGONIST_ATTACK1I
+S_PROTAGONIST_ATTACK1J
+S_PROTAGONIST_ATTACK1K
+S_PROTAGONIST_ATTACK1L
+S_PROTAGONIST_ATTACK1M
+S_PROTAGONIST_ATTACK2A
+S_PROTAGONIST_ATTACK2B
+S_PROTAGONIST_ATTACK2C
+S_PROTAGONIST_ATTACK2D
+S_PROTAGONIST_ATTACK2E
+S_PROTAGONIST_ATTACK2F
+S_PROTAGONIST_ATTACK2G
+S_PROTAGONIST_ATTACK2H
+S_PROTAGONIST_ATTACK2I
+S_PROTAGONIST_ATTACK2J
+S_PROTAGONIST_ATTACK3A
+S_PROTAGONIST_ATTACK3B
+S_PROTAGONIST_ATTACK3C
+S_PROTAGONIST_ATTACK3D
+S_PROTAGONIST_ATTACK3E
+S_PROTAGONIST_ATTACK3F
+S_PROTAGONIST_ATTACK3G
+S_PROTAGONIST_ATTACK3H
+S_PROTAGONIST_ATTACK3I
+S_PROTAGONIST_ATTACK4A
+S_PROTAGONIST_ATTACK4B
+S_PROTAGONIST_ATTACK4C
+S_PROTAGONIST_ATTACK4D
+S_PROTAGONIST_ATTACK4E
+S_PROTAGONIST_ATTACK4F
+S_PROTAGONIST_ATTACK4G
+S_PROTAGONIST_ATTACK4H
+S_PROTAGONIST_ATTACK4I
+S_PROTAGONIST_ATTACK4J
+S_PROTAGONIST_ATTACK4K
+S_PROTAGONIST_ATTACK4L
+S_PROTAGONIST_ATTACK4M
+S_PROTAGONIST_ATTACK4N
+S_PROTAGONIST_ATTACK4O
+S_PROTAGONIST_ATTACK4P
+S_PROTAGONIST_ATTACK5A
+S_PROTAGONIST_ATTACK5B
+S_PROTAGONIST_ATTACK5C
+S_PROTAGONIST_ATTACK5D
+S_PROTAGONIST_ATTACK5E
+S_PROTAGONIST_ATTACK5F
+S_PROTAGONIST_PAIN1
+S_PROTAGONIST_PAIN2
+S_PROTAGONIST_PAIN3
+S_PROTAGONIST_PAIN4
+S_PROTAGONIST_PAIN5
+S_PROTAGONIST_PAIN6
+S_PROTAGONIST_PAIN7
+S_PROTAGONIST_PAIN8
+S_PROTAGONIST_PAIN9
+S_PROTAGONIST_END1
+S_PROTAGONIST_END2
+S_PROTAGONIST_END3
+S_PROTAGONIST_END4
+S_PROTAGONIST_END5
+S_PROTAGONIST_END6
+S_PROTAGONIST_END7
+S_PROTAGONIST_END8
+S_PROTAGONIST_TRACER1
+S_PROTAGONIST_TRACER2
+S_PROTAGONIST_TRACER3
+S_PROTAGONIST_WALKER1_WAKE1
+S_PROTAGONIST_WALKER1_WAKE2
+S_PROTAGONIST_WALKER2_WAKE1
+S_PROTAGONIST_WALKER2_WAKE2
+S_PROTAGONIST_WALKER3_WAKE1
+S_PROTAGONIST_WALKER3_WAKE2
+S_PROTAGONIST_WALKER_GETUP1
+S_PROTAGONIST_WALKER_GETUP2
+S_PROTAGONIST_WALKER_GETUP3
+S_PROTAGONIST_WALKER_GETUP4
+S_PROTAGONIST_WALKER_MOVE1
+S_PROTAGONIST_WALKER_MOVE2
+S_PROTAGONIST_WALKER_MOVE3
+S_PROTAGONIST_WALKER_MOVE4
+S_PROTAGONIST_MISSILE1_WAKE1
+S_PROTAGONIST_MISSILE1_WAKE2
+S_PROTAGONIST_MISSILE2_WAKE1
+S_PROTAGONIST_MISSILE2_WAKE2
+S_PROTAGONIST_MISSILE3_WAKE1
+S_PROTAGONIST_MISSILE3_WAKE2
+S_PROTAGONIST_MISSILE_SHUUTO1
+S_PROTAGONIST_MISSILE_SHUUTO2
+S_PROTAGONIST_BULLET
+S_PROTAGONIST_BULLETBLAST1A
+S_PROTAGONIST_BULLETBLAST1B
+S_PROTAGONIST_BULLETBLAST1C
+S_PROTAGONIST_BULLETBLAST1D
+S_PROTAGONIST_BULLETBLAST2A
+S_PROTAGONIST_BULLETBLAST2B
+S_PROTAGONIST_BULLETBLAST3A
+S_PROTAGONIST_BULLETBLAST3B
+S_PROTAGONIST_BULLETBLAST3C
+S_PROTAGONIST_BULLETBLAST4A
+S_PROTAGONIST_BULLETBLAST4B
+S_PROTAGONIST_BULLETBLAST4C
+S_PROTAGONIST_BASSBALL1
+S_PROTAGONIST_BASSBALL2
+S_PROTAGONIST_BASSBALL3
+S_PROTAGONIST_BASSBALL4
+S_PROTAGONIST_BASSBALL5
+S_PROTAGONIST_CONFETTI1
+S_PROTAGONIST_CONFETTI2
+S_PROTAGONIST_CONFETTI3
+sfx_party
+# Certain object types were defined in the Lua lump because the way SRB2 reads lumps is funny like that
+
+# MT_PROTAGONIST - The true hero of SRB2
+
+Object MT_PROTAGONIST
+MapThingNum = 3762
+SpawnState = S_PROTAGONIST_START1
+SpawnHealth = 8
+SeeState = S_PROTAGONIST_RUNSTART
+SeeSound = sfx_None
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_PROTAGONIST_PAIN1
+PainChance = 1024
+PainSound = sfx_shldls
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_PROTAGONIST_END1
+XDeathState = S_PROTAGONIST_START6
+DeathSound = sfx_spkdth
+Speed = 15
+Radius = 12*FRACUNIT
+Height = 36*FRACUNIT
+DispOffset = 0
+Mass = 123
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_BOSS|MF_RUNSPAWNFUNC
+RaiseState = MT_JETTBULLET
+
+# Start boss
+
+State S_PROTAGONIST_START1
+SpriteName = PROT
+SpriteFrame = A
+Duration = 4
+Action = A_SetScale
+Var1 = (6*FRACUNIT)/4
+Var2 = 0
+Next = S_PROTAGONIST_START2
+
+State S_PROTAGONIST_START2
+SpriteName = PROT
+SpriteFrame = B
+Duration = 4
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_START3
+
+State S_PROTAGONIST_START3
+SpriteName = PROT
+SpriteFrame = C
+Duration = 4
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_START4
+
+State S_PROTAGONIST_START4
+SpriteName = PROT
+SpriteFrame = D
+Duration = 4
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_START5
+
+State S_PROTAGONIST_START5
+SpriteName = PROT
+SpriteFrame = E
+Duration = 4
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_START6
+
+State S_PROTAGONIST_START6
+SpriteName = PROT
+SpriteFrame = F
+Duration = 4
+Action = A_Look
+Var1 = 1
+Var2 = 1
+Next = S_PROTAGONIST_START1
+
+# Running animation
+
+State S_PROTAGONIST_RUNSTART
+SpriteName = PROT
+SpriteFrame = G
+Duration = 0
+Action = A_Repeat
+Var1 = 1
+Var2 = 0
+Next = S_PROTAGONIST_RUN1
+
+State S_PROTAGONIST_RUN1
+SpriteName = PROT
+SpriteFrame = G
+Duration = 2
+Action = A_ProtagRun
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_RUN2
+
+State S_PROTAGONIST_RUN2
+SpriteName = PROT
+SpriteFrame = H
+Duration = 2
+Action = A_ProtagRun
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_RUN3
+
+State S_PROTAGONIST_RUN3
+SpriteName = PROT
+SpriteFrame = I
+Duration = 2
+Action = A_ProtagRun
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_RUN4
+
+State S_PROTAGONIST_RUN4
+SpriteName = PROT
+SpriteFrame = J
+Duration = 2
+Action = A_ProtagRun
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_RUN5
+
+State S_PROTAGONIST_RUN5
+SpriteName = PROT
+SpriteFrame = K
+Duration = 2
+Action = A_ProtagRun
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_RUN6
+
+State S_PROTAGONIST_RUN6
+SpriteName = PROT
+SpriteFrame = L
+Duration = 2
+Action = A_ProtagRun
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_RUNRESTART
+
+State S_PROTAGONIST_RUNRESTART
+SpriteName = PROT
+SpriteFrame = L
+Duration = 0
+Action = A_Repeat
+Var1 = 2
+Var2 = S_PROTAGONIST_RUN1
+Next = S_PROTAGONIST_CHECK1A
+
+# Rerun - Used after certain attacks to spring back into a sprint ASAP
+
+State S_PROTAGONIST_RERUN
+SpriteName = PROT
+SpriteFrame = M
+Duration = 2
+Action = A_ProtagLook
+Var1 = 0
+Var2 = S_PROTAGONIST_RUN1
+Next = S_PROTAGONIST_RERUN
+
+# Checks - Determines which attack to use
+# Is the player close? Then go to attack 5 or 6 depending on custom value
+
+State S_PROTAGONIST_CHECK1A
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_CheckRange
+Var1 = (0*65536)+192
+Var2 = S_PROTAGONIST_CHECK1B
+Next = S_PROTAGONIST_CHECK2A
+
+State S_PROTAGONIST_CHECK1B
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_CheckCustomValue
+Var1 = 1
+Var2 = S_PROTAGONIST_CHECK1C
+Next = S_PROTAGONIST_CHECK1D
+
+State S_PROTAGONIST_CHECK1C
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_SetCustomValue
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK1A
+
+State S_PROTAGONIST_CHECK1D
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_SetCustomValue
+Var1 = 1
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK5A
+
+# Is the player at middle distance? Then go to attack 1 or 2
+
+State S_PROTAGONIST_CHECK2A
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_CheckRange
+Var1 = (0*65536)+384
+Var2 = S_PROTAGONIST_CHECK2B
+Next = S_PROTAGONIST_CHECK3A
+
+State S_PROTAGONIST_CHECK2B
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_CheckCustomValue
+Var1 = 1
+Var2 = S_PROTAGONIST_CHECK2C
+Next = S_PROTAGONIST_CHECK2D
+
+State S_PROTAGONIST_CHECK2C
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_SetCustomValue
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK2A
+
+State S_PROTAGONIST_CHECK2D
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_SetCustomValue
+Var1 = 1
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK1A
+
+# Player is too far, go to attack 3 (if there aren't enough walking dolls around) or 4
+
+State S_PROTAGONIST_CHECK3A
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_CheckThingCount
+Var1 = (MT_PROTAGONIST_WALKER1<<16)
+Var2 = S_PROTAGONIST_CHECK3B
+Next = S_PROTAGONIST_ATTACK3A
+
+State S_PROTAGONIST_CHECK3B
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_CheckThingCount
+Var1 = (MT_PROTAGONIST_WALKER2<<16)
+Var2 = S_PROTAGONIST_CHECK3C
+Next = S_PROTAGONIST_ATTACK3A
+
+State S_PROTAGONIST_CHECK3C
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_CheckThingCount
+Var1 = (MT_PROTAGONIST_WALKER3<<16)
+Var2 = S_PROTAGONIST_CHECK3D
+Next = S_PROTAGONIST_ATTACK3A
+
+State S_PROTAGONIST_CHECK3D
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_CheckFuse
+Var1 = 0
+Var2 = S_PROTAGONIST_ATTACK4A
+Next = S_PROTAGONIST_ATTACK3A
+
+# Attack 1 - Reverse bunny hop and fire
+
+State S_PROTAGONIST_ATTACK1A
+SpriteName = PROP
+SpriteFrame = B
+Duration = 1
+Action = A_FaceTarget
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK1B
+
+State S_PROTAGONIST_ATTACK1B
+SpriteName = PROP
+SpriteFrame = B
+Duration = 1
+Action = A_PlaySound
+Var1 = sfx_s3k4c
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK1C
+
+State S_PROTAGONIST_ATTACK1C
+SpriteName = PROP
+SpriteFrame = A
+Duration = 9
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK1D
+
+State S_PROTAGONIST_ATTACK1D
+SpriteName = PROT
+SpriteFrame = N
+Duration = 5
+Action = A_BunnyHop
+Var1 = 10
+Var2 = -5
+Next = S_PROTAGONIST_ATTACK1E
+
+State S_PROTAGONIST_ATTACK1E
+SpriteName = PROT
+SpriteFrame = O
+Duration = 4
+Action = A_SpawnObjectRelative
+Var1 = (0*65536)+0
+Var2 = (0*65536)+MT_PROTAGONIST_TRACER
+Next = S_PROTAGONIST_ATTACK1F
+
+State S_PROTAGONIST_ATTACK1F
+SpriteName = PROT
+SpriteFrame = P
+Duration = 3
+Action = A_FindTracer
+Var1 = MT_PROTAGONIST_TRACER
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK1G
+
+State S_PROTAGONIST_ATTACK1G
+SpriteName = PROT
+SpriteFrame = Q
+Duration = 3
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK1H
+
+State S_PROTAGONIST_ATTACK1H
+SpriteName = PROT
+SpriteFrame = R
+Duration = 0
+Action = A_Repeat
+Var1 = 1
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK1I
+
+State S_PROTAGONIST_ATTACK1I
+SpriteName = PROT
+SpriteFrame = R
+Duration = 2
+Action = A_ProtagFlash1
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK1J
+
+State S_PROTAGONIST_ATTACK1J
+SpriteName = PROT
+SpriteFrame = R
+Duration = 2
+Action = A_ProtagFlash2
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK1K
+
+State S_PROTAGONIST_ATTACK1K
+SpriteName = PROT
+SpriteFrame = R
+Duration = 0
+Action = A_Repeat
+Var1 = 3
+Var2 = S_PROTAGONIST_ATTACK1I
+Next = S_PROTAGONIST_ATTACK1L
+
+State S_PROTAGONIST_ATTACK1L
+SpriteName = PROT
+SpriteFrame = S
+Duration = 3
+Action = A_RemoteDamage
+Var1 = 2
+Var2 = 1
+Next = S_PROTAGONIST_ATTACK1M
+
+State S_PROTAGONIST_ATTACK1M
+SpriteName = PROT
+SpriteFrame = T
+Duration = 1
+Action = A_ChickenCheckX
+Var1 = S_PROTAGONIST_RERUN
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK1M
+
+# Attack 2 - Charged up ball of death
+
+State S_PROTAGONIST_ATTACK2A
+SpriteName = PROT
+SpriteFrame = U
+Duration = 2
+Action = A_FaceTarget
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK2B
+
+State S_PROTAGONIST_ATTACK2B
+SpriteName = PROT
+SpriteFrame = V
+Duration = 2
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK2C
+
+State S_PROTAGONIST_ATTACK2C
+SpriteName = PROT
+SpriteFrame = W
+Duration = 30
+Action = A_PlaySound
+Var1 = sfx_s3k5a
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK2D
+
+State S_PROTAGONIST_ATTACK2D
+SpriteName = PROT
+SpriteFrame = X
+Duration = 0
+Action = A_TrapShot
+Var1 = (22*65536)+MT_PROTAGONIST_BASSBALL
+Var2 = (10*65536)+0
+Next = S_PROTAGONIST_ATTACK2E
+
+State S_PROTAGONIST_ATTACK2E
+SpriteName = PROT
+SpriteFrame = X
+Duration = 1
+Action = A_PlaySound
+Var1 = sfx_s3k54
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK2F
+
+State S_PROTAGONIST_ATTACK2F
+SpriteName = PROT
+SpriteFrame = X
+Duration = 12
+Action = A_Thrust
+Var1 = -8
+Var2 = 1
+Next = S_PROTAGONIST_ATTACK2G
+
+State S_PROTAGONIST_ATTACK2G
+SpriteName = PROT
+SpriteFrame = Y
+Duration = 2
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK2H
+
+State S_PROTAGONIST_ATTACK2H
+SpriteName = PROT
+SpriteFrame = Z
+Duration = 2
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK2I
+
+State S_PROTAGONIST_ATTACK2I
+SpriteName = PROT
+SpriteFrame = 26
+Duration = 2
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK2J
+
+State S_PROTAGONIST_ATTACK2J
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_ChickenCheckX
+Var1 = S_PROTAGONIST_RERUN
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK2J
+
+# Attack 3 - Summon friends
+
+State S_PROTAGONIST_ATTACK3A
+SpriteName = PROT
+SpriteFrame = U
+Duration = 1
+Action = A_FaceTarget
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK3B
+
+State S_PROTAGONIST_ATTACK3B
+SpriteName = PROT
+SpriteFrame = V
+Duration = 1
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK3C
+
+State S_PROTAGONIST_ATTACK3C
+SpriteName = PROT
+SpriteFrame = W
+Duration = 35
+Action = A_PlaySound
+Var1 = sfx_gbeep
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK3D
+
+State S_PROTAGONIST_ATTACK3D
+SpriteName = PROT
+SpriteFrame = W
+Duration = 1
+Action = A_ProtagWalkersGo
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK3E
+
+State S_PROTAGONIST_ATTACK3E
+SpriteName = PROT
+SpriteFrame = X
+Duration = 17
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK3F
+
+State S_PROTAGONIST_ATTACK3F
+SpriteName = PROT
+SpriteFrame = Y
+Duration = 2
+Action = A_Thrust
+Var1 = -4
+Var2 = 1
+Next = S_PROTAGONIST_ATTACK3G
+
+State S_PROTAGONIST_ATTACK3G
+SpriteName = PROT
+SpriteFrame = Z
+Duration = 2
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK3H
+
+State S_PROTAGONIST_ATTACK3H
+SpriteName = PROT
+SpriteFrame = 26
+Duration = 2
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK3I
+
+State S_PROTAGONIST_ATTACK3I
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_ChickenCheckX
+Var1 = S_PROTAGONIST_RERUN
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK3I
+
+# Attack 4 - Air twirling
+
+State S_PROTAGONIST_ATTACK4A
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_FaceTarget
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK4B
+
+State S_PROTAGONIST_ATTACK4B
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_PlaySound
+Var1 = sfx_spring
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK4C
+
+State S_PROTAGONIST_ATTACK4C
+SpriteName = PROT
+SpriteFrame = 35
+Duration = 17
+Action = A_BunnyHop
+Var1 = 10
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK4D
+
+State S_PROTAGONIST_ATTACK4D
+SpriteName = CCOM
+SpriteFrame = A
+Duration = 0
+Action = A_Repeat
+Var1 = 1
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK4E
+
+State S_PROTAGONIST_ATTACK4E
+SpriteName = PROT
+SpriteFrame = 27
+Duration = 2
+Action = A_SpawnObjectRelative
+Var1 = (-40*65536)+0
+Var2 = (46*65536)+MT_PROTAGONIST_BULLETBLAST_3
+Next = S_PROTAGONIST_ATTACK4F
+
+State S_PROTAGONIST_ATTACK4F
+SpriteName = PROT
+SpriteFrame = 28
+Duration = 2
+Action = A_ZThrust
+Var1 = -1
+Var2 = (1*65536)+1
+Next = S_PROTAGONIST_ATTACK4G
+
+State S_PROTAGONIST_ATTACK4G
+SpriteName = PROT
+SpriteFrame = 29
+Duration = 2
+Action = A_SpawnObjectRelative
+Var1 = (40*65536)+0
+Var2 = (46*65536)+MT_PROTAGONIST_BULLETBLAST_4
+Next = S_PROTAGONIST_ATTACK4H
+
+State S_PROTAGONIST_ATTACK4H
+SpriteName = PROT
+SpriteFrame = 30
+Duration = 2
+Action = A_ZThrust
+Var1 = -1
+Var2 = (1*65536)+1
+Next = S_PROTAGONIST_ATTACK4I
+
+State S_PROTAGONIST_ATTACK4I
+SpriteName = PROT
+SpriteFrame = 31
+Duration = 2
+Action = A_SpawnObjectRelative
+Var1 = (-40*65536)+0
+Var2 = (46*65536)+MT_PROTAGONIST_BULLETBLAST_3
+Next = S_PROTAGONIST_ATTACK4J
+
+State S_PROTAGONIST_ATTACK4J
+SpriteName = PROT
+SpriteFrame = 32
+Duration = 2
+Action = A_ZThrust
+Var1 = -1
+Var2 = (1*65536)+1
+Next = S_PROTAGONIST_ATTACK4K
+
+State S_PROTAGONIST_ATTACK4K
+SpriteName = PROT
+SpriteFrame = 33
+Duration = 2
+Action = A_SpawnObjectRelative
+Var1 = (40*65536)+0
+Var2 = (46*65536)+MT_PROTAGONIST_BULLETBLAST_4
+Next = S_PROTAGONIST_ATTACK4L
+
+State S_PROTAGONIST_ATTACK4L
+SpriteName = PROT
+SpriteFrame = 34
+Duration = 2
+Action = A_ZThrust
+Var1 = -1
+Var2 = (1*65536)+1
+Next = S_PROTAGONIST_ATTACK4M
+
+State S_PROTAGONIST_ATTACK4M
+SpriteName = CCOM
+SpriteFrame = A
+Duration = 0
+Action = A_Repeat
+Var1 = 5
+Var2 = S_PROTAGONIST_ATTACK4E
+Next = S_PROTAGONIST_ATTACK4N
+
+State S_PROTAGONIST_ATTACK4N
+SpriteName = PROT
+SpriteFrame = M
+Duration = 0
+Action = A_FaceTarget
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK4O
+
+State S_PROTAGONIST_ATTACK4O
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_Thrust
+Var1 = -4
+Var2 = 1
+Next = S_PROTAGONIST_ATTACK4P
+
+State S_PROTAGONIST_ATTACK4P
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_ChickenCheckX
+Var1 = S_PROTAGONIST_RERUN
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK4P
+
+# Attack 5 - Summon missiles
+
+State S_PROTAGONIST_ATTACK5A
+SpriteName = PROT
+SpriteFrame = 36
+Duration = 2
+Action = A_FaceTarget
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK5B
+
+State S_PROTAGONIST_ATTACK5B
+SpriteName = PROT
+SpriteFrame = 37
+Duration = 2
+Action = A_ForceStop
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK5C
+
+State S_PROTAGONIST_ATTACK5C
+SpriteName = PROT
+SpriteFrame = 38
+Duration = 2
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK5D
+
+State S_PROTAGONIST_ATTACK5D
+SpriteName = PROT
+SpriteFrame = 39
+Duration = 3
+Action = A_ProtagMissilesGo
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK5E
+
+State S_PROTAGONIST_ATTACK5E
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_Thrust
+Var1 = -4
+Var2 = 1
+Next = S_PROTAGONIST_ATTACK5F
+
+State S_PROTAGONIST_ATTACK5F
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_ChickenCheckX
+Var1 = S_PROTAGONIST_RERUN
+Var2 = 0
+Next = S_PROTAGONIST_ATTACK5F
+
+# Ow! Ow! Oooooow!
+
+State S_PROTAGONIST_PAIN1
+SpriteName = PROT
+SpriteFrame = 40
+Duration = 0
+Action = A_FaceTarget
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_PAIN2
+
+State S_PROTAGONIST_PAIN2
+SpriteName = PROT
+SpriteFrame = 40
+Duration = 1
+Action = A_ZThrust
+Var1 = 7
+Var2 = (1*65536)+1
+Next = S_PROTAGONIST_PAIN3
+
+State S_PROTAGONIST_PAIN3
+SpriteName = PROT
+SpriteFrame = 40
+Duration = 0
+Action = A_Thrust
+Var1 = -4
+Var2 = 1
+Next = S_PROTAGONIST_PAIN4
+
+State S_PROTAGONIST_PAIN4
+SpriteName = PROT
+SpriteFrame = 40
+Duration = 1
+Action = A_Pain
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_PAIN5
+
+State S_PROTAGONIST_PAIN5
+SpriteName = PROT
+SpriteFrame = 40
+Duration = 0
+Action = A_FindTracer
+Var1 = MT_PROTAGONIST_TRACER
+Var2 = 0
+Next = S_PROTAGONIST_PAIN6
+
+State S_PROTAGONIST_PAIN6
+SpriteName = PROT
+SpriteFrame = 40
+Duration = 1
+Action = A_RemoteDamage
+Var1 = 2
+Var2 = 1
+Next = S_PROTAGONIST_PAIN7
+
+State S_PROTAGONIST_PAIN7
+SpriteName = PROT
+SpriteFrame = 40
+Duration = 1
+Action = A_ChickenCheckX
+Var1 = S_PROTAGONIST_PAIN8
+Var2 = 0
+Next = S_PROTAGONIST_PAIN7
+
+State S_PROTAGONIST_PAIN8
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_PAIN9
+
+State S_PROTAGONIST_PAIN9
+SpriteName = PROT
+SpriteFrame = M
+Duration = 1
+Action = A_SetFuse
+Var1 = 3*TICRATE
+Var2 = (1*65536)+0
+Next = S_PROTAGONIST_CHECK1A
+
+# I lost! ...again!
+
+State S_PROTAGONIST_END1
+SpriteName = PROT
+SpriteFrame = 41
+Duration = 0
+Action = A_FaceTarget
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_END2
+
+State S_PROTAGONIST_END2
+SpriteName = PROT
+SpriteFrame = 41
+Duration = 1
+Action = A_ZThrust
+Var1 = 7
+Var2 = (1*65536)+1
+Next = S_PROTAGONIST_END3
+
+State S_PROTAGONIST_END3
+SpriteName = PROT
+SpriteFrame = 41
+Duration = 0
+Action = A_Thrust
+Var1 = -4
+Var2 = 1
+Next = S_PROTAGONIST_END4
+
+State S_PROTAGONIST_END4
+SpriteName = PROT
+SpriteFrame = 41
+Duration = 1
+Action = A_Scream
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_END5
+
+State S_PROTAGONIST_END5
+SpriteName = PROT
+SpriteFrame = 41
+Duration = 1
+Action = A_ChickenCheckX
+Var1 = S_PROTAGONIST_END6
+Var2 = 0
+Next = S_PROTAGONIST_END5
+
+State S_PROTAGONIST_END6
+SpriteName = PROT
+SpriteFrame = 42
+Duration = 1
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_END7
+
+State S_PROTAGONIST_END7
+SpriteName = PROT
+SpriteFrame = 42
+Duration = 1
+Action = A_PlaySound
+Var1 = sfx_lvpass
+Var2 = 0
+Next = S_PROTAGONIST_END8
+
+State S_PROTAGONIST_END8
+SpriteName = PROT
+SpriteFrame = 42
+Duration = 1
+Action = A_ProtagDefeat
+Var1 = 105
+Var2 = (1*65536)+0
+Next = S_PROTAGONIST_END8
+
+# MT_PROTAGONIST_TRACER - So that second gun has something to shoot at
+
+Object MT_PROTAGONIST_TRACER
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_TRACER1
+SpawnHealth = 70
+SeeState = S_PROTAGONIST_TRACER1
+SeeSound = sfx_None
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 255
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 1000
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOSECTOR|MF_NOBLOCKMAP|MF_NOGRAVITY
+RaiseState = S_NULL
+
+State S_PROTAGONIST_TRACER1
+SpriteName = PROW
+SpriteFrame = E
+Duration = 1
+Action = None
+Var1 = 0
+Var2 = 1
+Next = S_PROTAGONIST_TRACER2
+
+State S_PROTAGONIST_TRACER2
+SpriteName = PROW
+SpriteFrame = E
+Duration = 1
+Action = A_Look
+Var1 = (0*65536)+0
+Var2 = 1
+Next = S_PROTAGONIST_TRACER3
+
+State S_PROTAGONIST_TRACER3
+SpriteName = PROW
+SpriteFrame = E
+Duration = 1
+Action = A_NoTarget
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_TRACER3
+
+# MT_PROTAGONIST_WALKER1 - Helper minion who falls close
+
+Object MT_PROTAGONIST_WALKER1
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_WALKER1_WAKE1
+SpawnHealth = 1
+SeeState = S_PROTAGONIST_WALKER_MOVE1
+SeeSound = sfx_None
+ReactionTime = 16
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 1024
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_BOSSEXPLODE
+XDeathState = S_NULL
+DeathSound = sfx_dmpain
+Speed = 5
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 123
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY
+RaiseState = S_NULL
+
+State S_PROTAGONIST_WALKER1_WAKE1
+SpriteName = PROW
+SpriteFrame = E
+Duration = 1
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_WALKER1_WAKE2
+
+State S_PROTAGONIST_WALKER1_WAKE2
+SpriteName = PROW
+SpriteFrame = E
+Duration = 1
+Action = A_Thrust
+Var1 = 5
+Var2 = 1
+Next = S_PROTAGONIST_WALKER_GETUP1
+
+# MT_PROTAGONIST_WALKER2 - Helper minion who falls at middle distance
+
+Object MT_PROTAGONIST_WALKER2
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_WALKER2_WAKE1
+SpawnHealth = 1
+SeeState = S_PROTAGONIST_WALKER_MOVE1
+SeeSound = sfx_None
+ReactionTime = 16
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 1024
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_BOSSEXPLODE
+XDeathState = S_NULL
+DeathSound = sfx_dmpain
+Speed = 20
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 123
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY
+RaiseState = S_NULL
+
+State S_PROTAGONIST_WALKER2_WAKE1
+SpriteName = PROW
+SpriteFrame = E
+Duration = 1
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_WALKER2_WAKE2
+
+State S_PROTAGONIST_WALKER2_WAKE2
+SpriteName = PROW
+SpriteFrame = E
+Duration = 1
+Action = A_Thrust
+Var1 = 20
+Var2 = 1
+Next = S_PROTAGONIST_WALKER_GETUP1
+
+# MT_PROTAGONIST_WALKER3 - Helper minion who falls far
+
+Object MT_PROTAGONIST_WALKER3
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_WALKER3_WAKE1
+SpawnHealth = 1
+SeeState = S_PROTAGONIST_WALKER_MOVE1
+SeeSound = sfx_None
+ReactionTime = 16
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 1024
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_BOSSEXPLODE
+XDeathState = S_NULL
+DeathSound = sfx_dmpain
+Speed = 40
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 123
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_ENEMY
+RaiseState = S_NULL
+
+State S_PROTAGONIST_WALKER3_WAKE1
+SpriteName = PROW
+SpriteFrame = E
+Duration = 1
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_WALKER3_WAKE2
+
+State S_PROTAGONIST_WALKER3_WAKE2
+SpriteName = PROW
+SpriteFrame = E
+Duration = 1
+Action = A_Thrust
+Var1 = 40
+Var2 = 1
+Next = S_PROTAGONIST_WALKER_GETUP1
+
+# Shared states between the different walkers
+# These are for getting up from the ground
+
+State S_PROTAGONIST_WALKER_GETUP1
+SpriteName = PROW
+SpriteFrame = E
+Duration = 1
+Action = A_ChickenCheckX
+Var1 = S_PROTAGONIST_WALKER_GETUP2
+Var2 = 0
+Next = S_PROTAGONIST_WALKER_GETUP1
+
+State S_PROTAGONIST_WALKER_GETUP2
+SpriteName = PROW
+SpriteFrame = F
+Duration = 4
+Action = A_Break
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_WALKER_GETUP3
+
+State S_PROTAGONIST_WALKER_GETUP3
+SpriteName = PROW
+SpriteFrame = G
+Duration = 4
+Action = A_Break
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_WALKER_GETUP4
+
+State S_PROTAGONIST_WALKER_GETUP4
+SpriteName = PROW
+SpriteFrame = G
+Duration = 4
+Action = A_Break
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_WALKER_MOVE1
+
+# And these are for chasing the player Crawla-style
+
+State S_PROTAGONIST_WALKER_MOVE1
+SpriteName = PROW
+SpriteFrame = A
+Duration = 1
+Action = A_ProtagWalkerLook
+Var1 = 0
+Var2 = S_PROTAGONIST_WALKER_MOVE2
+Next = S_PROTAGONIST_WALKER_MOVE1
+
+State S_PROTAGONIST_WALKER_MOVE2
+SpriteName = PROW
+SpriteFrame = B
+Duration = 5
+Action = A_Thrust
+Var1 = 2
+Var2 = 1
+Next = S_PROTAGONIST_WALKER_MOVE3
+
+State S_PROTAGONIST_WALKER_MOVE3
+SpriteName = PROW
+SpriteFrame = C
+Duration = 1
+Action = A_ProtagWalkerLook
+Var1 = 0
+Var2 = S_PROTAGONIST_WALKER_MOVE4
+Next = S_PROTAGONIST_WALKER_MOVE3
+
+State S_PROTAGONIST_WALKER_MOVE4
+SpriteName = PROW
+SpriteFrame = D
+Duration = 5
+Action = A_Thrust
+Var1 = 2
+Var2 = 1
+Next = S_PROTAGONIST_WALKER_MOVE1
+
+# MT_PROTAGONIST_MISSILE1 - Projectile minion who raises low
+
+Object MT_PROTAGONIST_MISSILE1
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_MISSILE1_WAKE1
+SpawnHealth = 1
+SeeState = S_PROTAGONIST_MISSILE_SHUUTO1
+SeeSound = sfx_None
+ReactionTime = 16
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 1024
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 10
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 5
+Mass = 123
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_PAIN|MF_MISSILE|MF_RUNSPAWNFUNC
+RaiseState = S_NULL
+
+State S_PROTAGONIST_MISSILE1_WAKE1
+SpriteName = PROM
+SpriteFrame = B
+Duration = 8
+Action = A_ZThrust
+Var1 = 4
+Var2 = (1*65536)+1
+Next = S_PROTAGONIST_MISSILE1_WAKE2
+
+State S_PROTAGONIST_MISSILE1_WAKE2
+SpriteName = PROM
+SpriteFrame = B
+Duration = 0
+Action = A_SetObjectFlags
+Var1 = MF_NOGRAVITY
+Var2 = 2
+Next = S_PROTAGONIST_MISSILE_SHUUTO1
+
+# MT_PROTAGONIST_MISSILE2 - Projectile minion who raises to middle height
+
+Object MT_PROTAGONIST_MISSILE2
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_MISSILE2_WAKE1
+SpawnHealth = 1
+SeeState = S_PROTAGONIST_MISSILE_SHUUTO1
+SeeSound = sfx_None
+ReactionTime = 16
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 1024
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 10
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 4
+Mass = 123
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_PAIN|MF_MISSILE|MF_RUNSPAWNFUNC
+RaiseState = S_NULL
+
+State S_PROTAGONIST_MISSILE2_WAKE1
+SpriteName = PROM
+SpriteFrame = B
+Duration = 14
+Action = A_ZThrust
+Var1 = 7
+Var2 = (1*65536)+1
+Next = S_PROTAGONIST_MISSILE2_WAKE2
+
+State S_PROTAGONIST_MISSILE2_WAKE2
+SpriteName = PROM
+SpriteFrame = B
+Duration = 8
+Action = A_SetObjectFlags
+Var1 = MF_NOGRAVITY
+Var2 = 2
+Next = S_PROTAGONIST_MISSILE_SHUUTO1
+
+# MT_PROTAGONIST_MISSILE3 - Projectile minion who raises high
+
+Object MT_PROTAGONIST_MISSILE3
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_MISSILE3_WAKE1
+SpawnHealth = 1
+SeeState = S_PROTAGONIST_MISSILE_SHUUTO1
+SeeSound = sfx_None
+ReactionTime = 16
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 1024
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 10
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 3
+Mass = 123
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_PAIN|MF_MISSILE|MF_RUNSPAWNFUNC
+RaiseState = S_NULL
+
+State S_PROTAGONIST_MISSILE3_WAKE1
+SpriteName = PROM
+SpriteFrame = B
+Duration = 18
+Action = A_ZThrust
+Var1 = 9
+Var2 = (1*65536)+1
+Next = S_PROTAGONIST_MISSILE3_WAKE2
+
+State S_PROTAGONIST_MISSILE3_WAKE2
+SpriteName = PROM
+SpriteFrame = B
+Duration = 18
+Action = A_SetObjectFlags
+Var1 = MF_NOGRAVITY
+Var2 = 2
+Next = S_PROTAGONIST_MISSILE_SHUUTO1
+
+# Shared states between the different missiles
+
+State S_PROTAGONIST_MISSILE_SHUUTO1
+SpriteName = PROM
+SpriteFrame = B
+Duration = 17
+Action = A_PlaySound
+Var1 = sfx_alarm
+Var2 = 0
+Next = S_PROTAGONIST_MISSILE_SHUUTO2
+
+State S_PROTAGONIST_MISSILE_SHUUTO2
+SpriteName = PROM
+SpriteFrame = A
+Duration = -1
+Action = A_ProtagMissileLook
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_MISSILE_SHUUTO2
+
+# MT_PROTAGONIST_BULLET - Self-explanatory
+
+Object MT_PROTAGONIST_BULLET
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_BULLET
+SpawnHealth = 1
+SeeState = S_NULL
+SeeSound = sfx_None
+ReactionTime = 32
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 200
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 20*FRACUNIT
+Radius = 4*FRACUNIT
+Height = 8*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 1
+ActiveSound = sfx_None
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_MISSILE|MF_RUNSPAWNFUNC
+RaiseState = S_NULL
+
+State S_PROTAGONIST_BULLET
+SpriteName = PROB
+SpriteFrame = A
+Duration = -1
+Action = A_PlaySound
+Var1 = sfx_s3k4d
+Var2 = 0
+Next = S_PROTAGONIST_BULLET
+
+# MT_PROTAGONIST_BULLETBLAST - A muzzle flash kinda thingy for the bullets
+
+Object MT_PROTAGONIST_BULLETBLAST
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_BULLETBLAST1A
+SpawnHealth = 70
+SeeState = S_NULL
+SeeSound = sfx_None
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 255
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 3
+Mass = 1000
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOBLOCKMAP|MF_NOGRAVITY
+RaiseState = S_NULL
+
+State S_PROTAGONIST_BULLETBLAST1A
+SpriteName = PROB
+SpriteFrame = B
+Duration = 1
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_BULLETBLAST1B
+
+State S_PROTAGONIST_BULLETBLAST1B
+SpriteName = PROB
+SpriteFrame = B
+Duration = 1
+Action = A_ProtagShotLow
+Var1 = MT_PROTAGONIST_BULLET
+Var2 = 0
+Next = S_PROTAGONIST_BULLETBLAST1C
+
+State S_PROTAGONIST_BULLETBLAST1C
+SpriteName = PROB
+SpriteFrame = C
+Duration = 1
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_BULLETBLAST1D
+
+State S_PROTAGONIST_BULLETBLAST1D
+SpriteName = PROB
+SpriteFrame = D
+Duration = 1
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_NULL
+
+# MT_PROTAGONIST_BULLETBLAST_2 - Another muzzle flash kinda thingy for the bullets
+
+Object MT_PROTAGONIST_BULLETBLAST_2
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_BULLETBLAST2A
+SpawnHealth = 70
+SeeState = S_NULL
+SeeSound = sfx_None
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 255
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 3
+Mass = 1000
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOBLOCKMAP|MF_NOGRAVITY
+RaiseState = S_NULL
+
+State S_PROTAGONIST_BULLETBLAST2A
+SpriteName = PROB
+SpriteFrame = B
+Duration = 1
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_BULLETBLAST2B
+
+State S_PROTAGONIST_BULLETBLAST2B
+SpriteName = PROB
+SpriteFrame = B
+Duration = 1
+Action = A_TrapShot
+Var1 = (0*65536)+MT_PROTAGONIST_BULLET
+Var2 = (0*65536)+357
+Next = S_PROTAGONIST_BULLETBLAST1C
+
+# MT_PROTAGONIST_BASSBALL - Don't tell me that's not chuckle-worthy
+
+Object MT_PROTAGONIST_BASSBALL
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_BASSBALL1
+SpawnHealth = 1
+SeeState = S_NULL
+SeeSound = sfx_None
+ReactionTime = 32
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 200
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 20*FRACUNIT
+Radius = 4*FRACUNIT
+Height = 45*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 1
+ActiveSound = sfx_None
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_PAIN|MF_NOGRAVITY|MF_MISSILE
+RaiseState = S_NULL
+
+State S_PROTAGONIST_BASSBALL1
+SpriteName = BASS
+SpriteFrame = A
+Duration = 1
+Action = A_GhostMe
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_BASSBALL2
+
+State S_PROTAGONIST_BASSBALL2
+SpriteName = BASS
+SpriteFrame = B
+Duration = 1
+Action = A_GhostMe
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_BASSBALL3
+
+State S_PROTAGONIST_BASSBALL3
+SpriteName = BASS
+SpriteFrame = C
+Duration = 1
+Action = A_GhostMe
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_BASSBALL4
+
+State S_PROTAGONIST_BASSBALL4
+SpriteName = BASS
+SpriteFrame = D
+Duration = 1
+Action = A_GhostMe
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_BASSBALL5
+
+State S_PROTAGONIST_BASSBALL5
+SpriteName = BASS
+SpriteFrame = E
+Duration = 1
+Action = A_GhostMe
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_BASSBALL1
+
+# MT_PROTAGONIST_CONFETTI - Why the heck did nobody upload MM8's SFX anywhere
+
+Object MT_PROTAGONIST_CONFETTI
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_CONFETTI1
+SpawnHealth = 70
+SeeState = S_NULL
+SeeSound = sfx_None
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 255
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 3
+Mass = 1000
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_RUNSPAWNFUNC
+RaiseState = S_NULL
+
+State S_PROTAGONIST_CONFETTI1
+SpriteName = CONF
+SpriteFrame = A
+Duration = 1
+Action = A_SetScale
+Var1 = (6*FRACUNIT)/4
+Var2 = 0
+Next = S_PROTAGONIST_CONFETTI2
+
+State S_PROTAGONIST_CONFETTI2
+SpriteName = CONF
+SpriteFrame = B
+Duration = 2
+Action = A_PlaySound
+Var1 = sfx_party
+Var2 = 0
+Next = S_PROTAGONIST_CONFETTI3
+
+State S_PROTAGONIST_CONFETTI3
+SpriteName = CONF
+SpriteFrame = FF_ANIMATE|C
+Duration = 18
+Action = None
+Var1 = 8
+Var2 = 2
+Next = S_NULL
+
+# MT_PROTAGONIST_BULLETBLAST_3 - Still not done with these
+
+Object MT_PROTAGONIST_BULLETBLAST_3
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_BULLETBLAST3A
+SpawnHealth = 70
+SeeState = S_NULL
+SeeSound = sfx_None
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 255
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 3
+Mass = 1000
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOBLOCKMAP|MF_NOGRAVITY
+RaiseState = S_NULL
+
+State S_PROTAGONIST_BULLETBLAST3A
+SpriteName = PROB
+SpriteFrame = B
+Duration = 1
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_BULLETBLAST3B
+
+State S_PROTAGONIST_BULLETBLAST3B
+SpriteName = PROB
+SpriteFrame = B
+Duration = 0
+Action = A_ChangeAngleAbsolute
+Var1 = 180
+Var2 = 180
+Next = S_PROTAGONIST_BULLETBLAST3C
+
+State S_PROTAGONIST_BULLETBLAST3C
+SpriteName = PROB
+SpriteFrame = B
+Duration = 1
+Action = A_TrapShot
+Var1 = (0*65536)+MT_PROTAGONIST_BULLET
+Var2 = (0*65536)+0
+Next = S_PROTAGONIST_BULLETBLAST1C
+
+# MT_PROTAGONIST_BULLETBLAST_4
+
+Object MT_PROTAGONIST_BULLETBLAST_4
+MapThingNum = -1
+SpawnState = S_PROTAGONIST_BULLETBLAST4A
+SpawnHealth = 70
+SeeState = S_NULL
+SeeSound = sfx_None
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 255
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 3
+Mass = 1000
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOBLOCKMAP|MF_NOGRAVITY
+RaiseState = S_NULL
+
+State S_PROTAGONIST_BULLETBLAST4A
+SpriteName = PROB
+SpriteFrame = B
+Duration = 1
+Action = None
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_BULLETBLAST4B
+
+State S_PROTAGONIST_BULLETBLAST4B
+SpriteName = PROB
+SpriteFrame = B
+Duration = 0
+Action = A_ChangeAngleAbsolute
+Var1 = 0
+Var2 = 0
+Next = S_PROTAGONIST_BULLETBLAST4C
+
+State S_PROTAGONIST_BULLETBLAST4C
+SpriteName = PROB
+SpriteFrame = B
+Duration = 1
+Action = A_TrapShot
+Var1 = (0*65536)+MT_PROTAGONIST_BULLET
+Var2 = (0*65536)+0
+Next = S_PROTAGONIST_BULLETBLAST1C

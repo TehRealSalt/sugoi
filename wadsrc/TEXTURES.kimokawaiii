@@ -1,0 +1,758 @@
+// Quandary Canyon Zone (RomioTheBadass)
+
+WallTexture DSTTOP1, 64, 64
+{
+	Patch DSTTOP1, 0, 0
+}
+
+WallTexture DSTWALL1, 128, 128
+{
+	Patch DSTWALL1, 0, 0
+}
+
+WallTexture DSTWALL2, 64, 64
+{
+	Patch DSTWALL2, 0, 0
+}
+
+WallTexture DSTBLOCK, 64, 2240
+{
+	Patch DSTTOP1, 0, 0
+	Patch DSTWALL1, 0, 128
+	Patch DSTWALL1, 0, 256
+	Patch DSTWALL1, 0, 384
+	Patch DSTWALL1, 0, 512
+	Patch DSTWALL1, 0, 320
+	Patch DSTWALL1, 0, 384
+	Patch DSTWALL1, 0, 448
+	Patch DSTWALL1, 0, 512
+	Patch DSTWALL1, 0, 640
+	Patch DSTWALL1, 0, 768
+	Patch DSTWALL1, 0, 896
+	Patch DSTWALL1, 0, 768
+	Patch DSTWALL1, 0, 896
+	Patch DSTWALL1, 0, 1024
+	Patch DSTWALL1, 0, 1152
+	Patch DSTWALL1, 0, 1024
+	Patch DSTWALL1, 0, 1088
+	Patch DSTWALL1, 0, 1152
+	Patch DSTWALL1, 0, 1280
+	Patch DSTWALL1, 0, 1344
+	Patch DSTWALL1, 0, 1472
+	Patch DSTWALL1, 0, 1600
+	Patch DSTWALL1, 0, 1728
+	Patch DSTWALL1, 0, 1856
+	Patch DSTWALL1, 0, 1728
+	Patch DSTWALL1, 0, 1984
+	Patch DSTWALL1, 0, 1728
+	Patch DSTWALL1, 0, 2112
+	Patch DSTWALL1, 0, 2240
+}
+
+WallTexture SKY89, 308, 176
+{
+	Patch SKY89, 0, 0
+}
+
+WallTexture SKY89, 256, 300
+{
+	Patch SKY89, 0, 0
+}
+
+WallTexture DSTWALL3, 64, 2240
+{
+	Patch DSTTOP1, 0, 0
+	Patch DSTWALL1, 0, 128
+	Patch DSTWALL1, 0, 256
+	Patch DSTWALL1, 0, 384
+	Patch DSTWALL1, 0, 512
+	Patch DSTWALL1, 0, 320
+	Patch DSTWALL1, 0, 384
+	Patch DSTWALL1, 0, 448
+	Patch DSTWALL1, 0, 512
+	Patch DSTWALL1, 0, 640
+	Patch DSTWALL1, 0, 768
+	Patch DSTWALL1, 0, 896
+	Patch DSTWALL1, 0, 768
+	Patch DSTWALL1, 0, 896
+	Patch DSTWALL1, 0, 1024
+	Patch DSTWALL1, 0, 1152
+	Patch DSTWALL1, 0, 1024
+	Patch DSTWALL1, 0, 1088
+	Patch DSTWALL1, 0, 1152
+	Patch DSTWALL1, 0, 1280
+	Patch DSTWALL1, 0, 1344
+	Patch DSTWALL1, 0, 1472
+	Patch DSTWALL1, 0, 1600
+	Patch DSTWALL1, 0, 1728
+	Patch DSTWALL1, 0, 1856
+	Patch DSTWALL1, 0, 1728
+	Patch DSTWALL1, 0, 1984
+	Patch DSTWALL1, 0, 1728
+	Patch DSTWALL1, 0, 2112
+	Patch DSTWALL1, 0, 2240
+}
+
+WallTexture DSTPLAT1, 128, 64
+{
+	Patch DSTPLAT1, 0, 0
+}
+
+WallTexture DSTWALL4, 64, 64
+{
+	Patch DSTWALL4, 0, 0
+}
+
+WallTexture DSTWALL5, 64, 64
+{
+	Patch DSTWALL5, 0, 0
+}
+
+WallTexture DSTFALL1, 128, 128
+{
+	Patch DSTFALL1, 0, 0
+}
+
+WallTexture DSTFALL2, 128, 128
+{
+	Patch DSTFALL2, 0, 0
+}
+
+WallTexture DSTFALL3, 128, 128
+{
+	Patch DSTFALL3, 0, 0
+}
+
+WallTexture DSBPLAT1, 128, 64
+{
+	Patch DSBPLAT1, 0, 0
+}
+
+WallTexture DSBTOP1, 128, 128
+{
+	Patch DSBTOP1, 0, 0
+}
+
+WallTexture DSBWALL1, 128, 128
+{
+	Patch DSBWALL1, 0, 0
+}
+
+WallTexture DSBWALL2, 64, 64
+{
+	Patch DSBWALL2, 0, 0
+}
+
+WallTexture DSBWALL4, 64, 64
+{
+	Patch DSBWALL4, 0, 0
+}
+
+WallTexture DSBWALL5, 64, 64
+{
+	Patch DSBWALL5, 0, 0
+}
+
+WallTexture DSBBLOCK, 64, 2240
+{
+	Patch DSBTOP1, 0, 0
+	Patch DSBWALL1, 0, 128
+	Patch DSBWALL1, 0, 256
+	Patch DSBWALL1, 0, 384
+	Patch DSBWALL1, 0, 512
+	Patch DSBWALL1, 0, 320
+	Patch DSBWALL1, 0, 384
+	Patch DSBWALL1, 0, 448
+	Patch DSBWALL1, 0, 512
+	Patch DSBWALL1, 0, 640
+	Patch DSBWALL1, 0, 768
+	Patch DSBWALL1, 0, 896
+	Patch DSBWALL1, 0, 768
+	Patch DSBWALL1, 0, 896
+	Patch DSBWALL1, 0, 1024
+	Patch DSBWALL1, 0, 1152
+	Patch DSBWALL1, 0, 1024
+	Patch DSBWALL1, 0, 1088
+	Patch DSBWALL1, 0, 1152
+	Patch DSBWALL1, 0, 1280
+	Patch DSBWALL1, 0, 1344
+	Patch DSBWALL1, 0, 1472
+	Patch DSBWALL1, 0, 1600
+	Patch DSBWALL1, 0, 1728
+	Patch DSBWALL1, 0, 1856
+	Patch DSBWALL1, 0, 1728
+	Patch DSBWALL1, 0, 1984
+	Patch DSBWALL1, 0, 1728
+	Patch DSBWALL1, 0, 2112
+	Patch DSBWALL1, 0, 2240
+}
+
+WallTexture DSTWALL7, 256, 256
+{
+	Patch DSTWALL7, 0, 0
+}
+
+WallTexture DSTBLOC3, 256, 2304
+{
+	Patch DSTTOP3, 0, 0
+	Patch DSTWALL7, 0, 256
+	Patch DSTWALL7, 0, 512
+	Patch DSTWALL7, 0, 768
+	Patch DSTWALL7, 0, 1024
+	Patch DSTWALL7, 0, 1280
+	Patch DSTWALL7, 0, 1536
+	Patch DSTWALL7, 0, 1792
+	Patch DSTWALL7, 0, 2048
+	Patch DSTWALL7, 0, 2304
+}
+
+WallTexture DSTWALL8, 256, 256
+{
+	Patch DSTWALL8, 0, 0
+}
+
+WallTexture DSTWALL9, 64, 64
+{
+	Patch DSTWALL9, 0, 0
+}
+
+// Bio Satellite Zone (Chaobrother)
+walltexture APWLCRCK, 512, 512 {
+	patch APWALL11, 0, 0 // GFZCrack start
+	patch VINE2, 0, 0
+	patch VINE2, 64, 0
+	patch VINE2, 128, 0
+	patch VINE2, 192, 0
+	patch VINE2, 256, 0
+	patch VINE2, 320, 0
+	patch VINE2, 384, 0
+	patch VINE2, 448, 0
+	patch VINE2, 512, 0
+	patch VINE2, 0, 64
+	patch VINE2, 64, 64
+	patch VINE2, 128, 64
+	patch VINE2, 192, 64
+	patch VINE2, 256, 64
+	patch VINE2, 320, 64
+	patch VINE2, 384, 64
+	patch VINE2, 448, 64
+	patch VINE2, 512, 64
+	patch VINE2, 0, 128
+	patch VINE2, 64, 128
+	patch VINE2, 128, 128
+	patch VINE2, 192, 128
+	patch VINE2, 256, 128
+	patch VINE2, 320, 128
+	patch VINE2, 384, 128
+	patch VINE2, 448, 128
+	patch VINE2, 512, 128
+}
+
+// Shogun Stronghold Zone (TehRealSalt)
+
+WallTexture SGSH_P01, 128, 1024
+{
+	Patch SGSH_W01, 0, 0
+	Patch SGSH_W01, 0, 128
+	Patch SGSH_W01, 0, 256
+	Patch SGSH_W01, 0, 384
+	Patch SGSH_W01, 0, 512
+	Patch SGSH_W01, 0, 640
+	Patch SGSH_W01, 0, 768
+	Patch SGSH_W02, 0, 896
+}
+
+// Egg Gundam (TehRealSalt)
+WallTexture GDM_PLTW, 128, 256
+{
+	Patch HPWALL2, 0, 0
+	Patch HPWALL5, 0, 128
+}
+
+// Long Journey's End (VAdaPEGA)
+WallTexture GUIMTXA1, 128, 128
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 32
+	Patch GUIMTX01, 0, 32
+}
+
+WallTexture GUIMTXB1, 128, 128
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 64
+	Patch GUIMTX01, 0, 64
+}
+
+WallTexture GUIMTXC1, 128, 128
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX01, 0, 0
+}
+
+WallTexture GUIMTXA0, 256, 512
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 256
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 0, 384
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 256
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTX00, 128, 384
+	Patch GUIMTX09, 54, 50
+	Patch GUIMTX0G, 173, 243
+	Patch GUIMTX0H, 28, 298
+}
+
+WallTexture GUIMTXA2, 256, 512
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 256
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 0, 384
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 256
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTX00, 128, 384
+	Patch GUIMTX0G, 186, 276
+	Patch GUIMTX0G, 23, 120
+	Patch GUIMTX0H, 114, 332
+	Patch GUIMTX0H, 153, 98
+}
+
+WallTexture GUIMTXA3, 256, 512
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 256
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 0, 384
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 256
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTX00, 128, 384
+	Patch GUIMTX0G, 33, 370
+	Patch GUIMTX0G, 202, 313
+	Patch GUIMTX0H, 114, 332
+	Patch GUIMTX0D, 0, 0
+	Patch GUIMTX0D, 128, 0
+}
+
+WallTexture GUIMTXA4, 256, 512
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 256
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 0, 384
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 256
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTX00, 128, 384
+	Patch GUIMTX0D, 0, 0
+	Patch GUIMTX0D, 128, 0
+	Patch GUIMTX09, 124, 393
+}
+
+WallTexture GUIMTXE0, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA00, 64, 130
+}
+
+WallTexture GUIMTXE1, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA01, 64, 130
+}
+
+WallTexture GUIMTXE2, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA02, 64, 130
+}
+
+WallTexture GUIMTXE3, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA03, 64, 130
+}
+
+WallTexture GUIMTXE4, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA04, 64, 130
+}
+
+WallTexture GUIMTXE5, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA05, 64, 130
+}
+
+WallTexture GUIMTXE6, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA06, 64, 130
+}
+
+WallTexture GUIMTXE7, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA07, 64, 130
+}
+
+WallTexture GUIMTXE8, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA08, 64, 130
+}
+
+WallTexture GUIMTXE9, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA09, 64, 130
+}
+
+WallTexture GUIMTXEA, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA10, 64, 130
+}
+
+WallTexture GUIMTXEB, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA11, 64, 130
+}
+
+WallTexture GUIMTXEC, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA12, 64, 130
+}
+
+WallTexture GUIMTXED, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA00, 64, 130
+}
+
+WallTexture GUIMTXEE, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA00, 64, 130
+}
+
+WallTexture GUIMTXEF, 256, 256
+{
+	Patch GUIMTX00, 0, 0
+	Patch GUIMTX00, 0, 128
+	Patch GUIMTX00, 128, 0
+	Patch GUIMTX00, 128, 128
+	Patch GUIMTA00, 64, 130
+}
+
+WallTexture GUIMTB00, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 0, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 0, 75
+}
+
+WallTexture GUIMTB01, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 2, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, -2, 75
+	Patch GUIMTX0C, 30, 75
+}
+
+WallTexture GUIMTB02, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 4, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, -4, 75
+	Patch GUIMTX0C, 28, 75
+}
+
+WallTexture GUIMTB03, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 6, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 26, 75
+}
+
+WallTexture GUIMTB04, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 8, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 24, 75
+}
+
+WallTexture GUIMTB05, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 10, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 22, 75
+}
+
+WallTexture GUIMTB06, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 12, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 20, 75
+}
+
+WallTexture GUIMTB07, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 14, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 18, 75
+}
+
+WallTexture GUIMTB08, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 16, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 16, 75
+}
+
+WallTexture GUIMTB09, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 18, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 14, 75
+}
+
+WallTexture GUIMTB0A, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 20, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 12, 75
+}
+
+WallTexture GUIMTB0B, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 22, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 10, 75
+}
+
+WallTexture GUIMTB0C, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 24, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 8, 75
+}
+
+WallTexture GUIMTB0D, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 26, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 6, 75
+}
+
+WallTexture GUIMTB0E, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 28, 11
+	Patch GUIMTX0B, -4, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 4, 75
+}
+
+WallTexture GUIMTB0F, 32, 128
+{
+	Patch ~031, 0, 0
+	Patch ~031, 0, 64
+	Patch GUIMTX0A, 0, 0
+	Patch GUIMTX0A, 8, 0
+	Patch GUIMTX0A, 16, 0
+	Patch GUIMTX0A, 24, 0
+	Patch GUIMTX0B, 30, 11
+	Patch GUIMTX0B, -2, 11
+	Patch GUIMTX0A, 0, 64
+	Patch GUIMTX0A, 8, 64
+	Patch GUIMTX0A, 16, 64
+	Patch GUIMTX0A, 24, 64
+	Patch GUIMTX0C, 2, 75
+}

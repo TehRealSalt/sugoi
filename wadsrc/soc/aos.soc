@@ -1,0 +1,25 @@
+##########################
+# SOC_AOSM
+# Acceleration of Soniguri Map background
+##########################
+Object MT_AOSMAPPOINT
+MapThingNum = 3567
+SpawnState = S_AOSMAPPOINT
+Radius = 16*FRACUNIT
+Height = 48*FRACUNIT
+Flags = MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOCLIPTHING|MF_NOGRAVITY|MF_NOSECTOR
+
+Object MT_AOSMAPFOLLOWPOINT
+MapThingNum = 3568
+SpawnState = S_AOSMAPPOINT
+Radius = 16*FRACUNIT
+Height = 48*FRACUNIT
+Flags = MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOCLIPTHING|MF_NOGRAVITY|MF_NOSECTOR
+
+State S_AOSMAPPOINT
+SpriteName = SPR_THOK
+SpriteFrame = A
+Next = S_AOSMAPPOINT
+Duration = -1
+Var1 = 0
+Var2 = 0

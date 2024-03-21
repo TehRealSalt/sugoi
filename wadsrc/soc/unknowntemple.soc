@@ -1,0 +1,264 @@
+Freeslot
+MT_NEGAMOBILE
+S_NEGAMOBILE_STND
+S_NEGAMOBILE_PAIN1
+S_NEGAMOBILE_PAIN2
+S_NEGAMOBILE_PANIC1
+S_NEGAMOBILE_PANIC2
+S_NEGAMOBILE_PANIC3
+S_NEGAMOBILE_DIE1
+S_NEGAMOBILE_DIE2
+S_NEGAMOBILE_DIE3
+S_NEGAMOBILE_DIE4
+S_NEGAMOBILE_DIE5
+S_NEGAMOBILE_DIE6
+S_NEGAMOBILE_DIE7
+S_NEGAMOBILE_DIE8
+S_NEGAMOBILE_DIE9
+S_NEGAMOBILE_DIE10
+S_NEGAMOBILE_DIE11
+S_NEGAMOBILE_DIE12
+S_NEGAMOBILE_DIE13
+S_NEGAMOBILE_DIE14
+S_NEGAMOBILE_FLEE
+S_NEGAMOBILE_RATK
+S_NEGAMOBILE_LATK
+SPR_NEGG
+
+
+Object MT_NEGAMOBILE
+#$Name Nega Mobile
+#$Sprite NEGGA1
+#$Category SUGOI Bosses
+MapThingNum = 2016
+SpawnState = S_NEGAMOBILE_STND
+SpawnHealth = 10
+SeeState = S_NEGAMOBILE_STND
+SeeSound = sfx_None
+ReactionTime = 8
+AttackSound = sfx_None
+PainState = S_NEGAMOBILE_PAIN1
+PainChance = 0
+PainSound = sfx_dmpain
+MeleeState = S_NEGAMOBILE_LATK
+MissileState = S_NEGAMOBILE_RATK
+DeathState = S_NEGAMOBILE_DIE1
+DeathSound = sfx_cybdth
+XDeathState = S_NEGAMOBILE_FLEE
+Speed = 10
+Radius = 24*FRACUNIT
+Height = 76*FRACUNIT
+Mass = 0
+Damage = 5
+ActiveSound = sfx_telept
+RaiseState = S_NEGAMOBILE_PANIC1
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_BOSS|MF_NOGRAVITY|MF_FLOAT
+
+State S_NEGAMOBILE_STND
+SpriteName = SPR_NEGG
+SpriteFrame = 0
+Duration = 1
+Next = S_NEGAMOBILE_STND
+Action A_Boss1Chase
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_LATK
+SpriteName = SPR_NEGG
+SpriteFrame = B
+Duration = 20
+Next = S_NEGAMOBILE_STND
+Action A_SkullAttack
+Var1 = 2
+Var2 = 1
+
+State S_NEGAMOBILE_RATK
+SpriteName = SPR_NEGG
+SpriteFrame = B
+Duration = 30
+Next = S_NEGAMOBILE_STND
+Action A_SkullAttack
+Var1 = 0
+Var2 = 0
+
+
+State S_NEGAMOBILE_PAIN1
+SpriteName = SPR_NEGG
+SpriteFrame = C
+Duration = 24
+Next = S_NEGAMOBILE_PAIN2
+Action A_Pain
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_PAIN2
+SpriteName = SPR_NEGG
+SpriteFrame = C
+Duration = 30
+Next = S_NEGAMOBILE_STND
+Action A_SkullAttack
+Var1 = 1
+Var2 = 0
+
+State S_NEGAMOBILE_PANIC1
+SpriteName = SPR_NEGG
+SpriteFrame = B
+Duration = 35
+Next = S_NEGAMOBILE_PANIC2
+Action A_PlaySound
+Var1 = sfx_bewar4
+Var2 = 0
+
+State S_NEGAMOBILE_PANIC2
+SpriteName = SPR_NEGG
+SpriteFrame = B
+Duration = 35
+Next = S_NEGAMOBILE_PANIC3
+Action A_FireShot
+Var1 = MT_ROCKET
+Var2 = 0
+
+State S_NEGAMOBILE_PANIC3
+SpriteName = SPR_NEGG
+SpriteFrame = B
+Duration = 30
+Next = S_NEGAMOBILE_STND
+Action A_SkullAttack
+Var1 = 2
+Var2 = 0
+
+State S_NEGAMOBILE_DIE1
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 8
+Next = S_NEGAMOBILE_DIE2
+Action A_Fall
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_DIE2
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 8
+Next = S_NEGAMOBILE_DIE3
+Action A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_DIE3
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 8
+Next = S_NEGAMOBILE_DIE4
+Action A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_DIE4
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 8
+Next = S_NEGAMOBILE_DIE5
+Action A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_DIE5
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 8
+Next = S_NEGAMOBILE_DIE6
+Action A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_DIE6
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 8
+Next = S_NEGAMOBILE_DIE7
+Action A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_DIE7
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 8
+Next = S_NEGAMOBILE_DIE8
+Action A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_DIE8
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 8
+Next = S_NEGAMOBILE_DIE9
+Action A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_DIE9
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 8
+Next = S_NEGAMOBILE_DIE10
+Action A_BossScream
+Var1 = 0
+Var2 = 0
+
+
+State S_NEGAMOBILE_DIE10
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 8
+Next = S_NEGAMOBILE_DIE11
+Action A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_DIE11
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 8
+Next = S_NEGAMOBILE_DIE12
+Action A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_DIE12
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 8
+Next = S_NEGAMOBILE_DIE13
+Action A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_DIE13
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 8
+Next = S_NEGAMOBILE_DIE14
+Action A_BossScream
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_DIE14
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = -1
+Next = S_NULL
+Action A_BossDeath
+Var1 = 0
+Var2 = 0
+
+State S_NEGAMOBILE_FLEE
+SpriteName = SPR_NEGG
+SpriteFrame = D
+Duration = 5
+Next = S_NEGAMOBILE_FLEE
+Action A_BossScream
+Var1 = 0
+Var2 = 0

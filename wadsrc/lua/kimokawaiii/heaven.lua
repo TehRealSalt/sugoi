@@ -118,6 +118,9 @@ local knife_spin = ANGLE_45 / 3;
 -- Marx knife attack settings
 local marx_knife_time = TICRATE;
 
+-- Throw knife attack settings
+local throw_knife_time = TICRATE;
+
 --
 -- Thinker settings for the spinning knives.
 --
@@ -163,6 +166,13 @@ local ATK_CRAZYSPIN = 1;
 -- vars[1]: Number of times to repeat this attack
 local ATK_MARX = 2;
 
+-- ATK_THROW: Throw knives at a random player.
+-- Each following throw results in an increase of speed.
+-- vars[1]: Number of times to repeat this attack
+-- vars[2]: Speed multiplier for the knife throwing
+-- vars[3]: General attack duration
+local ATK_THROW = 3;
+
 --
 -- Attack pattern table.
 -- Sets the order of all of the attacks used.
@@ -176,16 +186,20 @@ local atk_pattern = {
 	{ ATK_TELEPORT, { TELEPORT_OUTSIDE, 0, 0 } },
 	{ ATK_CRAZYSPIN, { 0, 0, 0 } },
 
+	{ ATK_THROW, { 5, 1, 3 } },
 	{ ATK_TELEPORT, { TELEPORT_CENTER, 0, 0 } },
 	{ ATK_MARX, { 1, 0, 0 } },
+	{ ATK_THROW, { 3, 2, 2 } },
 
 	{ ATK_TELEPORT, { TELEPORT_OUTSIDE, 0, 0 } },
 	{ ATK_CRAZYSPIN, { 0, 0, 0 } },
 	{ ATK_TELEPORT, { TELEPORT_OUTSIDE, 0, 0 } },
 	{ ATK_CRAZYSPIN, { 0, 0, 0 } },
 
+	{ ATK_THROW, { 7, 2, 3 } },
 	{ ATK_TELEPORT, { TELEPORT_CENTER, 0, 0 } },
 	{ ATK_MARX, { 1, 0, 0 } },
+	{ ATK_THROW, { 5, 2, 3 } },
 
 	{ ATK_TELEPORT, { TELEPORT_OUTSIDE, 0, 0 } },
 	{ ATK_CRAZYSPIN, { 0, 0, 0 } },
@@ -794,6 +808,66 @@ local heaven_atk_funcs = {
 				mo.spriteyoffset = P_RandomRange(-8, 8) * FRACUNIT;
 			end
 		end,
+
+		[ATK_THROW] = {
+			[ATK_FUNC_START] = function(mo)
+				-- Aim towards whoever's the closest first
+				mo.target = ATK_RandomTarget();
+	
+				if (mo.target and mo.target.valid)
+					mo.world_vars.angle_dest = R_PointToAngle2(mo.x, mo.y, mo.target.x, mo.target.y);
+				end
+	
+				-- Put your arms in the air
+				for i = 1,2 do
+					local fist = mo.world_vars.fists[i];
+					if (fist and fist.valid)
+						fist.fist_vars.lr_pos_dest = default_fist_lr * 2;
+						fist.fist_vars.fb_pos_dest = 0;
+						fist.fist_vars.v_pos_dest = 112;
+					end
+				end
+	
+				Heaven_PlayYell(mo);
+				mo.world_vars.attack_delay = mo.world_vars.attack_vars[3]*TICRATE;
+			end,
+			[ATK_FUNC_THINK] = function(mo)
+				-- Aim; make sure to update the target and angle.
+				mo.target = ATK_RandomTarget();
+	
+				if (mo.target and mo.target.valid)
+					mo.world_vars.angle_dest = R_PointToAngle2(mo.x, mo.y, mo.target.x, mo.target.y);
+				end
+				mo.movedir = mo.world_vars.angle_dest;
+				mo.angle = mo.movedir;
+	
+				-- Engage in the attack.
+				if (mo.world_vars.attack_delay == throw_knife_time)
+					-- Spawn and throw knives
+					S_StartSound(mo, sfx_knifes);
+	
+					local knife = ATK_CreateKnife(mo, KNIFE_NORMAL);
+					knife.z = mo.z + 24*FRACUNIT;
+					knife.movedir = ATK_EstimationVal(mo, mo.target, mobjinfo[MT_EGGWORLD_OH_KNIFE].speed*mo.world_vars.attack_vars[2]); // mo.world_vars.angle_dest
+					knife.angle = knife.movedir;
+					knife.fuse = 3*TICRATE;
+	
+					P_HomingAttack(knife, mo.target);
+					if (P_IsObjectOnGround(mo.target))
+						P_Thrust(knife, knife.angle, knife.info.speed*mo.world_vars.attack_vars[2]);
+					end
+	
+					-- Handle repeat count.
+					-- Extend the current timer, then decrement the variable.
+					-- Afterwards, increment how many times this attack has occured so far.
+					if (mo.world_vars.attack_vars[1] > 1)
+						mo.world_vars.attack_delay = $1 + (throw_knife_time * 3 / 4);
+						mo.world_vars.attack_vars[1] = $1 - 1;
+						mo.world_vars.attack_vars[2] = $1 + 1;
+					end
+				end
+			end,
+		},
 	},
 };
 

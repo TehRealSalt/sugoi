@@ -118,6 +118,12 @@ local knife_spin = ANGLE_45 / 3;
 -- Marx knife attack settings
 local marx_knife_time = TICRATE;
 
+-- Beam attack settings
+local beam_knife_delay = 2*TICRATE;
+local beam_knife_time = 4*TICRATE;
+local beam_knife_tired = 3*TICRATE/2;
+local beam_knife_speed = 4*FRACUNIT/3;
+
 --
 -- Thinker settings for the spinning knives.
 --
@@ -163,6 +169,9 @@ local ATK_CRAZYSPIN = 1;
 -- vars[1]: Number of times to repeat this attack
 local ATK_MARX = 2;
 
+-- ATK_BEAM: Rapidly throw a beam of knives
+local ATK_BEAM = 3;
+
 --
 -- Attack pattern table.
 -- Sets the order of all of the attacks used.
@@ -176,6 +185,7 @@ local atk_pattern = {
 	{ ATK_TELEPORT, { TELEPORT_OUTSIDE, 0, 0 } },
 	{ ATK_CRAZYSPIN, { 0, 0, 0 } },
 
+	/*
 	{ ATK_TELEPORT, { TELEPORT_CENTER, 0, 0 } },
 	{ ATK_MARX, { 1, 0, 0 } },
 
@@ -196,6 +206,10 @@ local atk_pattern = {
 	{ ATK_TELEPORT, { TELEPORT_CENTER, 0, 0 } },
 	{ ATK_TELEPORT, { TELEPORT_CENTER, 0, 0 } },
 	{ ATK_MARX, { 3, 0, 0 } },
+	*/
+
+	{ ATK_TELEPORT, { TELEPORT_RANDOM, 0, 0 } },
+	{ ATK_BEAM, { 0, 0, 0 } },
 };
 local atk_pattern_len = #atk_pattern;
 
@@ -392,6 +406,8 @@ local function ATK_CreateKnife(mo, knife_type)
 
 	if (knife_type == KNIFE_MARX)
 		knife.fuse = marx_knife_time;
+	else
+		knife.fuse = 10*TICRATE; //default_knife_time;
 	end
 
 	return knife;
@@ -792,6 +808,106 @@ local heaven_atk_funcs = {
 				-- Vibrate furiously before you attack.
 				mo.spritexoffset = P_RandomRange(-8, 8) * FRACUNIT;
 				mo.spriteyoffset = P_RandomRange(-8, 8) * FRACUNIT;
+			end
+		end,
+	},
+
+	[ATK_BEAM] = {
+		[ATK_FUNC_START] = function(mo)
+			-- Aim towards whoever's the closest
+			mo.target = ATK_ClosestTarget(mo);
+
+			if (mo.target and mo.target.valid)
+				mo.world_vars.angle_dest = R_PointToAngle2(mo.x, mo.y, mo.target.x, mo.target.y);
+			end
+
+			-- Put your arms in the air
+			for i = 1,2 do
+				local fist = mo.world_vars.fists[i];
+				if (fist and fist.valid)
+					fist.fist_vars.lr_pos_dest = default_fist_lr * 2;
+					fist.fist_vars.fb_pos_dest = 0;
+					fist.fist_vars.v_pos_dest = 112;
+				end
+			end
+
+			mo.world_vars.attack_delay = beam_knife_time + beam_knife_delay + beam_knife_tired;
+		end,
+		[ATK_FUNC_THINK] = function(mo)
+			if (mo.world_vars.attack_delay <= beam_knife_tired)
+				-- Stop vibrating.
+				mo.spritexoffset = 0;
+				mo.spriteyoffset = 0;
+
+				-- Lower your fists.
+				for i = 1,2 do
+					local fist = mo.world_vars.fists[i];
+					if (fist and fist.valid)
+						fist.fist_vars.lr_pos_dest = default_fist_lr * 2;
+						fist.fist_vars.fb_pos_dest = default_fist_fb;
+						fist.fist_vars.v_pos_dest = default_fist_v;
+					end
+				end
+			elseif (mo.world_vars.attack_delay <= beam_knife_time + beam_knife_tired)
+				if (mo.world_vars.attack_delay == beam_knife_time + beam_knife_tired)
+					Heaven_PlayYell(mo);
+				end
+
+				-- Play the knife throw sound
+				S_StartSound(mo, sfx_knifes);
+
+				-- Spawn a random knife at a random offset
+				local knife = ATK_CreateKnife(mo, 0);
+
+				local offset = {
+					x = P_RandomRange(-64, 64) * mo.scale,
+					y = P_RandomRange(-64, 64) * mo.scale,
+					z = (24 + P_RandomRange(0, 72)) * mo.scale,
+				};
+				offset.x = $1 + FixedMul(mo.radius + knife.radius, cos(mo.angle));
+				offset.y = $1 + FixedMul(mo.radius + knife.radius, sin(mo.angle));
+
+				P_SetOrigin(
+					knife,
+					mo.x + offset.x,
+					mo.y + offset.y,
+					mo.z + offset.z
+				);
+
+				knife.movedir = mo.angle;
+				knife.angle = knife.movedir;
+				P_InstaThrust(knife, knife.movedir, FixedMul(knife.info.speed, beam_knife_speed));
+
+				-- Swing your fists wildly!
+				for i = 1,2 do
+					local fist = mo.world_vars.fists[i];
+					if (fist and fist.valid)
+						fist.fist_vars.lr_pos_dest = default_fist_lr;
+						fist.fist_vars.v_pos_dest = default_fist_v;
+						fist.fist_vars.fb_pos_dest = default_fist_fb;
+
+						local tick = (mo.world_vars.attack_delay / 3) + i;
+						if (tick & 1)
+							fist.fist_vars.fb_pos_dest = $1 + 256;
+						end
+					end
+				end
+
+				-- Stop vibrating.
+				mo.spritexoffset = 0;
+				mo.spriteyoffset = 0;
+			else
+				-- Vibrate furiously before you attack.
+				mo.spritexoffset = P_RandomRange(-8, 8) * FRACUNIT;
+				mo.spriteyoffset = P_RandomRange(-8, 8) * FRACUNIT;
+
+				if not (mo.target and mo.target.valid)
+					mo.target = ATK_ClosestTarget(mo);
+				end
+
+				if (mo.target and mo.target.valid)
+					mo.world_vars.angle_dest = R_PointToAngle2(mo.x, mo.y, mo.target.x, mo.target.y);
+				end
 			end
 		end,
 	},

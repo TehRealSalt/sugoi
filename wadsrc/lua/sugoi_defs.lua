@@ -143,3 +143,6 @@ addHook("MusicChange", function(oldname, newname, mflags, looping, position, pre
 		end
 	end
 end)
+
+-- This is used for some dumb hacks
+sugoi.ExtraReelStart = 270;

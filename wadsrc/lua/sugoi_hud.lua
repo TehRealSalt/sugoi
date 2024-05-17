@@ -455,15 +455,21 @@ local function drawVoting(vid, player)
 	end
 
 	local author = mapheaderinfo[sugoi.currentVoteInfo.map].author;
+	local mapname = sugoi.GetMapName(sugoi.currentVoteInfo.map);
+
+	if (sugoi.currentVoteInfo.map == sugoi.ExtraReelStart)
+		author = "multiple authors";
+		mapname = "Finale Extra Reel";
+	end
 
 	if (multiplayer)
 		vid.drawString(160, 8, "A vote was started by \130"..startedname, V_ALLOWLOWERCASE, "center")
 
 		if (author != nil)
-			vid.drawString(160, 16, "for \130"..sugoi.GetMapName(sugoi.currentVoteInfo.map).."\128", V_ALLOWLOWERCASE, "center")
-			vid.drawString(160, 24, "by \130"..mapheaderinfo[sugoi.currentVoteInfo.map].author.."\128.", V_ALLOWLOWERCASE, "center")
+			vid.drawString(160, 16, "for \130"..mapname.."\128", V_ALLOWLOWERCASE, "center")
+			vid.drawString(160, 24, "by \130"..author.."\128.", V_ALLOWLOWERCASE, "center")
 		else
-			vid.drawString(160, 16, "for \130"..sugoi.GetMapName(sugoi.currentVoteInfo.map).."\128.", V_ALLOWLOWERCASE, "center")
+			vid.drawString(160, 16, "for \130"..mapname.."\128.", V_ALLOWLOWERCASE, "center")
 		end
 
 		vid.drawString(16, 144, "\130"..sugoi.GetVoteCount("yes").."\128 have voted \131YES\128.", V_ALLOWLOWERCASE, "left")
@@ -472,16 +478,18 @@ local function drawVoting(vid, player)
 		vid.drawString(160, 8, "Are you sure you want to go", V_ALLOWLOWERCASE, "center")
 
 		if (author != nil)
-			vid.drawString(160, 16, "to \130"..sugoi.GetMapName(sugoi.currentVoteInfo.map).."\128", V_ALLOWLOWERCASE, "center")
-			vid.drawString(160, 24, "by \130"..mapheaderinfo[sugoi.currentVoteInfo.map].author.."\128?", V_ALLOWLOWERCASE, "center")
+			vid.drawString(160, 16, "to \130"..mapname.."\128", V_ALLOWLOWERCASE, "center")
+			vid.drawString(160, 24, "by \130"..author.."\128?", V_ALLOWLOWERCASE, "center")
 		else
-			vid.drawString(160, 16, "to \130"..sugoi.GetMapName(sugoi.currentVoteInfo.map).."\128?", V_ALLOWLOWERCASE, "center")
+			vid.drawString(160, 16, "to \130"..mapname.."\128?", V_ALLOWLOWERCASE, "center")
 		end
 	end
 
 	vid.drawFill(116, 44, 88, 56, HUDBGColor)
 
-	if (mapheaderinfo[sugoi.currentVoteInfo.map].hubimage)
+	if (sugoi.currentVoteInfo.map == sugoi.ExtraReelStart)
+		vid.drawScaled(120*FRACUNIT, 47*FRACUNIT, FRACUNIT/2, vid.cachePatch("FER_PIC"))
+	elseif (mapheaderinfo[sugoi.currentVoteInfo.map].hubimage)
 		vid.drawScaled(120*FRACUNIT, 47*FRACUNIT, FRACUNIT/2, vid.cachePatch(mapheaderinfo[sugoi.currentVoteInfo.map].hubimage))
 	elseif (sugoi.currentVoteInfo.map)
 		vid.drawScaled(120*FRACUNIT, 47*FRACUNIT, FRACUNIT/2, vid.cachePatch(G_BuildMapName(sugoi.currentVoteInfo.map).."P"))
@@ -494,7 +502,12 @@ local function drawVoting(vid, player)
 		vid.draw(120, 47, vid.cachePatch("MSTATIC"..((leveltime % 4)+1)), V_30TRANS)
 	end
 
-	drawMapBadges(vid, sugoi.currentVoteInfo.map, 192, 89);
+	local badgemap = sugoi.currentVoteInfo.map;
+	if (sugoi.currentVoteInfo.map == sugoi.ExtraReelStart)
+		badgemap = $1 + 4;
+	end
+
+	drawMapBadges(vid, badgemap, 192, 89);
 	drawMapRating(vid, sugoi.currentVoteInfo.map, 121, 88);
 
 	if (sugoi.currentVoteInfo.emmycost > 0)

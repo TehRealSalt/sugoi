@@ -137,6 +137,12 @@ local function levelPortalSpawn(mo, mt)
 		return;
 	end
 
+	if (map == sugoi.ExtraReelStart)
+	and not (sugoi.Unlocked[22])
+		P_RemoveMobj(mo);
+		return;
+	end
+
 	local base = P_SpawnMobjFromMobj(mo, 0, 0, 0, MT_LEVELPORTAL);
 	base.renderflags = $1 | RF_NOSPLATBILLBOARD;
 
@@ -240,9 +246,14 @@ addHook("MobjThinker", function(mo)
 		mo.lvl = mo.spawnpoint.angle;
 	end
 
-	if not (mapheaderinfo[mo.lvl])
-	or not (mapheaderinfo[mo.lvl].typeoflevel & sugoi.tol(gametype))
-	or ((sugoi.mapChecks[mo.lvl]) and (leveltime >= 2))
+	local lvl = mo.lvl;
+	if (lvl == sugoi.ExtraReelStart)
+		lvl = $1 + 4;
+	end
+
+	if not (mapheaderinfo[lvl])
+	or not (mapheaderinfo[lvl].typeoflevel & sugoi.tol(gametype))
+	or ((sugoi.mapChecks[lvl]) and (leveltime >= 2))
 		P_RemoveMobj(mo);
 		return;
 	end

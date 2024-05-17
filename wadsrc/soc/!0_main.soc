@@ -1,6 +1,6 @@
 # Shut Up and Get On It
 MainCfg
-CustomVersion = SUGOI Beta 3
+CustomVersion = SUGOI v1.0
 SpStage_Start = A0
 IntroToPlay = 1
 CreditsCutscene = 4
@@ -596,7 +596,7 @@ NoChecklist = true
 Type = NightsMode
 
 # UNLOCKABLE 31: Cheat Menu
-# Unlocked by getting 100% completion (number is dummy for now)
+# Unlocked by getting 100% completion
 ConditionSet 126
 Condition1 = TotalEmblems 430
 

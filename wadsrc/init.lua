@@ -137,7 +137,7 @@ dofile("kimokawaiii/soaes-fade.lua");
 dofile("kimokawaiii/soaes-message.lua");
 dofile("kimokawaiii/soaes-arena.lua");
 dofile("kimokawaiii/soaes-boss.lua");
-dofile("kimokawaiii/heaven.lua");
+--dofile("kimokawaiii/heaven.lua");
 
 -- SUGOI main script
 

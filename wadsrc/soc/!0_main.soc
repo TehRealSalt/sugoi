@@ -612,3 +612,37 @@ Height = 100
 NoCecho = true
 Type = LevelSelect
 Var = 4
+
+# UNLOCKABLE 33: Abandoned Airbase secret exit trigger
+# Unlocked by getting 4 Abandoned Airbase emblems
+# (Yes, this sucks ass. I had to compile my own debug
+#  EXE to show the emblem IDs since there's no way
+#  in hell to find them normally.)
+ConditionSet 130
+Condition1 = Emblem 119
+Condition1 = Emblem 120
+Condition1 = Emblem 121
+Condition1 = Emblem 122
+Condition2 = Emblem 119
+Condition2 = Emblem 120
+Condition2 = Emblem 121
+Condition2 = Emblem 123
+Condition3 = Emblem 119
+Condition3 = Emblem 120
+Condition3 = Emblem 122
+Condition3 = Emblem 123
+Condition4 = Emblem 119
+Condition4 = Emblem 121
+Condition4 = Emblem 122
+Condition4 = Emblem 123
+Condition5 = Emblem 120
+Condition5 = Emblem 121
+Condition5 = Emblem 122
+Condition5 = Emblem 123
+
+Unlockable 33
+Name = Airbase Secret
+ConditionSet = 130
+NoCecho = true
+NoChecklist = true
+Type = None

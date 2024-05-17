@@ -1,6 +1,6 @@
 -- DEBUG
 --dofile("lib/doomedtool.lua");
-dofile("lib/hookprofile.lua");
+--dofile("lib/hookprofile.lua");
 
 -- Libraries
 dofile("lib/customhud.lua");

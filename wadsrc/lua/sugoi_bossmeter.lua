@@ -96,12 +96,13 @@ local function drawBossMeter(v, player)
 	local red_percent = 0;
 
 	if (boss.health > 0)
-		if (boss.type == MT_EGGWORLD_OH)
+		/*if (boss.type == MT_EGGWORLD_OH)
 			if (boss.world_vars != nil)
 				hp_percent = boss.world_vars.health;
 				red_percent = hp_percent + boss.world_vars.heal;
 			end
-		elseif (boss.type == MT_EGGLAS2)
+		else*/
+		if (boss.type == MT_EGGLAS2)
 			if (boss.acttime != nil)
 				hp_percent = FixedDiv(boss.acttime, 2100);
 			end

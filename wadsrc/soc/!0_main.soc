@@ -502,19 +502,21 @@ Type = Warp
 Var = EQ
 
 # UNLOCKABLE 23: Emblem Hints
-# Unlocked by getting 5 emblems
+# Unlocked by starting the game
 ConditionSet 50
-Condition1 = TotalEmblems 5
+Condition1 = PlayTime 1
 
 Unlockable 23
 Name = Emblem Hints
 ConditionSet = 50
+NoCecho = true
+NoChecklist = true
 Type = EmblemHints
 
 # UNLOCKABLE 24: Emblem Radar
-# Unlocked by getting 10 emblems
+# Unlocked by getting 5 emblems
 ConditionSet 51
-Condition1 = TotalEmblems 10
+Condition1 = TotalEmblems 5
 
 Unlockable 24
 Name = Emblem Radar

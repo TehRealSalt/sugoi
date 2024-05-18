@@ -66,7 +66,7 @@ local function playerThink(mo)
 	end
 
 	-- Undo the all super code
-	if (skins[mo.skin].flags & SF_SUPER)
+	if (mo.skin and (skins[mo.skin].flags & SF_SUPER))
 		player.sugoiAllSuper = nil;
 	elseif (player.sugoiAllSuper == true) and not (player.powers[pw_super])
 		player.charflags = $1 & ~SF_SUPER;

@@ -47,7 +47,7 @@ local function HandleTransparentBlocks(pmo, mo)
 		return
 	end
 
-    local distance = P_AproxDistance(mo.x, mo.y, pmo.x, pmo.y)
+    local distance = P_AproxDistance(mo.x - pmo.x, mo.y - pmo.y)
 
     if (distance <= mo.detectionradius) then
 		if mo.lineslope ~= nil

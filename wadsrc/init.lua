@@ -95,7 +95,7 @@ dofile("kimokawaiii/dwz-base.lua");
 dofile("kimokawaiii/dwz-pulley.lua");
 dofile("kimokawaiii/dwz-dialogue.lua");
 dofile("kimokawaiii/dwz-hookring.lua");
---dofile("kimokawaiii/dark-stabot.lua");
+dofile("kimokawaiii/dark-stabot.lua");
 --dofile("kimokawaiii/ds-intro.lua"); -- Broke the "only one map per entry" rule
 dofile("kimokawaiii/nsz-decoration.lua");
 dofile("kimokawaiii/nsz-tridentz.lua");

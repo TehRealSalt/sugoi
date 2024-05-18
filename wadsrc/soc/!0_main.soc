@@ -620,7 +620,7 @@ Var = 4
 # (Yes, this sucks ass. I had to compile my own debug
 #  EXE to show the emblem IDs since there's no way
 #  in hell to find them normally.)
-ConditionSet 130
+ConditionSet 100
 Condition1 = Emblem 119
 Condition1 = Emblem 120
 Condition1 = Emblem 121
@@ -644,7 +644,7 @@ Condition5 = Emblem 123
 
 Unlockable 33
 Name = Airbase Secret
-ConditionSet = 130
+ConditionSet = 100
 NoCecho = true
 NoChecklist = true
 Type = None

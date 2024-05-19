@@ -14,6 +14,9 @@
 	*shot*
 	*/
 
+	/*2024 Addendum: Also note that the comments contain a lot of obnoxious swearing
+	and general stupidity from a 16 year old version of myself -Root*/
+
 	freeslot(
 		"sfx_pdglsr"
 	)
@@ -1992,12 +1995,12 @@ addHook("ThinkFrame", RSC_Step)
 				//else {xspeed+=0.1 if xspeed > 0 xspeed=0}}
 				if (obj.onland and not obj.moving)
 					if (obj.xspeed > 0)
-					obj.xspeed = $1 - 11234
+					obj.xspeed = $1 - (11234*2)
 						if (obj.xspeed < 0)
 							obj.xspeed=0
 						end
 					else
-					obj.xspeed = $1 + 11234
+					obj.xspeed = $1 + (11234*2)
 						if (obj.xspeed > 0)
 							obj.xspeed=0
 						end
@@ -2007,9 +2010,9 @@ addHook("ThinkFrame", RSC_Step)
 				local nearplayer=apsa_NearPlayer(obj.x,obj.y,128)
 				if (nearplayer)
 					if (nearplayer.x > obj.x)
-						obj.xspeed = $1 + 5617
+						obj.xspeed = $1 + (5617*2)
 					else
-						obj.xspeed = $1 - 5617
+						obj.xspeed = $1 - (5617*2)
 					end
 					obj.xspeed=clamp(obj.xspeed,-168521,168521)
 					obj.leftright = sign(obj.xspeed)
@@ -2486,18 +2489,18 @@ addHook("ThinkFrame", RSC_Step)
 
 	local function apsa_PlayerMovement(player)
 		if (button_check(player,vk.right) and not button_check(player,vk.left))
-			player.obj.xspeed = $1 + 8224
+			player.obj.xspeed = $1 + (8425*2)
 			if (player.obj.xspeed < 0)
-				player.obj.xspeed = $1 + 11231 //turn around fast
+				player.obj.xspeed = $1 + (11234*2) //turn around fast
 			end
 			if (not button_check(player,vk.shoot))
 				player.obj.leftright=1
 			end
 		end
 		if (button_check(player,vk.left) and not button_check(player,vk.right))
-			player.obj.xspeed = $1 - 8224
+			player.obj.xspeed = $1 - (8425*2)
 			if (player.obj.xspeed > 0)
-				player.obj.xspeed = $1 - 11231 //turn around fast
+				player.obj.xspeed = $1 - (11234*2) //turn around fast
 			end
 			if (not button_check(player,vk.shoot))
 				player.obj.leftright=-1
@@ -2507,9 +2510,9 @@ addHook("ThinkFrame", RSC_Step)
 			//friction
 			if (not button_check(player,vk.right) and not button_check(player,vk.left))
 				if (player.obj.xspeed > 0)
-					player.obj.xspeed=clamp(player.obj.xspeed-11231,0,255*FRACUNIT)
+					player.obj.xspeed=clamp(player.obj.xspeed-(11234*2),0,255*FRACUNIT)
 				else
-					player.obj.xspeed=clamp(player.obj.xspeed+11231,-255*FRACUNIT,0)
+					player.obj.xspeed=clamp(player.obj.xspeed+(11234*2),-255*FRACUNIT,0)
 				end
 			end
 			//jumping

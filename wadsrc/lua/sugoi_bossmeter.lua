@@ -110,7 +110,7 @@ local function drawBossMeter(v, player)
 			hp_percent = FixedDiv(boss.health, boss.info.spawnhealth);
 
 			if (boss.raidBoss != nil)
-				hp_percent = $1 - (boss.raidBoss.poise / boss.info.spawnhealth);
+				hp_percent = $1 - ((FRACUNIT - boss.raidBoss.poise) / boss.info.spawnhealth);
 			end
 		end
 	end

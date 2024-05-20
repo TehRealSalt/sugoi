@@ -78,6 +78,34 @@ addHook("MobjSpawn", function(mo)
 	mo.jetfume3.target = mo
 end, MT_EGGOFLAMER)
 
+-- Sal: something about the state logic is preventing MF2_FRET from getting removed.
+-- I could not find the issue, so just fix it if it happens for too long.
+
+-- This boss has a variable number of FRET frames, even without the bug.
+-- So the following value is just based on vibes:
+local fretSoftLock = 4*TICRATE;
+
+local function FretSoftLockHack(mo)
+	if (mo.fretTime == nil)
+		mo.fretTime = 0;
+	end
+
+	if (mo.flags2 & MF2_FRET)
+		if (mo.fretTime == 0)
+			mo.fretTime = fretSoftLock + 1;
+		else
+			mo.fretTime = $1 - 1;
+
+			if (mo.fretTime <= 1)
+				mo.flags2 = ($1 & ~MF2_FRET);
+				mo.fretTime = 0;
+			end
+		end
+	else
+		mo.fretTime = 0;
+	end
+end
+
 addHook("MobjThinker", function(mo)
     if mo.jetfume1 and mo.jetfume1.valid then
 		P_MoveOrigin(mo.jetfume1, mo.x - 54 * cos(mo.angle), mo.y - 54 * sin(mo.angle), mo.z + (40*FRACUNIT))
@@ -88,4 +116,6 @@ addHook("MobjThinker", function(mo)
     if mo.jetfume3 and mo.jetfume3.valid then
 		P_MoveOrigin(mo.jetfume3, mo.x - 54 * cos(mo.angle) - 22*cos(mo.angle+ANGLE_90), mo.y - 54 * sin(mo.angle) - 22*sin(mo.angle+ANGLE_90), mo.z + (12*FRACUNIT))
     end
+
+	FretSoftLockHack(mo)
 end, MT_EGGOFLAMER)

@@ -153,15 +153,26 @@ mobjinfo[MT_BOULDER_COLLIDER] = {
 
 // powerupdisplay icon
 
-local cv_renderer = CV_FindVar("renderer")
-local cv_powerupdisplay = CV_FindVar("powerupdisplay")
-local cv_exitmove = CV_FindVar("exitmove")
+local _cv = {}
+local function GetVarVal(str)
+	local cvStr = "cv_" + str;
+
+	if not (_cv[cvStr])
+		_cv[cvStr] = CV_FindVar(str)
+	end
+
+	if (_cv[cvStr])
+		return _cv[cvStr].value;
+	end
+
+	return 0;
+end
 
 hud.add(function(v, player, cam)
 	if (player.powers[pw_shield] & SH_NOSTACK) == SH_BOULDER
-	and (cv_powerupdisplay.value == 2 or not cam.chase and cv_powerupdisplay.value)
+	and (GetVarVal("powerupdisplay") == 2 or not cam.chase and GetVarVal("powerupdisplay"))
 		v.drawScaled(
-			((player.pflags & PF_FINISHED and cv_exitmove.value and multiplayer and -20 or 0) + hudinfo[HUD_POWERUPS].x) * FRACUNIT,
+			((player.pflags & PF_FINISHED and GetVarVal("exitmove") and multiplayer and -20 or 0) + hudinfo[HUD_POWERUPS].x) * FRACUNIT,
 			hudinfo[HUD_POWERUPS].y * FRACUNIT,
 			FRACUNIT >> 1, v.cachePatch("TVBDICON"), V_PERPLAYER|hudinfo[HUD_POWERUPS].f|V_HUDTRANS)
 	// not bothered to do the slidey thing - for shields it only ever happens if you lose PF_FINISHED, and that's not a likely occurence
@@ -326,7 +337,7 @@ local function DoBoulderVisuals(player)
 			end
 
 			// cull rocks on FOFs so the player doesn't turn invisible
-			if cv_renderer.value == 1
+			if GetVarVal("renderer") == 1
 				if rock.z < rock.floorz
 				and (rock.floorrover or rock.subsector.sector ~= sector)
 				or rock.z + rock.height > rock.ceilingz

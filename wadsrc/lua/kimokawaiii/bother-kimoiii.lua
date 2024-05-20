@@ -301,10 +301,10 @@ local function playerSpawnBother(player)
 	if mapheaderinfo[gamemap].bother then
 		//print("Setting up the party for player: " .. #player)
 		playerBotherSetup(player)
-		sugoi.DEShortcut("score", false)
-		sugoi.DEShortcut("time", false)
-		sugoi.DEShortcut("rings", false)
-		sugoi.DEShortcut("lives", false)
+		sugoi.HUDShow("score", false)
+		sugoi.HUDShow("time", false)
+		sugoi.HUDShow("rings", false)
+		sugoi.HUDShow("lives", false)
 	else
 		return
 	end
@@ -326,10 +326,10 @@ local function playerBotherMapEnd(mapnum)
 			player.bother = nil
 			player.normalspeed = skins[player.mo.skin].normalspeed
 		end
-		sugoi.DEShortcut("score", true)
-		sugoi.DEShortcut("time", true)
-		sugoi.DEShortcut("rings", true)
-		sugoi.DEShortcut("lives", true)
+		sugoi.HUDShow("score", true)
+		sugoi.HUDShow("time", true)
+		sugoi.HUDShow("rings", true)
+		sugoi.HUDShow("lives", true)
 	end
 end
 
@@ -343,10 +343,10 @@ local function playerBotherMapStart(mapnum)
 				playerBotherSetup(player)
 			end
 		end
-		sugoi.DEShortcut("score", false)
-		sugoi.DEShortcut("time", false)
-		sugoi.DEShortcut("rings", false)
-		sugoi.DEShortcut("lives", false)
+		sugoi.HUDShow("score", false)
+		sugoi.HUDShow("time", false)
+		sugoi.HUDShow("rings", false)
+		sugoi.HUDShow("lives", false)
 	end
 end
 
@@ -363,10 +363,10 @@ local function playerThinkBother(mobj)
 	if mapheaderinfo[gamemap].bother and not player.bother then
 		//print("Setting up the party for player: " .. #player)
 		playerBotherSetup(player)
-		sugoi.DEShortcut("score", false)
-		sugoi.DEShortcut("time", false)
-		sugoi.DEShortcut("rings", false)
-		sugoi.DEShortcut("lives", false)
+		sugoi.HUDShow("score", false)
+		sugoi.HUDShow("time", false)
+		sugoi.HUDShow("rings", false)
+		sugoi.HUDShow("lives", false)
 	end
 
 	if not player.bother then

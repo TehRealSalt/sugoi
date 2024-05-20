@@ -421,41 +421,58 @@ freeslot(
 )
 
 freeslot(
-	"S_GSNAPPER_FORCE1",
-	"S_GSNAPPER_FORCE2",
-	"S_GSNAPPER_FORCE3",
-	"S_GSNAPPER_FORCE4",
-	"S_GSNAPPER_FORCE5",
-	"S_GSNAPPER_FORCE6",
+	"MT_RSNAPPER",
 
-	"S_GSNAPPER_IDLE1",
-	"S_GSNAPPER_IDLE2",
-	"S_GSNAPPER_IDLE3",
-	"S_GSNAPPER_IDLE4",
-	"S_GSNAPPER_IDLE5",
-	"S_GSNAPPER_BEFORECHOOSE",
-	"S_GSNAPPER_CHOOSE",
+	"S_RSNAPPER_FORCE1",
+	"S_RSNAPPER_FORCE2",
+	"S_RSNAPPER_FORCE3",
+	"S_RSNAPPER_FORCE4",
+	"S_RSNAPPER_FORCE5",
+	"S_RSNAPPER_FORCE6",
 
-	"S_GSNAPPER_ATK1_1",
-	"S_GSNAPPER_ATK1_2",
-	"S_GSNAPPER_ATK1_3",
-	"S_GSNAPPER_ATK1_4",
-	"S_GSNAPPER_ATK1_5",
+	"S_RSNAPPER_IDLE1",
+	"S_RSNAPPER_IDLE2",
+	"S_RSNAPPER_IDLE3",
+	"S_RSNAPPER_IDLE4",
+	"S_RSNAPPER_IDLE5",
+	"S_RSNAPPER_BEFORECHOOSE",
+	"S_RSNAPPER_CHOOSE",
 
-	"S_GSNAPPER_ATK2_1",
-	"S_GSNAPPER_ATK2_2",
-	"S_GSNAPPER_ATK2_3",
-	"S_GSNAPPER_ATK2_4",
-	"S_GSNAPPER_ATK2_5",
+	"S_RSNAPPER_ATK1_1",
+	"S_RSNAPPER_ATK1_2",
+	"S_RSNAPPER_ATK1_3",
+	"S_RSNAPPER_ATK1_4",
+	"S_RSNAPPER_ATK1_5",
 
-	"S_GSNAPPER_ATK3_1",
-	"S_GSNAPPER_ATK3_2",
-	"S_GSNAPPER_ATK3_3",
-	"S_GSNAPPER_ATK3_4",
-	"S_GSNAPPER_ATK3_5",
+	"S_RSNAPPER_ATK2_1",
+	"S_RSNAPPER_ATK2_2",
+	"S_RSNAPPER_ATK2_3",
+	"S_RSNAPPER_ATK2_4",
+	"S_RSNAPPER_ATK2_5",
 
-	"S_GSNAPPER_PHASE3_1"
+	"S_RSNAPPER_ATK3_1",
+	"S_RSNAPPER_ATK3_2",
+	"S_RSNAPPER_ATK3_3",
+	"S_RSNAPPER_ATK3_4",
+	"S_RSNAPPER_ATK3_5",
+
+	"S_RSNAPPER_PHASE3_1"
 )
+
+mobjinfo[MT_RSNAPPER] = {
+	doomednum = -1,
+	spawnstate = S_RSNAPPER_IDLE1,
+	spawnhealth = 1,
+	reactiontime = 32,
+	painchance = 200,
+	deathstate = S_XPLD1,
+	deathsound = sfx_pop,
+	speed = 3,
+	radius = 24*FRACUNIT,
+	height = 24*FRACUNIT,
+	mass = 100,
+	flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE,
+};
 
 freeslot(
 	"SPR_DCBP",
@@ -657,48 +674,48 @@ states[S_DARKSTABOT_BLUR] = {SPR_DCBF, J|TR_TRANS50, 1, nil, 0, 0, S_DARKSTABOT_
 states[S_DARKSTABOT_PHASE2_RAGE1] = {SPR_DCBF, A, 40, A_PlaySound, sfx_boil, 0, S_DARKSTABOT_PHASE2_RAGE2}
 states[S_DARKSTABOT_PHASE2_RAGE2] = {SPR_DCBF, I, 40, A_PlaySound, sfx_s3kbes, 0, S_DARKSTABOT_PHASE2_RAGE3}
 states[S_DARKSTABOT_PHASE2_RAGE3] = {SPR_DCBF, H, 1, nil, 0, 0, S_DARKSTABOT_PHASE2_RAGE4}
-states[S_DARKSTABOT_PHASE2_RAGE4] = {SPR_DCBF, H, 10, A_FindTarget, MT_GSNAPPER, 0, S_DARKSTABOT_PHASE2_RAGE5}
-states[S_DARKSTABOT_PHASE2_RAGE5] = {SPR_DCBF, A, 1, A_FindTarget, MT_GSNAPPER, 0, S_DARKSTABOT_PHASE2_RAGE6}
+states[S_DARKSTABOT_PHASE2_RAGE4] = {SPR_DCBF, H, 10, A_FindTarget, MT_RSNAPPER, 0, S_DARKSTABOT_PHASE2_RAGE5}
+states[S_DARKSTABOT_PHASE2_RAGE5] = {SPR_DCBF, A, 1, A_FindTarget, MT_RSNAPPER, 0, S_DARKSTABOT_PHASE2_RAGE6}
 states[S_DARKSTABOT_PHASE2_RAGE6] = {SPR_DCBF, I, 100, nil, 0, 0, S_DARKSTABOT_PHASE2_RAGE7}
 states[S_DARKSTABOT_PHASE2_RAGE7] = {SPR_DCBF, H, 20, A_FaceTarget, 0, 0, S_DARKSTABOT_ATK1_05}
 
 states[S_DARKSTABOT_PHASE3_RAGE1] = {SPR_DCBF, A, 40, A_PlaySound, sfx_boil, 0, S_DARKSTABOT_PHASE3_RAGE2}
 states[S_DARKSTABOT_PHASE3_RAGE2] = {SPR_DCBF, I, 40, A_PlaySound, sfx_s3kbes, 0, S_DARKSTABOT_PHASE3_RAGE3}
 states[S_DARKSTABOT_PHASE3_RAGE3] = {SPR_DCBF, H, 1, nil, 0, 0, S_DARKSTABOT_PHASE3_RAGE4}
-states[S_DARKSTABOT_PHASE3_RAGE4] = {SPR_DCBF, H, 1, A_FindTarget, MT_GSNAPPER, 0, S_DARKSTABOT_PHASE3_RAGE5}
-states[S_DARKSTABOT_PHASE3_RAGE5] = {SPR_DCBF, A, 1, A_FindTarget, MT_GSNAPPER, 0, S_DARKSTABOT_PHASE3_RAGE6}
+states[S_DARKSTABOT_PHASE3_RAGE4] = {SPR_DCBF, H, 1, A_FindTarget, MT_RSNAPPER, 0, S_DARKSTABOT_PHASE3_RAGE5}
+states[S_DARKSTABOT_PHASE3_RAGE5] = {SPR_DCBF, A, 1, A_FindTarget, MT_RSNAPPER, 0, S_DARKSTABOT_PHASE3_RAGE6}
 states[S_DARKSTABOT_PHASE3_RAGE6] = {SPR_DCBF, H, 50, A_KnightHop, 0, 0, S_DARKSTABOT_PHASE3_RAGE7}
 states[S_DARKSTABOT_PHASE3_RAGE7] = {SPR_DCBF, I, 20, A_SpawnCharge, SKINCOLOR_WHITE, 0, S_DARKSTABOT_PHASE3_RAGE8}
 states[S_DARKSTABOT_PHASE3_RAGE8] = {SPR_DCBF, H, 20, A_FaceTarget, 0, 0, S_DARKSTABOT_ATK1_05}
 
-states[S_GSNAPPER_FORCE1] = {SPR_GSNP, A, 15, nil, 0, 0, S_GSNAPPER_FORCE2}
-states[S_GSNAPPER_FORCE2] = {SPR_GSNP, A, 90, A_FaceTracer, 0, 0, S_GSNAPPER_FORCE3}
-states[S_GSNAPPER_FORCE3] = {SPR_RSNP, D, 47, nil, 0, 0, S_GSNAPPER_FORCE4}
-states[S_GSNAPPER_FORCE4] = {SPR_RSNP, B, 70, A_Shake, 0, 0, S_GSNAPPER_FORCE5}
-states[S_GSNAPPER_FORCE5] = {SPR_RSNP, A, 10, nil, 0, 0, S_GSNAPPER_IDLE1}
+states[S_RSNAPPER_FORCE1] = {SPR_GSNP, A, 15, nil, 0, 0, S_RSNAPPER_FORCE2}
+states[S_RSNAPPER_FORCE2] = {SPR_GSNP, A, 90, A_FaceTracer, 0, 0, S_RSNAPPER_FORCE3}
+states[S_RSNAPPER_FORCE3] = {SPR_RSNP, D, 47, nil, 0, 0, S_RSNAPPER_FORCE4}
+states[S_RSNAPPER_FORCE4] = {SPR_RSNP, B, 70, A_Shake, 0, 0, S_RSNAPPER_FORCE5}
+states[S_RSNAPPER_FORCE5] = {SPR_RSNP, A, 10, nil, 0, 0, S_RSNAPPER_IDLE1}
 
-states[S_GSNAPPER_BEFORECHOOSE] = {SPR_RSNP, B, 70, A_Shake, 0, 0, S_GSNAPPER_CHOOSE}
+states[S_RSNAPPER_BEFORECHOOSE] = {SPR_RSNP, B, 70, A_Shake, 0, 0, S_RSNAPPER_CHOOSE}
 
-states[S_GSNAPPER_IDLE1] = {SPR_RSNP, A, 2, A_Chase, 0, 0, S_GSNAPPER_IDLE2}
-states[S_GSNAPPER_IDLE2] = {SPR_RSNP, B, 2, A_Chase, 0, 0, S_GSNAPPER_IDLE3}
-states[S_GSNAPPER_IDLE3] = {SPR_RSNP, C, 2, A_Chase, 0, 0, S_GSNAPPER_IDLE4}
-states[S_GSNAPPER_IDLE4] = {SPR_RSNP, D, 2, A_Chase, 0, 0, S_GSNAPPER_IDLE5}
-states[S_GSNAPPER_IDLE5] = {SPR_RSNP, A, 0, A_Repeat, 8, S_GSNAPPER_IDLE1, S_GSNAPPER_BEFORECHOOSE}
+states[S_RSNAPPER_IDLE1] = {SPR_RSNP, A, 2, A_Chase, 0, 0, S_RSNAPPER_IDLE2}
+states[S_RSNAPPER_IDLE2] = {SPR_RSNP, B, 2, A_Chase, 0, 0, S_RSNAPPER_IDLE3}
+states[S_RSNAPPER_IDLE3] = {SPR_RSNP, C, 2, A_Chase, 0, 0, S_RSNAPPER_IDLE4}
+states[S_RSNAPPER_IDLE4] = {SPR_RSNP, D, 2, A_Chase, 0, 0, S_RSNAPPER_IDLE5}
+states[S_RSNAPPER_IDLE5] = {SPR_RSNP, A, 0, A_Repeat, 8, S_RSNAPPER_IDLE1, S_RSNAPPER_BEFORECHOOSE}
 
-states[S_GSNAPPER_CHOOSE] = {SPR_RSNP, A, 1, A_FaceTarget, 0, 0, S_GSNAPPER_CHOOSE}
+states[S_RSNAPPER_CHOOSE] = {SPR_RSNP, A, 1, A_FaceTarget, 0, 0, S_RSNAPPER_CHOOSE}
 
-states[S_GSNAPPER_ATK1_1] = {SPR_RSNP, D, 50, A_FaceTarget, 0, 0, S_GSNAPPER_ATK1_2}
-states[S_GSNAPPER_ATK1_2] = {SPR_RSNP, B, 70, nil, 0, 0, S_GSNAPPER_IDLE1}
+states[S_RSNAPPER_ATK1_1] = {SPR_RSNP, D, 50, A_FaceTarget, 0, 0, S_RSNAPPER_ATK1_2}
+states[S_RSNAPPER_ATK1_2] = {SPR_RSNP, B, 70, nil, 0, 0, S_RSNAPPER_IDLE1}
 
-states[S_GSNAPPER_ATK2_1] = {SPR_RSNP, D, 50, A_FaceTarget, 0, 0, S_GSNAPPER_ATK2_2}
-states[S_GSNAPPER_ATK2_2] = {SPR_RSNP, B, 120, nil, 0, 0, S_GSNAPPER_IDLE1}
+states[S_RSNAPPER_ATK2_1] = {SPR_RSNP, D, 50, A_FaceTarget, 0, 0, S_RSNAPPER_ATK2_2}
+states[S_RSNAPPER_ATK2_2] = {SPR_RSNP, B, 120, nil, 0, 0, S_RSNAPPER_IDLE1}
 
-states[S_GSNAPPER_ATK3_1] = {SPR_RSNP, D, 50, A_FaceTarget, 0, 0, S_GSNAPPER_ATK3_2}
-states[S_GSNAPPER_ATK3_2] = {SPR_RSNP, B, 30, A_BunnyHop, 6, 6, S_GSNAPPER_ATK3_3}
-states[S_GSNAPPER_ATK3_3] = {SPR_RSNP, D, 30, A_FaceTarget, 0, 0, S_GSNAPPER_ATK3_4}
-states[S_GSNAPPER_ATK3_4] = {SPR_RSNP, A, 0, A_Repeat, 4, S_GSNAPPER_ATK3_2, S_GSNAPPER_IDLE1}
+states[S_RSNAPPER_ATK3_1] = {SPR_RSNP, D, 50, A_FaceTarget, 0, 0, S_RSNAPPER_ATK3_2}
+states[S_RSNAPPER_ATK3_2] = {SPR_RSNP, B, 30, A_BunnyHop, 6, 6, S_RSNAPPER_ATK3_3}
+states[S_RSNAPPER_ATK3_3] = {SPR_RSNP, D, 30, A_FaceTarget, 0, 0, S_RSNAPPER_ATK3_4}
+states[S_RSNAPPER_ATK3_4] = {SPR_RSNP, A, 0, A_Repeat, 4, S_RSNAPPER_ATK3_2, S_RSNAPPER_IDLE1}
 
-states[S_GSNAPPER_PHASE3_1] = {SPR_RSNP, A, 100, A_FaceTracer, 0, 0, S_GSNAPPER_IDLE1}
+states[S_RSNAPPER_PHASE3_1] = {SPR_RSNP, A, 100, A_FaceTracer, 0, 0, S_RSNAPPER_IDLE1}
 
 states[S_DARKSTABOT_WALK1] = {SPR_DCBF, A, 1, A_FaceStabChase, 0, 0, S_DARKSTABOT_WALK2}
 states[S_DARKSTABOT_WALK2] = {SPR_DCBF, B, 1, A_FaceStabChase, 0, 0, S_DARKSTABOT_WALK3}
@@ -856,7 +873,7 @@ addHook("TouchSpecial", function(snapper,mo) //---------------------------------
 			return true
 		end
 	end
-end,MT_GSNAPPER)
+end,MT_RSNAPPER)
 
 addHook("ShouldDamage", function(stabber,mo)
 	if (stabber and stabber.valid)
@@ -1057,7 +1074,7 @@ addHook("MobjThinker", function(stabber)
 			stabber.exrage = true
 				if (stabber.exragetimer == 29)
 					stabber.state = S_DARKSTABOT_PHASE3_RAGE1
-					stabber.tracer.state = S_GSNAPPER_PHASE3_1
+					stabber.tracer.state = S_RSNAPPER_PHASE3_1
 					P_LinedefExecute(1008)
 				end
 		end
@@ -1083,7 +1100,7 @@ addHook("MobjThinker", function(stabber)
 			smoke.momz = $1 + 2*FRACUNIT
 		end
 
-		if stabber.tracer and stabber.tracer.state == S_GSNAPPER_FORCE1
+		if stabber.tracer and stabber.tracer.state == S_RSNAPPER_FORCE1
 			stabber.tracer.tracer = stabber
 		end
 
@@ -1135,7 +1152,7 @@ addHook("MobjThinker", function(stabber)
 
         if leveltime == 1
 			S_ChangeMusic("DEPEC",true)
-			stabber.tracer = P_SpawnMobj(4984*FRACUNIT, 372*FRACUNIT, 500*FRACUNIT, MT_GSNAPPER)
+			stabber.tracer = P_SpawnMobj(4984*FRACUNIT, 372*FRACUNIT, 500*FRACUNIT, MT_RSNAPPER)
 			stabber.tracer.tracer = stabber
 			A_SetObjectFlags(stabber.tracer,MF_PAIN)
 		end
@@ -1169,25 +1186,25 @@ addHook("MobjThinker", function(stabber)
 		end
 
 		if (mapheaderinfo[gamemap].darkstabot) and stabber.health == 2 and stabber.exragetimer <= 200
-			A_FindTracer(stabber,MT_GSNAPPER)
-			A_FindTarget(stabber,MT_GSNAPPER)
+			A_FindTracer(stabber,MT_RSNAPPER)
+			A_FindTarget(stabber,MT_RSNAPPER)
 		end
 
 		if (mapheaderinfo[gamemap].darkstabot) and stabber.tracer
 		and stabber.ragetimer == 0
 			stabber.tracer.color = SKINCOLOR_BLACK
 			A_SetObjectFlags(stabber.tracer, MF_SPECIAL|MF_NOCLIPTHING|MF_BOSS)
-			stabber.tracer.state = S_GSNAPPER_FORCE2
+			stabber.tracer.state = S_RSNAPPER_FORCE2
 		end
 
 		if (mapheaderinfo[gamemap].darkstabot) and stabber.tracer
 		and stabber.ragetimer == 1
-			stabber.tracer.state = S_GSNAPPER_FORCE1
+			stabber.tracer.state = S_RSNAPPER_FORCE1
 		end
 
 		if stabber.tracer and stabber.ragetimer > 0 and stabber.ragetimer < 120
-			A_FindTracer(stabber,MT_GSNAPPER)
-			A_FindTarget(stabber,MT_GSNAPPER)
+			A_FindTracer(stabber,MT_RSNAPPER)
+			A_FindTarget(stabber,MT_RSNAPPER)
 		end
 
 		if stabber.tracer and stabber.ragetimer >= 120
@@ -1217,7 +1234,7 @@ addHook("MobjThinker", function(stabber)
 			stabber.momz = 0
 			stabber.momx = 0
 			stabber.momy = 0
-			if (stabber.tracer.state != S_GSNAPPER_ATK2_2)
+			if (stabber.tracer.state != S_RSNAPPER_ATK2_2)
 				A_FaceTarget(stabber.tracer)
 			end
 		end
@@ -1418,19 +1435,7 @@ addHook("MobjThinker", function(stabber)
 				sugoi.ExitLevel()
 			end
 		end
-
-		if stabber.tracer and stabber.tracer.valid
-		and (stabber.tracer.state == S_GSNAPPER_STND or stabber.tracer.state == S_GSNAPPER1 or stabber.tracer.state == S_GSNAPPER2 or stabber.tracer.state == S_GSNAPPER3 or stabber.tracer.state == S_GSNAPPER4)
-		and (mapheaderinfo[gamemap].darkstabot)
-		and stabber.ragetimer >= 160
-			P_SetMobjStateNF(stabber.tracer,S_GSNAPPER_IDLE1)
-		end
 end, MT_DARKSTABOT)
-
-
-
-
-
 
 addHook("MobjThinker", function(stabber)
 	if not stabber return end
@@ -1440,32 +1445,32 @@ addHook("MobjThinker", function(stabber)
 	end
 
 	if (stabber.letitout == true)
-	and (stabber.state == S_GSNAPPER_IDLE1)
+	and (stabber.state == S_RSNAPPER_IDLE1)
 		stabber.letitout = false
 	end
 
-	if (stabber.state == S_GSNAPPER_ATK3_1)
+	if (stabber.state == S_RSNAPPER_ATK3_1)
 		stabber.letitout = true
 	end
 
-	if stabber.state == S_GSNAPPER_CHOOSE
+	if stabber.state == S_RSNAPPER_CHOOSE
 		local hmm = {1, 2, 3}
 		hmm = hmm[P_RandomKey(#hmm)+1]
 
 			if hmm == 1
-				P_SetMobjStateNF(stabber, S_GSNAPPER_ATK1_1)
+				P_SetMobjStateNF(stabber, S_RSNAPPER_ATK1_1)
 			end
 
 			if hmm == 2
-				P_SetMobjStateNF(stabber, S_GSNAPPER_ATK2_1)
+				P_SetMobjStateNF(stabber, S_RSNAPPER_ATK2_1)
 			end
 
 			if hmm == 3
-				P_SetMobjStateNF(stabber, S_GSNAPPER_ATK3_1)
+				P_SetMobjStateNF(stabber, S_RSNAPPER_ATK3_1)
 			end
 	end
 
-	if stabber.state == S_GSNAPPER_ATK1_1
+	if stabber.state == S_RSNAPPER_ATK1_1
 		if leveltime % 5 == 0
 			local smoke = P_SpawnMobj(stabber.x,stabber.y,stabber.z+100*FRACUNIT,MT_SMOKE)
 			smoke.info.speed = 5*FRACUNIT
@@ -1475,7 +1480,7 @@ addHook("MobjThinker", function(stabber)
 		end
 	end
 
-	if stabber.state == S_GSNAPPER_ATK2_1
+	if stabber.state == S_RSNAPPER_ATK2_1
 		if leveltime % 5 == 0
 			local smoke = P_SpawnMobj(stabber.x,stabber.y,stabber.z+100*FRACUNIT,MT_SMOKE)
 			smoke.info.speed = 5*FRACUNIT
@@ -1485,7 +1490,7 @@ addHook("MobjThinker", function(stabber)
 		end
 	end
 
-	if stabber.state == S_GSNAPPER_ATK3_1
+	if stabber.state == S_RSNAPPER_ATK3_1
 		if leveltime % 5 == 0
 			local smoke = P_SpawnMobj(stabber.x,stabber.y,stabber.z+100*FRACUNIT,MT_PARTICLE)
 			smoke.info.speed = 5*FRACUNIT
@@ -1495,14 +1500,14 @@ addHook("MobjThinker", function(stabber)
 		end
 	end
 
-	if stabber.state == S_GSNAPPER_ATK1_2
+	if stabber.state == S_RSNAPPER_ATK1_2
 	and stabber.target and stabber.target.valid
 		A_FaceTarget(stabber)
 		stabber.tracer.target = P_SpawnMobj(stabber.x+FixedMul(30*FRACUNIT, cos(stabber.angle)), stabber.y+FixedMul(30*FRACUNIT, sin(stabber.angle)), stabber.z+30*FRACUNIT, MT_TURRETLASER)
 		P_Thrust(stabber.tracer.target,stabber.angle,40*FRACUNIT)
 	end
 
-	if stabber.state == S_GSNAPPER_ATK2_2
+	if stabber.state == S_RSNAPPER_ATK2_2
 		stabber.angle = stabber.angle+ANG10
 		stabber.tracer.target = P_SpawnMobj(stabber.x+FixedMul(30*FRACUNIT, cos(stabber.angle)), stabber.y+FixedMul(30*FRACUNIT, sin(stabber.angle)), stabber.z+30*FRACUNIT, MT_TURRETLASER)
 		P_Thrust(stabber.tracer.target,stabber.angle,40*FRACUNIT)
@@ -1515,6 +1520,6 @@ addHook("MobjThinker", function(stabber)
 	end
 
 	if cutscenetimer6 >= 1
-		P_SetMobjStateNF(stabber,S_GSNAPPER_FORCE3)
+		P_SetMobjStateNF(stabber,S_RSNAPPER_FORCE3)
 	end
-end, MT_GSNAPPER)
+end, MT_RSNAPPER)

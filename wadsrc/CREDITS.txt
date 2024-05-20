@@ -526,7 +526,7 @@ MAPE0: Gateway Dimension Zone (TehRealSalt)
 	- Skybox: sphere
 
 Additional Credits:
-	- FreeDoom textures: FreeDoom team", nil, V_YELLOWMAP|V_ALLOWLOWERCASE},
+	- FreeDoom textures: FreeDoom team
 		- Ported to SRB2 by ShadowHog
 		- FreeDoom's full credits & license are included in CREDITS.freedoom & COPYING.freedoom
 	- Combine Ring: Lach

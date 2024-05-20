@@ -51,15 +51,29 @@ local function ssTimerSet()
 	panimtimer = 0
 end
 
-local function endTimer()
+local function endTimer(player)
 	if not (mapheaderinfo[gamemap].templetimer) return end
 	S_StartSound(nil, sfx_lose)
 
-	for player in players.iterate
+	if (player and player.valid)
 		P_DoPlayerExit(player)
+	else
+		for p in players.iterate
+			P_DoPlayerExit(p)
+		end
 	end
 
-	timer = -1
+	local allExit = true
+	for p in players.iterate
+		if not (p.exiting)
+			allExit = false
+			break
+		end
+	end
+
+	if (allExit)
+		timer = -1
+	end
 end
 
 local function ssTimer()
@@ -74,7 +88,7 @@ local function ssTimer()
 		if (timer > 0)
 			timer = $ - 1
 		elseif (timer == 0)
-			endTimer()
+			endTimer(nil)
 		end
 	end
 end
@@ -90,7 +104,7 @@ local function playerHit(mo)
 	if (player.powers[pw_super]) return false end
 	if (player.rings > 0) return false end
 
-	endTimer()
+	endTimer(player)
 	P_DoPlayerPain(player)
 	return true
 end
@@ -117,7 +131,7 @@ local function drawTimer(v, p)
 	if not mapheaderinfo[gamemap].templetimer return end
 	if (panimtimer % 3 == 2) or not (tpause) and not (timer < 0)
 		v.drawString(160, 20, G_TicsToMinutes(timer, true)..":"..("%02d"):format(G_TicsToSeconds(timer)), V_MONOSPACE|V_YELLOWMAP|V_SNAPTOTOP|V_HUDTRANSDOUBLE|V_PERPLAYER, "center")
-	elseif (timer == -1)
+	elseif (timer == -1 and stagefailed)
 		v.drawString(160, 100, "You blew it!", V_MONOSPACE|V_REDMAP|V_SNAPTOTOP|V_HUDTRANSDOUBLE|V_PERPLAYER, "center")
 	end
 end

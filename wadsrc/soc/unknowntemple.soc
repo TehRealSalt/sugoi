@@ -32,7 +32,7 @@ Object MT_NEGAMOBILE
 #$Category SUGOI Bosses
 MapThingNum = 2016
 SpawnState = S_NEGAMOBILE_STND
-SpawnHealth = 10
+SpawnHealth = 6
 SeeState = S_NEGAMOBILE_STND
 SeeSound = sfx_None
 ReactionTime = 8
@@ -45,11 +45,11 @@ MissileState = S_NEGAMOBILE_RATK
 DeathState = S_NEGAMOBILE_DIE1
 DeathSound = sfx_cybdth
 XDeathState = S_NEGAMOBILE_FLEE
-Speed = 10
+Speed = 4
 Radius = 24*FRACUNIT
 Height = 76*FRACUNIT
 Mass = 0
-Damage = 5
+Damage = 2
 ActiveSound = sfx_telept
 RaiseState = S_NEGAMOBILE_PANIC1
 Flags = MF_SPECIAL|MF_SHOOTABLE|MF_BOSS|MF_NOGRAVITY|MF_FLOAT

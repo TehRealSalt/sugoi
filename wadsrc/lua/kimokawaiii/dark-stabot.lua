@@ -1359,6 +1359,10 @@ addHook("MobjThinker", function(stabber)
 			and cutscenetimer6 < 250
 				A_BossScream(stabber)
 			end
+
+			if (player.cutscenemode6 == true)
+				player.drawangle = player.mo.angle
+			end
 		end
 
         if cutscenetimer6 == 200

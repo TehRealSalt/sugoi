@@ -2490,6 +2490,7 @@ Lua.TempleTimer = 120
 Lua.CountMap = true
 Lua.NoItemsAllowed = true
 Lua.SUGOIEmerald = 4
+Lua.SUGOIBossMeter = Nega Mobile
 Lua.Author = Sapheros
 Lua.Difficulty = 3
 Lua.Length = 3

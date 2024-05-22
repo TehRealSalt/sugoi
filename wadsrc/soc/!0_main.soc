@@ -181,7 +181,7 @@ Color = SKINCOLOR_MAGENTA
 
 # EXTRA EMBLEM 3: SUBARASHII secret ending clear
 ConditionSet 3
-Condition1 = MapBeaten XX
+Condition1 = MapBeaten C5
 
 ExtraEmblem 3
 Name = SAMURAII?!

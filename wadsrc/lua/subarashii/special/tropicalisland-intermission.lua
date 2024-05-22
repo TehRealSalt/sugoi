@@ -37,7 +37,10 @@ rawset(_G, "socket_startintermission", function(player)
 	player.socket_exitwait = td_intermissionmusiclength
 
 	player.socket_totalscore = 0
-	player.socket_scorebonus = player.mo.socket_energy * td_energyscoremul
+	player.socket_scorebonus = 0
+	if (player.mo.socket_energy != nil)
+		player.socket_scorebonus = player.mo.socket_energy * td_energyscoremul
+	end
 	player.socket_ringbonus = player.rings * 100
 
 	S_ChangeMusic("TDLCLR", false)

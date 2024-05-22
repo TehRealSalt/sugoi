@@ -678,7 +678,7 @@ end
 
 event.newevent("SetView",
 function(player,v)
-	while true
+	while (player and player.valid)
 		if (player.mo and player.mo.valid) and (player.mo.cam and not (player.mo.cam.override))
 			CAMERA:SetEye(player, maplocation("MAINFIELD_VIEWPOINT"), 0)
 			CAMERA:UnsetEye(player, 0)

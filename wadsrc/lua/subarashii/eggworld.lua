@@ -1181,8 +1181,9 @@ local function mapLoadHookNice(map)
 	if (mapheaderinfo[map].finalmapintro)
 		customhud.disable("bossmeter")
 
-		if (All7Emeralds(emeralds)) and not (modeattacking) -- no record attack, marathon, or dedicated servers
-		and not (server and server.valid and (server.marathon or server.isdedicated))
+		if (All7Emeralds(emeralds))
+		and not (modeattacking) -- no record attack or netgame
+		and not (netgame)
 			P_LinedefExecute(emeraldtag)
 		end
 

@@ -512,7 +512,7 @@ Color = SKINCOLOR_PURPLE
 Emblem
 Type = Time
 Var = 125*TICRATE
-MapNum = 33
+MapNum = E9
 Sprite = A
 Color = SKINCOLOR_BLUE
 
